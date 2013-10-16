@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">ListLayout</Text>
+<Text class="desc">
+	<p>The ListLayout positions the container's objects in a horizontal or vertical list. By default, the distribution is horizontal 
+	but can be set to vertical by setting the "type" attribute to "vertical". Spacing(pixels) is controlled by the "spacingX" and "spacingY" 
+	attributes and can be switched to use margins(marginX and marginY) through the "useMargins" flag.</p><br />
+	<p>This example demonstrates a horizontal list with a spacing of 200px and a vertical list with a margin of 5px.</p><br />
+	<p>See also:<br />
+	LayoutFactory<br />
+	GridLayout<br />
+	</p>	 
+</Text>
+
+<Container class="horiztonal_list" x="470" y="25">
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Layout classRef="ListLayout" spacingX="200" tween="true" tweenTime="1500"/>                  
+</Container>
+
+<Container class="vertical_list" x="750" y="200">
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Layout classRef="ListLayout" useMargins="true" marginY="5" type="vertical" tween="true" tweenTime="1500"/>                  
+</Container>
+
+</cml>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">TabbedContainer</Text>
+<Text class="desc">
+	<p>The TabbedContainer allows switching between a group of Tabs by selecting their associated tabs.</p><br />
+	<p>This example will demonstrate the change in content each time a different tab is touched.</p><br />
+	<p>See also:<br />
+	Container<br />Tab<br />
+	</p>	 
+</Text>
+
+<TabbedContainer x="625" y="150">
+		<Tab title="random" tabHeight="40">
+			<Image id="img1" src="images/foot.png" scale=".2"/>
+			<Image id="img1" src="images/foot.png" scale=".2"/>
+			<Image id="img1" src="images/foot.png" scale=".2"/>
+			<Image id="img1" src="images/foot.png" scale=".2"/>
+			<Layout classRef="RandomLayout" maxX="400" maxY="400"/>
+		</Tab>
+		<Tab title="grid" tabHeight="40">	
+			<Image id="img1" src="images/womb.png" scale=".1" />
+			<Image id="img1" src="images/womb.png" scale=".1" />
+			<Image id="img1" src="images/womb.png" scale=".1" />
+			<Image id="img1" src="images/womb.png" scale=".1" />
+			<Image id="img1" src="images/womb.png" scale=".1" />
+			<Image id="img1" src="images/womb.png" scale=".1" />
+			<Image id="img1" src="images/womb.png" scale=".1" />
+			<Image id="img1" src="images/womb.png" scale=".1" />
+			<Image id="img1" src="images/womb.png" scale=".1" />
+			<Image id="img1" src="images/womb.png" scale=".1" />
+			<Image id="img1" src="images/womb.png" scale=".1" />
+			<Image id="img1" src="images/womb.png" scale=".1" />
+			<Image id="img1" src="images/womb.png" scale=".1" />
+			<Image id="img1" src="images/womb.png" scale=".1" />
+			<Layout classRef="GridLayout" columns="4" rows="4" useMargins="true" />
+		</Tab>		
+		<Tab title="pile" tabHeight="40">
+			<Image id="img1" src="images/baby.jpg" scale=".5"/>	
+			<Image id="img1" src="images/baby.jpg" scale=".5"/>	
+			<Image id="img1" src="images/baby.jpg" scale=".5"/>	
+			<Image id="img1" src="images/baby.jpg" scale=".5"/>	
+			<Image id="img1" src="images/baby.jpg" scale=".5"/>	
+			<Layout classRef="PileLayout" originY="200" originX="200" />
+		</Tab>		
+		<Tab title="fan" tabHeight="40">
+			<Image id="img1" src="images/clockwork.png" scale=".2"/>
+			<Image id="img1" src="images/clockwork.png" scale=".2"/>
+			<Image id="img1" src="images/clockwork.png" scale=".2"/>
+			<Image id="img1" src="images/clockwork.png" scale=".2"/>
+			<Image id="img1" src="images/clockwork.png" scale=".2"/>
+			<Image id="img1" src="images/clockwork.png" scale=".2"/>
+			<Layout classRef="FanLayout" type="bottomRightOrigin" originX="200" originY="300" angle="20"/>
+		</Tab>		
+	</TabbedContainer>
+
+</cml>

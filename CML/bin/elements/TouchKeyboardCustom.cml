@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">TouchKeyboardCustom</Text>
+<Text class="desc">
+	<p>The TouchKeyboard is a virtual keyboard providing an interface for a collection of Key objects and output management for key events. Default configurations are in place for convenience but the keyboard's style, layout, and key actions are customizable.<br /><br />
+	This example displays a custom TouchKeyboard with a Dvorak layout and some additional keys.</p><br />
+	<p>See also:<br />
+	TouchKeyboard<br />Key<br />
+	</p>	 
+</Text>
+
+<!-- This is a customized TouchKeyboard with the Dvorak layout and some additional keys. The TouchKeyboard can be customized by nesting Containers 
+     of Keys, each Container representing a row of keys. If an output is not specified, the output text field will be the currently focused(focus is gained by touch) 
+	 text field. If an output is specified, the output is fixed to the provided text field.-->
+
+<TouchKeyboard id="tk" x="500" y="300" scale=".8" background="bkg" bkgPadding="20" output="notepad">
+	<Container class="row1" >
+		<Key  text="`" shiftText="~"/>						
+		<Key  text="1" shiftText="!"/>						
+		<Key  text="2" shiftText="@"/>						
+		<Key  text="3" shiftText="#"/>						
+		<Key  text="4" shiftText="$"/>						
+		<Key  text="5" shiftText="%"/>						
+		<Key  text="6" shiftText="^"/>						
+		<Key  text="7" shiftText="&"/>						
+		<Key  text="8" shiftText="*"/>						
+		<Key  text="9" shiftText="("/>						
+		<Key  text="0" shiftText=")"/>						
+		<Key charCode="123" shiftText="["/>			<!--assign text by ASCII character code -->		
+		<Key charCode="125" shiftText="]" />						
+		<Key  text="Backspace" width="110"/>			<!--Since "BACKSPACE" is a flash.ui.Keyboard constant, the associated keyCode/action is automatically resolved-->				
+	</Container>											<!--Assignmet of a different keyCode will override the default action-->
+	<Container class="row2">
+		<Key  text="Tab" width="80"/>					
+		<Key  text="'" shiftCharCode="34"/>	 		
+		<Key  text="," shiftCharCode="60"/>						
+		<Key  text="." shiftCharCode="62"/>						
+		<Key  text="p"/>						
+		<Key  text="y"/>						
+		<Key  text="f"/>						
+		<Key  text="g"/>						
+		<Key  text="c"/>						
+		<Key  text="r"/>						
+		<Key  text="l"/>						
+		<Key  text="/" shiftText="?"/>						
+		<Key  text="=" shiftText="+"/>						
+		<Key  text="\" shiftText="|" width="75"/>
+	</Container>
+	<Container class="row3">
+		<Key  text="Caps Lock" width="98" keyCode="20"/>     <!--Since "CAPS LOCK" is NOT a flash.ui.Keyboard constant, a key code must be specified to associate an action-->				
+		<Key  text="a"/>						                <!--Changeing the text to "CAPS_LOCK" would allow the action to be assigned automatically-->
+		<Key  text="o"/>						
+		<Key  text="e"/>						
+		<Key  text="u"/>						
+		<Key  text="i"/>						
+		<Key  text="d"/>						
+		<Key  text="h"/>						
+		<Key  text="t"/>						
+		<Key  text="n"/>						
+		<Key  text="s"/>						
+		<Key  text="-" shiftText="_"/>						
+		<Key  text="Enter" width="112"/>						
+	</Container>	
+	<Container class="row4">
+		<Key  text="Shift" width="125"/>						
+		<Key  text=";" shiftText=":"/>						
+		<Key  text="q"/>						
+		<Key  text="j"/>						
+		<Key  text="k"/>						
+		<Key  text="x"/>						
+		<Key  text="b"/>						
+		<Key  text="m"/>						
+		<Key  text="w"/>						
+		<Key  text="v"/>						
+		<Key  text="z"/>						
+		<Key  text="Shift" width="140"/>						
+	</Container>	
+	<Container class="row5">
+		<Key  text="Esc" keyCode="27"/>											
+		<Key  text="Delete" width="65"/>
+		<Key  width="586" keyCode="32"/>																	
+		<Key  keyCode="37" icon="left">
+			<Graphic id="left" shape="triangle" color="0xFFFFFF" height="15" rotation="-90" x="13" y="29"/>                 <!--Icon assignment-->
+		</Key>
+		<Key  keyCode="39" icon="right">
+			<Graphic id="right" shape="triangle" color="0xFFFFFF" height="15" rotation="90" x="31" y="14"/>
+		</Key>	
+	</Container>		
+	<Graphic id="bkg" shape="rectangle" color="0x383838" lineStroke="0"/>                                                     <!--Custom keyboard background-->	
+</TouchKeyboard>
+
+<Text id="notepad" x="499" y="140" width="694" height="150" background="true" backgroundColor="0xFFFFFF" border="true" multiline="true"/>   <!--Fixed output textfield referenced by id-->	
+
+</cml>

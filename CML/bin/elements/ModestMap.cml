@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">ModestMaps </Text>
+<Text class="desc" selectable="true">
+	<p>This tag is used to load a ModestMaps using the ModestMaps API. The element is already touch enabled for the purpose of navigating the map via touch, and switching map providers via touch. 
+	Map providers are basically the style of the map. The available map providers are:</p><br /> 
+	
+	<ul><li>bluemarblemapprovider</li>
+	<li>microsoftaerialmapprovider</li>
+	<li>microsofthybridmapprovider</li>
+	<li>microsoftroadmapprovider</li>
+	<li>openstreetmapprovider</li>
+	<li>yahooaerialmapprovider</li>
+	<li>yahoohybridmapprovider</li>
+	<li>yahooroadmapprovider</li></ul><br />
+	
+	<p>The map takes latitude and longitude values to determine the area it displays on load. Negative values are South, and West for the respective coordinates, positive values are North and East.</p><br />
+	<p>You may also add Map Markers to the map provider to point out areas of significance. These markers take display objects, so within their tags you can add graphics, Texts, Image s, or anything else 
+	which is a display object.</p><br />
+	<p>Zooming is available when used within a touchContainer, and double-tapping will also be able to switch map providers.</p>
+</Text>
+
+<ModestMap x="500" y="50" height="600" width="600" latitude="51.1789" longitude="-1.8264" zoom="7" mapprovider="MicrosoftRoadMapProvider">
+
+	<ModestMapMarker longitude="-1.8264" latitude="51.1789">
+		<Graphic fill="color" color="0x594D37" shape="roundRectangle" width="81" height="25" cornerWidth="10" cornerHeight="10" lineStroke="2" lineColor="0x293033"/>
+		<Text text="Stone Henge" color="0xFAFAC0" fontSize="12" width="81"/>
+	</ModestMapMarker>
+	
+</ModestMap>
+
+</cml>

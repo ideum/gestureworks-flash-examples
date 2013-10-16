@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">RenderKit</Text>
+<Text class="desc" selectable="false">
+	<p>This tag is used to create a template which can be populated by XML data that the tag is pointed towards. This allows a user to create a single template, then 
+	populate it many times over without repeating all the CML. This also allows a user to change many items with a simple style change to the RenderKit template.</p><br />
+	<p>The RenderKit is a three part tag. The RenderKit itself encapsulates the Renderer object that will be a template. The RenderKit searches for RendererData 
+	tags to gain the variables needed to populate its items. The RendererData tag can be set in its own file, which can be pointed to via the RenderKit's dataPath attribute. 
+	The RenderKit can also be pointed towards specific root tags when populating from RendererData using the dataRootTag attribute in the RenderKit tag.</p><br />
+	<p>The RenderKit searches XML data in the RendererData tag for XML tags that match ID's given in curly brackets, ie: width="{item-width}" in the RenderKit template will 
+	seek out the XML tag &lt;item-width&gt; in the RendererData, and be populated with the value within the tag.</p>
+</Text>
+
+<RenderKit dataRootTag="photo">
+	<Renderer>
+		<TouchContainer x="{start-x}" y="{start-y}">
+			<Graphic shape="rectangle" color="0xffffff" width="500" height="550" />
+			<Image src="{imagepath}" x="5" y="5" width="490" height="500" />
+			
+			<Gesture ref="n-drag" gestureOn="true"/>
+			<Gesture ref="n-scale" gestureOn="true"/>
+			<Gesture ref="n-rotate" gestureOn="true"/>
+		</TouchContainer>
+	</Renderer>
+
+
+<RendererData>
+	
+	<Photo>
+		<start-x>
+			500
+		</start-x>
+		<start-y>
+			50
+		</start-y>
+		<imagepath>
+			images/500px-Bi-crystal.jpg
+		</imagepath>
+	</Photo>
+	
+	<Photo>
+		<start-x>
+			750
+		</start-x>
+		<start-y>
+			50
+		</start-y>
+		<imagepath>
+			images/500px-Silver_crystal.jpg
+		</imagepath>
+	</Photo>
+	
+	<Photo>
+		<start-x>
+			1000
+		</start-x>
+		<start-y>
+			50
+		</start-y>
+		<imagepath>
+			images/baby.jpg
+		</imagepath>
+	</Photo>
+	
+	<Photo>
+		<start-x>
+			500
+		</start-x>
+		<start-y>
+			400
+		</start-y>
+		<imagepath>
+			images/clockwork.png
+		</imagepath>
+	</Photo>
+	
+	<Photo>
+		<start-x>
+			750
+		</start-x>
+		<start-y>
+			400
+		</start-y>
+		<imagepath>
+			images/foot.png
+		</imagepath>
+	</Photo>
+	
+	<Photo>
+		<start-x>
+			1000
+		</start-x>
+		<start-y>
+			400
+		</start-y>
+		<imagepath>
+			images/Helicopter.png
+		</imagepath>
+	</Photo>
+</RendererData>
+
+</RenderKit>
+
+</cml>

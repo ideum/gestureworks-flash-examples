@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">FlickrQuery </Text>
+<Text class="desc" selectable="true">
+	<p>This tag is used to search for images in Flickr using the API, and some Actionscripting will be necessary to get full use from it.</p><br /> 
+	<p>The FlickrQuery submits a text or tags search, with an option to set the search to "all" terms, or "any" and can be limited to only return 
+	results from a specific user. The FlickrQuery then receives an array of results, which contain all the information to generate Flickr elements.</p> <br />
+	<p>To use the class, you will need an API-key, which you can get for free at:&nbsp;<a href="http://www.flickr/com/service/api"> http://www.flickr/com/service/api</a>&nbsp; 
+	to allow you to submit queries to the Flickr database. The class has an option to page forward and backward through results, if the results returned are 
+	greater than the resultsPerPage property set.</p><br />
+	<p>This class does not load pictures on its own. The source code for this project illustrates how to use the class.</p><br />
+	<p>The query has no log in credentials, so it will only return results that are publicly viewable.</p><br />
+	<p>Please note, this is a very broad example, and will turn up any sort of picture tagged as either "daffodils" or "daisies", and OpenExhibits is not
+	responsible for content uploaded by Flickr users.</p><br />
+</Text>
+
+<FlickrQuery id="flickr-query"
+apikey="ENTER YOUR API KEY" 
+tagMode="any" 
+tags="daffodils,daisies" 
+resultsPerPage="3" />
+
+
+</cml>

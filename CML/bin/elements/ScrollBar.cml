@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">ScrollBar</Text>
+<Text class="desc">
+	<p>This tag provides a basic scroll bar that can be positioned and styled in various ways, and used to dispatch position events to position content. On its own,
+	the ScrollBar does not scroll content, but a user can either listen for it to customize how it scrolls, or use it as part of the ScrollPane.</p><br />
+	<p>When used in a ScrollPane, the content height or width will automatically be set. The fill corresponds with the bar's background, the buttons only with the top and
+	lower buttons, and the thumbFill corresponds with the actual bar that is dragged and scrolled.</p><br />
+	<p>Optionally, buttons for the ScrollBar can be turned off by setting the buttonVisible property.</p>
+	<br /><br /><p>See Also: ScrollPane</p>
+</Text>
+
+<ScrollBar id="sb-vert" 
+x="500" y="50" 
+orientation="vertical" 
+width="30" 
+contentHeight="1000" 
+height="500" 
+buttonFill="0xE7635E" 
+fill="0xF8E9A8" 
+thumbFill="0x452743" 
+cornerHeight="15" 
+cornerWidth="15"/>
+
+<Text id="vert-text" x="550" y="80" text="0" color="0xffffff" />
+
+<Text id="horiz-text" x="780" y="500" text="0" color="0xffffff"/>
+
+<ScrollBar id="sb-horiz" 
+x="530" y="550" 
+orientation="horizontal" 
+height="30" 
+contentWidth="1000" 
+width="500" 
+buttonFill="0xE7635E" 
+fill="0xF8E9A8" 
+thumbFill="0x452743" 
+cornerHeight="15" 
+cornerWidth="15"
+buttonVisible="false" />
+
+</cml>

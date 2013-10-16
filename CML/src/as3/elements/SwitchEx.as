@@ -1,0 +1,77 @@
+package as3.elements
+{
+	import com.gestureworks.cml.element.Switch;
+	import com.gestureworks.cml.element.Text;
+	import com.gestureworks.cml.events.StateEvent;
+	import com.gestureworks.core.GestureWorks;
+	import com.gestureworks.utils.ExampleTemplate;
+	
+	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="30")]
+	
+	public class SwitchEx extends GestureWorks
+	{
+		private var text:Text = new Text();
+		
+		public function SwitchEx():void
+		{
+		
+		}
+		
+		override protected function gestureworksInit():void
+		{
+			// entry point
+			
+			var exTemp:ExampleTemplate = new ExampleTemplate();
+			exTemp.createHeader();
+			addChild(exTemp);
+			
+			exTemp.createTitle("Switch");
+			exTemp.createDesc("<p>This tag acts as a Switch button.The state can be changed by drag and touch event.</p>");
+			
+			var sw:Switch = new Switch();
+			
+			sw.x = 800;
+			sw.y = 300;
+			
+			//background graphics
+			sw.backgroundColor = 0x404040;
+			sw.backgroundWidth = 100;
+			sw.backgroundHeight = 40;
+			sw.backgroundEllipseWidth = 25;
+			sw.backgroundEllipseHeight = 25;
+			
+			//button graphics
+			sw.buttonWidth = 50;
+			sw.buttonHeight = 40;
+			sw.buttonEllipseWidth = 25;
+			sw.buttonEllipseHeight = 25;
+			sw.buttonColor = 0x461B7E;
+			
+			//event listener
+			sw.addEventListener(StateEvent.CHANGE, onStateChange);
+			
+			sw.init();
+			addChild(sw);
+			
+			text.text = "TRUE";
+			text.x = 300;
+			text.y = 100;
+			text.visible = false;
+			text.color = 0xFFFFFF;
+			text.fontSize = 25;
+			addChild(text);
+		}
+		
+		//handles state event
+		private function onStateChange(event:StateEvent):void
+		{
+			trace(text, event.value);
+			
+			if (event.value == true)
+				text.visible = true;
+			else
+				text.visible = false;
+		}
+	
+	}
+}

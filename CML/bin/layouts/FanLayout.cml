@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">FanLayout</Text>
+<Text class="desc">
+	<p>The FanLayout positions the corners of the container's objects in the same location and rotates them individually around the corner.</p><br />
+	<p>This example demonstrates the fan layout rotated around each corner at various degrees of rotation.</p><br />
+	<p>See also:<br />
+	PileLayout<br />
+	</p>	 
+</Text>
+
+<!--Since there are four possible origins of rotation through the fan layout, this example demonstrates four fan layout containers nested into a parent container wiith a grid layout.-->
+
+<!--This is a global layout-->
+<LayoutKit>
+	<Layout id="grid" classRef="GridLayout" rows="2" columns="2" spacingX="500" spacingY="600"/>
+</LayoutKit>
+
+<Container layout="grid" x="625" y="50" class="parent_layout">            <!--global layouts are assigned by id to the Container's layout attribute-->
+
+	<Container class="top_left">
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Layout classRef="FanLayout" angle="10" tween="true" tweenTime="1500"/>                  <!--the default origin is the top left corner and the default angle is 5 -->
+	</Container>
+
+	<Container class="top_right">
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Layout classRef="FanLayout" type="topRightOrigin" angle="-10" tween="true" tweenTime="1500"/>          <!--to change origin, specify the type-->
+	</Container>
+	
+	<Container class="bottom_left">
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Layout classRef="FanLayout" type="bottomLeftOrigin" angle="-10" tween="true" tweenTime="1500"/>          
+	</Container>	
+	
+	<Container class="bottom_right">
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Image src="images/plane.jpg" scale=".3"/>
+		<Layout classRef="FanLayout" type="bottomRightOrigin" angle="10" tween="true" tweenTime="1500"/>          
+	</Container>		
+
+</Container>
+
+</cml>

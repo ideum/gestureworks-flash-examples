@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">PileLayout</Text>
+<Text class="desc">
+	<p>The PileLayout positions the centers of the container's objects in the same location and rotates them individually around the center.</p><br />
+	<p>This example demonstrates a pile layout with a random angle of rotation and one with a fixed angle of rotation.</p><br />
+	<p>See also:<br />
+	LayoutFactory<br />
+	FanLayout<br />
+	</p>	 
+</Text>
+
+<Container x="700" y="200" class="random_rotation">
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Layout classRef="PileLayout" tween="true" tweenTime="1500"/>                  <!--if angle of rotation is not specified, the rotation is random-->
+</Container>
+
+<Container x="1000" y="500" class="fixed_rotation">
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Layout classRef="PileLayout" angle="20" tween="true" tweenTime="1500"/>          <!--to fix the rotation, specify the angle-->
+</Container>
+
+</cml>

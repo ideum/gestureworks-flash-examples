@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Dial</Text>
+<Text class="desc">
+	<p>The Dial element provides a list of text elements in rotary selection tool.</p><br />
+	<p>The text can be moved from top to bottom or bottom to top through the drag event. The Dial has two different modes - Continous and Non-Continous. 
+	In continous dial mode the text elements move continously without stopping at the end or beginning through the drag event. In non-continous dial the motion 
+	stops when the first element or the last element reaches the center line. The text element closest to the center snaps to the center line and also 
+	changes its color.</p><br />
+	<p>It allows the user to set the dial mode from continous to non-continous or non-continous to continous by setting the continous flag to true or false.</p>
+</Text>
+
+<!-- Continous -->
+<Text x="590" y="210" text="Dial-Continous" fontSize="15" color="0xFFFFFF" width="300" font="OpenSansBold"/>
+
+<Dial id="dial" text="Collection 1,Collection 2,Collection 3,Collection 4,Collection 5,Collection 6,Collection 7,Collection 8,Collection 9,Collection 10" maxItemsOnScreen="5" 
+continuous="true" textColor="0xDDDDDD" selectedTextColor="0x000000" x="520" y="250"
+
+   gradientType ="linear" gradientColors ="0x111111,0xDDDDDD,0x111111" gradientAlphas="1, 1, 1" gradientRatios="0, 127.5, 255" gradientWidth="300" gradientHeight="200"
+   gradientX ="25" gradientY ="0" gradientRotation ="1.57"
+   backgroundLineStoke ="3" backgroundAlpha="5" leftTriangleColor ="0x303030" rightTriangleColor="0x303030" 
+   centerLineLineStoke="1" centerLineOutlineColor="0xAAAAAAA" centerLineOutlineAlpha="0.4" centerLineColor="0x666666" centerLineAlpha="0.2"/>
+
+   
+<!-- Non-Continous -->
+<Text x="1000" y="210" text="Dial-NonContinous" fontSize="15" color="0xFFFFFF" width="300" font="OpenSansBold"/>
+
+<Dial id="dial1" text="Collection 1,Collection 2,Collection 3,Collection 4,Collection 5,Collection 6,Collection 7,Collection 8,Collection 9,Collection 10" maxItemsOnScreen="5" 
+continuous="false" textColor="0xDDDDDD" selectedTextColor="0x000000" x="930" y="250"
+
+   gradientType ="linear" gradientColors ="0x111111,0xDDDDDD,0x111111" gradientAlphas="1, 1, 1" gradientRatios="0, 127.5, 255" gradientWidth="300" gradientHeight="200"
+   gradientX ="25" gradientY ="0" gradientRotation ="1.57"
+   backgroundLineStoke ="3" backgroundAlpha="5" leftTriangleColor ="0x303030" rightTriangleColor="0x303030" 
+   centerLineLineStoke="1" centerLineOutlineColor="0xAAAAAAA" centerLineOutlineAlpha="0.4" centerLineColor="0x666666" centerLineAlpha="0.2"/>
+
+</cml>
+
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">MP3 </Text>
+<Text class="desc" selectable="true">
+	<p>This tag is used to load an MP3 element that plays back and can be displayed with a graphical wave form.</p><br />
+	<p>Automatic play and looping can be set in the CML tag, as well as the wave form color and background. If no wave form is desired, set display="none".</p><br />
+	<p>Unlike the Wav, an MP3 does not have to be compiled as part of an air project.</p><br />
+	<p>See also: <br/>Wav<br/>WavPlayer</p>
+</Text>
+	
+<!-- The MP3 plays mp3 files and optionally displays a graphical waveform. -->
+
+<MP3 src="RuthCalledShot_vbr.mp3" 
+	display="waveform"
+	x="550" y="125" 	
+	width="600" height="400" 
+	autoplay="true"
+	preload="true"
+	loop="true"
+	pan="0.0"
+	volume="1.0"
+	waveColor="0x558855"
+	backgroundColor="0x333333"
+	backgroundAlpha=".5"
+	/>
+
+
+</cml>

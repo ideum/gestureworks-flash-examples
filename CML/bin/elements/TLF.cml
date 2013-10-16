@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+	<!-- header -->
+	<Graphic class="header-graphic" />
+	<Text class="title">TLF</Text>
+	<Text class="desc">
+		<p>TLF is a wrapper for AS3's TLF system. The input is in the form of XML, and prefixed with AS3's namespace.</p><br />
+		<p>This example demonstrates a simple line of text with superscript.</p><br />
+		<p>See also:<br />
+		Text<br />
+		</p>	 
+	</Text>
+
+	<TLF x="750" y="300" width="300" height="260" font="OpenSansRegularTLF">
+		<TextFlow xmlns="http://ns.adobe.com/textLayout/2008" color="0xFFFFFF">
+			<p fontSize="30">THE 19<span baselineShift="superscript">th</span> CENTURY</p> 
+		</TextFlow>		
+	</TLF>	
+
+</cml>

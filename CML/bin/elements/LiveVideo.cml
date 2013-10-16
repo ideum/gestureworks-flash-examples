@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">LiveVideo</Text>
+<Text class="desc">
+	<p>This tag captures and displays video input from a user’s camera. Default has width and height defined for the video but also allows the user to specify their own width and height for the video.</p><br />
+	<p>This example also captures audio from microphone.</p><br />
+    <p>See also: <br/>LiveVideoViewer</p>
+</Text>
+
+    <LiveVideo x="700" y="150" id="live" camera="#cam" microphone="#micro" width="320" height="240">
+        <VideoCamera	 id="cam"/>
+        <Microphone id="micro"/>
+    </LiveVideo>
+
+
+</cml>
+
+
+

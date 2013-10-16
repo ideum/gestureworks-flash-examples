@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Graphic</Text>
+<Text class="desc">
+	<p>This tag is a wrapper for the graphic class in AS3. Most of the functionality is supported.</p>
+</Text>
+	
+	
+<!-- The graphic element is a wrapper for AS3's Graphic class -->
+
+<Container scale=".7" x="200">
+
+<!-- Horizontal Line -->
+<Text text="Horizontal Line" x="500" y="50" color="0xFFFFFF" fontSize="25" width="200" />
+<Graphic x="500" y="120"shape="line" width="200" lineStroke="5" lineColor="0xFF0000" lineAlpha=".5" />
+
+<!-- Vertical Line -->
+<Text text="Vertical Line" x="750" y="50" color="0xFFFFFF" fontSize="25" width="200" />
+<Graphic x="800" y="100"shape="line" height="200" lineStroke="10" lineColor="0x00FF00" lineAlpha=".5" />
+
+<!-- Vector -->
+<Text text="Vector" x="950" y="50" color="0xFFFFFF" fontSize="25" width="200" />
+<Graphic x="1000" y="100"shape="vector" width="100" height="200" lineStroke="15" lineColor="0x0000FF" lineAlpha="1" />
+
+<!-- Rectangle -->
+<Text text="Rectangle" x="1150" y="50" color="0xFFFFFF" fontSize="25" width="200" />
+<Graphic x="1180" y="120"shape="rectangle" width="100" height="100" fill="color" color="0x448866" lineStroke="10" lineColor="0x448899" />
+
+<!-- Round Rectangle -->
+<Text text="Round Rectangle" x="500" y="350" color="0xFFFFFF" fontSize="25" width="200" />
+<Graphic x="530" y="400"shape="roundRectangle" width="100" height="200" cornerWidth="20" cornerHeight="20" fill="color" color="0xDDAA99" lineStroke="10" lineColor="0xAA7777" />
+
+<!-- Circle -->
+<Text text="Circle" x="820" y="350" color="0xFFFFFF" fontSize="25" width="200" />
+<Graphic x="750" y="400"shape="circle" radius="100" color="0x44CCAA" lineStroke="10" lineColor="0x449933" />
+
+<!-- Ellipse -->
+<Text text="Ellipse" x="1000" y="350" color="0xFFFFFF" fontSize="25" width="200" />
+<Graphic x="1000" y="400"shape="ellipse" width="100" height="200" color="0x44CCAA" lineStroke="0" />
+
+<!-- Gradient Rectangle -->
+<Text text="Gradient" x="1200" y="350" color="0xFFFFFF" fontSize="25" width="200" />
+<Graphic x="1200" y="400" shape="rectangle" width="200" height="100" lineStroke="2"
+	fill="gradient" gradientAlphas=".5, 1, .5" gradientColors="0x229944, 0xFF5544, 0x3366AA" gradientRatios="0, 65, 255" gradientRotation="45"/>
+	
+<!-- Triangle -->
+<Text text="Triangle" x="500" y="640" color="0xFFFFFF" fontSize="25" width="200" />
+<Graphic x="500" y="680" shape="triangle" color="0x00FF00" height="100"/> 
+
+<!-- Curve -->
+<Text text="Curve" x="750" y="640" color="0xFFFFFF" fontSize="25" width="200" />
+<Graphic x="530" y="660" shape="curve" color="0xFF0000" startX="150" startY="100" anchorX="400" anchorY="100" controlX="275" controlY="0"/> 	
+
+<!-- Path -->
+<Text text="Path" x="1000" y="640" color="0xFFFFFF" fontSize="25" width="200" />
+<Graphic x="800" y="680" shape="path" color="0x000000" pathCommands="1,2,1,2" pathCoordinates="200,10, 300,110, 300,10, 200,110"/> 
+
+</Container>
+</cml>

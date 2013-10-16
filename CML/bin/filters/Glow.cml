@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="true">
+	
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Filter - Glow</Text>
+<Text class="desc" selectable="false">
+	<p>This tag gives access to various filter effects. The Filter is added on as a child of whatever display object should have that filter, and is then applied. 
+	The ref attribute defines the type of filter.</p><br />
+	<p>The Glow filter creates the illusion of light emanating around or within an object.</p>
+</Text>
+
+<Graphic shape="circle" radius="150" x="600" y="150" lineStroke="0" color="0x777777">
+	<Filter ref="Glow"
+		color="0xF2E3B6"
+		alpha="0.75"
+		blurX="15"
+		blurY="15"
+		strength="10"
+		inner="false"
+		knockout="false" />
+</Graphic>
+
+</cml>

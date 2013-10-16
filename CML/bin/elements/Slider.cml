@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Slider</Text>
+<Text class="desc" selectable="false" >
+	<p>This tag creates a slider element. The slider can be used through touch and mouse input devices. It also allows for the input value to be fed 
+	through a function call, allowing  the slider to updated by another process.</p><br />
+    <p>The slider can be orientation horizontally or vertically. It can act as a continuous slider or one that snaps to x-number of discrete steps.</p>
+</Text>
+	
+<!-- The Slider tag -->
+
+<!-- Vertical continous slider -->
+<Slider id="vertical" x="500" y="100" discrete="false" orientation="vertical" gestureReleaseInertia="true" hit="#hitArea" rail="#bottom" knob="#top" min="0" max="100">
+	<Graphic id="bottom" shape="rectangle" x="0" y="0" width="20" height="500" lineStroke="1" color="0x222222" lineColor="0x333333" alpha="1"/>
+	<Graphic id="top" shape="circle" x="-15" y="0" radius="25" color="0xDDDDDD" lineStroke="2" lineColor="0x666666"/>
+	<Graphic id="hitArea" shape="rectangle" x="-40" y="0" width="100" height="500" alpha="0" />
+</Slider>
+
+
+<!-- Vertical slider updated by program -->
+<Slider id="input-vert" x="600" y="100" mouseEnabled="false" discrete="true" orientation="vertical" gestureReleaseInertia="true" hit="#hitArea" rail="#bottom" knob="#top" min="0" max="100">
+	<Graphic id="bottom" shape="rectangle" x="0" y="0" width="20" height="500" lineStroke="1" color="0x222222" lineColor="0x333333" alpha="1"/>
+	<Graphic id="top" shape="circle" x="-15" y="0" radius="25" color="0xDDDDDD" lineStroke="2" lineColor="0x666666"/>
+	<Graphic id="hitArea" shape="rectangle" x="-40" y="0" width="100" height="500" alpha="0" />
+</Slider>
+
+
+<!-- Horizontal snaps to discrete points slider -->
+<Slider id="horizontal" x="700" y="200" discrete="true" steps="5" orientation="horizontal" gestureReleaseInertia="false" hit="#hitArea" rail="#bottom" knob="#top" min="0" max="100">
+	<Graphic id="bottom" shape="rectangle" x="0" y="0" width="500" height="20" lineStroke="1" color="0x222222" lineColor="0x333333" alpha="1"/>
+	<Graphic id="top" shape="rectangle" x="0" y="-10" width="10" height="40" color="0xDDDDDD" lineStroke="2" lineColor="0x666666"/>
+	<Graphic id="hitArea" shape="rectangle" x="0" y="-40" width="500" height="100" alpha="0" />
+</Slider>
+
+
+<!-- Horizontal slider updated by program -->
+<Slider id="input-horiz" x="700" y="300" mouseEnabled="false" discrete="false" orientation="horizontal" gestureReleaseInertia="false" hit="#hitArea" rail="#bottom" knob="#top" min="0" max="100">
+	<Graphic id="bottom" shape="rectangle" x="0" y="0" width="500" height="20" lineStroke="1" color="0x222222" lineColor="0x333333" alpha="1"/>
+	<Graphic id="top" shape="rectangle" x="0" y="-10" width="10" height="40" color="0xDDDDDD" lineStroke="2" lineColor="0x666666"/>
+	<Graphic id="hitArea" shape="rectangle" x="0" y="-40" width="500" height="100" alpha="0" />
+</Slider>
+
+
+</cml>
+
+
+

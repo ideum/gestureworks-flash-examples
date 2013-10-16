@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- library files must be relative to the root directory for security reasons -->
+<LibraryKit>
+	<Library type="swf" src="assets/openexhibits_assets.swf" />	
+</LibraryKit>
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Collection Viewer</Text>
+<Text class="desc">
+	<p>The Collection Viewer can load more objects than will display at any one time. The objects not displayed are put into queue and the CollectionViwer cycles through the queue whenever a user closes an object or moves it offscreen.<br /><br />
+	This example demonstrates three items loaded, with two on-screen (amountToShow) and one in the queue.</p><br />
+	<p>See also:<br />
+	Component<br />ImageViewer<br />VideoViewer<br />MP3Player<br />
+	</p>	 
+</Text>
+
+<!-- collection viewer -->
+<CollectionViewer id="collection" autoShuffle="true" amountToShow="2" mouseChildren="true" animateIn="true">
+	<Include src="ImageViewer.cml" />
+	<Include src="MP3Player.cml" />
+	<Include src="VideoViewer.cml" />
+</CollectionViewer>
+
+</cml>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<LibraryKit>
+	<Library type="swf" src="assets/openexhibits_assets.swf" />	
+</LibraryKit>
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">SlideshowViewer</Text>
+<Text class="desc">
+	<p>The SlideshowViewer is a component similar to many other components. While it can be set up with a front and backside, those are optional. This example is designed to show
+	the use of RadioButtons as pagination buttons in a viewer. Both the SlideshowViewer and AlbumViewer are equipped with this feature.</p><br />
+	<p>Instead of playing like a Slideshow can on its own, the autoplay is set to false, and this example uses RadioButtons. Hitting a radio button jumps to the corresponding page,
+	and these buttons are auto-populated based on the number of items in the viewer.</p>
+	<p></p>
+	<p>See also:<br />
+	AlbumViewer<br />
+	</p>	 
+</Text>
+
+<SlideshowViewer x="200" y="250" front="front" mouseChildren="true" linkSlideshows="true">
+	
+	<!-- Background graphic to help us move the whole viewer around. -->
+	<TouchContainer visible="true" targetParent="true" >
+		<Graphic shape="rectangle" width="500" height="375" lineStroke="0" fill="color" color="0x2e1705"/>
+	</TouchContainer>
+	
+	<TouchContainer visible="true" targetParent="true" mouseChildren="false">
+		<Slideshow x="17.5" y="17.5" id="front" loop="true" fadeDuration="1000" rate="2000" autoplay="false">
+			<Image src="images/plane.jpg" height="300" />
+			<Image x="100" src="images/train.jpg" height="300" />
+			<Image x="40" src="images/USS_Macon_over_Manhattan.png" height="300" />
+		</Slideshow>
+	</TouchContainer>
+	
+	<RadioButtons x="40" y="330" id="page-buttons" pageButtons="true" labels="0,1,2,3" absOffset="true" horizontalOffset="10" verticalLayout="false"
+	selectedColor="0xffae0f" selectedFillRatio="1" fontAlpha="0" fontSize="23"/>
+	
+	<GestureList>
+		<Gesture ref="n-drag" gestureOn="true"/>
+		<Gesture ref="n-scale" gestureOn="true"/>
+		<Gesture ref="n-rotate" gestureOn="true"/>
+	</GestureList>
+	
+</SlideshowViewer>	
+	
+</cml>

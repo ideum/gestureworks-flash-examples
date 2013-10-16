@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">RadioButtons</Text>
+<Text class="desc">
+	<p>The RadioButtons element represents a group of radio buttons generated from a user defined list of labels. Other configurable 
+	properties include the primary font characteristics (style, size, and color), placement direction (right to left or top to bottom), and the spacing between the buttons.</p><br />
+	<p>This example demonstrates the selection of a value from a defined set of choices by selecting a corresponding button.</p><br />
+	<p>See also:<br />
+	Toggle<br />
+	</p>	
+</Text>
+	 
+
+<RadioButtons id = "rb1" x="650" y="100" labels = "Male,Female,Dragon,Turtle,Monkey,Horse" fontSize = "25" fontColor = "0x00FF00" fontStyle = "OpenSansBold" verticalOffset = "90" />
+
+<Text id="selection" x="900" y="100" autoSize="left" fontSize="50" color="0xFFFFFF"/> 
+
+</cml>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="true">
+
+<Stage color="0x555666" />
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Filter - DropShadow</Text>
+<Text class="desc" selectable="false">
+	<p>This tag gives access to various filter effects. The Filter is added on as a child of whatever display object should have that filter, and is then applied. 
+	The ref attribute defines the type of filter.</p><br />
+	<p>The DropShadow uses distance and angle primarily to create the illusion of a shadow cast by a directional light. The hideObject property makes it so that only the object's 
+	shadow is scene and not the displayObject itself.</p>
+</Text>
+
+<Graphic shape="circle" radius="150" x="600" y="150" lineStroke="0" color="0x777777">
+	<Filter ref="DropShadow" 
+		distance="8"
+		angle="45"
+		color="0"
+		alpha="0.75"
+		blurX="4"
+		blurY="4" 
+		strength="1"
+		quality="1"
+		inner="false"
+		knockout="false"
+		hideObject="false"/>
+</Graphic>
+
+</cml>

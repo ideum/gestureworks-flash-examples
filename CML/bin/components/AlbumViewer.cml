@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+	<LibraryKit>
+		<Library type="swf" src="assets/openexhibits_assets.swf" />	
+	</LibraryKit>
+
+	<!-- header -->
+	<Graphic class="header-graphic" />
+	<Text class="title">AlbumViewer</Text>
+	<Text class="desc">
+		<p>The AlbumViewer is a component that is primarily meant to display an Album on the front side and meta-data on the back side. 
+		It is composed of the following elements: album, front, back, menu, and frame. The width and height of the component are automatically 
+		set to the dimensions of the album unless it is previously specifed by the component.<br /><br />
+		This example demonstrates the simultaneous scrolling of an album and interactivity of its items. The nested elements consist of Video objects, that can be played by tapping and paused by dragging, and
+		ScrollPane objects to zoom in and out of their corresponding images. The viewer also links the "front" album with a "back" album to provide individual info panels for each element.</p><br />
+		<p>See also:<br />
+		Component<br />Album<br />
+		</p>	 
+	</Text>
+	
+	<AlbumViewer id="av" x="585" y="200" rotation="-10" autoTextLayout="false" linkAlbums="true">
+
+		<Album id="front" loop="false" horizontal="true" applyMask="true" margin="8" visible="true" targetParent="false" mouseChildren="true" clusterBubbling="true" gestureReleaseInertia="true" dragGesture="1-finger-drag-inertia">
+			<TouchContainer class="player" width="500" height="400" mouseChildren="false" disableNativeTransform="true">
+				<Video src="market-street.mov" width="500" height="400"/>
+				<Graphic shape="triangle" height="100" rotation="90" x="300" y="150" alpha=".5"/> 
+				<GestureList>
+					<Gesture ref="n-tap" gestureOn="true"/>
+				</GestureList>				
+			</TouchContainer>
+			<TouchContainer class="player" width="500" height="400" mouseChildren="false" disableNativeTransform="true">
+				<Video src="market-street.mov" width="500" height="400"/>
+				<Graphic shape="triangle" height="100" rotation="90" x="300" y="150" alpha=".5"/> 
+				<GestureList>
+					<Gesture ref="n-tap" gestureOn="true"/>
+				</GestureList>				
+			</TouchContainer>			
+			<TouchContainer class="player" width="500" height="400" mouseChildren="false" disableNativeTransform="true">
+				<Video src="market-street.mov" width="500" height="400"/>
+				<Graphic shape="triangle" height="100" rotation="90" x="300" y="150" alpha=".5"/> 
+				<GestureList>
+					<Gesture ref="n-tap" gestureOn="true"/>
+				</GestureList>				
+			</TouchContainer>				
+			<ScrollPane width="500" height="400" paneStroke="0" scrollThickness="0" mouseChildren="true" targetParent="false" clusterBubbling="true" invertDrag="true">
+				<Image name="baby" src="images/USS_Macon_over_Manhattan.png" width="500" height="400"/>
+				<TouchContainer disableNativeTransform="true">
+					<GestureList>
+						<Gesture ref="2-finger-drag" gestureOn="true"/>
+						<Gesture ref="n-scale" gestureOn="true"/>
+					</GestureList>
+				</TouchContainer>
+			</ScrollPane>			
+			<ScrollPane width="500" height="400" paneStroke="0" scrollThickness="0" mouseChildren="true" targetParent="false" clusterBubbling="true" invertDrag="true">
+				<Image name="bee" src="images/wb3.jpg" width="500" height="400"/>			
+				<TouchContainer disableNativeTransform="true">
+					<GestureList>
+						<Gesture ref="2-finger-drag" gestureOn="true"/>
+						<Gesture ref="n-scale" gestureOn="true"/>
+					</GestureList>
+				</TouchContainer>
+			</ScrollPane>			
+		</Album>
+				
+		<Album id="back" alpha=".5" loop="false" applyMask="true" horizontal="true" margin="8" visible="false" targetParent="false">
+			<TouchContainer width="500" height="400">
+				<Graphic shape="rectangle" color="0x6B7DB3" width="500" height="400"/>		
+				<Text class="title" text="First Video" width="500"/>
+				<Text class="description" width="500" height="400" y="70" text="Footage of San Francisco's Market Street in 1905." />
+			</TouchContainer>		
+			<TouchContainer width="500" height="400">
+				<Graphic shape="rectangle" color="0x000000" width="500" height="400"/>		
+				<Text class="title" text="Second Video" width="500"/>
+				<Text class="description" width="500" height="400" y="70" text="Footage of San Francisco's Market Street in 1905." />
+			</TouchContainer>				
+			<TouchContainer width="500" height="400">
+				<Graphic shape="rectangle" color="0x000000" width="500" height="400"/>		
+				<Text class="title" text="Third Video" width="500"/>
+				<Text class="description" width="500" height="400" y="70" text="Footage of San Francisco's Market Street in 1905." />
+			</TouchContainer>			
+			<TouchContainer width="500" height="400">
+				<Graphic shape="rectangle" color="0xC24C51" width="500" height="400"/>		
+				<Text class="title" text="USS_Macon" width="500"/>
+				<Text class="description" width="500" height="400" y="70" text="Flying over New York Harbor, circa Summer 1933." />
+			</TouchContainer>						
+			<TouchContainer width="500" height="400">
+				<Graphic shape="rectangle" color="0xBFD14B" width="500" height="400"/>		
+				<Text class="title" text="Wright Brothers" width="500"/>
+				<Text class="description" width="500" height="400" y="70" text="Orville Wright's famous first airplane flight." />
+			</TouchContainer>			
+		</Album>	
+
+		<TouchContainer class="frame_container" visible="true" targetParent="true" >
+			<Frame id="frame-e" class="frame_element"/>
+		</TouchContainer>
+		
+		<Menu class="menu_container" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="true" visible="false" >
+		
+			<Button id="back-btn" class="back_btn" dispatch="down:back" hit="back-hit" initial="back-up" down="back-down" up="back-up" out="back-up">
+				<Container id="back-up">
+					<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x282E33" />	
+					<SWF alpha="1" x="8" y="29" color="0xFFFFFF" scale="1.6" rotation="-90" classRef="org.openexhibits.assets.ArrowFill" />
+				</Container>
+				<Container id="back-down">
+					<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x495E67" />	
+					<SWF alpha="1" x="5" y="29" color="0xCCCCCC" scale="1.6" rotation="-90" classRef="org.openexhibits.assets.ArrowFill" />
+				</Container>	
+				<Container id="back-hit">
+					<Graphic id="back-hit-bg" shape="circle" radius="20" color="0x666666" alpha="0" />
+				</Container>
+			</Button>
+
+			<Button id="forward-btn" class="forward_btn" dispatch="down:forward" hit="forward-hit" initial="forward-up" down="forward-down" up="forward-up" out="forward-up">
+				<Container id="forward-up">
+					<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x282E33" />	
+					<SWF alpha="1" x="32" y="10" color="0xFFFFFF" scale="1.6" rotation="90" classRef="org.openexhibits.assets.ArrowFill" />
+				</Container>
+				<Container id="forward-down">
+					<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x495E67" />	
+					<SWF alpha="1" x="32" y="10" color="0xCCCCCC" scale="1.6" rotation="90" classRef="org.openexhibits.assets.ArrowFill" />
+				</Container>	
+				<Container id="forward-hit">
+					<Graphic id="forward-hit-bg" shape="circle" radius="20" color="0x666666" alpha="0" />
+				</Container>
+			</Button>
+
+			<Button id="info-btn" class="info_btn" dispatch="down:info" hit="info-hit" initial="info-up" down="info-down" up="info-up" out="info-up">
+				<Container id="info-up">
+					<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x282E33" />	
+					<SWF alpha="1" x="15" y="8" color="0xFFFFFF" scale="1.6" classRef="org.openexhibits.assets.Info" />
+				</Container>
+				<Container id="info-down">
+					<Graphic id="info-bg-down" shape="circle" radius="20" lineStroke="1.5" color="0x495E67" />	
+					<SWF alpha="1" x="15" y="8" color="0xCCCCCC" scale="1.6" classRef="org.openexhibits.assets.Info" />
+				</Container>	
+				<Container id="info-hit">
+					<Graphic id="info-hit-bg" shape="circle" radius="20" color="0x666666" alpha="0" />
+				</Container>
+			</Button>
+			
+			<Button id="close-btn" class="close_btn" dispatch="down:close" hit="close-hit" initial="close-up" down="close-down" up="close-up" out="close-up">
+				<Container id="close-up" class="up" >
+					<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x282E33" />	
+					<SWF alpha="1" x="11" y="11" color="0xFFFFFF" scale="1.6" classRef="org.openexhibits.assets.Close"/>
+				</Container>
+				<Container id="close-down" class="down">
+					<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x495E67" />	
+					<SWF alpha="1" x="11" y="11" color="0xCCCCCC" scale="1.6" classRef="org.openexhibits.assets.Close" />
+				</Container>	
+				<Container id="close-hit" class="hit">
+					<Graphic id="close-hit-bg" shape="circle" radius="20" alpha="0" />
+				</Container>
+			</Button>
+		
+		</Menu>
+		
+		<GestureList>
+			<Gesture ref="n-drag" gestureOn="true"/>
+			<Gesture ref="n-scale" gestureOn="true"/>
+			<Gesture ref="n-rotate" gestureOn="true"/>
+		</GestureList>
+		
+	</AlbumViewer>
+
+</cml>

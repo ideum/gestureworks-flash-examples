@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">TouchKeyboard</Text>
+<Text class="desc">
+	<p>The TouchKeyboard is a virtual keyboard providing an interface for a collection of Key objects and output management for key events. 
+	Default configurations are in place for convenience but the keyboard's style, layout, and key actions are customizable.</p><br />
+	<p>This example displays the default layout and demonstrates key actions and the ability switch between multiple text fields.</p><br />
+	<p>See also:<br />
+	Key<br />TouchKeyboardCustom<br />
+	</p>	 
+</Text>
+
+<TouchKeyboard id="tk" x="500" y="300" scale=".8"/>
+<Text x="500" y="140" width="365" height="150" background="true" backgroundColor="0xFFFFFF" border="true" multiline="true" type="input"/>
+<Text x="875" y="140" width="365" height="150" background="true" backgroundColor="0xFFFFFF" border="true" multiline="true" type="input"/>
+
+</cml>

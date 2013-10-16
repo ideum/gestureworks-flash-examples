@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml css="library/css/styles.css" tuio="false" simulator="false">
+
+<LibraryKit>
+	<Library type="swf" src="library/assets/openexhibits_assets.swf" />	
+</LibraryKit>
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">WAV Player</Text>
+<Text class="desc" selectable="true">
+	<p>Viewer and Player tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br />
+	<p>Due to certain constraints in Actionscript programming, this element requires your AS3 project to be an AIR project.</p><br />
+	<p>In this case, the menu not only provides a helpful visual frame and an info panel, but buttons which allow access to the WAV's play and pause functions.</p><br />
+	<p>It has also been styled differently in the CML to give it a more unique border and theme.</p><br />
+	<p>This example loads a WAV, and flips it with an info-panel.</p>
+</Text>
+
+<WAVPlayer x="535" y="250" rotation="-17" width="500" height="250" mouseChildren="true" disableNativeTransform="false" disableAffineTransform="false">
+	
+	<!-- Here is where the WAV is loaded in to be viewed.-->
+	<TouchContainer class="WAV_container" visible="true" targetParent="true" mouseChildren="false">
+		<WAV src="library/assets/FDR-Infamy.WAV" autoplay="true" display="waveform" width="500" height="250" volume="0.5" x="0" y="0" waveColor="0xD9B26A" backgroundColor="0x574A59"/>
+	</TouchContainer>
+	
+	<!-- Designate information for the info panel. Something labeled with class="info_bg" will be set as the back. -->
+	<TouchContainer class="info_container" visible="false" targetParent="true" mouseChildren="false" >
+		<Graphic color="0xBF935E" alpha="0.6" lineStroke="0" class="info_bg" shape="rectangle"/>		
+		<Text class="title" border="false" selectable="false" text="FDR's Infamy Speech"/>				
+	</TouchContainer>
+
+	<!-- This is just the frame for the whole viewer. Thick frames are very useful for objects with context-specific touch, as it gives a touchable border. 
+	The WAVPlayer does not have context specific touch, so feel free to style it however you like. -->
+	<TouchContainer class="frame_container" visible="true" targetParent="true" mouseChildren="false">
+		<Frame frameColor="0x591202" frameAlpha="1" frameThickness="5" frameShape="rectangle" class="frame_element"/>
+	</TouchContainer>
+	
+	<!-- Here is where the entire menu is structured. We used "include" files to style each of our buttons individually rather than have all the mark-up here,
+	but you could just individually create buttons through mark-up here if you so choose.-->
+	<Menu class="menu_container" x="0" y="-65" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="true" visible="false">
+	
+		<Include src="library/cml/infoButton.cml"/>
+		
+		<Include src="library/cml/playButton.cml"/>
+		
+		<Include src="library/cml/pauseButton.cml"/>
+		
+		<Include src="library/cml/closeButton.cml"/>
+		
+	</Menu>
+	
+	<GestureList>
+		<Gesture ref="n-drag" gestureOn="true"/>
+		<Gesture ref="n-scale" gestureOn="true"/>
+		<Gesture ref="n-rotate" gestureOn="true"/>
+		<Gesture ref="tap" gestureOn="true"/>
+	</GestureList>
+	
+</WAVPlayer>
+
+</cml>
+
+<!-- Color theme: "Pearl Harbor" by pblack on kuler.adobe.com -->

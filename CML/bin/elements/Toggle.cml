@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Toggle</Text>
+<Text class="desc">
+	<p>This tag acts as a toggle button and adds crossline inside square when toggled.</p>
+</Text>
+
+<Toggle id="toggle" x="700" y="200" backgroundColor="0xFFFFFF" backgroundLineColor="0xFF0000" backgroundLineStoke="3" toggleColor="0xFF0000" toggleLineStoke="1"/>
+
+</cml>
+
+
+

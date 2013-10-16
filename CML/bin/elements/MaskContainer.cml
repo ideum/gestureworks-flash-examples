@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Mask Container</Text>
+<Text class="desc" selectable="true">
+	<p>This tag is used to set up a series of images to use with a floating mask that can be dragged, scaled, and rotated via touch. The purpose is to give the appearance of filtering through images, or revealing "hidden" details that only the mask can see.</p><br /> 
+	<p>The MaskContainer itself will mask out any display objects contained within its tags (including Texts and Graphics) so that the display object can only be seen within the area of the MaskContainer. The maskShape may either be a "rectangle" or a "circle".</p><br />
+	<p>For a rectangle, you will set the maskWidth and maskHeight attributes, for a circle you will set maskRadius. The mask has a border to aid in visibility, and can be made invisible by setting maskBorderAlpha="0".</p><br />
+	<p>If the mask has multiple images that it holds, a user may double-tap if the Gesture is enabled in the gesture list to flip through the various pictures.</p><br />
+	<p>The MaskContainer itself may be included inside other containers and frames.</p>
+</Text>
+
+<Image x="500" y="150" resample="true" width="600" src="spectrum/bulbs_vis.jpg"/>
+
+<MaskContainer maskShape="rectangle" x="500" y="150" maskWidth="200" maskHeight="100" maskBorderColor="0xff0000" maskBorderStroke="2" maskBorderAlpha="0.75" mouseChildren="true">	
+	<Image width="600" src="spectrum/bulbs_off_therm.jpg"/>
+	<Image width="600" src="spectrum/bulbs_off_uv.jpg"/>
+	<Image width="600" src="spectrum/bulbs_therm.jpg"/>
+	<Image width="600" src="spectrum/bulbs_uv.jpg"/>
+	<Image width="600" src="spectrum/bulbs_uv_pure.jpg"/>
+	<Image width="600" src="spectrum/bulbs_ir.jpg"/>
+	<Image width="600" src="spectrum/bulbs_xray.jpg"/>
+	
+	<TouchContainer>
+		<GestureList>
+			<Gesture ref="n-double_tap" gestureOn="true"/>
+			<Gesture ref="n-drag" gestureOn="true"/>
+			<Gesture ref="n-scale" gestureOn="true"/>
+			<Gesture ref="n-rotate" gestureOn="true"/>
+		</GestureList>
+	</TouchContainer>
+</MaskContainer>
+
+</cml>

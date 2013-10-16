@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">AttractKit</Text>
+<Text class="desc" selectable="false">
+	<p>This tag creates an automated attract screen. The attract screen can be set to timeout and fade out if desired. The timer automatically 
+	resets whenever a touch interaction occurs. When the timer expires, the attract screen is automatically brought back to the top of the display list 
+	and set to visible, so it will never be behind another object.</p><br />
+	<p>The AttactKit works as a container, and displays the media inside it. If any object has a "play" function, such as a video, mp3, wav, or slideshow, 
+	when the attract screen is made invisible or visible the AttractKit will automatically run the play or stop functions as necessary.</p><br />
+	<p>The AttractKit will automatically center the attract screen. If using a tween fade, the tweenTime always should be less than the timeout time, otherwise the timer will timeout 
+	and attempt to reset while tweening the fade.</p>
+</Text>
+
+
+<!-- The Attract tag allows you to make a customizable attract screen. -->
+<Attract timeout="15" tweenFades="true" tweenTime="0.75">
+	<Container width="700" height="520">
+		<Graphic shape="rectangle" color="0xB53E2E" fill="color" width="700" height="520"/>
+		<Text x="150" y="110" width="400" height="100" fontSize="30" color="0xC4B453" font="OpenSansBold" text="SAMPLE ATTRACT SCREEN"/>
+		<Text x="175" y="175" height="100" autoSize="left" fontSize="18" color="0xC4B453" font="OpenSansRegular" text="Touch to make this screen disappear."/>
+	</Container>
+</Attract>
+
+
+
+
+<!-- Touch Containers are basic display containers. -->
+
+<TouchContainer id="touch-image" x="600" y="200" alpha=".5">
+
+	<Image id="img1" mouseChildren="false" src="images/foot.png" rotation="-20" width="400" height="348" visible="true"/>
+	
+	<GestureList>
+	    <Gesture ref="n-drag" gestureOn="true"/>
+	    <Gesture ref="n-scale" gestureOn="true"/>
+	    <Gesture ref="n-rotate" gestureOn="true"/>
+    </GestureList>
+	
+</TouchContainer>
+
+
+
+</cml>

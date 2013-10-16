@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+	<!-- header -->
+	<Graphic class="header-graphic" />
+	<Text class="title">KeyElement</Text>
+	<Text class="desc">
+		<p>The Key element simulates a keyboard key by dispatching a keyboard event containing the assigned character and key unicode values, when touched. 
+		Keys are intended to be contained in a TouchKeyboard for layout and output management.</p><br />
+		<p>This example displays a default KeyElement next to a custom KeyElement to demonstrate the possible key state(initial, down, up, over, out) 
+		configurations. Corresponding key actions are output to the text field.</p><br />
+		<p>See also:<br />
+		TouchKeyboard<br />TouchKeyboardCustom<br />Button<br />
+		</p>	 
+	</Text>
+
+
+	<!--Default button states are, by default, exact copies of the initial state with decreased alphas for both down and over states.																   
+		Default actions are automatically resolved by analyzing the character code(ascii), if the text is a single character, or the key code(unicode).-->
+		
+	<Key id="ke" x="650" y="255" scale="4" text="D"/>          
+
+
+	<!--The Key inherits the button states from the Button providing user control of the key's background at each state. In addition the Key also provides text
+		customization at each state. Refer to the TouchKeyboardCustom example for Key examples of overriding text with ASCII character codes and key action specification using
+		Unicode key codes.--> 
+		
+	<Key id="ke2" x="900" y="255" scale="4" initial="customInit" down="customDown" text="letter" downTextColor="0xFF0000" overTextColor="0x00FF00">
+		<Graphic id="customInit" width="45" height="45" shape="rectangle" color="0xFF0000"/>	
+		<Graphic id="customDown" width="45" height="45" shape="rectangle" color="0xFFFFFF"/>
+		<Text id="letter" text="C" fontSize="40" textColor="0xFFFFFF" autoSize="left" selectable="false" x="3" y="-10"/>	
+	</Key>
+
+	<Text id="text" x="850" y="480" autoSize="left" fontSize="50" textColor="0xFFFFFF"/>
+
+</cml>

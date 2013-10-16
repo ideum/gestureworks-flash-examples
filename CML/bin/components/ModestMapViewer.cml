@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<LibraryKit>
+	<Library type="swf" src="assets/openexhibits_assets.swf" />	
+</LibraryKit>
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">ModestMap Viewer</Text>
+<Text class="desc" selectable="true">
+	<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br />
+	<p>The ModestMapViewer wraps a ModestMap in a frame with optional buttons. The ModestMap has its own drag and scale functions, 
+	so a thick frame is helpful in enabling touch and manipulation around the rest of the stage.</p>
+</Text>
+
+<ModestMapViewer x="630" y="100" width="550" height="400" rotation="10" autoTextLayout="false">
+	
+	<TouchContainer class="frame_container" visible="true" targetParent="true" mouseChildren="false">
+		<Frame class="frame_element"/>
+	</TouchContainer>
+
+	<TouchContainer class="map_container" visible="true" targetParent="false" mouseChildren="false"  disableNativeTransform="true" disableAffineTransform="true">
+		
+		<ModestMap class="map_element" height="400" width="550" latitude="51.1857" longitude="-1.8033" zoom="13" mapprovider="MicrosoftHybridMapProvider">
+			<ModestMapMarker longitude="-1.7867" latitude="51.1896">
+				<Text text="Woodhenge" color="0xFAFAC0" fontSize="12" width="81" height="20" background="true" backgroundColor="0x594D37"/>
+			</ModestMapMarker>
+			<ModestMapMarker longitude="-1.8264" latitude="51.1789">
+				<Text text="Stonehenge" color="0xFAFAC0" fontSize="12" width="81" height="20" background="true" backgroundColor="0x594D37"/>
+			</ModestMapMarker>
+		</ModestMap>	
+		
+		<GestureList>
+			<Gesture ref="n-drag" gestureOn="true"/>
+			<Gesture ref="n-scale" gestureOn="true"/>
+			<Gesture ref="n-rotate" gestureOn="true"/>
+			<Gesture ref="double_tap" gestureOn="true"/>
+		</GestureList>			
+	</TouchContainer>	
+	
+	<TouchContainer class="info_container" visible="false" targetParent="true" mouseChildren="false" >
+		<Graphic color="0xFFAE1F" alpha="0.6" lineStroke="0" class="info_bg" shape="rectangle"/>		
+		<Text class="title" border="false" selectable="false" text="Stonehenge and Woodhenge"/>				
+		<Text width="470" height="1000" x="30" y="60" color="0xffffff" fontSize="16" wordWrap="true" multiline="true" textAlign="justify" text="Henges are types of neo-lithic earthwork featuring a ring bank and an inner ditch. It is estimated that henges served important ritual purposes. Stonehenge and Woodhenge likely served for burial ceremonies of esteemed figures."/>
+	</TouchContainer>
+	
+	<!-- Here is where the entire menu is structured. We used "include" files to style each of our buttons individually rather than have all the mark-up here. -->
+	<Menu class="menu_container" x="0" y="0" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="true" visible="false">
+	
+		<Include src="infoButton.cml"/>
+		
+		<Include src="closeButton.cml"/>
+		
+	</Menu>
+	
+	<GestureList>
+		<Gesture ref="n-drag" gestureOn="true"/>
+		<Gesture ref="n-scale" gestureOn="true"/>
+		<Gesture ref="n-rotate" gestureOn="true"/>
+		<Gesture ref="tap" gestureOn="true"/>
+	</GestureList>
+	
+</ModestMapViewer>
+
+</cml>

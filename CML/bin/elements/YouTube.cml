@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">YouTube </Text>
+<Text class="desc">
+	<p>This tag is used to load in YouTube videos from their ID labels using the YouTube API. It can be placed inside a viewer, containers, and collection viewers, 
+	and has the methods "Play", "Pause", "Stop", "Resume", "Seek", and "Close" available.</p><br/>	 
+	<p>This example will automatically load and play a video from the web.</p><br/>
+	<p>This example uses YouTube's "chromed" player, which automatically has buttons to control playback, volume, etc. When a Youtube is placed inside a touchContainer, 
+	it is recommended to set chrome="false" and to use custom buttons, since touch events will not reach the "chromed" player.</p><br/>
+</Text>
+
+<!--The Video ID is the 10-digit ID associated with the video link. For example, a direct URL to the video used in this example is:
+http://www.youtube.com/watch?v=h0MZX-D8xzA Notice the "h0MZX-D8xzA" is the video's id. A video must be set to allow embedding from its owner
+to be used by the YouTube API. If you receive "Error 100" or "Error 101", or "150", the video either no longer exists, or its embedding has
+been disabled.-->
+
+	<YouTube x="600" y="150" src="h0MZX-D8xzA" autoplay="true" chrome="true"/>
+	
+</cml>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="true">
+
+<Stage
+	color="0x550044"
+	scaleMode="exactFit"
+	fullscreen="false"
+	align="top" 
+	frameRate="30" />
+	
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Stage</Text>
+<Text class="desc" selectable="false">
+	<p>This tag gives access to stage definitions normally only available to editing the main document class in Actionscript. This means the stage can be restyled 
+	and redefined without having to recompile a whole project. Width and height available in AIR only. Color available only in Flash Player 11.0+</p><br />
+</Text>
+
+</cml>

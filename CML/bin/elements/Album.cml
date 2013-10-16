@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Album</Text>
+<Text class="desc">
+	<p>The Album provides a list of display objects that can be scrolled horizontally or vertically.<br /><br />
+	This example demonstrates the scrolling of a set of images by dragging the list along the x or y axis. When the drag is complete, the view will snap to the closest display object.</p>
+	<br />
+	<p>See also:<br />
+	AlbumViewer<br />
+	</p>	 
+</Text>
+
+<!--horizontal album-->
+<Album x="625" y="50" margin="20">	                        													
+	<Container width="500" height="300">          															<!-- left arrow-->
+		<Graphic shape="rectangle" lineStroke="0" width="500" height="300"/>
+		<Graphic x="300" y="125" shape="triangle" color="0xFFFFFF" height="50" rotation="90"/>
+		<Graphic x="200" y="137" shape="rectangle" width="50" height="25" color="0xFFFFFF"/>		
+	</Container>
+	<Image id="img1" src="images/plane.jpg" width="500" height="300" />
+	<Image id="img1" src="images/USS_Macon_over_Manhattan.png" width="500" height="300" />
+	<Container width="500" height="300">                                                                     <!--right arrow-->
+		<Graphic shape="rectangle" lineStroke="0" width="500" height="300"/>
+		<Graphic x="200" y="175" shape="triangle" color="0xFFFFFF" height="50" rotation="-90"/>
+		<Graphic x="250" y="137" shape="rectangle" width="50" height="25" color="0xFFFFFF"/>
+	</Container>
+</Album>
+
+<!--vertical album-->
+<Album x="625" y="375" margin="20" horizontal="false">	         
+	<Container width="500" height="300">																	<!--down arrow-->
+		<Graphic shape="rectangle" lineStroke="0" width="500" height="300"/>
+		<Graphic x="275" y="200" shape="triangle" color="0xFFFFFF" height="50" rotation="180"/>
+		<Graphic x="237" y="100" shape="rectangle" width="25" height="50" color="0xFFFFFF"/>		
+	</Container>
+	<Image id="img1" src="images/plane.jpg" width="500" height="300" />
+	<Image id="img1" src="images/USS_Macon_over_Manhattan.png" width="500" height="300" />
+	<Container width="500" height="300">																	<!--up arrow-->
+		<Graphic shape="rectangle" lineStroke="0" width="500" height="300"/>
+		<Graphic x="225" y="100" shape="triangle" color="0xFFFFFF" height="50"/>
+		<Graphic x="237" y="150" shape="rectangle" width="25" height="50" color="0xFFFFFF"/>		
+	</Container>
+</Album> 
+
+</cml>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Include</Text>
+<Text class="desc" selectable="false">
+	<p>This tag allows you to nest CML files. In this example, an external CML file loads an Image wrapped in a TouchContainer</p><br />
+	<p>The Include tag inserts CML at the location of the Include tag. There is no limit to the amount of Include tags one can use.</p>	
+</Text>
+
+<TouchContainer id="tc1" mouseChildren="false" disableNativeTransform="false" disableAffineTransform="false">
+
+	<!-- The Include tag makes reusing CML very easy. -->
+	<Include src="TouchImage.cml" />
+
+	<GestureList>
+			<Gesture ref="n-drag" gestureOn="true"/>
+			<Gesture ref="n-scale" gestureOn="true"/>
+			<Gesture ref="n-rotate" gestureOn="true"/>
+	</GestureList>
+	
+</TouchContainer>
+
+</cml>
+

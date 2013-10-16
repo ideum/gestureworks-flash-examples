@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Gigapixel </Text>
+<Text class="desc" selectable="true">
+	<p>This tag is used to load in a gigapixel image. Gigapixel images are massive images made by tiling smaller images in a seamless, pyramid structured fashion.</p><br />
+	<p>The Gigapixel will always maintain its aspect ratio, so you only need to give it a width or a height. If given both width and height, the element will simply have a 
+	viewable area of that size, but will not necessarily fill that area until zoomed in.</p><br/>
+	<p>This example will not actually load a picture until you place your own API key into the CML file.</p><br />
+	<p>The Gigapixel loads a base xml file that references its branching folders to get the actual images.</p><br />
+</Text>
+
+<Gigapixel mouseChildren="true" x="500" src="deepzoom/space.xml" width="600" height="600" />
+
+
+</cml>

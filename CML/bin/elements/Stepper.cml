@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Stepper</Text>
+<Text class="desc">
+	<p>Float tag provides increment and decrement of text and allows the user to enter the text through text input field.<br/>
+	   Float example also provide an option to change the text from float to integer and viceversa by setting the float flag to true or false.The text can be incremented or decremented based on the touch and drag events.
+	</p>
+	<br/>
+	<p>Integer tag provides increment and decrement of text and allows the user to enter the text through text input field.<br/>
+	   Integer example also provide an option to change the text from integer to float and viceversa by setting the float flag to true or false.The text can be incremented or decremented based on the touch and drag events.
+	</p>
+</Text>
+
+<!-- Stepper-Float-->
+<Text text="Stepper-Float" x="600" y="200" color="0xFFFFFF" width="200" fontSize="15" font="OpenSansBold"/>
+ 
+<Stepper id="st" textColor="0x0000FF" text="0.1" float="true" x="600" y="250"
+     backgroundLineColor="0x000000" backgroundLineStroke="2" backgroundColor="0xCCCCCC" topTriangleColor="0x000000" topTriangleAlpha="2" bottomTriangleColor="0x000000" bottomTriangleAlpha="2"/>
+ 
+<!-- Stepper-Integer-->
+<Text text="Stepper-Integer" x="1000" y="200" color="0xFFFFFF" width="200" fontSize="15" font="OpenSansBold"/>
+
+<Stepper id="st1" textColor="0x0000FF" text="0.1" float="false" x="1000" y="250"
+     backgroundLineColor="0x000000" backgroundLineStroke="2" backgroundColor="0xCCCCCC" topTriangleColor="0x000000" topTriangleAlpha="2" bottomTriangleColor="0x000000" bottomTriangleAlpha="2"/>
+
+</cml>
+
+
+

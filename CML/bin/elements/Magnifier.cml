@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- background image -->
+<Image src="images/oe_bg_720.png"/>
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Magnifier</Text>
+<Text class="desc" selectable="true">
+<p>The Magnifier element provides a touch enabled element with an optional graphical lens that will increase the magnification when placed over any display object on the stage.</p><br />
+<p>Note that if the stage does not have a background image or display object of some sort, the MagnifierElement will simply retain visual data from the last object it was
+held over until brought to another display object.</p><br />
+</Text>
+
+<Image src="images/foot.png" x="500" y="60" height="600" resample="true"/>
+
+<TouchContainer x="900" y="250">
+
+		<Image src="images/bee.jpg"/>
+		
+		<GestureList>
+			<Gesture ref="n-drag" gestureOn="true"/>
+			<Gesture ref="n-scale" gestureOn="true"/>
+			<Gesture ref="n-rotate" gestureOn="true"/>
+		</GestureList>
+</TouchContainer>
+
+<Magnifier x="800" y="200" radius="100" magnification="2" distortionRadius="18" graphic="default"/>
+
+</cml>

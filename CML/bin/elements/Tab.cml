@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Tab</Text>
+<Text class="desc">
+	<p>The tab element is a container with a tab extension. The container's contents will be visible when the selected state is true and hidden othewise. 
+	Intended to be grouped and toggled between other Tab objects in a TabbedContainer.</p><br />
+	<p>This example displays a tab element and its contents.</p><br />
+	<p>See also:<br />
+	TabbedContainer<br />
+	</p>	 
+</Text>
+
+<Tab title="bee" displayColor="0x680000" tabFontColor="0xFFFF66" x="600" y="100" tabHeight="50" tabWidth="150">
+	<Image id="img1" src="images/bee.jpg" x="75" y="120" scale="1"/>	
+</Tab>
+
+</cml>

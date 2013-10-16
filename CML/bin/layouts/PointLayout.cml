@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">PointLayout</Text>
+<Text class="desc">
+	<p>The PointLayout positions the objects of a container based on a user defined list of xy coordinates. 
+	The list is a comma delimited string of number values assigned to the "points" attribute.</p><br />
+	<p>This example demonstrates a layout based on a user defined list of points.</p><br />
+	<p>See also:<br />
+	LayoutFactory<br />
+	RandomLayout<br />
+	</p>	 
+</Text>
+
+<TouchContainer x="500" y="20">
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Layout classRef="PointLayout" points="10,400,200,250,450,350,400,400,523" tween="true" tweenTime="1500"/>   
+	<!--The points list does not need to specify a coordinate for each child. Unspecified coordinates will remain 0.-->                  
+</TouchContainer>
+
+</cml>

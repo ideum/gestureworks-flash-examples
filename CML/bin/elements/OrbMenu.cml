@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="true">
+
+<Graphic class="background" width="1280" height = "720" shape="rectangle" color="0x000000"/>  
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">OrbMenu</Text>
+<Text class="desc">
+	<p>This tag has a list of menu items and allows the user to insert any number of items in the menu.The list of menu items can be 
+	viewed through the drag event.The user can change the location of curve text through the attributes.</p><br />
+	<p>This example has two modes-floating and stable.These modes can be changed by setting the attractMode attribute to true or false. 
+	With the repeatTimer attribute the user can set the timer before floating starts.</p>
+</Text>
+
+<OrbMenu id="ob1" repeatTimer="1" attractMode="true" textX="90" textY="80" textRadius="100" curveText="MENU" coverage="0.4" startAngle="100" stopAngle="100" orbRadius="100"
+
+    x="700" y="200" gradientType="linear" gradientColors="0x404040,0x404040" gradientAlphas="1,1" gradientRatios="0,255" gradientHeight="100" gradientWidth="50" 
+    gradientRotation="0" gradientX="25" gradientY="0" shape1LineStoke="3" shape1OutlineColor="0x000000" shape2LineStoke="3" shape2OutlineColor="0x000000" 
+    backgroundColor="0x808080" backgroundOutlineColor="0x000000" backgroundLineStoke="3">
+
+	<!--buttons creation-->
+   <Button id="btn0" dispatch="down:btn0" hit="close-hit" initial="close-up" down="close-down" up="close-up" out="close-up">
+	    <Container id="close-up">
+	        <Text text="grey" selectable="false" color="0x151B54" fontSize="18" x="15" y="20" font="OpenSansRegular"/>
+	    </Container>
+	    <Container id="close-down">
+	        <Text text="grey" selectable="false" color="0x151B54" fontSize="18" x="15" y="20" font="OpenSansRegular"/>
+	    </Container>
+	    <Container id="close-hit">
+	       <Graphic shape="rectangle" width="100" height="100" alpha="0"/>	
+		</Container>    
+   </Button>
+	
+	<Button id="btn1" dispatch="down:btn1" hit="close-hit" initial="close-up" down="close-down" up="close-up" out="close-up">
+	    <Container id="close-up">
+	       <Text text="purple" selectable="false" color="0x151B54" fontSize="18" x="15" y="20" font="OpenSansRegular"/>	
+	    </Container>
+	    <Container id="close-down">
+	       <Text text="purple" selectable="false" color="0x151B54" fontSize="18" x="15" y="20" font="OpenSansRegular"/>
+	    </Container>
+	    <Container id="close-hit">
+	       <Graphic shape="rectangle" width="100" height="100" alpha="0"/>	
+	    </Container>
+	</Button>
+	
+	<Button id="btn2" dispatch="down:btn2" hit="close-hit" initial="close-up" down="close-down" up="close-up" out="close-up">
+	     <Container id="close-up">
+	        <Text text="pink" selectable="false" color="0x151B54" fontSize="18" x="15" y="20" font="OpenSansRegular"/>	
+	    </Container>
+	    <Container id="close-down">
+	        <Text text="pink" selectable="false" color="0x151B54" fontSize="18" x="15" y="20" font="OpenSansRegular"/>
+		 </Container>
+	    <Container id="close-hit">
+	        <Graphic shape="rectangle" width="100" height="100" alpha="0"/>	
+	    </Container>
+	</Button>
+		
+</OrbMenu>	
+
+</cml>
+
+
+

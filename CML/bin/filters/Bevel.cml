@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="true">
+	
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Filter - Bevel</Text>
+<Text class="desc" selectable="false">
+	<p>This tag gives access to various filter effects. The Filter is added on as a child of whatever display object should have that filter, and is then applied. 
+	The ref attribute defines the type of filter.</p><br />
+	<p>The Bevel filter creates an extrusion or impression effect of an object. It works by being given highlights and shadows, as well as a distance for how far the object 
+	will be beveled out, and the angle for the light shining on the bevel.</p>
+</Text>
+
+<Graphic shape="circle" radius="150" x="600" y="150" lineStroke="0" color="0x777777">
+	<Filter ref="Bevel"
+		distance="4"
+		angle="57"
+		highlightColor="0xF2E3B6" 
+		highlightAlpha="0.5"
+		shadowColor="0x000000"
+		shadowAlpha="1"
+		strength="10" 
+		type="full" />
+</Graphic>
+
+</cml>

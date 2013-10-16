@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">GridLayout</Text>
+<Text class="desc">
+	<p>The GridLayout positions the container's objects in a grid based on the number of rows, columns, and spacing(pixels). 
+	By default, the distribution is from left to right but can be performed from top to bottom by setting the "leftToRight" flag to false. 
+	Spacing is controlled by the "spacingX" and "spacingY" attributes and can be switched to use margins(marginX and marginY) through the 
+	"useMargins" flag.</p><br />
+	<p>This example demonstrates a 3x3 grid layout with margins of 4px.</p><br />
+	<p>See also:<br />
+	LayoutFactory<br />
+	ListLayout<br />
+	</p>	 
+</Text>
+
+<Container x="505" y="125">
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Layout classRef="GridLayout" rows="3" columns="3" useMargins="true" marginX="4" marginY="4" tween="true" tweenTime="1500"/>                  
+</Container>
+
+</cml>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- SWFs use library kits to load in their appropriate swf. Once loaded in by a library kit, 
+	you'll use the SWF tag to access any of that SWF's classes. -->
+<LibraryKit>
+	<Library type="swf" src="assets/openexhibits_assets.swf" />	
+</LibraryKit>
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">SWF </Text>
+<Text class="desc">
+	<p>This tag is used to load classes and items from within already generated SWFs. This is a great way to incorporate your own graphics into applications.</p><br /> 
+	<p>To load a SWF, first you must load the SWF in the CML through a library kit. Then you can load any classes that were exported for Actionscript in the SWF through the "classRef" attribute.</p>
+</Text>
+
+<!-- Plain items we use from our assets to style buttons -->
+<!-- SWFs can be put into place and used as interactively as any graphic element or image -->
+<SWF alpha="1" x="500" y="100" color="0xFFFFFF" scale="2" classRef="org.openexhibits.assets.Play" />
+
+<SWF alpha="1" x="545" y="100" color="0xFFFFFF" scale="2" classRef="org.openexhibits.assets.Pause" />
+
+<SWF alpha="1" x="590" y="100" color="0xFFFFFF" scale="2" classRef="org.openexhibits.assets.Info" />
+
+<SWF alpha="1" x="635" y="100" color="0xFFFFFF" scale="2" classRef="org.openexhibits.assets.Close" />
+
+<!-- Same SWFs, but with extra style -->
+<Container x="500" y="200">
+	<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x282E33" />	
+	<SWF alpha="1" x="15" y="8" color="0xFFFFFF" scale="1.6" classRef="org.openexhibits.assets.Play" />
+</Container>
+
+<Container x="545" y="200">
+	<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x282E33" />	
+	<SWF alpha="1" x="14.5" y="8.5" color="0xFFFFFF" scale="1.6" classRef="org.openexhibits.assets.Pause" />
+</Container>
+
+<Container x="590" y="200">
+	<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x282E33" />	
+	<SWF alpha="1" x="15" y="8" color="0xD9B26A" scale="1.6" classRef="org.openexhibits.assets.Info" />
+</Container>
+
+<Container x="635" y="200">
+	<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x282E33" />	
+	<SWF alpha="1" x="11" y="11" color="0xFFFFFF" scale="1.6" classRef="org.openexhibits.assets.Close"/>
+</Container>
+
+
+</cml>

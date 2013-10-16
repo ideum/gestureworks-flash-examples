@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml css="library/css/styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">WAV</Text>
+<Text class="desc">
+	<p>This tag is used to load and play a .WAV file from a local storage device, and optionally provides a graphical visualizer.</p><br />
+	<p>Due to certain constraints in Actionscript programming, this element requires your AS3 project to be an AIR project.</p><br />
+	<p>The WAV also has public methods to stop, play, seek, and pause. It can be placed inside a viewer and paired with buttons similar to the YouTube to control these functions.</p><br />
+	<p>Like other elements, the WAV is a display object, and can be placed inside many other viewers and containers.</p><br />
+	<p>This particular example will load a file of FDR's famous "infamy" speech inside a TouchContainer.</p><br />
+</Text>
+
+<TouchContainer id="tc1" x="500" y="250" mouseChildren="false" disableNativeTransform="false" disableAffineTransform="false">
+
+	<WAV src="library/assets/FDR-Infamy.wav" autoplay="true" display="waveform" width="500" height="500" volume="0.5" scale=".75" x="0" y="0" />
+	
+	<GestureList>
+			<Gesture ref="n-drag" gestureOn="true"/>
+			<Gesture ref="n-scale" gestureOn="true"/>
+			<Gesture ref="n-rotate" gestureOn="true"/>
+	</GestureList>
+</TouchContainer>
+
+</cml>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<LibraryKit>
+	<Library type="swf" src="assets/openexhibits_assets.swf" />	
+</LibraryKit>
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Flickr Viewer</Text>
+<Text class="desc" selectable="true">
+	<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br />
+	<p>The FlickrViewer places the Flickr in an easily visible frame. Frames are sometimes used to provide more easily touchable 
+	   areas for other elements which have context-sensitive touch.</p><br />
+	<p>This example also gives a customizable info panel.</p><br />
+	<p>Keep in mind, you must have your own Flickr API key to be able to load Flickrs. 
+	   You can get one for free at: <br /><a href="http://www.flickr/com/service/api"> http://www.flickr/com/service/api</a></p>
+</Text>
+
+<FlickrViewer x="500" y="280" rotation="10" mouseChildren="true">
+	
+	<TouchContainer class="frame_container" visible="true" targetParent="true">
+		<Frame class="frame_element"/>
+	</TouchContainer>
+
+	<TouchContainer class="flickr_container" visible="true" targetParent="true">
+		<Flickr class="flickr_element" apikey="ENTER FLICKR API KEY" src="4385244497" width="300"/>
+	</TouchContainer>	
+	
+	<!-- Designate information for the info panel. Something labeled with class="info_bg" will be set as the back. -->
+	<TouchContainer class="info_container" visible="false" targetParent="true">
+		<Graphic color="0xFFAE1F" alpha="0.6" lineStroke="0" class="info_bg" shape="rectangle"/>		
+			<Text border="false" class="title"selectable="false" text="Chrome Alum Crystals"/>				
+			<Text border="false" width="300" wordWrap="true" color="0xFFFFFF" font="OpenSansRegular" fontSize="12" selectable="false" 
+			text="This is a photo of chrome alum crystals in a chrome alum solution, at 20x magnification. Taken with my Canon SX110 IS, through a Novex stereo microscope with lighting from underneath. The crystals are grown from a saturated solution and are no more than 1 mm in diameter. Created myself, Paul, from www.paulslab.com"/>
+	</TouchContainer>
+	
+	<!-- Here is where the entire menu is structured. We used "include" files to style each of our buttons individually rather than have all the mark-up here. -->
+	<Menu class="menu_container" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="true" visible="false">
+	
+		<Include src="infoButton.cml"/>
+		
+		<Include src="closeButton.cml"/>
+		
+	</Menu>
+	
+	<GestureList>
+		<Gesture ref="n-drag" gestureOn="true"/>
+		<Gesture ref="n-scale" gestureOn="true"/>
+		<Gesture ref="n-rotate" gestureOn="true"/>
+		<Gesture ref="tap" gestureOn="true"/>
+	</GestureList>
+	
+</FlickrViewer>
+
+</cml>

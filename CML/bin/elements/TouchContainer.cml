@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">TouchContainer</Text>
+<Text class="desc" selectable="false">
+	<p>This tag creates touchable containers. Add gestures using the GestureList tag.</p><br />
+	<p>In this example, the drag, scale, and rotate gestures are turned on.</p>
+</Text>
+
+	
+<!-- Touch Containers are basic display containers. They keep track of CML children through the childList (see the Main AS3 class) -->
+
+<TouchContainer id="touch-image" x="600" y="200" alpha=".5" scale="5">
+
+	<Image id="img1" src="images/foot.png" rotation="-20" width="400" height="348" visible="true" scale=".2"/>
+	
+	<GestureList>
+	    <Gesture ref="n-drag" gestureOn="true"/>
+	    <Gesture ref="n-scale" gestureOn="true"/>
+	    <Gesture ref="n-rotate" gestureOn="true"/>
+    </GestureList>
+	
+</TouchContainer>
+
+
+
+</cml>

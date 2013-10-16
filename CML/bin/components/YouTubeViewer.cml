@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<LibraryKit>
+	<Library type="swf" src="assets/openexhibits_assets.swf" />	
+</LibraryKit>
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">YouTube Viewer</Text>
+<Text class="desc" selectable="true">
+	<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br />
+	<p>In this case, the menu not only provides a helpful visual frame and an info panel, but buttons which allow access to the YouTube's 
+	play and pause functions without having to set chrome="true" in the element tag.</p><br />
+	<p>This example loads a YouTube, and flips it with an info-panel.</p>
+</Text>
+
+<YouTubeViewer x="500" y="250" rotation="-20" mouseChildren="true" disableNativeTransform="false" disableAffineTransform="false">
+	
+	<!-- Here is where the YouTube is loaded in to be viewed. If there is an item with class="youtube_element", it will be automatically set as the "front" side of a YouTubeViewer. -->
+	<TouchContainer class="video_container" visible="true" targetParent="true" mouseChildren="false">
+		<YouTube class="youtube_element" src="h0MZX-D8xzA" width="600" height="360" autoplay="false" />
+	</TouchContainer>
+	
+	<!-- Designate information for the info panel. Something labeled with class="info_bg" will be set as the back. -->
+	<TouchContainer class="info_container" visible="false" targetParent="true" mouseChildren="false" >
+		<Graphic color="0xFFAE1F" alpha="0.6" lineStroke="0" class="info_bg" shape="rectangle"/>		
+		<Text class="title" border="false" selectable="false" text="A Noir Exercise"/>				
+		<Text x="10" width="580" wordWrap="true" color="0xFFFFFF" font="OpenSansRegular" fontSize="16" class="info_description" border="false" selectable="false" text="A silent experiment in Noir cinematography using the Panasonic AF-100, by Joshua Hicks"/>		
+	</TouchContainer>
+
+	<!-- This is just the frame for the whole viewer. Thick frames are very useful for objects with context-specific touch, as it gives a touchable border. 
+	The YouTubeViewer does not have context specific touch, so feel free to style it however you like. -->
+	<TouchContainer class="frame_container" visible="true" targetParent="true" mouseChildren="false">
+		<Frame frameColor="0x999999" frameAlpha="0.3" frameThickness="30" frameShape="rectangle" class="frame_element"/>
+	</TouchContainer>
+	
+	<!-- Here is where the entire menu is structured. We used "include" files to style each of our buttons individually rather than have all the mark-up here. -->
+	<Menu class="menu_container" x="0" y="0" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="true" visible="false">
+	
+		<Include src="infoButton.cml"/>
+		
+		<Include src="playButton.cml"/>
+		
+		<Include src="pauseButton.cml"/>
+		
+		<Include src="closeButton.cml"/>
+		
+	</Menu>
+	
+	<GestureList>
+		<Gesture ref="n-drag" gestureOn="true"/>
+		<Gesture ref="n-scale" gestureOn="true"/>
+		<Gesture ref="n-rotate" gestureOn="true"/>
+		<Gesture ref="tap" gestureOn="true"/>
+	</GestureList>
+	
+</YouTubeViewer>
+
+</cml>

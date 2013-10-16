@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">PointLayout</Text>
+<Text class="desc">
+	<p>The RandomLayout positions the container's objects randomly about the x and y axes and applies a specified amount of random rotation. 
+	The available types are randomX, randomY, randomXY, and randomXYRotation. Limitations can be set by the minimum and maximum attributes
+	(minX, maxX, minY, maxY, minRot, maxRot).</p><br />
+	<p>This example demonstrates a layout with rondom x, y, and rotation values.</p><br />
+	<p>See also:<br />
+	LayoutFactory<br />
+	PointLayout<br />
+	</p>	 
+</Text>
+
+<TouchContainer x="500" y="20" class="random_rotation">
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Image src="images/plane.jpg" scale=".3"/>
+	<Layout classRef="RandomLayout" maxX="400" maxY="500" minRot="-30" maxRot="30" type="randomXYRotation" tween="true" tweenTime="1500"/>                  
+</TouchContainer>
+
+</cml>

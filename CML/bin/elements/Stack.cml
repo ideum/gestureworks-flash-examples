@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Stack</Text>
+<Text class="desc">
+	<p>This tag is a container that gathers its children into a stack, and allows the user to shuffle through them using a specified user input.<br /><br />
+	This example will shuffle through the stack on each mouse/touch up event. The stack may optionally loop.</p><br />
+	<p>See also:<br />
+	Slideshow<br />
+	</p>	 
+</Text>
+
+
+<!-- The stack hides all but first child, and toggles through children using gesture specified as the value the of toggle argument -->
+<!-- Currently supports: mouseOver, mouseDown, mouseUp, touchDown, touchUp, down, and up -->
+
+<Stack toggle="up" x="700" y="150" loop="false">
+
+	<Text text="This the top of the stack. Click or touch here to advance to the next cml child." 
+		color="0xFFFFFF" fontSize="20" width="250" height="700" wordWrap="true" multiline="true" selectable="false" textAlign="justify" />
+		
+	<Image src="images/Helicopter.png" height="500"/>
+	
+	<Text text="The children can be any display object." color="0xFFFFFF" fontSize="20" width="250" textAlign="justify"
+		wordWrap="true" multiline="true" selectable="false" />
+	
+	<Graphic shape="rectangle" width="200" height="200" color="0xAA2222" />
+
+	<Image src="images/500px-Bi-crystal.jpg" height="500"/>
+		
+	<Text text="This is the bottom of the stack." 
+		color="0xFFFFFF" fontSize="20" width="250" height="700" wordWrap="true" multiline="true" selectable="false" textAlign="justify" />
+</Stack>
+
+</cml>

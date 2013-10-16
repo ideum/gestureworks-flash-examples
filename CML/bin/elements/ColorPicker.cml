@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<Graphic class="background" width = "1280" height = "720" shape="rectangle" color="0x000000"/>  
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">ColorPicker</Text>
+<Text class="desc">
+	<p>The ColorPicker element provides color selection capability by moving provided indicators or adjusting color properties to select hue and color variants.<br /><br />
+	This example will demonstrate how to change the selected color by dragging the color grid and hue bar indicators or manually entering values in the text fields.</p><br />
+	<p>See also:<br />
+	DatePicker<br />
+	</p>
+</Text>
+
+<ColorPicker id = "cp" skin="0x383838" labelColor="0xFFFFFF" x="625" y="175"/>
+
+</cml>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Accordion</Text>
+<Text class="desc" selectable="true">
+	<p>This tag allows content to be organized in an expanding and collapsing Accordion.</p><br />
+	<p>The width and height correspond to the size of each accordion section, and not to the element's total height.</p><br />
+	<p>The Accordion takes a comma separated list of labels to label each of the collapsing sections. The Accordion also works as a container which can be populated with display objects.
+		Each different display object will be organized into one of the Accordion's sections in the order the items and labels are given. If there are more items than labels, the Accordion
+		will leave the section unlabeled.</p><br />
+	<p>The Accordion has a setting for autoLayout. When true, it automatically formats the labels. When false, it allows a user to set paddingTop, and paddingLeft to determine text position.</p><br />
+	<p>Optionally, twirl icons can be turned on and off by setting the twirlIndicator property. This also use padding properties if autoLayout is false.</p>
+	<p>The Accordion element can even be used as an expanding, collapsing menu by placing buttons inside the display objects it holds.</p>
+</Text>
+
+<Accordion id="accordion-example"
+	x="500" y="25" 
+	width="375" height="375" 
+	labels="Photo 1,Photo 2" 
+	autoLayout="false" 
+	twirlIndicator="true" 
+	paddingTop="10" 
+	paddingBottom="15" 
+	paddingRight="15" 
+	fontSize="16" 
+	fontColor="0xff0000">
+
+	<Container>
+		<Graphic shape="rectangle" width="375" height="375" fill="color" color="0x424141" lineStroke="0" />
+		<Image y="20" src="images/bee.jpg" alpha=".25" />
+	</Container>
+
+	<Container>
+		<Graphic shape="rectangle" width="375" height="375" fill="color" color="0x424141" lineStroke="0"/>
+		<Image y="20" src="images/bee.jpg" alpha=".75" />
+	</Container>
+
+	<Container>
+		<Graphic shape="rectangle" width="375" height="375" fill="color" color="0x424141" lineStroke="0"/>
+		
+		
+		<Button y="20" dispatch="down:bees" hit="bee-hit" initial="beeButton" down="beeButton" up="beeButton" out="beeButton">
+			<Image id="beeButton" src="images/bee.jpg" alpha="1" />
+			<Graphic id="bee-hit" shape="rectangle" width="317" height="241" color="0x666666" alpha="0" />
+		</Button>
+		
+	</Container>
+</Accordion>
+
+<Text id="debug-text" x="900" y="100" autoSize="left" font="OpenSansRegular" fontSize="15" color="0xffffff" text="Button event working" visible="true" alpha="0" />
+
+</cml>
