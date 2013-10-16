@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Multiple camera example
+	-->
+<cml>
+
+<LightPicker id="LightsGroup1" lights="DLight1"/>
+
+<Plane id="plane" width="1000" height="1000" segmentsW="1" segmentsH="1" yUp="true" />
+
+<Geometry ref="Cube" id="BaseCube" width="1000" height="50" depth="1000" />
+<Geometry ref="Sphere" id="TreeTop" radius="65" />
+<Geometry ref="Cylinder" id="TreeTrunk" topRadius="20" bottomRadius="20" height="200" yUp="true" />
+
+<Material id="BaseCubeColor" color="0x007100" />
+<Material id="TreeTrunkColor"  src="assets/treebark.jpg" />
+<Material id="TreeTopColor" color="0x00cb00" lightPicker="LightsGroup1" />
+
+<Scene> <!-- if no width height given use full stage. Any scene attr are overidden by cameras-->
+	<Camera id="TopView" pos="0,1000,0" viewPos="0,0" viewDim="450,450" viewBgColor="0xff0000" ortho="true" projectionHeight="1000" lookat="0,0,0" />
+	<Camera id="PerspView" pos="0,1000,-1000" viewPos="450,0" viewDim="450,450" viewBgColor="0x00ff00" lookat="0,0,0" />
+	<Camera id="FrontView" pos="0,0,-1000" viewPos="0,450" viewDim="450,450" ortho="true" projectionHeight="1000" viewBgColor="0x0000ff" lookat="0,0,0" />
+	<Camera id="LeftView" pos="-1000,0,0" viewPos="450,450" viewDim="450,450" ortho="true" projectionHeight="1000" viewBgColor="0x0000ff" lookat="0,0,0" />
+	<SkyBox>
+		<Image width="1024" src="assets/panoramic/30kabah_r.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_l.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_u.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_d.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_f.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_b.jpg"/>
+	</SkyBox>
+
+	<Light id="DLight1" type="directional" direction="0,0,1"/>
+	<Mesh id="0" geometry="BaseCube" material="BaseCubeColor" />
+		
+	<Container3D id="ThreeTreesA">
+		<Mesh geometry="TreeTrunk" material="TreeTrunkColor" pos="128,125,5" sca="0.7,0.7,0.7" >
+			<Mesh id="1" geometry="TreeTop" material="TreeTopColor" pos="0,125,0" sca="1,2,1" />
+		</Mesh>
+		<Mesh geometry="TreeTrunk"  material="TreeTrunkColor" pos="0,125,0">
+			<Mesh id="2" geometry="TreeTop" material="TreeTopColor" pos="0,150,0" sca="1,2,1" />
+		</Mesh>
+		<Mesh geometry="TreeTrunk"  material="TreeTrunkColor" pos="33,125,165"  sca="0.8,0.8,0.8" >
+			<Mesh id="3" geometry="TreeTop" material="TreeTopColor" pos="0,125,0" sca="1,2,1" />
+		</Mesh>
+	</Container3D>
+</Scene>
+
+</cml>

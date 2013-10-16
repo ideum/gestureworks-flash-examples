@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Container3D example
+	-->
+<cml>
+
+<Geometry ref="Cube" id="cube" width="200" height="200" depth="200" />
+<Material id="blue" color="0x447199"/>
+
+<Scene>
+	<Camera pos="0,0,-500" lookat="0,0,0" viewBgColor="0x000000" />
+	<Container3D rot="90,0,0">
+		<Mesh geometry="cube" material="blue" releaseInertia="true">
+			<Gesture ref="n-drag-3d" />
+			<Gesture ref="n-rotate-3d" />
+			<Gesture ref="n-scale-3d" />
+		</Mesh>
+	</Container3D>
+</Scene>
+
+</cml>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml>
+
+<Geometry ref="Sphere" id="sphere" />
+<Geometry ref="Sphere" id="sphereold" /><!-- radius set in css-->
+<Geometry ref="Plane" id="graphicPlane" width="1800" height="1800"  yUp="false"/>	
+<Material id="redcolor" lightPicker="Dlight1"/><!-- color ste in CSS-->
+<Material id="Texture" src="assets/treebark.jpg"  alpha="0.1"  lightPicker="Dlight1"/>
+<LightPicker id="lp1" lights="scenePL, sceneDL1" />
+<LightPicker id="LP2" lights="scneneDL2" />
+<LightPicker id="Dlight1" lights="spherePL1" />
+
+<Scene stageProxyColor="0x00ffff">
+	<Camera pos="0,0,-2000" viewPos="0,0" viewDim="400,600" viewBgColor="0xff0000" />
+	<!--All these lights are added to the scene individually.
+		They are grouped only for the lightPicker
+		-->
+	<Light id="scenePL" type="point" pos="0,1000,-500" />
+	<Light id="sceneDL1" type="directional" direction="-1,0,0"/>
+	<Light id="scneneDL2" type="directional" direction="1, 0, 0"/>
+	
+	<!--Using Material child Image tag -->
+	<Material id="IMG" lightPicker="LP2">
+		<Image width="256" src="assets/stripeTexture.jpg"/>
+	</Material>
+	
+	<!-- Using material from above -->
+	<Mesh geometry="sphere" material="redcolor" pos="-600,0,0" />
+	<Mesh geometry="sphereold" material="Texture" pos="-400,0,0" />
+	<Mesh geometry="sphere" material="IMG" pos="-200,0,0" />
+	
+	<Mesh geometry="sphere" pos="200,0,0">
+		<Light id="spherePL1" type="point" pos="0,300,-300" /><!-- This light is added to the parent sphere -->
+		<Material  src="assets/stripeTexture.jpg" lightPicker="lp1"/>
+	</Mesh>
+	
+	<Mesh geometry="sphere" pos="400,0,0">
+		<Material lightPicker="Dlight1">
+			<Image width="256" src="assets/treebark.jpg"/>
+		</Material>
+	</Mesh>
+</Scene>
+
+<!-- Graphics and text drawn on Materials BitmapData-->
+<Material id="GraphicTest" alphaBlending="true">
+	<!-- Horizontal Line -->
+	<Text text="Horizontal Line" x="0" y="50" color="0xFFFFFF" fontSize="25" width="200" />
+	<Graphic x="0" y="120"shape="line" width="200" lineStroke="5" lineColor="0xFF0000" lineAlpha=".5" />
+
+	<!-- Vertical Line -->
+	<Text text="Vertical Line" x="250" y="50" color="0xFFFFFF" fontSize="25" width="200" />
+	<Graphic x="300" y="100"shape="line" height="200" lineStroke="10" lineColor="0x00FF00" lineAlpha=".5" />
+
+	<!-- Vector -->
+	<Text text="Vector" x="450" y="50" color="0xFFFFFF" fontSize="25" width="200" />
+	<Graphic x="500" y="100"shape="vector" width="100" height="200" lineStroke="15" lineColor="0x0000FF" lineAlpha="1" />
+
+	<!-- Rectangle -->
+	<Text text="Rectangle" x="650" y="50" color="0xFFFFFF" fontSize="25" width="200" />
+	<Graphic x="680" y="120"shape="rectangle" width="100" height="100" fill="color" color="0x448866" lineStroke="10" lineColor="0x448899" />
+
+	<!-- Round Rectangle -->
+	<Text text="Round Rectangle" x="0" y="350" color="0xFFFFFF" fontSize="25" width="200" />
+	<Graphic x="30" y="400"shape="roundRectangle" width="100" height="200" cornerWidth="20" cornerHeight="20" fill="color" color="0xDDAA99" lineStroke="10" lineColor="0xAA7777" />
+
+	<!-- Circle -->
+	<Text text="Circle" x="320" y="350" color="0xFFFFFF" fontSize="25" width="200" />
+	<Graphic x="250" y="400"shape="circle" radius="100" color="0x44CCAA" lineStroke="10" lineColor="0x449933" />
+
+	<!-- Ellipse -->
+	<Text text="Ellipse" x="500" y="350" color="0xFFFFFF" fontSize="25" width="200" />
+	<Graphic x="500" y="400"shape="ellipse" width="100" height="200" color="0x44CCAA" lineStroke="0" />
+
+	<!-- Gradient Rectangle -->
+	<Text text="Gradient" x="700" y="350" color="0xFFFFFF" fontSize="25" width="200" />
+	<Graphic x="700" y="400" shape="rectangle" width="200" height="100" lineStroke="2"
+		fill="gradient" gradientAlphas=".5, 1, .5" gradientColors="0x229944, 0xFF5544, 0x3366AA" gradientRatios="0, 65, 255" gradientRotation="45"/>
+		
+	<!-- Triangle -->
+	<Text text="Triangle" x="0" y="640" color="0xFFFFFF" fontSize="25" width="200" />
+	<Graphic x="0" y="680" shape="triangle" color="0x00FF00" height="100"/> 
+
+	<!-- Curve -->
+	<Text text="Curve" x="250" y="640" color="0xFFFFFF" fontSize="25" width="200" />
+	<Graphic x="30" y="660" shape="curve" color="0xFF0000" startX="150" startY="100" anchorX="400" anchorY="100" controlX="275" controlY="0"/> 	
+
+	<!-- Path -->
+	<Text text="Path" x="500" y="640" color="0xFFFFFF" fontSize="25" width="200" />
+	<Graphic x="300" y="680" shape="path" color="0x000000" pathCommands="1,2,1,2" pathCoordinates="200,10, 300,110, 300,10, 200,110"/> 
+</Material>
+
+<Scene>
+	<Camera pos="0,0,-2000" viewPos="410,0" viewDim="400,600" viewBgColor="0x0000ff" />
+	<Mesh geometry="graphicPlane" material="GraphicTest" rot="0,30,0"/>
+</Scene>
+
+</cml>

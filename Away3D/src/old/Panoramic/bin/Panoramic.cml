@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="../../../../_assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">Panoramic </Text>
+<Text class="desc" selectable="true">
+	<p>This tag is used to load in panorama files using Away3D. Panoramic types that can be loaded are Cubic (projectionType="cube") or Spherical (projectionType="sphere").</p><br />	 
+	<p>In this example, the panorama viewer loads in a cubic panorama by being directed to the six files necessary. Note that for cubic panoramas it is important that they are loaded in this order: right, left, up, down, front, back.</p><br />
+	<p>Panoramic images can only go up to 2048 pixels in texture, and for any size smaller they must be a power of 2 (ie: 512, 1024, 2048.) This means cubic panoramic image files can each be up to 2048 x 2048, and for a spherical panorama the longest side for the image must be 2048 or a power of 2 less. The image file itself does not need to have its dimensions altered, the width and height properties can be set in CML or Actionscript.</p><br />
+	<p>Once loaded, the panorama can be navigated by dragging, and by two finger scaling (pinch/zoom).</p>
+</Text>
+
+	
+		
+<Panoramic projectionType="cube" cubeFace="true" x="500" y="100" width="720" height="405" fovMin="30" mouseChildren="true">
+	
+	<Image width="1024" src="panoramic/30kabah_r.jpg"/>
+	<ImageElement width="1024" src="panoramic/30kabah_l.jpg"/>
+	<ImageElement width="1024" src="panoramic/30kabah_u.jpg"/>
+	<ImageElement width="1024" src="panoramic/30kabah_d.jpg"/>
+	<ImageElement width="1024" src="panoramic/30kabah_f.jpg"/>
+	<ImageElement width="1024" src="panoramic/30kabah_b.jpg"/>
+		
+	<TouchContainer nestedTransform="false" gestureEvents="true" mouseChildren="false" disableNativeTransform="true" disableAffineTransform="true">
+		<GestureList>
+			<Gesture ref="n-drag" gestureOn="true"/>
+			<Gesture ref="n-scale" gestureOn="true"/>
+		</GestureList>
+	</TouchContainer>
+		
+</Panoramic>
+
+</cml>
