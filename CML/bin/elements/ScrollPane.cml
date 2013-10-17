@@ -29,7 +29,7 @@ scrollThickness="20">
 	<Image x="50" y="50" src="images/500px-Bi-crystal.jpg"/>
 	
 	<!-- TouchContainer so dragging and scrolling can be set on or off, also to assist with making child events accesible provided there is no gesture conflict -->
-	<TouchContainer disableNativeTransform="true" touchChildren="true" clusterBubbling="true">
+	<TouchContainer nativeTransform="false" touchChildren="true" clusterBubbling="true">
 		<GestureList>
 			<Gesture ref="n-drag" gestureOn="true"/>
 			<Gesture ref="n-scale" gestureOn="true"/>

@@ -15,7 +15,7 @@
 	<p>This example loads a Video, and flips it with an info-panel.</p>
 </Text>
 
-<VideoViewer x="500" y="250" rotation="-20" mouseChildren="true" disableNativeTransform="false" disableAffineTransform="false">
+<VideoViewer x="500" y="250" rotation="-20" mouseChildren="true" nativeTransform="true" affineTransform="true">
 	
 	<TouchContainer class="video_container" visible="true" targetParent="true" mouseChildren="false">
 		<Video class="video_element" src="market-street.mov" autoplay="true"/>

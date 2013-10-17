@@ -14,7 +14,7 @@
 	<p>The GigapixelViewer tag loads a gigapixel image from an XML index and folder branch, and allows for an info panel or other buttons to be attached to provide more information.</p>
 </Text>
 
-<GigapixelViewer x="540" y="140" width="600" height="450" rotation="3" mouseChildren="true" disableNativeTransform="false" disableAffineTransform="false">
+<GigapixelViewer x="540" y="140" width="600" height="450" rotation="3" mouseChildren="true" nativeTransform="true" affineTransform="true">
 	
 	<TouchContainer class="frame_container" visible="true" targetParent="true" mouseChildren="false">
 		<Frame class="frame_element"/>

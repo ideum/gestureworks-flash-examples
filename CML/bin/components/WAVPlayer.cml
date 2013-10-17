@@ -17,7 +17,7 @@
 	<p>This example loads a WAV, and flips it with an info-panel.</p>
 </Text>
 
-<WAVPlayer x="535" y="250" rotation="-17" width="500" height="250" mouseChildren="true" disableNativeTransform="false" disableAffineTransform="false">
+<WAVPlayer x="535" y="250" rotation="-17" width="500" height="250" mouseChildren="true" nativeTransform="true" affineTransform="true">
 	
 	<!-- Here is where the WAV is loaded in to be viewed.-->
 	<TouchContainer class="WAV_container" visible="true" targetParent="true" mouseChildren="false">

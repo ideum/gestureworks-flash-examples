@@ -23,21 +23,21 @@
 	<AlbumViewer id="av" x="585" y="200" rotation="-10" autoTextLayout="false" linkAlbums="true">
 
 		<Album id="front" loop="false" horizontal="true" applyMask="true" margin="8" visible="true" targetParent="false" mouseChildren="true" clusterBubbling="true" gestureReleaseInertia="true" dragGesture="1-finger-drag-inertia">
-			<TouchContainer class="player" width="500" height="400" mouseChildren="false" disableNativeTransform="true">
+			<TouchContainer class="player" width="500" height="400" mouseChildren="false" nativeTransform="false">
 				<Video src="market-street.mov" width="500" height="400"/>
 				<Graphic shape="triangle" height="100" rotation="90" x="300" y="150" alpha=".5"/> 
 				<GestureList>
 					<Gesture ref="n-tap" gestureOn="true"/>
 				</GestureList>				
 			</TouchContainer>
-			<TouchContainer class="player" width="500" height="400" mouseChildren="false" disableNativeTransform="true">
+			<TouchContainer class="player" width="500" height="400" mouseChildren="false" nativeTransform="false">
 				<Video src="market-street.mov" width="500" height="400"/>
 				<Graphic shape="triangle" height="100" rotation="90" x="300" y="150" alpha=".5"/> 
 				<GestureList>
 					<Gesture ref="n-tap" gestureOn="true"/>
 				</GestureList>				
 			</TouchContainer>			
-			<TouchContainer class="player" width="500" height="400" mouseChildren="false" disableNativeTransform="true">
+			<TouchContainer class="player" width="500" height="400" mouseChildren="false" nativeTransform="false">
 				<Video src="market-street.mov" width="500" height="400"/>
 				<Graphic shape="triangle" height="100" rotation="90" x="300" y="150" alpha=".5"/> 
 				<GestureList>
@@ -46,7 +46,7 @@
 			</TouchContainer>				
 			<ScrollPane width="500" height="400" paneStroke="0" scrollThickness="0" mouseChildren="true" targetParent="false" clusterBubbling="true" invertDrag="true">
 				<Image name="baby" src="images/USS_Macon_over_Manhattan.png" width="500" height="400"/>
-				<TouchContainer disableNativeTransform="true">
+				<TouchContainer nativeTransform="false">
 					<GestureList>
 						<Gesture ref="2-finger-drag" gestureOn="true"/>
 						<Gesture ref="n-scale" gestureOn="true"/>
@@ -55,7 +55,7 @@
 			</ScrollPane>			
 			<ScrollPane width="500" height="400" paneStroke="0" scrollThickness="0" mouseChildren="true" targetParent="false" clusterBubbling="true" invertDrag="true">
 				<Image name="bee" src="images/wb3.jpg" width="500" height="400"/>			
-				<TouchContainer disableNativeTransform="true">
+				<TouchContainer nativeTransform="false">
 					<GestureList>
 						<Gesture ref="2-finger-drag" gestureOn="true"/>
 						<Gesture ref="n-scale" gestureOn="true"/>

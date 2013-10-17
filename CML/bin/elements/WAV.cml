@@ -13,7 +13,7 @@
 	<p>This particular example will load a file of FDR's famous "infamy" speech inside a TouchContainer.</p><br />
 </Text>
 
-<TouchContainer id="tc1" x="500" y="250" mouseChildren="false" disableNativeTransform="false" disableAffineTransform="false">
+<TouchContainer id="tc1" x="500" y="250" mouseChildren="false" nativeTransform="true" affineTransform="true">
 
 	<WAV src="library/assets/FDR-Infamy.wav" autoplay="true" display="waveform" width="500" height="500" volume="0.5" scale=".75" x="0" y="0" />
 	
