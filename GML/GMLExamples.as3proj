@@ -16,7 +16,6 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
-    <class path="..\..\..\gml_core" />
   </classpaths>
   <!-- Build options -->
   <build>
