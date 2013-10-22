@@ -16,7 +16,7 @@
 	<p>This example loads a YouTube, and flips it with an info-panel.</p>
 </Text>
 
-<YouTubeViewer x="500" y="250" rotation="-20" mouseChildren="true" disableNativeTransform="false" disableAffineTransform="false">
+<YouTubeViewer x="500" y="250" rotation="-20" mouseChildren="true" nativeTransform="true" affineTransform="true">
 	
 	<!-- Here is where the YouTube is loaded in to be viewed. If there is an item with class="youtube_element", it will be automatically set as the "front" side of a YouTubeViewer. -->
 	<TouchContainer class="video_container" visible="true" targetParent="true" mouseChildren="false">

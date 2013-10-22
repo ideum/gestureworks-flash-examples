@@ -30,7 +30,7 @@
 	</TouchContainer>
 	
 	<MaskContainer maskShape="rectangle" maskWidth="200" maskHeight="100" maskBorderColor="0x4CC7FF" maskBorderStroke="2" 
-		maskBorderAlpha="0.75" mouseChildren="true" disableNativeTransform="true" disableAffineTransform="true">	
+		maskBorderAlpha="0.75" mouseChildren="true" nativeTransform="false" affineTransform="false">	
 		<Image visible="false" width="600" src="spectrum/bulbs_off_therm.jpg"/>
 		<Image visible="false" width="600" src="spectrum/bulbs_off_uv.jpg"/>
 		<Image visible="false" width="600" src="spectrum/bulbs_therm.jpg"/>

@@ -20,7 +20,7 @@
 	
 <!-- The MP3 plays mp3 files and optionally displays a graphical waveform. -->
 
-<MP3Player x="600" y="170" mouseChildren="true" disableNativeTransform="false" disableAffineTransform="false">
+<MP3Player x="600" y="170" mouseChildren="true" nativeTransform="true" affineTransform="true">
 
 	<TouchContainer class="mp3_container" visible="true" targetParent="true" mouseChildren="false">
 		<MP3 src="RuthCalledShot_vbr.mp3" 

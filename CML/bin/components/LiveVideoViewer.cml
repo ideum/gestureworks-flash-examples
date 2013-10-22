@@ -16,7 +16,7 @@
 </Text>
 	
 
-<LiveVideoViewer id="video-viewer-1" x="600" y="300" rotation="-20" mouseChildren="true" disableNativeTransform="false" disableAffineTransform="false">
+<LiveVideoViewer id="video-viewer-1" x="600" y="300" rotation="-20" mouseChildren="true" nativeTransform="true" affineTransform="true">
 	<TouchContainer id="tc_video1" class="video_container" visible="true" targetParent="true" mouseChildren="false">
 		<LiveVideo id="live" camera="#cam" microphone="#micro" width="320" height="240">
 		    <VideoCamera id="cam"/>

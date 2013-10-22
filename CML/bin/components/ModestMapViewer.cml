@@ -21,7 +21,7 @@
 		<Frame class="frame_element"/>
 	</TouchContainer>
 
-	<TouchContainer class="map_container" visible="true" targetParent="false" mouseChildren="false"  disableNativeTransform="true" disableAffineTransform="true">
+	<TouchContainer class="map_container" visible="true" targetParent="false" mouseChildren="false"  nativeTransform="false" affineTransform="false">
 		
 		<ModestMap class="map_element" height="400" width="550" latitude="51.1857" longitude="-1.8033" zoom="13" mapprovider="MicrosoftHybridMapProvider">
 			<ModestMapMarker longitude="-1.7867" latitude="51.1896">

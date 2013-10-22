@@ -23,7 +23,7 @@
 </Text>
 
 
-<MediaViewer x="575" y="300" width="485" height="350" rotation="-20" mouseChildren="true" disableNativeTransform="false" disableAffineTransform="false">
+<MediaViewer x="575" y="300" width="485" height="350" rotation="-20" mouseChildren="true" nativeTransform="true" affineTransform="true">
 	
 	<!-- Here is where the Media is loaded in to be viewed. If there is an item with class="media_element", it will be automatically set as the "front" side of a MediaViewer. -->
 	<TouchContainer class="video_container" visible="true" targetParent="true" mouseChildren="false">

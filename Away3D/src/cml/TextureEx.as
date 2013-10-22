@@ -1,6 +1,6 @@
 package cml {
 	import com.gestureworks.away3d.Away3DTouchManager;
-	import com.gestureworks.cml.core.CMLAway3D; CMLAway3D;
+	import com.gestureworks.away3d.CML_Away3D; CML_Away3D;
 	import com.gestureworks.cml.core.CMLParser;
 	import com.gestureworks.core.GestureWorks;
 	import flash.events.Event;

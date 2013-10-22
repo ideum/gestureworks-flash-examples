@@ -10,7 +10,7 @@
 	<p>The Include tag inserts CML at the location of the Include tag. There is no limit to the amount of Include tags one can use.</p>	
 </Text>
 
-<TouchContainer id="tc1" mouseChildren="false" disableNativeTransform="false" disableAffineTransform="false">
+<TouchContainer id="tc1" mouseChildren="false" nativeTransform="true" affineTransform="true">
 
 	<!-- The Include tag makes reusing CML very easy. -->
 	<Include src="TouchImage.cml" />
