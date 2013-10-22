@@ -1,5 +1,5 @@
-Examples for GestureWorks Flash and Open Exhibits SDK. 
-===========================
+GestureWorks Flash and Open Exhibits SDK Examples
+=================================================
 
 Some examples require external assets. The assets can be found here:
 https://www.dropbox.com/sh/6s5tl508k88wxw9/Mv8RMKpkm4
