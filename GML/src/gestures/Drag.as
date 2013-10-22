@@ -43,7 +43,7 @@ package gestures
 			
 			// add events 
 			touchSprite.affineTransform = true;
-			touchSprite.gestureList = {"drag-1f": true};
+			touchSprite.gestureList = {"drag": true};
 			touchSprite.addEventListener(GWGestureEvent.DRAG, gestureDragHandler);
 		}
 		

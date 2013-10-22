@@ -2,11 +2,11 @@
 <GestureMarkupLanguage>
 <Gesture_set>
 	
-	<Gesture id="n-hold" type="hold">
+	<Gesture id="hold" type="hold">
 		<match>
 			<action>
 				<initial>
-					<point event_duration_min="2000" translation_max="2"/>
+					<point event_duration_min="500" translation_max="10"/>
 					<cluster point_number="0" point_number_min="1" point_number_max="5"/>
 				</initial>
 			</action>

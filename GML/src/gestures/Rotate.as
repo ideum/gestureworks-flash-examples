@@ -24,7 +24,10 @@ package gestures
 			addChild(exTemp);
 			
 			exTemp.createTitle("rotate");
-			exTemp.createDesc("The Rotate gesture is designed to provide object rotation functionality using any number of touch points. It is considered to be one of the three fundamental object " + "manipulation gestures.<br /><br />This gesture can be activated by any number of touch points between 2 and 10. When two or more touch points are recognized on a touch object the relative " + "orientation of the touch points are tracked and grouped into a cluster. This change in the orientation of the cluster is mapped directly to the rotation of the touch object.<br /><br />This " + "example rotates the square around the cluster point center on each rotate event.");
+			exTemp.createDesc("The Rotate gesture is designed to provide object rotation functionality using any number of touch points. It is considered to be one of the three fundamental object "
+			+ "manipulation gestures.<br /><br />This gesture can be activated by any number of touch points between 2 and 10. When two or more touch points are recognized on a touch object the relative "
+			+ "orientation of the touch points are tracked and grouped into a cluster. This change in the orientation of the cluster is mapped directly to the rotation of the touch object.<br /><br />This "
+			+ "example rotates the square around the cluster point center on each rotate event.");
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

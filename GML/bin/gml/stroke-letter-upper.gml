@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GestureMarkupLanguage>
-<Gesture_set>
+<Gesture_set id="stroke_letter_uppercase">
 	<comment>This is a set of uppercase letters of the English alphabet</comment>
 	
 	<Gesture id="letter-D" type="stroke">
