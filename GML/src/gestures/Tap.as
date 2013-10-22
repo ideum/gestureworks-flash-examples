@@ -25,9 +25,9 @@ package gestures
 			addChild(exTemp);
 			
 			exTemp.createTitle("tap");
-			exTemp.createDesc("<p>The tap gesture is recognized when a touch down and touch up event occur within a specified time interval and translation threshold. " + "These values can be set in the GML definition. The interval can be set using the \"event_duration_max\" attribute and the translation threshold can be set using the " + "\"translation_max\" attribute. NOTE: These attributes are currently not working in the tap gesture.</p><br />" +
+			exTemp.createDesc("<p>The tap gesture is recognized when a touch down and touch up event occur within a specified time interval and translation threshold. " + "These values can be set in the GML definition. The interval can be set using the \"event_duration_max\" attribute and the translation threshold can be set using the " + "\"translation_max\" attribute.</p><br />" +
 				
-				"<p>Like other gestures you can turn an \"tap\" gesture into a 1-finger, 2-finger, etc. tap gesture by altering the cluster point number. NOTE: This feature is currently " + "not working in the tap gesture. Use the \"tap_n\" return value instead.</p><br />" +
+				"<p>Like other gestures you can turn a \"tap\" gesture into a 1-finger, 2-finger, etc. tap gesture by altering the cluster point number.</p><br />" +
 				
 				"<p>This example randomly changes the color of the square on each tap event. It also traces the return values to the output window.</p><br />");
 			

@@ -7,7 +7,7 @@
 			<action>
 				<initial>
 					<point event_duration_max="300" interevent_duration_max="300" translation_max="20"/>
-					<cluster point_number="0"/>
+					<cluster point_number="0" point_number_min="1" point_number_max="10"/>
 					<event gesture_event="tap" />
 				</initial>
 			</action>
