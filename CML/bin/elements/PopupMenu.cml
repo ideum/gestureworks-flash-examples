@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">PopupMenu</Text>
+<Text class="desc" selectable="true">
+	<p>This tag is used to create a simple popup menu from a text string of items. It requires a menuTitle, and menuItems, which will be a comma separated list of items to populate the menu.</p><br/>	 
+	<p>Width and height are automatically set based on font size. To use the menu, you can listen for StateEvents and then extract the string of the menu item that called it from the event's value.</p><br/>
+	<p>A menuMarker attribute can be set to "true" or "false", this setting determines whether or not an arrow appears next to the title menu item to indicate that this does, in fact, function as a menu.</p><br/>
+</Text>
+
+<PopupMenu id="ddMenu" x="500" y="150" menuTitle="Images" menuItems="Image1,Image2,Image3,Image4,Image5" fill="0xF2D4C2" color="0xA66874" fontSize="36"/>
+
+<Image id="Image1" src="images/500px-Bi-crystal.jpg" height="500" x="700" y="150" visible="false"/>
+<Image id="Image2" src="images/500px-Silver_crystal.jpg" x="700" y="150" visible="false"/>
+<Image id="Image3" src="images/bee.jpg" x="700" y="150" visible="false"/>
+<Image id="Image4" src="images/clockwork.png" height="500" x="700" y="150" visible="false"/>
+<Image id="Image5" src="images/orchid.jpg" x="700" y="150" visible="false"/>
+
+</cml>
