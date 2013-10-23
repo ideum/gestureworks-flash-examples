@@ -49,7 +49,7 @@ package gestures
 			addChild(touchSprite);
 			
 			// add events 
-			touchSprite.gestureList = {"3-finger-tilt":true};
+			touchSprite.gestureList = {"tilt-3f":true};
 			touchSprite.addEventListener(GWGestureEvent.TILT, onTilt);
 			
 			function onTilt(event:GWGestureEvent):void

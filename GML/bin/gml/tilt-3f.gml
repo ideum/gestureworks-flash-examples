@@ -2,7 +2,7 @@
 <GestureMarkupLanguage>
 <Gesture_set>
 	
-	<Gesture id="3-finger-tilt" type="tilt">
+	<Gesture id="tilt-3f" type="tilt">
 		<match>
 			<action>
 				<initial>
