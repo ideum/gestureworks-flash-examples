@@ -12,6 +12,7 @@
 <p>The Magnifier element provides a touch enabled element with an optional graphical lens that will increase the magnification when placed over any display object on the stage.</p><br />
 <p>Note that if the stage does not have a background image or display object of some sort, the MagnifierElement will simply retain visual data from the last object it was
 held over until brought to another display object.</p><br />
+<p>Also note there is an issue with dynamically scaling this element with flash's shader system. If scaling is needed it is recommented to dispose and create a new Magnifier.</p>
 </Text>
 
 <Image src="images/foot.png" x="500" y="60" height="600" resample="true"/>
@@ -27,6 +28,6 @@ held over until brought to another display object.</p><br />
 		</GestureList>
 </TouchContainer>
 
-<Magnifier x="800" y="200" radius="100" magnification="2" distortionRadius="18" graphic="default"/>
+<Magnifier x="800" y="200" radius="100" magnification="2" distortionRadius="50" graphic="default"/>
 
 </cml>

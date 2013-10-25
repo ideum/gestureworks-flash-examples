@@ -21,7 +21,7 @@
 	<p>The map takes latitude and longitude values to determine the area it displays on load. Negative values are South, and West for the respective coordinates, positive values are North and East.</p><br />
 	<p>You may also add Map Markers to the map provider to point out areas of significance. These markers take display objects, so within their tags you can add graphics, Texts, Image s, or anything else 
 	which is a display object.</p><br />
-	<p>Zooming is available when used within a touchContainer, and double-tapping will also be able to switch map providers.</p>
+	<p>Zooming is available, and double-tapping will also be able to switch map providers.</p>
 </Text>
 
 <ModestMap x="500" y="50" height="600" width="600" latitude="51.1789" longitude="-1.8264" zoom="7" mapprovider="MicrosoftRoadMapProvider">
