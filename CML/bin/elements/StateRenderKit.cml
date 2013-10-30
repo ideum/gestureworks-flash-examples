@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml rootDirectory="assets/" css="styles.css">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">StateManager</Text>
+<Text class="desc" selectable="false">
+	<p>The StateManager gobally stores attributes of items, in the RenderData, as states of the object(s), in the Renderer, by assigning the stateId attribute to
+	the desired item(s). Only attributes adhereing to the RenderKit expression convention (e.g. x="{x}") will be stored as state attributes. States of mulitple objects 
+	in various render kits can be linked to the same stateId. Once saved, object states can be dynamically loaded by passing corresponding stateIds to the
+	StateManager's loadState function.</p><br /><p>This example contains four buttons that dispatch a different state id to dynamically load the associated
+	states of two Container objects.</p>
+</Text>
+
+<!-- Buttons to dispatch stateIds -->
+<Button class="b" initial="btn" hit="btn" down="btn" up="btn" dispatch="down:circle_1" x="500">
+	<Graphic id="btn" shape="rectangle" width="100" height="50" color="0xFFFFFF"/>
+</Button>
+<Button class="b" initial="btn" hit="btn" down="btn" up="btn" dispatch="down:rectangle_1" x="650">
+	<Graphic id="btn" shape="rectangle" width="100" height="50" color="0xFFFFFF"/>
+</Button>
+<Button class="b" initial="btn" hit="btn" down="btn" up="btn" dispatch="down:rectangle_2" x="800">
+	<Graphic id="btn" shape="rectangle" width="100" height="50" color="0xFFFFFF"/>
+</Button>
+<Button class="b" initial="btn" hit="btn" down="btn" up="btn" dispatch="down:circle_2" x="950">
+	<Graphic id="btn" shape="rectangle" width="100" height="50" color="0xFFFFFF"/>
+</Button>
+	  
+
+<!--RenderKit with state data-->
+<RenderKit>
+
+	<Renderer max="1" dataRootNode="Item">
+		<Container id="c1" x="{x}" y="{y}">
+			<Graphic id="g" color="{color}" shape="{shape}" radius="{r}" width="{width}" height="{height}"/>
+		</Container>
+	</Renderer>
+
+	<RendererData>
+		<Item stateId="circle_1">
+			<x>500</x>
+			<y>100</y>
+			<shape>circle</shape>			
+			<color>0xFFFFFF</color>
+			<r>100</r>
+		</Item>
+		<Item stateId="rectangle_1"> 
+			<x>600</x>
+			<y>200</y>
+			<shape>rectangle</shape>
+			<color>0xFF0000</color>			
+			<width>200</width>					
+			<height>100</height>
+		</Item>
+		<Item stateId="rectangle_2"> 
+			<x>700</x>
+			<y>300</y>
+			<shape>rectangle</shape>
+			<color>0x00FF00</color>			
+			<width>200</width>					
+			<height>400</height>
+		</Item>
+		<Item stateId="circle_2"> 
+			<x>800</x>
+			<y>400</y>
+			<shape>circle</shape>		
+			<r>150</r>
+		</Item>
+	</RendererData>	
+
+</RenderKit>
+
+
+<!--second RenderKit with state data-->
+<RenderKit>
+
+	<Renderer max="1" dataRootNode="TextItem">
+		<Container id="c2" x="{x}" y="{y}">
+			<Text color="{color}" text="{text}" fontSize="{size}" autoSize="left"/>
+		</Container>
+	</Renderer>
+
+	<RendererData>
+		<TextItem stateId="circle_1">
+			<x>900</x>
+			<y>150</y>
+			<color>0xFFFFFF</color>
+			<text>circle_1</text>
+			<size>20</size>
+		</TextItem>
+		<TextItem stateId="rectangle_1"> 
+			<x>1000</x>
+			<y>200</y>
+			<color>0xFF0000</color>			
+			<text>rectangle_1</text>
+			<size>35</size>
+		</TextItem>
+		<TextItem stateId="rectangle_2"> 
+			<x>1000</x>
+			<y>400</y>
+			<color>0x00FF00</color>			
+			<text>rectangle_2</text>
+			<size>12</size>
+		</TextItem>
+		<TextItem stateId="circle_2"> 
+			<x>500</x>
+			<y>200</y>
+			<text>circle_2</text>
+			<size>50</size>
+		</TextItem>
+	</RendererData>	
+
+</RenderKit>
+
+</cml>

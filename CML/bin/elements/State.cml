@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cml rootDirectory="assets/"  css="styles.css">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">StateManager</Text>
+<Text class="desc" selectable="false">
+	<p>	The StateManager globally stores attributes specified by nested "State" tags as states of the object(s). When a "State" tag is present, the set of attributes in the object tag
+	is stored as the initial state and state tag attributes are stored as subsequent states. If a stateId is not defined for a state, one is automatically generated and assigned by 
+	the StateManager. A single state can be linked to multiple stateIds by assigning a comma delimited list of ids to the stateId attribute. States of multiple objects can be linked 
+	to the same stateId allowing multiple objects to load their associated states at the same time. Object states can by dynamically loaded by passing stateIds to the StateManager's
+	loadState function.</p><br /><p>This example contains four buttons that dispatch a different state id to dynamically load the associated
+	states of two objects. The third state of the circle graphic is the same as the first state because the initial state is linked to the first and third stateIds through a comma
+	delimited list.</p>
+</Text>
+
+<!-- Buttons to dispatch stateIds -->
+<Button class="b" initial="btn" hit="btn" down="btn" up="btn" dispatch="down:state_0" x="500">
+	<Graphic id="btn" shape="rectangle" width="100" height="50" color="0xFFFFFF"/>
+</Button>
+<Button class="b" initial="btn" hit="btn" down="btn" up="btn" dispatch="down:state_1" x="650">
+	<Graphic id="btn" shape="rectangle" width="100" height="50" color="0xFFFFFF"/>
+</Button>
+<Button class="b" initial="btn" hit="btn" down="btn" up="btn" dispatch="down:user_defined_1" x="800">
+	<Graphic id="btn" shape="rectangle" width="100" height="50" color="0xFFFFFF"/>
+</Button>
+<Button class="b" initial="btn" hit="btn" down="btn" up="btn" dispatch="down:user_defined_2" x="950">
+	<Graphic id="btn" shape="rectangle" width="100" height="50" color="0xFFFFFF"/>
+</Button>
+	  
+<Text text="state_0" x="500" y="100" autoSize="left" fontSize="30" textColor="0xFFFFFF" selectable="false">
+	<State text="state_1" x="650" textColor="0xFF0000"/>
+	<State stateId="user_defined_1" text="user_defined_1" x="800" textColor="0x00FF00"/>
+	<State stateId="user_defined_2" text="user_defined_2" x="950" textColor="0x0000FF"/>
+</Text>
+
+<Graphic stateId="state_0, user_defined_1" shape="circle" radius="50" x="500" y="300" color="0xFFFFFF">
+	<State stateId="state_1" x="650" color="0xFF0000"/>
+	<State stateId="user_defined_2" x="950" color="0x0000FF"/>
+</Graphic>
+
+</cml>
