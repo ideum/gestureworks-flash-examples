@@ -16,8 +16,8 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
-    <class path="..\..\gwas\development\cml_core" />
-    <class path="..\..\gwas\development\gml_core" />
+    <class path="..\..\..\cml_core" />
+    <class path="..\..\..\gml_core" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -77,7 +77,7 @@
   </library>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
-    <compile path="src\cml\elements\PopupMenuEx.as" />
+    <compile path="src\cml\elements\GigapixelEx.as" />
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>
@@ -94,5 +94,8 @@
     <option testMovieCommand="" />
   </options>
   <!-- Plugin storage -->
-  <storage />
+  <storage>
+    <entry key="at_enabled"><![CDATA[0]]></entry>
+    <entry key="at_password"><![CDATA[AT]]></entry>
+  </storage>
 </project>

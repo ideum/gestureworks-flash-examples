@@ -44,11 +44,11 @@
 		<Button id="info-btn" class="info_btn" dispatch="down:info" hit="info-hit" initial="info-up" down="info-down" up="info-up" out="info-up">
 			<Container id="info-up">
 				<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x282E33" />	
-				<SWF alpha="1" x="15" y="8" color="0xFFFFFF" scale="1.6" classRef="org.openexhibits.assets.Info" />
+				<SWF alpha="1" x="15" y="8" color="0xFFFFFF" scale="1.6" ref="org.openexhibits.assets.Info" />
 			</Container>
 			<Container id="info-down">
 				<Graphic id="info-bg-down" shape="circle" radius="20" lineStroke="1.5" color="0x495E67" />	
-				<SWF alpha="1" x="15" y="8" color="0xCCCCCC" scale="1.6" classRef="org.openexhibits.assets.Info" />
+				<SWF alpha="1" x="15" y="8" color="0xCCCCCC" scale="1.6" ref="org.openexhibits.assets.Info" />
 			</Container>	
 			<Container id="info-hit">
 				<Graphic id="info-hit-bg" shape="circle" radius="20" color="0x666666" alpha="0" />
@@ -58,11 +58,11 @@
 		<Button id="close-btn" class="close_btn" dispatch="down:close" hit="close-hit" initial="close-up" down="close-down" up="close-up" out="close-up">
 			<Container id="close-up" class="up" >
 				<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x282E33" />	
-				<SWF alpha="1" x="11" y="11" color="0xFFFFFF" scale="1.6" classRef="org.openexhibits.assets.Close"/>
+				<SWF alpha="1" x="11" y="11" color="0xFFFFFF" scale="1.6" ref="org.openexhibits.assets.Close"/>
 			</Container>
 			<Container id="close-down" class="down">
 				<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x495E67" />	
-				<SWF alpha="1" x="11" y="11" color="0xCCCCCC" scale="1.6" classRef="org.openexhibits.assets.Close" />
+				<SWF alpha="1" x="11" y="11" color="0xCCCCCC" scale="1.6" ref="org.openexhibits.assets.Close" />
 			</Container>	
 			<Container id="close-hit" class="hit">
 				<Graphic id="close-hit-bg" shape="circle" radius="20" alpha="0" />

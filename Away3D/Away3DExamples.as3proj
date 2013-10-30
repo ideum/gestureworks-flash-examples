@@ -9,13 +9,14 @@
     <movie width="800" />
     <movie height="600" />
     <movie version="11" />
-    <movie minorVersion="8" />
+    <movie minorVersion="7" />
     <movie platform="Flash Player" />
     <movie background="#FFFFFF" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
+    <class path="..\..\lib" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -63,8 +64,9 @@
     <element path="..\..\..\lib\coreAssets.swc" />
     <element path="..\..\..\..\lib\GestureWorksCML.swc" />
     <element path="..\..\..\..\lib\GestureWorksGML.swc" />
-    <element path="..\..\..\cml_core\lib\cml_ext.swc" />
-    <element path="..\..\..\gml_core\lib\gml_ext.swc" />
+    <element path="..\..\lib\Away3D.swc" />
+    <element path="..\..\lib\GestureWorksCML.swc" />
+    <element path="..\..\lib\GestureWorksGML.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
@@ -84,7 +86,7 @@
   </library>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
-    <compile path="src\cml\Container3DEx.as" />
+    <compile path="src\cml\TouchContainer3DEx.as" />
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>

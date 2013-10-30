@@ -19,7 +19,7 @@
 			<Image id="img1" src="images/foot.png" scale=".2"/>
 			<Image id="img1" src="images/foot.png" scale=".2"/>
 			<Image id="img1" src="images/foot.png" scale=".2"/>
-			<Layout classRef="RandomLayout" maxX="400" maxY="400"/>
+			<Layout ref="RandomLayout" maxX="400" maxY="400"/>
 		</Tab>
 		<Tab title="grid" tabHeight="40">	
 			<Image id="img1" src="images/womb.png" scale=".1" />
@@ -36,7 +36,7 @@
 			<Image id="img1" src="images/womb.png" scale=".1" />
 			<Image id="img1" src="images/womb.png" scale=".1" />
 			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Layout classRef="GridLayout" columns="4" rows="4" useMargins="true" />
+			<Layout ref="GridLayout" columns="4" rows="4" useMargins="true" />
 		</Tab>		
 		<Tab title="pile" tabHeight="40">
 			<Image id="img1" src="images/baby.jpg" scale=".5"/>	
@@ -44,7 +44,7 @@
 			<Image id="img1" src="images/baby.jpg" scale=".5"/>	
 			<Image id="img1" src="images/baby.jpg" scale=".5"/>	
 			<Image id="img1" src="images/baby.jpg" scale=".5"/>	
-			<Layout classRef="PileLayout" originY="200" originX="200" />
+			<Layout ref="PileLayout" originY="200" originX="200" />
 		</Tab>		
 		<Tab title="fan" tabHeight="40">
 			<Image id="img1" src="images/clockwork.png" scale=".2"/>
@@ -53,7 +53,7 @@
 			<Image id="img1" src="images/clockwork.png" scale=".2"/>
 			<Image id="img1" src="images/clockwork.png" scale=".2"/>
 			<Image id="img1" src="images/clockwork.png" scale=".2"/>
-			<Layout classRef="FanLayout" type="bottomRightOrigin" originX="200" originY="300" angle="20"/>
+			<Layout ref="FanLayout" type="bottomRightOrigin" originX="200" originY="300" angle="20"/>
 		</Tab>		
 	</TabbedContainer>
 

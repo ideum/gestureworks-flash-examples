@@ -22,7 +22,7 @@
 	<Image src="images/plane.jpg" scale=".3"/>
 	<Image src="images/plane.jpg" scale=".3"/>
 	<Image src="images/plane.jpg" scale=".3"/>
-	<Layout classRef="PointLayout" points="10,400,200,250,450,350,400,400,523" tween="true" tweenTime="1500"/>   
+	<Layout ref="PointLayout" points="10,400,200,250,450,350,400,400,523" tween="true" tweenTime="1500"/>   
 	<!--The points list does not need to specify a coordinate for each child. Unspecified coordinates will remain 0.-->                  
 </TouchContainer>
 

@@ -17,7 +17,7 @@
 
 <!--This is a global layout-->
 <LayoutKit>
-	<Layout id="grid" classRef="GridLayout" rows="2" columns="2" spacingX="500" spacingY="600"/>
+	<Layout id="grid" ref="GridLayout" rows="2" columns="2" spacingX="500" spacingY="600"/>
 </LayoutKit>
 
 <Container layout="grid" x="625" y="50" class="parent_layout">            <!--global layouts are assigned by id to the Container's layout attribute-->
@@ -31,7 +31,7 @@
 		<Image src="images/plane.jpg" scale=".3"/>
 		<Image src="images/plane.jpg" scale=".3"/>
 		<Image src="images/plane.jpg" scale=".3"/>
-		<Layout classRef="FanLayout" angle="10" tween="true" tweenTime="1500"/>                  <!--the default origin is the top left corner and the default angle is 5 -->
+		<Layout ref="FanLayout" angle="10" tween="true" tweenTime="1500"/>                  <!--the default origin is the top left corner and the default angle is 5 -->
 	</Container>
 
 	<Container class="top_right">
@@ -43,7 +43,7 @@
 		<Image src="images/plane.jpg" scale=".3"/>
 		<Image src="images/plane.jpg" scale=".3"/>
 		<Image src="images/plane.jpg" scale=".3"/>
-		<Layout classRef="FanLayout" type="topRightOrigin" angle="-10" tween="true" tweenTime="1500"/>          <!--to change origin, specify the type-->
+		<Layout ref="FanLayout" type="topRightOrigin" angle="-10" tween="true" tweenTime="1500"/>          <!--to change origin, specify the type-->
 	</Container>
 	
 	<Container class="bottom_left">
@@ -55,7 +55,7 @@
 		<Image src="images/plane.jpg" scale=".3"/>
 		<Image src="images/plane.jpg" scale=".3"/>
 		<Image src="images/plane.jpg" scale=".3"/>
-		<Layout classRef="FanLayout" type="bottomLeftOrigin" angle="-10" tween="true" tweenTime="1500"/>          
+		<Layout ref="FanLayout" type="bottomLeftOrigin" angle="-10" tween="true" tweenTime="1500"/>          
 	</Container>	
 	
 	<Container class="bottom_right">
@@ -67,7 +67,7 @@
 		<Image src="images/plane.jpg" scale=".3"/>
 		<Image src="images/plane.jpg" scale=".3"/>
 		<Image src="images/plane.jpg" scale=".3"/>
-		<Layout classRef="FanLayout" type="bottomRightOrigin" angle="10" tween="true" tweenTime="1500"/>          
+		<Layout ref="FanLayout" type="bottomRightOrigin" angle="10" tween="true" tweenTime="1500"/>          
 	</Container>		
 
 </Container>

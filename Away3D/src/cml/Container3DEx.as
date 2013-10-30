@@ -1,6 +1,6 @@
 package cml {
-	import com.gestureworks.away3d.Away3DTouchManager;
-	import com.gestureworks.away3d.CML_Away3D; CML_Away3D;
+	import com.gestureworks.away3d.TouchManager3D;
+	import com.gestureworks.cml.core.CMLAway3D; CMLAway3D;
 	import com.gestureworks.cml.core.CMLParser;
 	import com.gestureworks.core.GestureWorks;
 	import flash.events.Event;
@@ -13,7 +13,7 @@ package cml {
 			gml = "gml/gestures.gml";			
 			cml = "cml/Container3D.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
-		}
+		} 
 	
 		override protected function gestureworksInit():void {
 			trace("gestureWorksInit()");	

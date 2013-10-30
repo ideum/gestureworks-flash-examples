@@ -25,7 +25,7 @@
 	<Image src="images/plane.jpg" scale=".3"/>
 	<Image src="images/plane.jpg" scale=".3"/>
 	<Image src="images/plane.jpg" scale=".3"/>
-	<Layout classRef="ListLayout" spacingX="200" tween="true" tweenTime="1500"/>                  
+	<Layout ref="ListLayout" spacingX="200" tween="true" tweenTime="1500"/>                  
 </Container>
 
 <Container class="vertical_list" x="750" y="200">
@@ -37,7 +37,7 @@
 	<Image src="images/plane.jpg" scale=".3"/>
 	<Image src="images/plane.jpg" scale=".3"/>
 	<Image src="images/plane.jpg" scale=".3"/>
-	<Layout classRef="ListLayout" useMargins="true" marginY="5" type="vertical" tween="true" tweenTime="1500"/>                  
+	<Layout ref="ListLayout" useMargins="true" marginY="5" type="vertical" tween="true" tweenTime="1500"/>                  
 </Container>
 
 </cml>
