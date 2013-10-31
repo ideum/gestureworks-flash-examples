@@ -1,3 +1,4 @@
+*.lxml
 obj/
 Away3D/bin/Away3DExamples.swf
 Away3D/bin/assets
