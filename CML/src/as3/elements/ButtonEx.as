@@ -21,7 +21,7 @@ package as3.elements
 		
 		public function ButtonEx():void
 		{
-		
+			gml = "assets/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void

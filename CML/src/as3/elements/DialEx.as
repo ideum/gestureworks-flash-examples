@@ -4,15 +4,14 @@ package as3.elements
 	import com.gestureworks.cml.element.Text;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
-	import flash.events.Event;
 	
 	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="30")]
 	
 	public class DialEx extends GestureWorks
 	{
-		
 		public function DialEx():void
 		{
+			gml = "assets/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void

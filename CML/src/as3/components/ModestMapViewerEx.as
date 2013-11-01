@@ -18,15 +18,15 @@ package as3.components
 	
 	public class ModestMapViewerEx extends GestureWorks
 	{
-		[Embed(source="../../../bin/assets/openexhibits_assets.swf",symbol="org.openexhibits.assets.Info")]
+		[Embed(source="../../../lib/openexhibits_assets.swf",symbol="org.openexhibits.assets.Info")]
 		private var infoBtn:Class;
 		
-		[Embed(source="../../../bin/assets/openexhibits_assets.swf",symbol="org.openexhibits.assets.Close")]
+		[Embed(source="../../../lib/openexhibits_assets.swf",symbol="org.openexhibits.assets.Close")]
 		private var closeBtn:Class;
 		
 		public function ModestMapViewerEx():void
 		{
-		
+			gml = "assets/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void

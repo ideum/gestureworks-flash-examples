@@ -12,10 +12,9 @@ package as3.elements
 	
 	public class ContainerEx extends GestureWorks
 	{
-		
 		public function ContainerEx():void
 		{
-		
+			gml = "assets/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void

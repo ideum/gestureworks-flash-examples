@@ -12,14 +12,12 @@ package as3.elements
 	{
 		public function ImageEx():void 
 		{
-			
+			gml = "assets/gestures.gml";			
 		}
 		
 		override protected function gestureworksInit():void 
 		{
-			
-			// entry point
-			
+			// entry point			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
 			exTemp.createHeader();
 			addChild(exTemp);
@@ -28,7 +26,6 @@ package as3.elements
 			exTemp.createDesc("<p>This tag allows you to load and display external image files such as jpg, png, etc.</p><br /><p>This tag also allows for scaling and resampling.</p>");
 			
 			// Set the file path using the src attribute. File paths are relative to the executable or swf file.
-			
 			var img1:Image = new Image();
 			img1.src = "assets/images/plane.jpg";
 			img1.scale = 0.6;
@@ -37,8 +34,7 @@ package as3.elements
 			img1.open(img1.src);
 			addChild(img1);
 			
-			// Downsampling can improve performance. You can set just one dimension to maintain the original aspect ratio.
-			
+			// Downsampling can improve performance. You can set just one dimension to maintain the original aspect ratio.			
 			var loadString:String = "assets/images/train.jpg";
 			var img2:Image = new Image();
 			img2.open(loadString);

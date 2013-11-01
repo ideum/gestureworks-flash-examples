@@ -14,14 +14,12 @@ package as3.elements
 		
 		public function DatePickerEx():void
 		{
-		
+			gml = "assets/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void
 		{
-			
-			// entry point
-			
+			// entry point			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
 			exTemp.createHeader();
 			addChild(exTemp);

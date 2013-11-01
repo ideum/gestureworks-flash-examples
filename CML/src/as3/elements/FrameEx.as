@@ -9,17 +9,15 @@ package as3.elements
 	
 	public class FrameEx extends GestureWorks
 	{
-		
 		public function FrameEx():void
 		{
+			gml = "assets/gestures.gml";			
 		}
 		
 		override protected function gestureworksInit():void
 		{
-			trace("gestureWorksInit()");
-			
+			trace("gestureWorksInit()");		
 			// entry point
-			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
 			exTemp.createHeader();
 			addChild(exTemp);

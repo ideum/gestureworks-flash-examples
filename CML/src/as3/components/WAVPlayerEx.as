@@ -15,28 +15,28 @@ package as3.components
 	
 	/**
 	 * ...
-	 * @author josh
+	 * @author Ideum
 	 */
 	
 	 [SWF(width = "1280", height = "720", backgroundColor = "0x000000", frameRate = "30")]
 	 
 	public class WAVPlayerEx extends GestureWorks 
 	{
-		[Embed(source = "../../../../_assets/openexhibits_assets.swf", symbol = "org.openexhibits.assets.Info")]
+		[Embed(source = "../../../../_../../../lib/openexhibits_assets.swf", symbol = "org.openexhibits.assets.Info")]
 		private var infoBtn:Class;
 		
-		[Embed(source = "../../../../_assets/openexhibits_assets.swf", symbol = "org.openexhibits.assets.Play")]
+		[Embed(source = "../../../../_../../../lib/openexhibits_assets.swf", symbol = "org.openexhibits.assets.Play")]
 		private var playBtn:Class;
 		
-		[Embed(source = "../../../../_assets/openexhibits_assets.swf", symbol = "org.openexhibits.assets.Pause")]
+		[Embed(source = "../../../../_../../../lib/openexhibits_assets.swf", symbol = "org.openexhibits.assets.Pause")]
 		private var pauseBtn:Class;
 		
-		[Embed(source = "../../../../_assets/openexhibits_assets.swf", symbol = "org.openexhibits.assets.Close")]
+		[Embed(source = "../../../../_../../../lib/openexhibits_assets.swf", symbol = "org.openexhibits.assets.Close")]
 		private var closeBtn:Class;
 		
 		public function WAVPlayerEx():void 
 		{
-			
+			gml = "gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void 

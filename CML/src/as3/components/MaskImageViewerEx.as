@@ -19,10 +19,10 @@ package as3.components
 	
 	public class MaskImageViewerEx extends GestureWorks 
 	{
-		[Embed(source = "../../../bin/assets/openexhibits_assets.swf", symbol = "org.openexhibits.assets.Info")]
+		[Embed(source = "../../../lib/openexhibits_assets.swf", symbol = "org.openexhibits.assets.Info")]
 		private var infoBtn:Class;
 		
-		[Embed(source = "../../../bin/assets/openexhibits_assets.swf", symbol = "org.openexhibits.assets.Close")]
+		[Embed(source = "../../../lib/openexhibits_assets.swf", symbol = "org.openexhibits.assets.Close")]
 		private var closeBtn:Class;
 		
 		private var maskedImages:Array = new Array("assets/spectrum/bulbs_off_therm.jpg",
@@ -35,7 +35,7 @@ package as3.components
 		
 		public function MaskImageViewerEx():void 
 		{
-			
+			gml = "assets/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void 

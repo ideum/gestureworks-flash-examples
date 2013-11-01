@@ -18,21 +18,21 @@ package as3.components
 	
 	public class AlbumViewerEx extends GestureWorks
 	{
-		[Embed(source="../../../bin/../../../bin/assets/openexhibits_assets.swf",symbol="org.openexhibits.assets.Info")]
+		[Embed(source="../../../lib/openexhibits_assets.swf",symbol="org.openexhibits.assets.Info")]
 		private var infoBtn:Class;
 		
-		[Embed(source="../../../bin/../../../bin/assets/openexhibits_assets.swf",symbol="org.openexhibits.assets.Play")]
+		[Embed(source="../../../lib/openexhibits_assets.swf",symbol="org.openexhibits.assets.Play")]
 		private var playBtn:Class;
 		
-		[Embed(source="../../../bin/../../../bin/assets/openexhibits_assets.swf",symbol="org.openexhibits.assets.Pause")]
+		[Embed(source="../../../lib/openexhibits_assets.swf",symbol="org.openexhibits.assets.Pause")]
 		private var pauseBtn:Class;
 		
-		[Embed(source="../../../bin/../../../bin/assets/openexhibits_assets.swf",symbol="org.openexhibits.assets.Close")]
+		[Embed(source="../../../lib/openexhibits_assets.swf",symbol="org.openexhibits.assets.Close")]
 		private var closeBtn:Class;
 		
 		public function AlbumViewerEx():void
 		{
-		
+			gml = "assets/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void

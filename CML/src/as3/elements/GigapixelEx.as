@@ -9,18 +9,15 @@ package as3.elements
 	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="30")]
 	
 	public class GigapixelEx extends GestureWorks
-	{
-		
+	{	
 		public function GigapixelEx():void
 		{
-		
+			gml = "assets/gestures.gml";		
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			
-			// entry point
-			
+		{		
+			// entry point	
 			var exTemp:ExampleTemplate = new ExampleTemplate();
 			exTemp.createHeader();
 			addChild(exTemp);

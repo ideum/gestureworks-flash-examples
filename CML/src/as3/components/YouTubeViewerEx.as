@@ -12,27 +12,26 @@ package as3.components
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	import flash.display.Sprite;
-	import flash.events.Event;
 	
 	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="30")]
 	
 	public class YouTubeViewerEx extends GestureWorks
 	{
-		[Embed(source="../../../bin/assets/openexhibits_assets.swf",symbol="org.openexhibits.assets.Info")]
+		[Embed(source="../../../lib/openexhibits_assets.swf",symbol="org.openexhibits.assets.Info")]
 		private var infoBtn:Class;
 		
-		[Embed(source="../../../bin/assets/openexhibits_assets.swf",symbol="org.openexhibits.assets.Play")]
+		[Embed(source="../../../lib/openexhibits_assets.swf",symbol="org.openexhibits.assets.Play")]
 		private var playBtn:Class;
 		
-		[Embed(source="../../../bin/assets/openexhibits_assets.swf",symbol="org.openexhibits.assets.Pause")]
+		[Embed(source="../../../lib/openexhibits_assets.swf",symbol="org.openexhibits.assets.Pause")]
 		private var pauseBtn:Class;
 		
-		[Embed(source="../../../bin/assets/openexhibits_assets.swf",symbol="org.openexhibits.assets.Close")]
+		[Embed(source="../../../lib/openexhibits_assets.swf",symbol="org.openexhibits.assets.Close")]
 		private var closeBtn:Class;
 		
 		public function YouTubeViewerEx():void
 		{
-		
+			gml = "assets/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void

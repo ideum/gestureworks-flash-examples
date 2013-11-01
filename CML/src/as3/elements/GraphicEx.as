@@ -12,16 +12,13 @@ package as3.elements
 	
 	public class GraphicEx extends GestureWorks 
 	{
-		
 		public function GraphicEx():void 
 		{
-			
-			
+			gml = "assets/gestures.gml";						
 		}
 		
 		override protected function gestureworksInit():void 
 		{
-			
 			// entry point
 			var exTemp:ExampleTemplate = new ExampleTemplate();
 			exTemp.createHeader();
