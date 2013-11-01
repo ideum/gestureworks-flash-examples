@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Graphic class="header-graphic" />
+<Text class="title">HTML (url)</Text>
+<Text class="desc">
+	<p>This tag loads a url using the WebKit AIR Browser.</p>
+</Text>
+	
+	
+<!-- The html element can load local or remove url address. -->
+
+<HTML src="https://www.ideum.com/" baseURL="https://www.ideum.com/"  />
+
+
+</cml>
