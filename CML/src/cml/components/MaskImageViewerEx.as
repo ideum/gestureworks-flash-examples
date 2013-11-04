@@ -14,6 +14,7 @@ package cml.components
 		public function MaskImageViewerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "components/MaskImageViewer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

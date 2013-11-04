@@ -14,6 +14,7 @@ package cml.elements
 		public function VideoEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Video.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

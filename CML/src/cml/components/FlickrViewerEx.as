@@ -14,6 +14,7 @@ package cml.components
 		public function FlickrViewerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "components/FlickrViewer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

@@ -19,6 +19,7 @@ package cml.elements
 		public function ButtonEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Button.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 			addEventListener(StateEvent.CHANGE, buttonState);

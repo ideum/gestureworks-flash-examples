@@ -14,6 +14,7 @@ package cml.components
 		public function CollectionViewerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "components/CollectionViewer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

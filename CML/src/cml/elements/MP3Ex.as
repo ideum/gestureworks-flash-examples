@@ -14,6 +14,7 @@ package cml.elements
 		public function MP3Ex():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/MP3.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

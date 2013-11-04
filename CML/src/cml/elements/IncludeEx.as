@@ -14,6 +14,7 @@ package cml.elements
 		public function IncludeEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Include.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

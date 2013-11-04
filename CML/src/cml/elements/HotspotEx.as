@@ -14,6 +14,7 @@ package cml.elements
 		public function HotspotEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Hotspot.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

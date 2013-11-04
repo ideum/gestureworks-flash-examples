@@ -20,6 +20,7 @@ package cml.elements
 		public function ColorPickerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/ColorPicker.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 			addEventListener(StateEvent.CHANGE, changeBkg); //ColorPicker dispatches a state event at each color change

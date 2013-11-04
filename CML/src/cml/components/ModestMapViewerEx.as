@@ -14,6 +14,7 @@ package cml.components
 		public function ModestMapViewerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "components/ModestMapViewer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

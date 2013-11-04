@@ -14,6 +14,7 @@ package cml.elements
 		public function LiveVideoEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/LiveVideo.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

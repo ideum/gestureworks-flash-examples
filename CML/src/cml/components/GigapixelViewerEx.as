@@ -14,6 +14,7 @@ package cml.components
 		public function GigapixelViewerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "components/GigapixelViewer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

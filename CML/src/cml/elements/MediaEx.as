@@ -14,6 +14,7 @@ package cml.elements
 		public function MediaEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Media.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

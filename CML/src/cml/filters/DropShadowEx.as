@@ -14,6 +14,7 @@ package cml.filters
 		public function DropShadowEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "filters/DropShadow.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);			
 		}

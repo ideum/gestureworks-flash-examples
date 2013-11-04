@@ -22,6 +22,7 @@ package cml.elements
 		public function AccordianEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Accordion.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

@@ -14,6 +14,7 @@ package cml.elements
 		public function GraphicEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Graphic.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

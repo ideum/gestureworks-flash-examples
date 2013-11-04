@@ -14,6 +14,7 @@ package cml.components
 		public function MediaViewerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "components/MediaViewer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

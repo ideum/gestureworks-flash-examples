@@ -14,6 +14,7 @@ package cml.elements
 		public function SlideshowEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/SlideShow.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

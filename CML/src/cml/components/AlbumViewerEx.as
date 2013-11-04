@@ -23,6 +23,7 @@ package cml.components
 		public function AlbumViewerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "components/AlbumViewer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}
@@ -66,8 +67,7 @@ package cml.components
 		
 		private function reset(e:StateEvent):void
 		{
-			if (e.property == "isPlaying" && !e.value)
-			{
+			if (e.property == "isPlaying" && !e.value) {
 				var g:Graphic = e.target.parent.searchChildren(Graphic);
 				g.visible = true;
 			}

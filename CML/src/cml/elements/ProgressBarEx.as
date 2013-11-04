@@ -14,6 +14,7 @@ package cml.elements
 		public function ProgressBarEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/ProgressBar.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

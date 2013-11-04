@@ -14,6 +14,7 @@ package cml.elements
 		public function TabbedContainerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/TabbedContainer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

@@ -19,6 +19,7 @@ package cml.elements
 		public function KeyEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Key.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 			addEventListener(KeyboardEvent.KEY_DOWN, output);

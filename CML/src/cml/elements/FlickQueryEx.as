@@ -19,6 +19,7 @@ package cml.elements
 		public function FlickQueryEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/FlickrQuery.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

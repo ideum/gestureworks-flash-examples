@@ -14,6 +14,7 @@
 		public function SlideshowViewerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "components/SlideshowViewer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

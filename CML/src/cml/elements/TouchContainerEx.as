@@ -16,6 +16,7 @@ package cml.elements
 		public function TouchContainerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/TouchContainer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

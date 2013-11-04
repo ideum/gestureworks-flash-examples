@@ -14,6 +14,7 @@ package cml.elements
 		public function MaskContainerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/MaskContainer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

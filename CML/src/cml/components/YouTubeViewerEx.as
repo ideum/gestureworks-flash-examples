@@ -14,6 +14,7 @@ package cml.components
 		public function YouTubeViewerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "components/YouTubeViewer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

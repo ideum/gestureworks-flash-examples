@@ -14,6 +14,7 @@ package cml.elements
 		public function YouTubeEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/YouTube.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

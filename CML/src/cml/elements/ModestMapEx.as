@@ -14,6 +14,7 @@ package cml.elements
 		public function ModestMapEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/ModestMap.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

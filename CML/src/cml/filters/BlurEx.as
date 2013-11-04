@@ -14,6 +14,7 @@ package cml.filters
 		public function BlurEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "filters/Blur.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);			
 		}

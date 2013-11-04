@@ -14,6 +14,7 @@ package cml.elements
 		public function AlbumEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Album.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

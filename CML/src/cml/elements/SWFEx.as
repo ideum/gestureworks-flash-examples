@@ -14,6 +14,7 @@ package cml.elements
 		public function SWFEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/SWF.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

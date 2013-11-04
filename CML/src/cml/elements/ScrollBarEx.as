@@ -23,6 +23,7 @@ package cml.elements
 		public function ScrollBarEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/ScrollBar.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

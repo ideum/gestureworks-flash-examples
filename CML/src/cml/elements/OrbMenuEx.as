@@ -20,6 +20,7 @@ package cml.elements
 		public function OrbMenuEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/OrbMenu.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

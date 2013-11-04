@@ -20,6 +20,7 @@ package cml.elements
 		public function SwitchEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Switch.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

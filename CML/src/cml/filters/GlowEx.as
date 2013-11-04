@@ -14,6 +14,7 @@ package cml.filters
 		public function GlowEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "filters/Glow.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);			
 		}

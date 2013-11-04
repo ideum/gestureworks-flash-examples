@@ -17,6 +17,7 @@ package cml.elements
 		public function FlickrEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Flickr.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

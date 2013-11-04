@@ -14,6 +14,7 @@ package cml.elements
 		public function ImageEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Image.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

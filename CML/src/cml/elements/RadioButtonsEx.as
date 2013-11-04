@@ -19,6 +19,7 @@ package cml.elements
 		public function RadioButtonsEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/RadioButtons.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

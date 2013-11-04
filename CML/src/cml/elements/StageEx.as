@@ -14,6 +14,7 @@ package cml.elements
 		public function StageEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Stage.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

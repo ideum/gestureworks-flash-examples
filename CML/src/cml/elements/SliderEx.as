@@ -19,6 +19,7 @@ package cml.elements
 		public function SliderEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Slider.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

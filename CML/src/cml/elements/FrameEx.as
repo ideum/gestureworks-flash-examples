@@ -14,6 +14,7 @@ package cml.elements
 		public function FrameEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Frame.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

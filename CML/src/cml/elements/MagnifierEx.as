@@ -14,6 +14,7 @@ package cml.elements
 		public function MagnifierEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Magnifier.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

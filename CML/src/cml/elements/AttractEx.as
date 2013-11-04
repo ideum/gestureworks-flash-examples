@@ -14,6 +14,7 @@ package cml.elements
 		public function AttractEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Attract.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

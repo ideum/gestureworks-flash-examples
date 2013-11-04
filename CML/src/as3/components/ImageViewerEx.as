@@ -47,6 +47,8 @@ package as3.components
 			
 			var imageViewer:ImageViewer = new ImageViewer();
 			
+			
+			
 			var imageContainer:TouchContainer = new TouchContainer();
 			imageContainer.className = "image_container";
 			imageContainer.visible = true;

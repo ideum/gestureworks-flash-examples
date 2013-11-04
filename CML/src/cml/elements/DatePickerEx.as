@@ -20,6 +20,7 @@ package cml.elements
 		public function DatePickerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/DatePicker.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

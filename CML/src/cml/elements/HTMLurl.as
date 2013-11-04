@@ -14,6 +14,7 @@ package cml.elements
 		public function HTMLurl():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/HTMLurl.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

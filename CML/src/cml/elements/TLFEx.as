@@ -14,6 +14,7 @@ package cml.elements
 		public function TLFEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/TLF.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

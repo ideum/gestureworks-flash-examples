@@ -142,7 +142,7 @@ package as3.components
 			var menu:Menu = new Menu();
 			menu.className = "menu_container";
 			menu.alpha = 0.6;
-			menu.position = "bottom";
+			menu.position = "bottomight";
 			menu.paddingLeft = 30;
 			menu.paddingBottom = -50;
 			menu.paddingRight = 20;

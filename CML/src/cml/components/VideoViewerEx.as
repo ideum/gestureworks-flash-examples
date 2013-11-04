@@ -14,6 +14,7 @@ package cml.components
 		public function VideoViewerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "components/VideoViewer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

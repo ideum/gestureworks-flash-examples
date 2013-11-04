@@ -16,6 +16,7 @@ package cml.elements
 		public function ContainerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Container.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

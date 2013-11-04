@@ -14,6 +14,7 @@ package cml.elements
 		public function StepperEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Stepper.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

@@ -14,6 +14,7 @@ package cml.elements
 		public function ScrollPaneEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/ScrollPane.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

@@ -14,6 +14,7 @@ package cml.elements
 		public function RenderKitEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/RenderKit.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

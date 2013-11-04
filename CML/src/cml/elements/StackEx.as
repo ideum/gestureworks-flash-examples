@@ -14,6 +14,7 @@ package cml.elements
 		public function StackEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Stack.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

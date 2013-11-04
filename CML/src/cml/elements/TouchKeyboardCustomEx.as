@@ -14,6 +14,7 @@ package cml.elements
 		public function TouchKeyboardCustomEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/TouchKeyboardCustom.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

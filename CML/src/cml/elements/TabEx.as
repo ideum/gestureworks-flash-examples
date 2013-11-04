@@ -14,6 +14,7 @@ package cml.elements
 		public function TabEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Tab.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

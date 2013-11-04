@@ -14,12 +14,9 @@ package cml.components
 		public function MP3PlayerEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "components/MP3Player.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
-		}
-		
-		{
-			trace("gestureWorksInit()");
 		}
 		
 		private function cmlInit(event:Event):void

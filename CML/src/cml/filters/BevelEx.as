@@ -14,6 +14,7 @@ package cml.filters
 		public function BevelEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "filters/Bevel.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);			
 		}

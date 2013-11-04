@@ -17,6 +17,7 @@ package cml.elements
 		public function ToggleEx():void
 		{
 			super();
+			gml = "gml/gestures.gml"
 			cml = "elements/Toggle.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}
