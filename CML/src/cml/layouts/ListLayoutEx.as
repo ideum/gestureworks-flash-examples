@@ -14,6 +14,7 @@ package cml.layouts
 		public function ListLayoutEx():void
 		{
 			super();
+			gml = "gml/gestures.gml";
 			cml = "layouts/ListLayout.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

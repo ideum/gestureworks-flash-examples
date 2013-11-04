@@ -14,6 +14,7 @@ package cml.layouts
 		public function PileLayoutEx():void
 		{
 			super();
+			gml = "gml/gestures.gml";
 			cml = "layouts/PileLayout.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

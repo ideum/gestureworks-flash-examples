@@ -14,6 +14,7 @@ package cml.layouts
 		public function FanLayoutEx():void
 		{
 			super();
+			gml = "gml/gestures.gml";
 			cml = "layouts/FanLayout.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

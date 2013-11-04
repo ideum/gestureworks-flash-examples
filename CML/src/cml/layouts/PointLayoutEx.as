@@ -14,6 +14,7 @@ package cml.layouts
 		public function PointLayoutEx():void
 		{
 			super();
+			gml = "gml/gestures.gml";
 			cml = "layouts/PointLayout.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

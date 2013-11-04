@@ -14,6 +14,7 @@ package cml.layouts
 		public function GridLayoutEx():void
 		{
 			super();
+			gml = "gml/gestures.gml";
 			cml = "layouts/GridLayout.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}
