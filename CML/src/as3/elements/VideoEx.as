@@ -10,13 +10,12 @@ package as3.elements
 	{
 		public function VideoEx():void
 		{
-		
+			gml = "gml/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void
 		{			
 			// entry point
-			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
 			exTemp.createHeader();
 			addChild(exTemp);

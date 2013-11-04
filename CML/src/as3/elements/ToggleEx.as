@@ -12,15 +12,7 @@ package as3.elements
 	{
 		public function ToggleEx():void
 		{
-			if (stage)
-				this.gestureworksInit();
-			else
-				addEventListener(Event.ADDED_TO_STAGE, init);
-		}
-		
-		private function init(e:Event):void
-		{
-			gestureworksInit();
+			gml = "gml/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void

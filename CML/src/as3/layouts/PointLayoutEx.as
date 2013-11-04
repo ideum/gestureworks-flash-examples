@@ -13,14 +13,12 @@ package as3.layouts
 	{
 		public function PointLayoutEx():void
 		{
-		
+			gml = "gml/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void
 		{
-			
-			// entry point
-			
+			// entry point			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
 			exTemp.createHeader();
 			addChild(exTemp);

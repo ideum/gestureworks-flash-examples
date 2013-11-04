@@ -31,7 +31,7 @@
 	<Image src="images/plane.jpg" scale=".3"/>
 	<Image src="images/plane.jpg" scale=".3"/>
 	<Image src="images/plane.jpg" scale=".3"/>
-	<Layout ref="PileLayout" angle="20" tween="true" tweenTime="1500"/>          <!--to fix the rotation, specify the angle-->
+	<Layout ref="Pile" angle="20" tween="true" tweenTime="1500"/>          <!--to fix the rotation, specify the angle-->
 </Container>
 
 </cml>

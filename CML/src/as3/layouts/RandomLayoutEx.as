@@ -12,14 +12,13 @@ package as3.layouts
 	public class RandomLayoutEx extends GestureWorks
 	{
 		public function RandomLayoutEx():void
-		{
-		
+		{	
+			gml = "gml/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void
 		{
 			// entry point
-			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
 			exTemp.createHeader();
 			addChild(exTemp);

@@ -26,7 +26,7 @@
 	<Image src="images/plane.jpg" scale=".3"/>
 	<Image src="images/plane.jpg" scale=".3"/>
 	<Image src="images/plane.jpg" scale=".3"/>
-	<Layout ref="GridLayout" rows="3" columns="3" useMargins="true" marginX="4" marginY="4" tween="true" tweenTime="1500"/>                  
+	<Layout ref="Grid" rows="3" columns="3" useMargins="true" marginX="4" marginY="4" tween="true" tweenTime="1500"/>                  
 </Container>
 
 </cml>

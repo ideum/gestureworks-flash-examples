@@ -3,8 +3,6 @@ package as3.elements
 	import com.gestureworks.cml.element.YouTube;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
-	import flash.display.Sprite;
-	import flash.events.Event;
 	
 	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="30")]
 	
@@ -12,12 +10,11 @@ package as3.elements
 	{
 		public function YouTubeEx():void
 		{
-		
+			gml = "gml/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void
 		{
-			
 			// entry point
 			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
@@ -39,7 +36,6 @@ package as3.elements
 			ytElement.autoplay = true;
 			ytElement.chrome = true;
 			addChild(ytElement);
-			
 			ytElement.init();
 		}
 	

@@ -18,8 +18,7 @@ package as3.elements
 		
 		public function TouchContainerEx():void
 		{
-			
-			simulator = true;
+			gml = "gml/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void

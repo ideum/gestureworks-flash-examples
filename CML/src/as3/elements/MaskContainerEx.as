@@ -21,7 +21,7 @@ package as3.elements
 		
 		public function MaskContainerEx():void 
 		{
-			
+			gml = "gml/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void 

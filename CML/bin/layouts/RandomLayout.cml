@@ -23,7 +23,7 @@
 	<Image src="images/plane.jpg" scale=".3"/>
 	<Image src="images/plane.jpg" scale=".3"/>
 	<Image src="images/plane.jpg" scale=".3"/>
-	<Layout ref="RandomLayout" maxX="400" maxY="500" minRot="-30" maxRot="30" type="randomXYRotation" tween="true" tweenTime="1500"/>                  
+	<Layout ref="Random" maxX="400" maxY="500" minRot="-30" maxRot="30" type="randomXYRotation" tween="true" tweenTime="1500"/>                  
 </TouchContainer>
 
 </cml>

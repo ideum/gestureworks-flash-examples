@@ -7,16 +7,14 @@ package as3.elements
 	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="30")]
 	
 	public class ScrollBarEx extends GestureWorks
-	{
-		
+	{		
 		public function ScrollBarEx():void
 		{
-		
+			gml = "gml/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void
 		{
-			
 			// entry point			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
 			exTemp.createHeader();

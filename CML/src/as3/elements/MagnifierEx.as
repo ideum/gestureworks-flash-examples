@@ -13,6 +13,7 @@ package as3.elements
 	{
 		public function MagnifierEx():void 
 		{
+			gml = "gml/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void 

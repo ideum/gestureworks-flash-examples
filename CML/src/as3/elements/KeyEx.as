@@ -15,6 +15,7 @@ package as3.elements
 		
 		public function KeyEx():void 
 		{
+			gml = "gml/gestures.gml";
 			addEventListener(KeyboardEvent.KEY_DOWN, output);			
 		}
 		
@@ -30,7 +31,6 @@ package as3.elements
 			exTemp.createDesc("<p>The Key simulates a keyboard key by dispatching a keyboard event containing the assigned character and key unicode values, when touched. Keys are intended to be contained in a TouchKeyboard for layout and output management.<br /><br />"+
 					"This example displays a default Key next to a custom Key to demonstrate the possible key state(initial, down, up, over, out) configurations. Corresponding key actions are output to the text field.</p>"+
 					"<br /><p>See also:<br />TouchKeyboard<br />TouchKeyboardCustom<br />Button<br /></p>");
-						
 			
 			//Default button states are, by default, exact copies of the initial state with decreased alphas for both down and over states.																   
 			//Default actions are automatically resolved by analyzing the character code(ascii), if the text is a single character, or the key code(unicode).

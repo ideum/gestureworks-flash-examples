@@ -5,7 +5,6 @@ package as3.layouts
 	import com.gestureworks.cml.layouts.GridLayout;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
-	import flash.events.Event;
 	
 	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="30")]
 	
@@ -13,13 +12,12 @@ package as3.layouts
 	{
 		public function GridLayoutEx():void
 		{
-		
+			gml = "gml/gestures.gml";		
 		}
 		
 		override protected function gestureworksInit():void
 		{
 			// entry point
-			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
 			exTemp.createHeader();
 			addChild(exTemp);

@@ -13,13 +13,12 @@ package as3.layouts
 	{
 		public function ListLayoutEx():void
 		{
-		
+			gml = "gml/gestures.gml";		
 		}
 		
 		override protected function gestureworksInit():void
 		{
 			// entry point
-			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
 			exTemp.createHeader();
 			addChild(exTemp);

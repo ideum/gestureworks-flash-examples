@@ -6,7 +6,6 @@ package as3.layouts
 	import com.gestureworks.cml.layouts.GridLayout;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
-	import flash.events.Event;
 	
 	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="30")]
 	
@@ -14,7 +13,7 @@ package as3.layouts
 	{
 		public function FanLayoutEx():void
 		{
-		
+			gml = "gml/gestures.gml";
 		}
 		
 		//To best demonstrate the four possible origins of rotation through the fan layout, this example nests the four versions of this layout
@@ -22,9 +21,7 @@ package as3.layouts
 		
 		override protected function gestureworksInit():void
 		{
-			
-			// entry point
-			
+			// entry point			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
 			exTemp.createHeader();
 			addChild(exTemp);

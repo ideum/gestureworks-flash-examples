@@ -67,7 +67,7 @@
 		<Image src="images/plane.jpg" scale=".3"/>
 		<Image src="images/plane.jpg" scale=".3"/>
 		<Image src="images/plane.jpg" scale=".3"/>
-		<Layout ref="FanLayout" type="bottomRightOrigin" angle="10" tween="true" tweenTime="1500"/>          
+		<Layout ref="Fan" type="bottomRightOrigin" angle="10" tween="true" tweenTime="1500"/>          
 	</Container>		
 
 </Container>

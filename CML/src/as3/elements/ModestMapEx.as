@@ -14,7 +14,8 @@ package as3.elements
 	public class ModestMapEx extends GestureWorks 
 	{
 		public function ModestMapEx():void 
-		{		
+		{
+			gml = "gml/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void 
