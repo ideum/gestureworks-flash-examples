@@ -49,7 +49,7 @@ package as3.elements
 			dial1.gradientRotation = 1.57;
 			
 			//background graphics
-			dial1.backgroundLineStoke = 3;
+			dial1.backgroundLineStroke = 3;
 			dial1.backgroundAlpha = 5;
 			
 			//triangles graphics
@@ -103,7 +103,7 @@ package as3.elements
 			dial2.gradientRotation = 1.57;
 			
 			//background graphics
-			dial2.backgroundLineStoke = 3;
+			dial2.backgroundLineStroke = 3;
 			dial2.backgroundAlpha = 5;
 			
 			//triangles graphics

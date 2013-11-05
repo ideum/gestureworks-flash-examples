@@ -15,15 +15,17 @@
 </Text>
 
 <!-- Continous -->
-<Text x="590" y="210" text="Dial-Continous" fontSize="15" color="0xFFFFFF" width="300" font="OpenSansBold"/>
+<Text x="590" y="210" text="Dial-Continous" fontSize="15" color="0xFFFFFF" width="300" font="OpenSansBold" />
 
 <Dial id="dial" text="Collection 1,Collection 2,Collection 3,Collection 4,Collection 5,Collection 6,Collection 7,Collection 8,Collection 9,Collection 10" maxItemsOnScreen="5" 
 continuous="true" textColor="0xDDDDDD" selectedTextColor="0x000000" x="520" y="250"
 
    gradientType ="linear" gradientColors ="0x111111,0xDDDDDD,0x111111" gradientAlphas="1, 1, 1" gradientRatios="0, 127.5, 255" gradientWidth="300" gradientHeight="200"
    gradientX ="25" gradientY ="0" gradientRotation ="1.57"
-   backgroundLineStoke ="3" backgroundAlpha="5" leftTriangleColor ="0x303030" rightTriangleColor="0x303030" 
-   centerLineLineStoke="1" centerLineOutlineColor="0xAAAAAAA" centerLineOutlineAlpha="0.4" centerLineColor="0x666666" centerLineAlpha="0.2"/>
+   backgroundLineStroke ="3" backgroundAlpha="5" leftTriangleColor ="0x303030" rightTriangleColor="0x303030" 
+   centerLineLineStroke="1" centerLineOutlineColor="0xAAAAAAA" centerLineOutlineAlpha="0.4" centerLineColor="0x666666" centerLineAlpha="0.2">
+
+ </Dial>
 
    
 <!-- Non-Continous -->
@@ -34,8 +36,8 @@ continuous="false" textColor="0xDDDDDD" selectedTextColor="0x000000" x="930" y="
 
    gradientType ="linear" gradientColors ="0x111111,0xDDDDDD,0x111111" gradientAlphas="1, 1, 1" gradientRatios="0, 127.5, 255" gradientWidth="300" gradientHeight="200"
    gradientX ="25" gradientY ="0" gradientRotation ="1.57"
-   backgroundLineStoke ="3" backgroundAlpha="5" leftTriangleColor ="0x303030" rightTriangleColor="0x303030" 
-   centerLineLineStoke="1" centerLineOutlineColor="0xAAAAAAA" centerLineOutlineAlpha="0.4" centerLineColor="0x666666" centerLineAlpha="0.2"/>
+   backgroundLineStroke ="3" backgroundAlpha="5" leftTriangleColor ="0x303030" rightTriangleColor="0x303030" 
+   centerLineLineStroke="1" centerLineOutlineColor="0xAAAAAAA" centerLineOutlineAlpha="0.4" centerLineColor="0x666666" centerLineAlpha="0.2"/>
 
 </cml>
 
