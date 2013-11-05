@@ -16,7 +16,7 @@ package as3.elements
 		
 		public function DropDownMenuEx():void 
 		{
-			gml = "assets/gestures.gml";			
+			gml = "gml/gestures.gml";			
 		}
 		
 		override protected function gestureworksInit():void 
@@ -48,7 +48,7 @@ package as3.elements
 			ddMenu.addEventListener(StateEvent.CHANGE, onItemSelected);
 		}
 		
-		function onItemSelected(e:StateEvent):void {
+		private function onItemSelected(e:StateEvent):void {
 			trace("OnItemSelected");
 			//When an item is selected in the dropdownmenu, the value the event puts out is the item's string.
 			//The images in the following method have id's set the same as their corresponding menu items.

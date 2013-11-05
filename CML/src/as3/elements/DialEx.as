@@ -11,21 +11,19 @@ package as3.elements
 	{
 		public function DialEx():void
 		{
-			gml = "assets/gestures.gml";
+			gml = "gml/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void
 		{
-			trace("gestureWorksInit()");
-			
-			// entry point
-			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("Dial");
-			exTemp.createDesc("<p>This tag provides a list of text elements. The text can be moved from top to bottom or bottom to top through the drag event. The dial consists of two modes - Continous and Non-Continous.</p> <br /><p>In continous mode, the text elements move continously without stopping at the end or beginning through the drag event where as in Non-Continous mode, the motion stops when the first element or the last element reaches the center line.</p><br /><p>The text element closest to the center snaps to the center line and also changes its color. It allows the user to set the dial mode from continous to non-continous or non-continous to continous by setting the continous flag to true or false.</p>");
+			exTemp.createDesc("<p>This tag provides a list of text elements. The text can be moved from top to bottom or bottom to top through the drag event. "
+			+"The dial consists of two modes - Continous and Non-Continous.</p> <br /><p>In continous mode, the text elements move continously without stopping at the "
+			+"end or beginning through the drag event whereas in Non-Continous mode, the motion stops when the first element or the last element reaches the center line."
+			+"</p><br /><p>The text element closest to the center snaps to the center line and changes color. </p>");
 			
 			/******Continous Dial******/
 			var dial1:Dial = new Dial();

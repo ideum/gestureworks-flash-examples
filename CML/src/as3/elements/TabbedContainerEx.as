@@ -16,18 +16,17 @@ package as3.elements
 		
 		public function TabbedContainerEx():void
 		{
-			gml = "gml/gestures.gml";
+			gml = "gml/gestures.gml";		
 		}
 		
 		override protected function gestureworksInit():void
 		{
-			// entry point			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("TabbedContainer");
-			exTemp.createDesc("<p>The TabbedContainer allows switching between a group of Tabs by selecting their associated tabs. <br /><br />" + "This example will demonstrate the change in content each time a different tab is touched.</p>" + "<br/ ><br /><p>See also:<br />Container<br />Tab<br /></p>");
+			exTemp.createDesc("<p>The TabbedContainer allows switching between a group of Tabs by selecting their associated tabs. <br /><br />" 
+			+ "This example will demonstrate the change in content each time a different tab is touched.</p>" + "<br/ ><br /><p>See also:<br />Container<br />Tab<br /></p>");
 			
 			//create tabbed container
 			var tc:TabbedContainer = new TabbedContainer();

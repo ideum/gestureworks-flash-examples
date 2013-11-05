@@ -14,20 +14,18 @@ package as3.elements
 	{
 		public function SlideshowEx():void
 		{
-			gml = "gml/gestures.gml";
+			gml = "gml/gestures.gml";				
 		}
 		
 		override protected function gestureworksInit():void
 		{
-			
-			// entry point
-			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("Slideshow");
-			exTemp.createDesc("<p>The Slideshow tag allows you to create a slideshow out of any variety of display objects, including text, graphics, images, and containers.</p><br /><p>The Slideshow can even be put inside a viewer or any other container with buttons that allow a user to access Play, Pause, Resume, and Stop.</p><br /><p>The \"rate\" is how long each item is on stage in milliseconds after fading in, the fade duration determines in milliseconds how quickly the fade happens between objects.</p>");
+			exTemp.createDesc("<p>The Slideshow tag allows you to create a slideshow out of any variety of display objects, including text, graphics, images, and containers.</p><br />"
+			+"<p>The Slideshow can even be put inside a viewer or any other container with buttons that allow a user to access Play, Pause, Resume, and Stop.</p><br />"
+			+"<p>The \"rate\" is how long each item is on stage in milliseconds after fading in, the fade duration determines how quickly the fade happens between objects.</p>");
 			
 			var slideShow:Slideshow = new Slideshow();
 			slideShow.x = 500;

@@ -14,7 +14,7 @@ package as3.elements
 		
 		public function RadioButtonsEx():void
 		{
-			gml = "gml/gestures.gml";
+			gml = "gml/gestures.gml";		
 		}
 		
 		override protected function gestureworksInit():void
@@ -22,7 +22,6 @@ package as3.elements
 			// entry point
 			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("RadioButtons");

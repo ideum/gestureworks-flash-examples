@@ -11,19 +11,17 @@ package as3.elements
 	{
 		public function TabEx():void
 		{
-			gml = "gml/gestures.gml";
+			gml = "gml/gestures.gml";				
 		}
 		
 		override protected function gestureworksInit():void
 		{
-			// entry point
-			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("Tab");
-			exTemp.createDesc("<p>The Tab is a container with a tab extension. The container's contents will be visible when the selected state is true and hidden othewise. Intended to be grouped and toggled between other Tab objects in a TabbedContainer.<br /><br />" + "This example displays a tab element and its contents.</p>" + "<br/ ><p>See also:<br />TabbedContainer<br /></p>");
+			exTemp.createDesc("<p>The Tab is a container with a tab extension. The container's contents will be visible when the selected state is true and hidden othewise. Intended to be grouped and toggled between other Tab objects in a TabbedContainer.<br /><br />" 
+			+ "This example displays a tab element and its contents.</p>" + "<br/ ><p>See also:<br />TabbedContainer<br /></p>");
 			
 			//create tab element
 			var tab:Tab = new Tab();

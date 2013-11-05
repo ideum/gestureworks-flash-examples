@@ -14,18 +14,16 @@ package as3.elements
 		
 		public function SwitchEx():void
 		{
-			gml = "gml/gestures.gml";
+			gml = "gml/gestures.gml";				
 		}
 		
 		override protected function gestureworksInit():void
 		{
-			// entry point
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("Switch");
-			exTemp.createDesc("<p>This tag acts as a Switch button.The state can be changed by drag and touch event.</p>");
+			exTemp.createDesc("<p>This tag acts as a Switch button. The state can be changed by drag and touch event.</p>");
 			
 			var sw:Switch = new Switch();
 			

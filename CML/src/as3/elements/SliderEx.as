@@ -15,18 +15,16 @@ package as3.elements
 	{
 		public function SliderEx():void
 		{
-			gml = "gml/gestures.gml";
+			gml = "gml/gestures.gml";		
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			// entry point
+		{			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("Slider");
-			exTemp.createDesc("<p>This tag creates a slider element. The slider can be used through touch and mouse input devices. It also allows for the input value to be fed through a function call, allowing the slider to updated by another process. The slider can be orientation horizontally or vertically. It can act as a continuous slider or one that snaps to x-number of discrete steps.</p>");
+			exTemp.createDesc("<p>The slider can be used through touch and mouse input devices. It also allows for the input value to be fed through a function call, allowing the slider to updated by another process. The slider can be orientation horizontally or vertically and can act as a continuous slider or one that snaps to x-number of discrete steps.</p>");
 			
 			var slider:Slider = new Slider();
 			slider.x = 700;

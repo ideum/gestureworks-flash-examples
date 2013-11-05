@@ -15,7 +15,7 @@ package as3.elements
 		
 		public function ColorPickerEx():void
 		{
-			gml = "assets/gestures.gml";
+			gml = "gml/gestures.gml";
 			addEventListener(StateEvent.CHANGE, changeBkg);
 		}
 		

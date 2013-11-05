@@ -11,7 +11,7 @@ package as3.elements
 	{
 		public function FrameEx():void
 		{
-			gml = "assets/gestures.gml";			
+			gml = "gml/gestures.gml";			
 		}
 		
 		override protected function gestureworksInit():void
