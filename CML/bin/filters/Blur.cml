@@ -11,10 +11,10 @@
 	<p>The Blur filter simply uses blurX and blurY to create the blur effect. The blurred pixels will stretch to the distances of the properties given.</p>
 </Text>
 
-<Graphic shape="circle" radius="150" x="600" y="150" lineStroke="0" color="0x777777">
+<Image src="images/lake-vuoksa.jpg" scale=".5" x="600" y="150">
 	<Filter ref="Blur"
 		blurX="10"
 		blurY="10" />
-</Graphic>
+</Image>
 
 </cml>

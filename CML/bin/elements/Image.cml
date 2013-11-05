@@ -6,15 +6,24 @@
 <Graphic class="header-graphic" />
 <Text class="title">Image </Text>
 <Text class="desc" selectable="true">
-	<p>This tag allows you to load and display external image files such as jpg, png, etc.</p><br />
-	<p>This tag also allows for scaling and resampling.</p><br />
+	<p>This tag allows you to load and display external image files such as jpg, png, etc. This tag can resample of the image. The smaller image has been resampled to reduce memory
+		and increase performance, but it will become pixelated if scaled too high.  </p><br />
+	<p>Most elements including the image are gesture-ready.</p><br />
 </Text>
 
 <!-- Set the file path using the src attribute. File paths are relevant to the executable or swf file. -->
-<Image x="475" y="50" src="images/plane.jpg" scale=".5" />
+<Image x="480" y="50" src="images/smoke.jpg" scale=".75">
+	<Gesture ref="n-drag" />
+	<Gesture ref="n-rotate" />
+	<Gesture ref="n-scale" />	
+</Image>
 
 <!-- Downsampling can improve performance. You can set just one dimension to maintain the original aspect ratio. -->
-<Image x="950" y="50" src="images/train.jpg" width="300" resample="true" />
+<Image x="930" y="70" src="images/smoke.jpg" width="300" resample="true">
+	<Gesture ref="n-drag" />
+	<Gesture ref="n-rotate" />
+	<Gesture ref="n-scale" />
+</Image>
 
 
 </cml>

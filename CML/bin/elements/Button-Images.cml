@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+	<!-- header -->
+	<Graphic class="header-graphic" />
+	<Text class="title">Button</Text>
+	<Text class="desc">
+		<p>The Button hides or shows DisplayObjects on specified state events. The available button states are initial, down, up, over and out.<br /><br />
+		This example demonstrates a simple button contstructed of external image files. Each image will be visible when its associated button state occurs.</p><br />
+		<p>See also:<br />
+		Button<br />
+		Image<br />
+		</p>	 
+	</Text>
+
+	<Button x="720" y="200" dispatch="down:toggle-text" hit="hit-area" initial="up-img" down="down-img" over="down-img" up="up-img" out="up-img">
+			<!-- children can be any CML display object -->
+			<Graphic id="hit-area" color="0xFF0000" shape="rectangle" width="200" height="50" x="5"  alpha=".1"/>	<!-- increase alpha to see hit zone -->
+			<Image id="up-img" src="images/image-button-1.png" />
+			<Image id="down-img" src="images/image-button-2.png" />	
+	</Button>
+
+</cml>

@@ -7,21 +7,32 @@
 <Text class="title">Include</Text>
 <Text class="desc" selectable="false">
 	<p>This tag allows you to nest CML files. In this example, an external CML file loads an Image wrapped in a TouchContainer</p><br />
-	<p>The Include tag inserts CML at the location of the Include tag. There is no limit to the amount of Include tags one can use.</p>	
+	<p>The Include tag inserts CML at the location of the Include tag. Include tags are use often.</p>	
 </Text>
 
-<TouchContainer id="tc1" mouseChildren="false" nativeTransform="true" affineTransform="true">
-
+	
+<TouchContainer x="600" y="50">	
 	<!-- The Include tag makes reusing CML very easy. -->
-	<Include src="TouchImage.cml" />
+	<Include src="image.cml" />
 
 	<GestureList>
-			<Gesture ref="n-drag" gestureOn="true"/>
-			<Gesture ref="n-scale" gestureOn="true"/>
-			<Gesture ref="n-rotate" gestureOn="true"/>
+		<Gesture ref="n-drag" />
+		<Gesture ref="n-scale" />
+		<Gesture ref="n-rotate" />
 	</GestureList>
-	
 </TouchContainer>
+
+<TouchContainer x="200" y="100">	
+	<!-- The Include tag makes reusing CML very easy. -->
+	<Include src="image.cml" />
+
+	<GestureList>
+		<Gesture ref="n-drag" />
+		<Gesture ref="n-scale" />
+		<Gesture ref="n-rotate" />
+	</GestureList>
+</TouchContainer>
+
 
 </cml>
 

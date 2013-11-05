@@ -15,14 +15,18 @@
 	<li>3GPP</li>
 	<li>.MOV</li>
 	<li>.F4V</li>
-	</ul></p><br />
-	<p>Automatic play and looping can be set in the CML tag.</p><br />
+	</ul></p>
+	<p>Automatic play and looping can be set in the CML tag.</p>
+	<p>This is video has drag, scale, and rotate gesture enabled.</p><br />
 	<p>See also:<br/>VideoViewer <br/>YouTube <br/>YouTubeViewer</p>
 </Text>
 	
 <!-- The Video plays video files. -->
-
-<Video src="market-street.mov" autoplay="true" scale="1" x="500" y="100" />
+<Video src="market-street.mov" autoplay="true" scale="1" x="650" y="200" loop="true">
+	<Gesture ref="n-drag"/>
+	<Gesture ref="n-scale"/>
+	<Gesture ref="n-rotate"/>
+</Video>
 
 
 </cml>

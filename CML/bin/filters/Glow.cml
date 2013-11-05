@@ -11,7 +11,7 @@
 	<p>The Glow filter creates the illusion of light emanating around or within an object.</p>
 </Text>
 
-<Graphic shape="circle" radius="150" x="600" y="150" lineStroke="0" color="0x777777">
+<Image src="images/lake-vuoksa.jpg" scale=".5" x="600" y="150">
 	<Filter ref="Glow"
 		color="0xF2E3B6"
 		alpha="0.75"
@@ -20,6 +20,6 @@
 		strength="10"
 		inner="false"
 		knockout="false" />
-</Graphic>
+</Image>
 
 </cml>

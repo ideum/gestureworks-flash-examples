@@ -1,8 +1,6 @@
 *.lxml
 obj/
 Away3D/bin/Away3DExamples.swf
-Away3D/bin/assets
 CML/bin/CMLExamples.swf
-CML/bin/assets
 GML/bin/GMLExamples.swf
 Other/Microsoft SAPI/bin/SAPI.swf

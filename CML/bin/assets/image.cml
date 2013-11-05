@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml>
+
+<Container>
+	<Image scale=".5" src="images/clockwork.png" />
+	<Image scale=".5" src="images/clockwork.png" />
+	<Image scale=".5" src="images/clockwork.png" />
+	<Layout ref="Fan" angle="30" tween="true" tweenTime="1500"/>          
+</Container>
+
+</cml>

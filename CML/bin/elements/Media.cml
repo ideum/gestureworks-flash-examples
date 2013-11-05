@@ -8,7 +8,8 @@
 	<Text class="desc">
 		<p>The Media is a wrapper for media elements including the Image, Video, and the MP3. It auto-selects the correct media element based on the input file extension. 
 		It suppports the following file extensions: png, gif, jpg, mpeg-4, mp4, m4v, 3gpp, mov, flv, f4v, and mp3.<br /><br />
-		This example demonstrates the loading of two different types of media files(.jpg and .mov). </p><br />
+		This example demonstrates the loading of two different types of media files: jpg and mov. </p><br />
+		<p>The drag and rotate gestures have been enabled on the video.</p><br />
 		<p>See also:<br />
 		MediaViewer<br />
 		Image<br />
@@ -20,7 +21,10 @@
 	<!-- The Media tag auto-switches the correctly playback based on media type specified in the src attribute. 
 		This is useful, for example, in situations where you are switching between media types dynamically. -->
 
-	<Media id="image" x="500" y="175" src="images/plane.jpg" scale=".46" />
-	<Media id="video" x="925" y="350" src="market-street.mov" autoplay="true" loop="true" scale="1"/>
+	<Media id="image" x="500" y="50" src="images/plane.jpg" scale=".8" />
+	<Media id="video" x="500" y="350" src="market-street.mov" autoplay="true" loop="true" scale="1">
+		<Gesture ref="n-drag"/>
+		<Gesture ref="n-rotate"/>
+	</Media>
 
 </cml>

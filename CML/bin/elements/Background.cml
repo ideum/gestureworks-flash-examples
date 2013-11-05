@@ -3,14 +3,15 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="true">
 
 <Background autoupdate="true">
-	<Image src="images/oe_bg_720.png"/>
+	<Image src="images/background.jpg"/>
 </Background>
 	
 <!-- header -->
 <Graphic class="header-graphic" />
-<Text class="title">BackgroundKit</Text>
+<Text class="title">Background</Text>
 <Text class="desc" selectable="false">
-	<p>This tag creates a background screen out of its child objects. The autoupdate property can be set to true to make sure the background resizes when the window resizes.</p><br />
+	<p>This tag creates a background screen out of its child objects. 
+	The autoupdate property can be set to true to make sure the background resizes when the window resizes.</p><br />
 </Text>
 
 </cml>

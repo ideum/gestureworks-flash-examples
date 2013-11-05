@@ -39,7 +39,7 @@ package cml.elements
 			// you can loop through the cml list of children of any CML container using the childlist:
 			for (var i:int = 0; i < redCircles.childList.length; i++)
 			{
-				trace(redCircles.childList.getIndex(i).id);
+				trace(redCircles.childList[i].id);
 					//You could do logic on the object here by simply using redCircles.childList.getIndex(i)
 					//and setting a property, like ".visible = false;"
 			}

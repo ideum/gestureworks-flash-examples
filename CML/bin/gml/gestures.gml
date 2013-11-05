@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <GestureMarkupLanguage xmlns:gml="http://gestureworks.com/gml/version/1.0">
 	
 	<Gesture_set gesture_set_name="basic-core-gestures">
@@ -1018,7 +1019,7 @@
 								<action>
 									<initial>
 										<point event_duration_max="200" translation_max="10"/>
-										<cluster point_number="0"/>
+										<cluster point_number="0" point_number_min="1" point_number_max="10"/>
 										<event touch_event="touchEnd"/>
 									</initial>
 								</action>

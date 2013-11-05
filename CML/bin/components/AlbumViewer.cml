@@ -92,9 +92,7 @@
 			</TouchContainer>			
 		</Album>	
 
-		<TouchContainer class="frame_container" visible="true" targetParent="true" >
-			<Frame id="frame-e" class="frame_element"/>
-		</TouchContainer>
+		<Include src="frame.cml" />
 		
 		<Menu class="menu_container" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="true" visible="false" >
 		

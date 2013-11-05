@@ -28,7 +28,7 @@
 
 
 <!-- VIEWER -->
-<ImageViewer x="720" y="100" front="#img" back="#info" autoTextLayout="false" scale=".9">
+<ImageViewer x="720" y="100" front="#img" back="#info" scale=".9">
 	<!-- FRONT: image -->
 	<Image id="img" src="images/train.jpg" scale=".5" mouseChildren="false"/>
 	
@@ -43,11 +43,11 @@
 	</Container>
 
 	<!-- FRAME-->
-	<Frame frameColor="0x224456" frameAlpha="0.5" frameThickness="15" frameShape="rectangle" targetParent="true" mouseChildren="false"/>
+	<Include src="frame.cml" />
 	
 	<!-- MENU -->
-	<Menu x="0" y="0" alpha="0.75" position="bottomRight"
-		paddingLeft="0" paddingBottom="10" paddingRight="10" autoHide="true" visible="false">
+	<Menu x="0" y="0" alpha="0.75" position="bottomRight" autoHide="true"
+		paddingLeft="0" paddingBottom="10" paddingRight="10" visible="false">
 		<Include src="infoButton.cml"/>
 		<Include src="closeButton.cml"/>		
 	</Menu>

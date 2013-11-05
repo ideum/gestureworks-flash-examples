@@ -40,13 +40,10 @@
 
 	<Container>
 		<Graphic shape="rectangle" width="375" height="375" fill="color" color="0x424141" lineStroke="0"/>
-		
-		
 		<Button y="20" dispatch="down:bees" hit="bee-hit" initial="beeButton" down="beeButton" up="beeButton" out="beeButton">
 			<Image id="beeButton" src="images/bee.jpg" alpha="1" />
 			<Graphic id="bee-hit" shape="rectangle" width="317" height="241" color="0x666666" alpha="0" />
 		</Button>
-		
 	</Container>
 </Accordion>
 

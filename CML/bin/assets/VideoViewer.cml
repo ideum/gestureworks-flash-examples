@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml>
+
+<VideoViewer x="500" y="250" width="320" height="240" rotation="-20" mouseChildren="true" nativeTransform="true">
+	
+	<TouchContainer class="video_container" visible="true" targetParent="true" mouseChildren="false">
+		<Video class="video_element" src="market-street.mov" autoplay="true"/>
+	</TouchContainer>
+	
+	<!-- Designate information for the info panel. Something labeled with class="info_bg" will be set as the back. -->
+	<TouchContainer class="info_container" visible="false" targetParent="true" mouseChildren="false" >
+		<Graphic color="0x19677F" alpha="0.6" lineStroke="0" class="info_bg" shape="rectangle"/>		
+		<Text class="title" border="false" selectable="false" text="Market Street"/>				
+	</TouchContainer>
+
+	<!-- This is just the frame for the whole viewer. Thick frames are very useful for objects with context-specific touch, as it gives a touchable border. 
+	The VideoViewer does not have context specific touch, so feel free to style it however you like. -->
+	<TouchContainer class="frame_container" visible="true" targetParent="true" mouseChildren="false">
+		<Frame frameColor="0x999999" frameAlpha="0.3" frameThickness="30" frameShape="rectangle" class="frame_element"/>
+	</TouchContainer>
+	
+	<!-- Here is where the entire menu is structured. We used "include" files to style each of our buttons individually rather than have all the mark-up here. -->
+	<Menu class="menu_container" x="0" y="0" alpha="0.6" position="bottomRight" paddingBottom="-50" paddingRight="10" autoHide="true" visible="false">
+		<Include src="infoButton.cml"/>
+		<Include src="playButton.cml"/>
+		<Include src="pauseButton.cml"/>
+		<Include src="closeButton.cml"/>
+	</Menu>
+	
+	<GestureList>
+		<Gesture ref="n-drag" gestureOn="true"/>
+		<Gesture ref="n-scale" gestureOn="true"/>
+		<Gesture ref="n-rotate" gestureOn="true"/>
+		<Gesture ref="tap" gestureOn="true"/>
+	</GestureList>
+	
+</VideoViewer>
+
+</cml>

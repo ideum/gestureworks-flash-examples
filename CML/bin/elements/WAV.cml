@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<cml css="library/css/styles.css" tuio="false" simulator="false">
+<cml css="assets/styles.css" tuio="false" simulator="false">
 
 <!-- header -->
 <Graphic class="header-graphic" />
@@ -10,18 +10,13 @@
 	<p>Due to certain constraints in Actionscript programming, this element requires your AS3 project to be an AIR project.</p><br />
 	<p>The WAV also has public methods to stop, play, seek, and pause. It can be placed inside a viewer and paired with buttons similar to the YouTube to control these functions.</p><br />
 	<p>Like other elements, the WAV is a display object, and can be placed inside many other viewers and containers.</p><br />
-	<p>This particular example will load a file of FDR's famous "infamy" speech inside a TouchContainer.</p><br />
+	<p>This particular example will load a file of FDR's famous "infamy" speech.</p><br />
 </Text>
 
-<TouchContainer id="tc1" x="500" y="250" mouseChildren="false" nativeTransform="true" affineTransform="true">
 
-	<WAV src="library/assets/FDR-Infamy.wav" autoplay="true" display="waveform" width="500" height="500" volume="0.5" scale=".75" x="0" y="0" />
-	
-	<GestureList>
-			<Gesture ref="n-drag" gestureOn="true"/>
-			<Gesture ref="n-scale" gestureOn="true"/>
-			<Gesture ref="n-rotate" gestureOn="true"/>
-	</GestureList>
-</TouchContainer>
-
+	<WAV src="assets/FDR-Infamy.wav" autoplay="true" display="waveform" x="550" y="150" width="700" height="400" volume="1" scale="1" backgroundColor="0x542622">
+		<Gesture ref="n-drag" />
+		<Gesture ref="n-scale" />
+		<Gesture ref="n-rotate" />
+	 </WAV>
 </cml>

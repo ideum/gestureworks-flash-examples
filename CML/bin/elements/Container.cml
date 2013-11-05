@@ -12,18 +12,19 @@
 	
 <!-- Containers are basic display containers. They keep track of CML children through the childList (see the Main AS3 class) -->
 
-<Container id="red-circles" x="500" y="400" alpha=".25" scale="5">
-	<Graphic id="RedCircle1" x="0" y="0" color="0xFF0000" shape="circle" radius="20" lineStroke="0" />	
-	<Graphic id="RedCircle2" x="20" y="0" color="0xFF0000" shape="circle" radius="20" lineStroke="0" />
-	<Graphic id="RedCircle3" x="0" y="20" color="0xFF0000" shape="circle" radius="20" lineStroke="0" />
-	<Graphic id="RedCircle3" x="20" y="20" color="0xFF0000" shape="circle" radius="20" lineStroke="0" />
-</Container>
+<Container x="600" y="60">
+	<Container id="red-circles" alpha=".25" scale="10">
+		<Graphic id="RedCircle1" x="0" y="0" color="0xFF0000" shape="circle" radius="20" lineStroke="0" />	
+		<Graphic id="RedCircle2" x="20" y="0" color="0xFF0000" shape="circle" radius="20" lineStroke="0" />
+		<Graphic id="RedCircle3" x="0" y="20" color="0xFF0000" shape="circle" radius="20" lineStroke="0" />
+		<Graphic id="RedCircle3" x="20" y="20" color="0xFF0000" shape="circle" radius="20" lineStroke="0" />
+	</Container>
 
-<Container id="images" x="850" y="200">
-	<Image id="image1" x="0" y="0" width="200" src="spectrum/bulbs_vis.jpg"/>	
-	<Image id="image2" x="200" y="0" width="200" src="spectrum/bulbs_off_therm.jpg"/>
-	<Image id="image3" x="0" y="200" width="200" src="spectrum/bulbs_off_uv.jpg"/>
-	<Image id="image4" x="200" y="200"  width="200" src="spectrum/bulbs_therm.jpg"/>
+	<Container id="images" y="55" alpha=".25">
+		<Image id="image1" x="0" y="0" width="300" src="spectrum/bulbs_vis.jpg"/>	
+		<Image id="image2" x="300" y="0" width="300" src="spectrum/bulbs_off_therm.jpg"/>
+		<Image id="image3" x="0" y="250" width="300" src="spectrum/bulbs_off_uv.jpg"/>
+		<Image id="image4" x="300" y="250"  width="300" src="spectrum/bulbs_therm.jpg"/>
+	</Container>
 </Container>
-
 </cml>

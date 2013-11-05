@@ -1,0 +1,168 @@
+/* BUTTON */
+
+/* background */
+.btn-bg-up {
+	shape:circle;
+	radius:20;
+	lineStroke:1.5;
+	color:0x282E33;
+}
+
+.btn-bg-down {
+	shape:circle;
+	radius:20;
+	lineStroke:1.5;	
+	color:0x495E67;
+}
+
+/* foreground */
+.btn-fg-up {
+	color:0xFFFFFF;
+	scale:1.6;
+}
+
+.btn-fg-down {
+	color:0xCCCCCC;
+	scale:1.6;	
+}
+
+/* hit */
+.btn-hit {
+	shape:circle;
+	radius:20;
+	alpha:0;
+}
+
+
+/* close button */
+#close-bg-up {
+	alpha:1;
+}
+
+#close-bg-down {
+	alpha:1;	
+}
+
+#close-fg-up {
+	alpha:1;
+	x:11;
+	y:11;
+}
+
+#close-fg-down {
+	alpha:1;
+	x:11;
+	y:11;
+}
+
+
+/* play button */
+#play-bg-up {
+	alpha:1;
+}
+
+#play-bg-down {
+	alpha:1;	
+}
+
+#play-fg-up {
+	alpha:1;
+	x:15;
+	y:8;
+}
+
+#play-fg-down {
+	alpha:1;
+	x:15;
+	y:8;
+}
+
+
+/* pause button */
+#pause-bg-up {
+	alpha:1;
+}
+
+#pause-bg-down {
+	alpha:1;	
+}
+
+#pause-fg-up {
+	alpha:1;
+	x:14.5;
+	y:8.5;
+}
+
+#pause-fg-down {
+	alpha:1;
+	x:14.5;
+	y:8.5;
+}
+
+
+/* info button */
+#info-bg-up {
+	alpha:1;
+}
+
+#info-bg-down {
+	alpha:1;	
+}
+
+#info-fg-up {
+	alpha:1;
+	x:15;
+	y:8;
+}
+
+#info-fg-down {
+	alpha:1;
+	x:15;
+	y:8;
+}
+
+
+/* flip button */
+#flip-bg-up {
+	alpha:1;
+}
+
+#flip-bg-down {
+	alpha:1;	
+}
+
+#flip-fg-up {
+	alpha:1;
+	x:7;
+	y:7;
+}
+
+#flip-fg-down {
+	alpha:1;
+	x:7;
+	y:7;
+}
+
+
+/* info */
+#info-bg
+{
+	color:0xFFAE1F;
+	alpha:0.6;
+	lineStroke:0;
+}
+
+#description
+{
+	x:30; y:60; color:0xFFFFFF; fontSize:16; width:400; height:1000; wordWrap:true; multiline:true; selectable:false; textAlign:justify; font:OpenSansRegular; leading:-4.5;
+}
+
+
+/* frame */
+#frame-e
+{ 
+	frameColor:0x999999; 
+	frameAlpha:0.3;
+	frameThickness:30;
+	frameShape:rectangle;
+}

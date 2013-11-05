@@ -35,7 +35,6 @@ package cml.elements
 			var accordion:Accordion = CMLObjectList.instance.getId("accordion-example");
 			accordion.addEventListener(StateEvent.CHANGE, onStateEvent);
 			var text:Text = CMLObjectList.instance.getId("debug-text");
-			
 			tween = new TweenLite(text, 1.5, {alpha: 1, onComplete: reverseTween, onReverseComplete: finishTween});
 		}
 		

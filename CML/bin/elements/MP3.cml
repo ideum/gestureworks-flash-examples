@@ -16,8 +16,8 @@
 
 <MP3 src="RuthCalledShot_vbr.mp3" 
 	display="waveform"
-	x="550" y="125" 	
-	width="600" height="400" 
+	x="550" y="100" 	
+	width="650" height="300" 
 	autoplay="true"
 	preload="true"
 	loop="true"
@@ -27,6 +27,6 @@
 	backgroundColor="0x333333"
 	backgroundAlpha=".5"
 	/>
-
+	
 
 </cml>

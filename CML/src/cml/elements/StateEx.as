@@ -20,17 +20,11 @@ package cml.elements
 		public function StateEx():void 
 		{
 			super();
+			gml = "gml/gestures.gml";
 			cml = "elements/State.cml";			
-			
-			// add this event listener so we know when the CML parsing is complete
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}
-	
-		override protected function gestureworksInit():void
- 		{
-			trace("gestureWorksInit()");			
-		}
-		
+
 		private function cmlInit(event:Event):void
 		{
 			trace("cmlInit()");

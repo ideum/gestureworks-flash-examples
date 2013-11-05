@@ -18,24 +18,24 @@
 <Image x="500" src="images/clockwork.png"/>
 
 <Hotspot x="750" y="150" 
-component="text-box"
-tether="true"
-tetherColor="0x000000"
-tetherStroke="2">
+	component="text-box"
+	tether="true"
+	tetherColor="0x000000"
+	tetherStroke="2">
+	
 	<Button dispatch="down:hotspot" initial="btn-vis" up="btn-vis" down="btn-vis" out="btn-vis">
 		<Container id="btn-vis">
-			<Graphic x="-13" y="3" shape="circle" radius="20" fill="color" color="0xffff00" lineStroke="1.5" lineColor="0x000000"/>
+			<Graphic x="-13" y="3" shape="circle" radius="20" fill="color" color="0x557744" lineStroke="1.5" lineColor="0x000000"/>
 			<Text selectable="false" font="OpenSansBold" fontSize="30" color="0x000000" text="!"/>
 		</Container>
-		
 		<Graphic id="btn-hit" x="-13" y="3" shape="circle" radius="20" fill="color" color="0xffff00" lineStroke="1.5" lineColor="0x000000"/>
 	</Button>
 </Hotspot>
 
 <TouchContainer id="text-box" visible="false">
-	<Graphic shape="rectangle" width="300" height="90" color="0xffff00" lineStroke="1.5" lineColor="0x000000" />
-	<Text fontSize="18" width="300" height="90" wordWrap="true" color="0x000000" text="This is only an example. You can activate entire components with a hotspot with just an id."/>
-
+	<Graphic shape="rectangle" width="300" height="90" color="0x557744" lineStroke="1.5" lineColor="0x000000" />
+	<Text fontSize="18" width="300" height="90" wordWrap="true" color="0x000000" 
+		text="This is only an example. You can activate entire components within a hotspot."/>
 	<Gesture ref="n-drag" gestureOn="true"/>
 	<Gesture ref="n-rotate" gestureOn="true"/>
 </TouchContainer>

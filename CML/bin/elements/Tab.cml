@@ -14,8 +14,8 @@
 	</p>	 
 </Text>
 
-<Tab title="bee" displayColor="0x680000" tabFontColor="0xFFFF66" x="600" y="100" tabHeight="50" tabWidth="150">
-	<Image id="img1" src="images/bee.jpg" x="75" y="120" scale="1"/>	
+<Tab title="bee" displayColor="0x357397" tabFontColor="0xFFFF66" x="600" y="100" tabHeight="50" tabWidth="150">
+	<Image id="img1" src="images/bee.jpg" x="75" y="120" scale=".3"/>	
 </Tab>
 
 </cml>

@@ -12,16 +12,16 @@
 	will be beveled out, and the angle for the light shining on the bevel.</p>
 </Text>
 
-<Graphic shape="circle" radius="150" x="600" y="150" lineStroke="0" color="0x777777">
+<Image src="images/lake-vuoksa.jpg" scale=".5" x="600" y="150">
 	<Filter ref="Bevel"
 		distance="4"
 		angle="57"
-		highlightColor="0xF2E3B6" 
-		highlightAlpha="0.5"
+		highlightColor="0xFFFFFF" 
+		highlightAlpha="1"
 		shadowColor="0x000000"
 		shadowAlpha="1"
-		strength="10" 
+		strength="50" 
 		type="full" />
-</Graphic>
+</Image>
 
 </cml>

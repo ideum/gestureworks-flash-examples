@@ -2,7 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="true">
 
-<Stage color="0x555666" />
+<Stage color="0x424344" />
 
 <!-- header -->
 <Graphic class="header-graphic" />
@@ -14,7 +14,7 @@
 	shadow is scene and not the displayObject itself.</p>
 </Text>
 
-<Graphic shape="circle" radius="150" x="600" y="150" lineStroke="0" color="0x777777">
+<Image src="images/lake-vuoksa.jpg" scale=".5" x="600" y="150">
 	<Filter ref="DropShadow" 
 		distance="8"
 		angle="45"
@@ -27,6 +27,6 @@
 		inner="false"
 		knockout="false"
 		hideObject="false"/>
-</Graphic>
+</Image>
 
 </cml>

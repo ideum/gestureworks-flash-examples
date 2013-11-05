@@ -18,8 +18,7 @@
 <RenderKit dataRootTag="photo">
 	<Renderer>
 		<TouchContainer x="{start-x}" y="{start-y}">
-			<Graphic shape="rectangle" color="0xffffff" width="500" height="550" />
-			<Image src="{imagepath}" x="5" y="5" width="490" height="500" />
+			<Image src="{imagepath}" x="5" y="5" height="500" />
 			
 			<Gesture ref="n-drag" gestureOn="true"/>
 			<Gesture ref="n-scale" gestureOn="true"/>

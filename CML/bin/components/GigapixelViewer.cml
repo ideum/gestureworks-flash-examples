@@ -16,9 +16,7 @@
 
 <GigapixelViewer x="540" y="140" width="600" height="450" rotation="3" mouseChildren="true" nativeTransform="true" affineTransform="true">
 	
-	<TouchContainer class="frame_container" visible="true" targetParent="true" mouseChildren="false">
-		<Frame class="frame_element"/>
-	</TouchContainer>
+	<Frame class="frame_element"/>
 
 	<Gigapixel x="0" y="0" class="gigapixel_element" src="deepzoom/space.xml" touchChildren="true" width="600" />
 	
