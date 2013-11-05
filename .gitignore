@@ -2,5 +2,6 @@
 obj/
 Away3D/bin/Away3DExamples.swf
 CML/bin/CMLExamples.swf
+CML/bin/CMLExamplesAir.swf
 GML/bin/GMLExamples.swf
 Other/Microsoft SAPI/bin/SAPI.swf
