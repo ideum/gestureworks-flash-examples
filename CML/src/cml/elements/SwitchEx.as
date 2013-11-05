@@ -33,9 +33,7 @@ package cml.elements
 			var sw:Switch = Switch(CMLObjectList.instance.getId("switch"));
 			sw.addEventListener(StateEvent.CHANGE, onStateChange);
 			
-			text.text = "TRUE";
-			text.x = 500;
-			text.y = 300;
+			text.text = "FALSE";
 			text.visible = false;
 			text.color = 0xFFFFFF;
 			text.fontSize = 25;
@@ -45,10 +43,17 @@ package cml.elements
 		private function onStateChange(event:StateEvent):void
 		{
 			trace(event.value);
-			if (event.value == true)
-				text.visible = true;
-			else
-				text.visible = false;
+			text.visible = true;
+			if (event.value == true) {
+				text.str = "TRUE";
+				text.x = 915;
+				text.y = 300;				
+			}
+			else {
+				text.str = "FALSE";
+				text.x = 708;
+				text.y = 300;	
+			}
 		}
 	
 	}

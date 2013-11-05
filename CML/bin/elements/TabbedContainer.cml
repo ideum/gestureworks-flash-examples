@@ -14,47 +14,47 @@
 </Text>
 
 <TabbedContainer x="625" y="150">
-		<Tab title="random" tabHeight="40">
-			<Image id="img1" src="images/foot.png" scale=".2"/>
-			<Image id="img1" src="images/foot.png" scale=".2"/>
-			<Image id="img1" src="images/foot.png" scale=".2"/>
-			<Image id="img1" src="images/foot.png" scale=".2"/>
-			<Layout ref="RandomLayout" maxX="400" maxY="400"/>
-		</Tab>
-		<Tab title="grid" tabHeight="40">	
-			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Image id="img1" src="images/womb.png" scale=".1" />
-			<Layout ref="GridLayout" columns="4" rows="4" useMargins="true" />
-		</Tab>		
-		<Tab title="pile" tabHeight="40">
-			<Image id="img1" src="images/baby.jpg" scale=".5"/>	
-			<Image id="img1" src="images/baby.jpg" scale=".5"/>	
-			<Image id="img1" src="images/baby.jpg" scale=".5"/>	
-			<Image id="img1" src="images/baby.jpg" scale=".5"/>	
-			<Image id="img1" src="images/baby.jpg" scale=".5"/>	
-			<Layout ref="PileLayout" originY="200" originX="200" />
-		</Tab>		
-		<Tab title="fan" tabHeight="40">
-			<Image id="img1" src="images/clockwork.png" scale=".2"/>
-			<Image id="img1" src="images/clockwork.png" scale=".2"/>
-			<Image id="img1" src="images/clockwork.png" scale=".2"/>
-			<Image id="img1" src="images/clockwork.png" scale=".2"/>
-			<Image id="img1" src="images/clockwork.png" scale=".2"/>
-			<Image id="img1" src="images/clockwork.png" scale=".2"/>
-			<Layout ref="FanLayout" type="bottomRightOrigin" originX="200" originY="300" angle="20"/>
-		</Tab>		
-	</TabbedContainer>
+	<Tab title="random" tabHeight="40">
+		<Image id="img1" src="images/foot.png" scale=".2"/>
+		<Image id="img1" src="images/foot.png" scale=".2"/>
+		<Image id="img1" src="images/foot.png" scale=".2"/>
+		<Image id="img1" src="images/foot.png" scale=".2"/>
+		<Layout ref="Random" maxX="400" maxY="400"/>
+	</Tab>
+	<Tab title="grid" tabHeight="40">	
+		<Image id="img1" src="images/womb.png" scale=".1" />
+		<Image id="img1" src="images/womb.png" scale=".1" />
+		<Image id="img1" src="images/womb.png" scale=".1" />
+		<Image id="img1" src="images/womb.png" scale=".1" />
+		<Image id="img1" src="images/womb.png" scale=".1" />
+		<Image id="img1" src="images/womb.png" scale=".1" />
+		<Image id="img1" src="images/womb.png" scale=".1" />
+		<Image id="img1" src="images/womb.png" scale=".1" />
+		<Image id="img1" src="images/womb.png" scale=".1" />
+		<Image id="img1" src="images/womb.png" scale=".1" />
+		<Image id="img1" src="images/womb.png" scale=".1" />
+		<Image id="img1" src="images/womb.png" scale=".1" />
+		<Image id="img1" src="images/womb.png" scale=".1" />
+		<Image id="img1" src="images/womb.png" scale=".1" />
+		<Layout ref="Grid" columns="4" rows="4" useMargins="true" />
+	</Tab>		
+	<Tab title="pile" tabHeight="40">
+		<Image id="img1" src="images/baby.jpg" scale=".5"/>	
+		<Image id="img1" src="images/baby.jpg" scale=".5"/>	
+		<Image id="img1" src="images/baby.jpg" scale=".5"/>	
+		<Image id="img1" src="images/baby.jpg" scale=".5"/>	
+		<Image id="img1" src="images/baby.jpg" scale=".5"/>	
+		<Layout ref="Pile" originY="200" originX="200" />
+	</Tab>		
+	<Tab title="fan" tabHeight="40">
+		<Image id="img1" src="images/clockwork.png" scale=".2"/>
+		<Image id="img1" src="images/clockwork.png" scale=".2"/>
+		<Image id="img1" src="images/clockwork.png" scale=".2"/>
+		<Image id="img1" src="images/clockwork.png" scale=".2"/>
+		<Image id="img1" src="images/clockwork.png" scale=".2"/>
+		<Image id="img1" src="images/clockwork.png" scale=".2"/>
+		<Layout ref="Fan" type="bottomRightOrigin" originX="200" originY="300" angle="20"/>
+	</Tab>		
+</TabbedContainer>
 
 </cml>

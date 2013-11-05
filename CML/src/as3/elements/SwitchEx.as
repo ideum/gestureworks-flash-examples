@@ -50,9 +50,7 @@ package as3.elements
 			sw.init();
 			addChild(sw);
 			
-			text.text = "TRUE";
-			text.x = 300;
-			text.y = 100;
+			text.text = "FALSE";
 			text.visible = false;
 			text.color = 0xFFFFFF;
 			text.fontSize = 25;
@@ -62,12 +60,18 @@ package as3.elements
 		//handles state event
 		private function onStateChange(event:StateEvent):void
 		{
-			trace(text, event.value);
-			
-			if (event.value == true)
-				text.visible = true;
-			else
-				text.visible = false;
+			trace(event.value);
+			text.visible = true;
+			if (event.value == true) {
+				text.str = "TRUE";
+				text.x = 915;
+				text.y = 300;				
+			}
+			else {
+				text.str = "FALSE";
+				text.x = 708;
+				text.y = 300;	
+			}
 		}
 	
 	}
