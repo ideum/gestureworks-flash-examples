@@ -36,11 +36,12 @@ package as3.elements
 			addChild(bgImage);
 			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("Magnifier");
-			exTemp.createDesc("<p>Description</p>");
+			exTemp.createDesc("<p>The Magnifier element provides a touch enabled element with an optional graphical lens that will increase the magnification when placed over any display object on the stage.</p><br />"
+					+"<p>Note that if the stage does not have a background image or display object of some sort, the Magnifier element will simply retain visual data from the last object it was held over until brought to another display object.</p><br />"
+					+"<p>Also note there is an issue with dynamically scaling this element with flash's shader system. If scaling is needed it is recommented to dispose and create a new Magnifier.</p>");
 			
 			//Image to look at
 			var image:Image = new Image();

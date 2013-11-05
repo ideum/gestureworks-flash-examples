@@ -32,9 +32,9 @@ package as3.elements
 			mp3.loop = true;
 			mp3.autoplay = true;
 			mp3.width = 600;
-			mp3.height = 400;
+			mp3.height = 300;
 			mp3.x = 550;
-			mp3.y = 125;
+			mp3.y = 100;
 			addChild(mp3);
 			mp3.init();
 		}
