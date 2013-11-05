@@ -16,13 +16,13 @@
 <Image x="500" y="150" resample="true" width="600" src="spectrum/bulbs_vis.jpg"/>
 
 <MaskContainer maskShape="rectangle" x="500" y="150" maskWidth="200" maskHeight="100" maskBorderColor="0xff0000" maskBorderStroke="2" maskBorderAlpha="0.75" mouseChildren="true">	
-	<Image width="600" src="spectrum/bulbs_off_therm.jpg"/>
-	<Image width="600" src="spectrum/bulbs_off_uv.jpg"/>
-	<Image width="600" src="spectrum/bulbs_therm.jpg"/>
-	<Image width="600" src="spectrum/bulbs_uv.jpg"/>
-	<Image width="600" src="spectrum/bulbs_uv_pure.jpg"/>
-	<Image width="600" src="spectrum/bulbs_ir.jpg"/>
-	<Image width="600" src="spectrum/bulbs_xray.jpg"/>
+	<Image width="600" resample="true" visible="false" src="spectrum/bulbs_off_therm.jpg"/>
+	<Image width="600" resample="true" visible="false" src="spectrum/bulbs_off_uv.jpg"/>
+	<Image width="600" resample="true" visible="false" src="spectrum/bulbs_therm.jpg"/>
+	<Image width="600" resample="true" visible="false" src="spectrum/bulbs_uv.jpg"/>
+	<Image width="600" resample="true" visible="false" src="spectrum/bulbs_uv_pure.jpg"/>
+	<Image width="600" resample="true" visible="false" src="spectrum/bulbs_ir.jpg"/>
+	<Image width="600" resample="true" visible="false" src="spectrum/bulbs_xray.jpg"/>
 	
 	<TouchContainer>
 		<GestureList>
