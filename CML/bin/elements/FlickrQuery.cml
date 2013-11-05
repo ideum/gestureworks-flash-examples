@@ -18,10 +18,12 @@
 	responsible for content uploaded by Flickr users.</p><br />
 </Text>
 
-<FlickrQuery id="flickr-query"
-	apikey="ENTER YOUR API KEY" 
-	tagMode="any" 
-	tags="daffodils,daisies" 
-	resultsPerPage="3" />
+<Container>
+	<FlickrQuery id="flickr-query"
+		apikey="5487a9cd58bb07a37700558d6362972f" 
+		tagMode="any" 
+		tags="daffodils,daisies" 
+		resultsPerPage="3" />
+</Container>
 
 </cml>

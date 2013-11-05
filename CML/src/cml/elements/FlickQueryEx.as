@@ -58,6 +58,7 @@ package cml.elements
 				
 				// Position and add child.
 				flickrPic.x = _x;
+				flickrPic.y = 150;
 				addChild(flickrPic);
 				
 				// Run init to make sure the Flickr element loads the picture now assigned to it.
