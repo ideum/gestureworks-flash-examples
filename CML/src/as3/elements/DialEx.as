@@ -68,7 +68,7 @@ package as3.elements
 			text.x = 590;
 			text.y = 200;
 			text.text = "Dial-Continous";
-			text.width = 3000;
+			text.width = 300;
 			text.color = 0xCC0099;
 			text.selectable = false;
 			text.font = "OpenSansBold";
@@ -121,7 +121,7 @@ package as3.elements
 			text1.x = 980;
 			text1.y = 200;
 			text1.text = "Dial-NonContinous";
-			text1.width = 3000;
+			text1.width = 300;
 			text1.color = 0xCC0099;
 			text1.font = "OpenSansBold";
 			text1.selectable = false;
