@@ -14,6 +14,7 @@ package cml.elements
 		public function DialEx():void 
 		{	
 			super();
+			gml = "gml/gestures.gml";
 			cml = "elements/Dial.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

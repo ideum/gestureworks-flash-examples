@@ -57,7 +57,7 @@ package as3.elements
 			dial1.rightTriangleColor = 0x303030;
 			
 			//center line graphics
-			dial1.centerLineLineStoke = 1;
+			dial1.centerLineLineStroke = 1;
 			dial1.centerLineOutlineColor = 0xAAAAAAA;
 			dial1.centerLineOutlineAlpha = 0.4;
 			dial1.centerLineColor = 0x666666;
@@ -111,7 +111,7 @@ package as3.elements
 			dial2.rightTriangleColor = 0x303030;
 			
 			//center line graphics
-			dial2.centerLineLineStoke = 1;
+			dial2.centerLineLineStroke = 1;
 			dial2.centerLineOutlineColor = 0xAAAAAAA;
 			dial2.centerLineOutlineAlpha = 0.4;
 			dial2.centerLineColor = 0x666666;
