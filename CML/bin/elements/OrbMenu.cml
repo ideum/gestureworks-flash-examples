@@ -14,7 +14,7 @@
 	With the repeatTimer attribute the user can set the timer before floating starts.</p>
 </Text>
 
-<OrbMenu id="ob1" repeatTimer="1" attractMode="true" textX="90" textY="80" textRadius="100" curveText="MENU" coverage="0.4" startAngle="100" stopAngle="100" orbRadius="100"
+<OrbMenu id="ob1" repeatTimer="1" attractMode="false" textX="90" textY="80" textRadius="100" coverage="0.4" startAngle="100" stopAngle="100" orbRadius="100"
 
     x="700" y="200" gradientType="linear" gradientColors="0x404040,0x404040" gradientAlphas="1,1" gradientRatios="0,255" gradientHeight="100" gradientWidth="50" 
     gradientRotation="0" gradientX="25" gradientY="0" shape1LineStoke="3" shape1OutlineColor="0x000000" shape2LineStoke="3" shape2OutlineColor="0x000000" 

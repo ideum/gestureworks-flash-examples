@@ -21,22 +21,21 @@ package as3.elements
 		
 		override protected function gestureworksInit():void
 		{
-			// entry point
-			
 			//add color changing background
 			bkg = new Graphic();
 			bkg.shape = "rectangle";
-			bkg.width = stage.width;
-			bkg.height = stage.height;
+			bkg.width = stage.stageWidth;
+			bkg.height = stage.stageHeight;
 			bkg.color = 0x000000;
 			addChild(bkg);
 			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("ColorPicker");
-			exTemp.createDesc("<p>The ColorPicker element provides color selection capability by moving provided indicators or adjusting color properties to select hue and color variants.<br /><br />" + "This example will demonstrate how to change the selected color by dragging the color grid and hue bar indicators or manually entering values in the text fields.</p>" + "<br /><p>See also:<br />DatePicker<br /></p>");
+			exTemp.createDesc("<p>The ColorPicker element provides color selection capability by moving provided indicators or adjusting color properties to select hue and color variants.<br /><br />" 
+			+ "This example will demonstrate how to change the selected color by dragging the color grid and hue bar indicators or manually entering values in the text fields.</p>" 
+			+ "<br /><p>See also:<br />DatePicker<br /></p>");
 			
 			//create the color picker
 			var colorPicker:ColorPicker = new ColorPicker();

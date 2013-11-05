@@ -16,7 +16,6 @@ package as3.elements
 		override protected function gestureworksInit():void
 		{
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("MP3");
@@ -31,12 +30,11 @@ package as3.elements
 			mp3.volume = 1.0;
 			mp3.pan = 0;
 			mp3.loop = true;
-			mp3.preload = true;
 			mp3.autoplay = true;
 			mp3.width = 600;
-			mp3.height = 400;
+			mp3.height = 300;
 			mp3.x = 550;
-			mp3.y = 125;
+			mp3.y = 100;
 			addChild(mp3);
 			mp3.init();
 		}
