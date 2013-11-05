@@ -14,8 +14,8 @@ package as3.elements
 	public class ModestMapEx extends GestureWorks 
 	{
 		public function ModestMapEx():void 
-		{
-			gml = "gml/gestures.gml";
+		{		
+			gml = "gml/gestures.gml";			
 		}
 		
 		override protected function gestureworksInit():void 
@@ -27,7 +27,11 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("ModestMap");
-			exTemp.createDesc("<p>This tag is used to load a ModestMaps using the ModestMaps API. The element is already touch enabled for the purpose of navigating the map via touch, and switching map providers via touch. Map providers are basically the style of the map. The available map providers are:</p><ul><li>bluemarblemapprovider</li><li>microsoftaerialmapprovider</li><li>microsofthybridmapprovider</li><li>microsoftroadmapprovider</li><li>openstreetmapprovider</li><li>yahooaerialmapprovider</li><li>yahoohybridmapprovider</li><li>yahooroadmapprovider</li></ul><br /><p>The map takes latitude and longitude values to determine the area it displays on load. Negative values are South, and West for the respective coordinates, positive values are North and East.</p><br /><p>You may also add Map Markers to the map provider to point out areas of significance. These markers take display objects, so within their tags you can add Graphics, Texts, Image Elements, or anything else which is a display object.</p><br /><p>Zooming is available when used within a touchContainer, and double-tapping will also be able to switch map providers.</p>");
+			exTemp.createDesc("<p>This tag is used to load a ModestMaps using the ModestMaps API. The element is already touch enabled for the purpose of navigating the map via touch, and switching map providers via touch. Map providers are basically the style of the map. The available map providers are:"
+			+"</p><br /><ul><li>bluemarblemapprovider</li><li>microsoftaerialmapprovider</li><li>microsofthybridmapprovider</li><li>microsoftroadmapprovider</li><li>openstreetmapprovider</li><li>yahooaerialmapprovider</li><li>yahoohybridmapprovider</li><li>yahooroadmapprovider</li></ul><br />"
+			+"<p>The map takes latitude and longitude values to determine the area it displays on load. Negative values are South, and West for the respective coordinates, positive values are North and East.</p><br />" 
+			+"<p>You may also add Map Markers to the map provider to point out areas of significance. These markers take display objects, so within their tags you can add Graphics, Texts, Image Elements, or anything else which is a display object.</p><br />"
+			+"<p>The map can be navigated by dragging on the object and zoomed in and out with a scale gesture.</p>");
 			
 			// The map.
 			var map1:ModestMap = new ModestMap;

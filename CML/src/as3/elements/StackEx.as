@@ -16,19 +16,17 @@ package as3.elements
 	{
 		public function StackEx():void
 		{
-			gml = "gml/gestures.gml";
+			gml = "gml/gestures.gml";				
 		}
 		
 		override protected function gestureworksInit():void
 		{
-			// entry point
-			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("Stack");
-			exTemp.createDesc("<p>This tag is a container that gathers its children into a stack, and allows the user to shuffle through them using a specified user input.<br /><br />This example will shuffle through the stack on each mouse/touch up event. The stack may optionally loop.</p><br /><p>See also:<br />Container<br /></p>");
+			exTemp.createDesc("<p>This tag is a container that gathers its children into a stack, and allows the user to shuffle through them using a specified user input.<br /><br />"
+			+"This example will shuffle through the stack on each mouse/touch up event. The stack may optionally loop.</p><br /><p>See also:<br />Container<br /></p>");
 			
 			var complete:Boolean = false;
 			var imageCount:Number = 0;

@@ -19,7 +19,6 @@ package as3.elements
 		{
 			// entry point			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("ScrollPane");
@@ -43,7 +42,7 @@ package as3.elements
 			sp.addChild(img);
 			
 			var tc:TouchContainer = new TouchContainer();
-			tc.disableNativeTransform = true;
+			tc.nativeTransform = false;
 			tc.gestureList = {"n-drag": true, "n-scale": true};
 			sp.addChild(tc);
 			

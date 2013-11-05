@@ -40,7 +40,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("Magnifier");
-			exTemp.createDesc("<p>This class is used to load images in from Flickr using the Flickr API. It can be placed inside a viewer, containers, and collection viewers.</p><br /><p>You will need two things to load a picture from Flickr: a picture ID, and an API Key. Your API key is something you can sign up for free at <a href=\"http://www.flickr/com/service/api\"> http://www.flickr/com/service/api</a> to allow you to submit queries to the Flickr database.</p><br /><p>This example will not actually load a picture until you set the API key property with your own key.</p><br /><p>Pictures must be public and available to be accessed.</p>");
+			exTemp.createDesc("<p>Description</p>");
 			
 			//Image to look at
 			var image:Image = new Image();

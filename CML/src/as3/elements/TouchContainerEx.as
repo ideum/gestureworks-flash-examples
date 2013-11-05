@@ -18,17 +18,12 @@ package as3.elements
 		
 		public function TouchContainerEx():void
 		{
-			gml = "gml/gestures.gml";
+			gml = "gml/gestures.gml";				
 		}
 		
 		override protected function gestureworksInit():void
 		{
-			trace("gestureWorksInit()");
-			
-			// entry point
-			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			   exTemp.createHeader();
 			   addChild(exTemp);
 			
 			   exTemp.createTitle("Touch Container");
@@ -62,8 +57,8 @@ package as3.elements
 			 addChild(tc);
 			
 			cont_square = new TouchSprite();
-			cont_square2 = new TouchSprite();
-			
+			cont_square.y = 300;
+			cont_square2 = new TouchSprite();			
 			cont_square2.x = 500;
 			
 			var graphic_square:Sprite = new Sprite();
@@ -86,7 +81,7 @@ package as3.elements
 			cont_square2.addChild(graphic_square2);
 			addChild(cont_square2);
 			
-			cont_square.disableAffineTransform = cont_square2.disableAffineTransform = false;
+			cont_square.affineTransform = cont_square2.affineTransform = true;
 			
 			cont_square.gestureList = {"n-drag": true, "n-scale": true, "n-rotate": true};
 			cont_square2.gestureList = {"n-drag": true, "n-scale": true, "n-rotate": true};
@@ -101,21 +96,21 @@ package as3.elements
 		private function drag_handler(event:GWGestureEvent):void
 		{
 			trace("drag");
-			event.target.$x += event.value.drag_dx;
-			event.target.$y += event.value.drag_dy;
+			event.target.x += event.value.drag_dx;
+			event.target.y += event.value.drag_dy;
 		}
 		
 		private function scale_handler(event:GWGestureEvent):void
 		{
 			trace("scale");
-			event.target.$scaleX += event.value.scale_dsx;
-			event.target.$scaleY += event.value.scale_dsy;
+			event.target.scaleX += event.value.scale_dsx;
+			event.target.scaleY += event.value.scale_dsy;
 		}
 		
 		private function rotate_handler(event:GWGestureEvent):void
 		{
 			trace("rotate");
-			event.target.$rotation += event.value.rotate_dtheta;
+			event.target.rotation += event.value.rotate_dtheta;
 		}
 	
 	}

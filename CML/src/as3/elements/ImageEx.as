@@ -12,7 +12,7 @@ package as3.elements
 	{
 		public function ImageEx():void 
 		{
-			gml = "assets/gestures.gml";			
+			gml = "gml/gestures.gml";			
 		}
 		
 		override protected function gestureworksInit():void 

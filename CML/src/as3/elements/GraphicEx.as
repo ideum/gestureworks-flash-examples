@@ -14,7 +14,7 @@ package as3.elements
 	{
 		public function GraphicEx():void 
 		{
-			gml = "assets/gestures.gml";						
+			gml = "gml/gestures.gml";						
 		}
 		
 		override protected function gestureworksInit():void 
