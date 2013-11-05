@@ -19,9 +19,7 @@ package as3.elements
 		
 		override protected function gestureworksInit():void 
 		{
-			// entry point
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("Graphic Element");
@@ -190,9 +188,9 @@ package as3.elements
 			//Path
 			var path:Graphic = new Graphic();
 			path.shape = "path";
-			path.pathCommands = "1,2,1,2";
+			path.pathCommands = "1,2,2,2";
 			path.pathCoordinates = "200,10, 300,110, 300,10, 200,110";
-			path.color = 0x000000;
+			path.color = 0xffffff;
 			path.x = 800;
 			path.y = 780;
 			container.addChild(path);
