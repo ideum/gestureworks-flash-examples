@@ -29,17 +29,13 @@ package cml.elements
 			CMLParser.removeEventListener(CMLParser.COMPLETE, cmlInit);
 			trace("cmlInit()");
 			
-			var horizontal:Slider = CMLObjectList.instance.getId("horizontal");
 			var vertical:Slider = CMLObjectList.instance.getId("vertical");
-			horizontal.addEventListener(StateEvent.CHANGE, onStateEvent);
 			vertical.addEventListener(StateEvent.CHANGE, onStateEvent);
 			
-			function onStateEvent(event:StateEvent):void
-			{
+			function onStateEvent(event:StateEvent):void {
 				trace(event.id, event.property, event.value);
 			}
 			
-			var inputHoriz:Slider = CMLObjectList.instance.getId("input-horiz");
 			var inputVert:Slider = CMLObjectList.instance.getId("input-vert");
 			
 			var timer:Timer = new Timer(10);
@@ -47,9 +43,7 @@ package cml.elements
 			timer.start();
 			var cnt:Number = 0;
 			
-			function onTimer(event:TimerEvent):void
-			{
-				inputHoriz.input(cnt);
+			function onTimer(event:TimerEvent):void {
 				inputVert.input(cnt);
 				cnt += .1;
 			}

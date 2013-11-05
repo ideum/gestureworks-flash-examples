@@ -32,7 +32,7 @@ package as3.elements
 			
 			// slider graphics- can change the position of slider through orientation
 			slider.orientation = "vertical";
-			slider.gestureReleaseInertia = true;
+			slider.releaseInertia = true;
 			slider.min = 0;
 			slider.max = 100;
 			
