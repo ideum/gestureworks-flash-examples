@@ -7,7 +7,7 @@
 }
 
 .desc {	
-	x:35; y:85; color:0xFFFFFF; fontSize:16; width:425; height:500; wordWrap:true; multiline:true; selectable:false; textAlign:left; font:OpenSansRegular; leading:-4.5;
+	x:35; y:85; color:0xFFFFFF; fontSize:16; width:425; height:700; wordWrap:true; multiline:true; selectable:false; textAlign:left; font:OpenSansRegular; leading:-4.5;
 }
 
 .example-graphic {	

@@ -7,7 +7,7 @@ package cml.elements
 	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="30")]
 	
 	/**
-	 * This example demonstrates the ModestMapElement and ModestMapMarker tags.
+	 * This example demonstrates the ModestMap element and ModestMapMarker tags.
 	 */
 	public class ModestMapEx extends GestureWorks
 	{

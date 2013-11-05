@@ -7,7 +7,9 @@
 <Text class="title">Album</Text>
 <Text class="desc">
 	<p>The Album provides a list of display objects that can be scrolled horizontally or vertically.<br /><br />
-	This example demonstrates the scrolling of a set of images by dragging the list along the x or y axis. When the drag is complete, the view will snap to the closest display object.</p>
+	This example demonstrates the scrolling of a set of images by dragging the list along the x or y axis. When the drag is complete, 
+	the view will snap to the closest display object. The bottom Album uses a release intertia enabled drag. 
+	The top Album does not, so it will snap faster.</p>
 	<br />
 	<p>See also:<br />
 	AlbumViewer<br />
@@ -15,7 +17,7 @@
 </Text>
 
 <!--horizontal album-->
-<Album x="625" y="50" margin="20">	                        													
+<Album x="625" y="50" margin="20" dragGesture="n-drag">	                        													
 	<Container width="500" height="300">          															<!-- left arrow-->
 		<Graphic shape="rectangle" lineStroke="0" width="500" height="300"/>
 		<Graphic x="300" y="125" shape="triangle" color="0xFFFFFF" height="50" rotation="90"/>
