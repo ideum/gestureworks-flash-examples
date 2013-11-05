@@ -68,7 +68,7 @@ package cml.elements
 			}
 		}
 		
-		private function onAnchor(event:TextEvent)
+		private function onAnchor(event:TextEvent):void 
 		{
 			var urlRequest:URLRequest = new URLRequest(event.text);
 			navigateToURL(urlRequest);

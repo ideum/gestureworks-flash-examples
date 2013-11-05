@@ -38,11 +38,8 @@
 	
 	<!-- Here is where the entire menu is structured. We used "include" files to style each of our buttons individually rather than have all the mark-up here. -->
 	<Menu class="menu_container" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="true" visible="false">
-	
 		<Include src="infoButton.cml"/>
-		
 		<Include src="closeButton.cml"/>
-		
 	</Menu>
 	
 	<GestureList>

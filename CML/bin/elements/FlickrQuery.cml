@@ -4,7 +4,7 @@
 
 <!-- header -->
 <Graphic class="header-graphic" />
-<Text class="title">FlickrQuery </Text>
+<Text class="title">FlickrQuery</Text>
 <Text class="desc" selectable="true">
 	<p>This tag is used to search for images in Flickr using the API, and some Actionscripting will be necessary to get full use from it.</p><br /> 
 	<p>The FlickrQuery submits a text or tags search, with an option to set the search to "all" terms, or "any" and can be limited to only return 
@@ -19,10 +19,9 @@
 </Text>
 
 <FlickrQuery id="flickr-query"
-apikey="ENTER YOUR API KEY" 
-tagMode="any" 
-tags="daffodils,daisies" 
-resultsPerPage="3" />
-
+	apikey="ENTER YOUR API KEY" 
+	tagMode="any" 
+	tags="daffodils,daisies" 
+	resultsPerPage="3" />
 
 </cml>
