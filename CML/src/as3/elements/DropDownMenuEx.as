@@ -23,7 +23,6 @@ package as3.elements
 		{
 			// entry point			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("DropDownMenu");
@@ -54,11 +53,13 @@ package as3.elements
 			//The images in the following method have id's set the same as their corresponding menu items.
 			//This will just loop through to find the id matching the event value, then set that item visible, 
 			//and everything else invisible.
-			for (var i:Number = 0; i < imagesArray.length; i++) {
-				if (imagesArray[i].id == e.value)
-					imagesArray[i].visible = true;
-				else
-					imagesArray[i].visible = false;
+			if (e.property == "itemSelected"){
+				for (var i:Number = 0; i < imagesArray.length; i++) {
+					if (imagesArray[i].id == e.value)
+						imagesArray[i].visible = true;
+					else
+						imagesArray[i].visible = false;
+				}
 			}
 		}
 		
@@ -72,6 +73,7 @@ package as3.elements
 			image1.y = 150;
 			image1.visible = false;
 			addChild(image1);
+			image1.init();			
 			imagesArray[0] = image1;
 			
 			var image2:Image = new Image();
@@ -81,6 +83,7 @@ package as3.elements
 			image2.y = 150;
 			image2.visible = false;
 			addChild(image2);
+			image2.init();			
 			imagesArray[1] = image2;
 			
 			var image3:Image = new Image();
@@ -88,8 +91,10 @@ package as3.elements
 			image3.open("assets/images/bee.jpg");
 			image3.x = 700;
 			image3.y = 150;
+			image3.scale = .5;
 			image3.visible = false;
 			addChild(image3);
+			image3.init();		
 			imagesArray[2] = image3;
 			
 			var image4:Image = new Image();
@@ -100,6 +105,7 @@ package as3.elements
 			image4.y = 150;
 			image4.visible = false;
 			addChild(image4);
+			image4.init();
 			imagesArray[3] = image4;
 			
 			var image5:Image = new Image();
@@ -109,6 +115,7 @@ package as3.elements
 			image5.y = 150;
 			image5.visible = false;
 			addChild(image5);
+			image5.init();
 			imagesArray[4] = image5;
 		}
 		

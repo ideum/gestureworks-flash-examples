@@ -18,6 +18,7 @@ package cml.elements
 		public function DropDownMenuEx():void 
 		{
 			super();
+			gml = "gml/gestures.gml";
 			cml = "elements/DropDownMenu.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}

@@ -15,7 +15,7 @@
 
 <Image id="Image1" src="images/500px-Bi-crystal.jpg" height="500" x="700" y="150" visible="false"/>
 <Image id="Image2" src="images/500px-Silver_crystal.jpg" x="700" y="150" visible="false"/>
-<Image id="Image3" src="images/bee.jpg" x="700" y="150" visible="false"/>
+<Image id="Image3" src="images/bee.jpg" x="700" y="150" height="300" visible="false"/>
 <Image id="Image4" src="images/clockwork.png" height="500" x="700" y="150" visible="false"/>
 <Image id="Image5" src="images/orchid.jpg" x="700" y="150" visible="false"/>
 
