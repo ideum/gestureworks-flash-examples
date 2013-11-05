@@ -24,7 +24,6 @@ package as3.elements
 			// entry point
 			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("Key");
@@ -93,7 +92,7 @@ package as3.elements
 			text.text = "C";
 			text.fontSize = 40;
 			text.textColor = 0xFFFFFF;
-			text.autoSize = "center";
+			text.autoSize = "left";
 			text.selectable = false;
 			text.x = 3;
 			text.y = -10;

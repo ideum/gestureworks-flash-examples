@@ -57,7 +57,7 @@
 
 <!-- Path -->
 <Text text="Path" x="1000" y="640" color="0xFFFFFF" fontSize="25" width="200" />
-<Graphic x="800" y="680" shape="path" color="0x000000" pathCommands="1,2,1,2" pathCoordinates="200,10, 300,110, 300,10, 200,110"/> 
+<Graphic x="800" y="680" shape="path" color="0xFFFFFF" pathCommands="1,2,2,2" pathCoordinates="200,10, 300,110, 300,10, 200,110"/> 
 
 </Container>
 </cml>

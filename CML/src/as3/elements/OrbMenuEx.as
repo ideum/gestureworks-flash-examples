@@ -38,7 +38,8 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("OrbMenu");
-			exTemp.createDesc("<p>This tag has a list of menu items and allows the user to insert any number of items in the menu. The list of menu items can be viewed through the drag event. The user can change the location of curve text through the attributes.<br/><br/>" + "This example has two modes-floating and stable. These modes can be changed by setting the attractMode attribute to true or false. With the repeatTimer attribute the user can set the timer before floating starts.</p>");
+			exTemp.createDesc("<p>This class has a list of menu items and allows the user to insert any number of items in the menu. The list of menu items can be viewed through the drag event. The user can change the location of curve text through the attributes.<br/><br/>"
+			+ "This example has two modes-floating and stable. These modes can be changed by setting the attractMode attribute to true or false. With the repeatTimer attribute the user can set the timer before floating starts.</p>");
 			
 			var orb:OrbMenu = new OrbMenu();
 			orb.x = 600;
@@ -49,13 +50,12 @@ package as3.elements
 			
 			//can set the timer and attract mode of orbmenu
 			orb.repeatTimer = 1;
-			orb.attractMode = true;
+			orb.attractMode = false;
 			
 			//curve text location of orbmenu
 			orb.textX = 90;
 			orb.textY = 80;
 			orb.textRadius = 100;
-			orb.curveText = "MENU";
 			orb.coverage = 0.4;
 			orb.startAngle = 100;
 			orb.stopAngle = 100;

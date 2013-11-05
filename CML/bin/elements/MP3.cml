@@ -19,7 +19,6 @@
 	x="550" y="100" 	
 	width="650" height="300" 
 	autoplay="true"
-	preload="true"
 	loop="true"
 	pan="0.0"
 	volume="1.0"
