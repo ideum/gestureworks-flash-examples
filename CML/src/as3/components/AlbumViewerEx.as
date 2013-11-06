@@ -32,21 +32,19 @@ package as3.components
 		
 		public function AlbumViewerEx():void
 		{
-			gml = "assets/gestures.gml";
+			gml = "gml/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void
 		{
-			// entry point
-			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("AlbumViewer");
 			exTemp.createDesc("<p>The AlbumViewer is a component that is primarily meant to display an Album on the front side and meta-data on the back side. It is composed of the following elements: album, front, back, menu, and frame. The width and height of the component are automatically set to the dimensions of the album unless it is previously specifed by the component.<br /><br />" + "This example demonstrates the horizontal scrolling of a of an album within a viewer frame and an associated info panel. The viewer can be rotated, scaled, and dragged.</p>" + "<br /><p>See also:<br />Component<br />Album<br /></p>");
 			
 			var albumViewer:AlbumViewer = new AlbumViewer();
+			albumViewer.clusterBubbling = true;
 			albumViewer.x = 550;
 			albumViewer.y = 280;
 			
@@ -56,44 +54,27 @@ package as3.components
 			album.addChild(getImage("assets/images/wb3.jpg"));
 			album.addChild(getImage("assets/images/USS_Macon_over_Manhattan.png"));
 			album.loop = true;
-			album.init();
-			
+			album.dragGesture = "1-finger-drag";
+			album.init();			
 			albumViewer.addChild(album);
-			albumViewer.childToList("video_element", album);
-			albumViewer.album = album;
 			
 			//The viewer frame
-			var frameContainer:TouchContainer = new TouchContainer();
-			frameContainer.className = "frame_container";
-			frameContainer.visible = true;
-			frameContainer.targetParent = true;
-			frameContainer.init();
-			
 			var frame:Frame = new Frame();
-			frame.className = "frame_element";
-			frameContainer.addChild(frame);
-			frameContainer.childToList("frame_element", frame);
-			
-			frame.init();
-			
-			albumViewer.addChild(frameContainer);
-			albumViewer.childToList("frame_container", frameContainer);
+			frame.targetParent = true;			
+			frame.init();			
+			albumViewer.addChild(frame);
 			
 			// Info container
 			var infoContainer:TouchContainer = new TouchContainer();
-			infoContainer.className = "info_container";
-			infoContainer.visible = false;
 			infoContainer.targetParent = true;
 			infoContainer.init();
 			
 			var infoBg:Graphic = new Graphic();
 			infoBg.shape = "rectangle";
-			infoBg.className = "info_bg";
 			infoBg.alpha = 0.6;
 			infoBg.lineStroke = 0;
 			infoBg.color = 0x6699FF;
 			infoContainer.addChild(infoBg);
-			infoContainer.childToList("info_bg", infoBg);
 			
 			var infoTitle:Text = new Text();
 			infoTitle.border = false;
@@ -101,7 +82,6 @@ package as3.components
 			infoTitle.font = "OpenSansBold";
 			infoTitle.fontSize = 20;
 			infoTitle.color = 0xffffff;
-			infoTitle.className = "title";
 			infoTitle.selectable = false;
 			infoTitle.text = "The USS Macon";
 			infoTitle.x = 30;
@@ -109,14 +89,12 @@ package as3.components
 			
 			var infoBody:Text = new Text();
 			infoBody.border = false;
-			infoBody.className = "info_description";
 			infoBody.selectable = false;
 			infoBody.multiline = true;
 			infoBody.wordWrap = true;
 			infoBody.width = 300;
 			infoBody.fontSize = 14;
 			infoBody.color = 0xffffff;
-			infoBody.font = "OpenSansRegular";
 			infoBody.text = "Macon, built in Ohio by the Goodyear-Zeppelin Corporation, was commissioned on 11 Mar 1933. 785 feet long and 132 feet in diameter, the airship carried five Curtiss F9C Sparrowhawk biplanes and had a crew of 76.";
 			
 			infoContainer.addChild(infoTitle);
@@ -167,7 +145,7 @@ package as3.components
 			albumViewer.rotation = -20;
 			albumViewer.mouseChildren = true;
 			albumViewer.gestureEvents = true;
-			albumViewer.gestureList = {"n-drag": true, "n-scale": true, "n-rotate": true, "tap": true};
+			albumViewer.gestureList = {"2-finger-drag": true, "n-scale": true, "n-rotate": true, "tap": true};
 			
 			addChild(albumViewer);
 			

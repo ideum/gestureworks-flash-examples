@@ -67,7 +67,7 @@ package as3.elements
 			stoneHenge.addChild(markerText);
 			////// Map marker complete.
 			
-			map1.addChild(stoneHenge);
+			//map1.addChild(stoneHenge);
 			addChild(map1);
 			map1.init();
 		}
