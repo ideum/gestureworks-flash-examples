@@ -1,8 +1,8 @@
 package as3.elements 
 {
-	import com.gestureworks.cml.element.Graphic;
-	import com.gestureworks.cml.element.Key;
-	import com.gestureworks.cml.element.Text;
+	import com.gestureworks.cml.elements.Graphic;
+	import com.gestureworks.cml.elements.Key;
+	import com.gestureworks.cml.elements.Text;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	import flash.events.KeyboardEvent;

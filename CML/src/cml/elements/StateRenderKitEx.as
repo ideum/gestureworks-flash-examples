@@ -1,7 +1,7 @@
 package cml.elements
 {
-	import com.gestureworks.cml.element.Button;
-	import com.gestureworks.cml.element.TouchContainer;
+	import com.gestureworks.cml.elements.Button;
+	import com.gestureworks.cml.elements.TouchContainer;
 	import com.gestureworks.cml.managers.StateManager;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.cml.core.CMLParser;

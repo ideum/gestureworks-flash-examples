@@ -1,6 +1,6 @@
 package as3.elements
 {
-	import com.gestureworks.cml.element.MP3;
+	import com.gestureworks.cml.elements.MP3;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	

@@ -1,6 +1,6 @@
 package as3.elements
 {
-	import com.gestureworks.cml.element.Toggle;
+	import com.gestureworks.cml.elements.Toggle;
 	import com.gestureworks.cml.events.StateEvent;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;

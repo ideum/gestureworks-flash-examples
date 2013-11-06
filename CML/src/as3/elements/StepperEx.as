@@ -1,7 +1,7 @@
 package as3.elements 
 {
-	import com.gestureworks.cml.element.Stepper;
-	import com.gestureworks.cml.element.Text;
+	import com.gestureworks.cml.elements.Stepper;
+	import com.gestureworks.cml.elements.Text;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	import flash.events.Event;

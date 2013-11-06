@@ -1,11 +1,11 @@
 package as3.elements
 {
-	import com.gestureworks.cml.element.Album;
-	import com.gestureworks.cml.element.Button;
-	import com.gestureworks.cml.element.Container;
-	import com.gestureworks.cml.element.Graphic;
-	import com.gestureworks.cml.element.Image;
-	import com.gestureworks.cml.element.Text;
+	import com.gestureworks.cml.elements.Album;
+	import com.gestureworks.cml.elements.Button;
+	import com.gestureworks.cml.elements.Container;
+	import com.gestureworks.cml.elements.Graphic;
+	import com.gestureworks.cml.elements.Image;
+	import com.gestureworks.cml.elements.Text;
 	import com.gestureworks.cml.events.StateEvent;
 	import com.gestureworks.cml.utils.CloneUtils;
 	import com.gestureworks.core.GestureWorks;

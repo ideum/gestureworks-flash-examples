@@ -1,6 +1,6 @@
 package as3.elements
 {
-	import com.gestureworks.cml.element.ScrollBar;
+	import com.gestureworks.cml.elements.ScrollBar;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	

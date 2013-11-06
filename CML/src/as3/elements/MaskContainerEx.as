@@ -1,8 +1,8 @@
 package as3.elements 
 {
-	import com.gestureworks.cml.element.Image;
-	import com.gestureworks.cml.element.MaskContainer;
-	import com.gestureworks.cml.element.TouchContainer;
+	import com.gestureworks.cml.elements.Image;
+	import com.gestureworks.cml.elements.MaskContainer;
+	import com.gestureworks.cml.elements.TouchContainer;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	import flash.events.Event;

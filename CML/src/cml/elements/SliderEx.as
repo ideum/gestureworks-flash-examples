@@ -2,7 +2,7 @@ package cml.elements
 {
 	import com.gestureworks.cml.core.CMLObjectList;
 	import com.gestureworks.cml.core.CMLParser;
-	import com.gestureworks.cml.element.Slider;
+	import com.gestureworks.cml.elements.Slider;
 	import com.gestureworks.cml.events.StateEvent;
 	import com.gestureworks.core.GestureWorks;
 	import flash.events.Event;

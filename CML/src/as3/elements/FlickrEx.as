@@ -1,6 +1,6 @@
 package as3.elements
 {
-	import com.gestureworks.cml.element.Flickr;
+	import com.gestureworks.cml.elements.Flickr;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	import flash.display.Sprite;

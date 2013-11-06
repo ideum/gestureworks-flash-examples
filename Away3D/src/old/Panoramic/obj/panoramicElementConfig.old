@@ -16,21 +16,34 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'10/15/2012'</value>
+      <value>'11/6/2013'</value>
+    </define>
+    <define append="true">
+      <name>CONFIG::air</name>
+      <value>false</value>
+    </define>
+    <define append="true">
+      <name>CONFIG::mobile</name>
+      <value>false</value>
+    </define>
+    <define append="true">
+      <name>CONFIG::desktop</name>
+      <value>false</value>
     </define>
     <verbose-stacktraces>true</verbose-stacktraces>
     <source-path append="true">
-      <path-element>C:\Users\Jesse\Documents\gwas\docs\examples\cml\Elements\Panoramic\src</path-element>
-      <path-element>C:\Program Files (x86)\Adobe\Adobe Flash Builder 4.5\sdks\4.5.0\frameworks</path-element>
+      <path-element>C:\repo\gwas\development\docs\examples\Away3D\src\old\Panoramic\src</path-element>
+      <path-element>C:\repo\gwas\development\docs\lib</path-element>
       <path-element>C:\Program Files (x86)\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
     <library-path append="true">
-      <path-element>C:\Users\Jesse\Documents\gwas\docs\lib\GestureWorksCML.swc</path-element>
-      <path-element>C:\Users\Jesse\Documents\gwas\docs\lib\GestureWorksGML.swc</path-element>
+      <path-element>C:\repo\gwas\development\docs\lib\GestureWorksAway3D.swc</path-element>
+      <path-element>C:\repo\gwas\development\docs\lib\GestureWorksCML.swc</path-element>
+      <path-element>C:\repo\gwas\development\docs\lib\GestureWorksGML.swc</path-element>
     </library-path>
   </compiler>
   <file-specs>
-    <path-element>C:\Users\Jesse\Documents\gwas\docs\examples\cml\Elements\Panoramic\src\Main.as</path-element>
+    <path-element>C:\repo\gwas\development\docs\examples\Away3D\src\old\Panoramic\src\Main.as</path-element>
   </file-specs>
   <default-background-color>#FFFFFF</default-background-color>
   <default-frame-rate>30</default-frame-rate>
