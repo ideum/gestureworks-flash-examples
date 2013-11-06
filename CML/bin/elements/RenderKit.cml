@@ -5,7 +5,7 @@
 <!-- header -->
 <Graphic class="header-graphic" />
 <Text class="title">RenderKit</Text>
-<Text class="desc" selectable="false">
+<Text class="desc">
 	<p>This tag is used to create a template which can be populated by XML data that the tag is pointed towards. This allows a user to create a single template, then 
 	populate it many times over without repeating all the CML. This also allows a user to change many items with a simple style change to the RenderKit template.</p><br />
 	<p>The RenderKit is a three part tag. The RenderKit itself encapsulates the Renderer object that will be a template. The RenderKit searches for RendererData 

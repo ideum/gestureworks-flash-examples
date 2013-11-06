@@ -8,7 +8,7 @@
 
 <!-- header -->
 <Text class="title">ModestMap Viewer</Text>
-<Text class="desc" selectable="true">
+<Text class="desc">
 	<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br />
 	<p>The ModestMapViewer wraps a ModestMap in a frame with optional buttons. The ModestMap has its own drag and scale functions, 
 	so a thick frame is helpful in enabling touch and manipulation around the rest of the stage.</p>

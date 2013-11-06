@@ -8,7 +8,7 @@
 
 <!-- header -->
 <Text class="title">MediaViewer</Text>
-<Text class="desc" selectable="true">
+<Text class="desc">
 	<p>The MediaViewer is a component that is meant to load various types of media files on the front and metadata on the back. It is composed of the 
 	following elements: media, front, back, menu, and frame. The width and height of the component are automatically set to the dimensions of the media 
 	element unless it is previously specifed by the component.</p><br />

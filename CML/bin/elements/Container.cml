@@ -5,7 +5,7 @@
 <!-- header -->
 <Graphic class="header-graphic" />
 <Text class="title">Container</Text>
-<Text class="desc" selectable="true">
+<Text class="desc">
 	<p>This tag can be used to create display hierarchies. It keeps track of CML children through the childlist property.</p><br />
 	<p>The container gives a large amount of control in keeping track of objects and can hold a variety of items.</p>
 </Text>

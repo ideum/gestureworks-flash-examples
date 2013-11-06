@@ -5,7 +5,7 @@
 <!-- header -->
 <Graphic class="header-graphic" />
 <Text class="title">ProgressBar </Text>
-<Text class="desc" selectable="true">
+<Text class="desc">
 	<p>The progress bar can be set as the child of a video element to display the video's playing progress. Width and height are customizable, as is color.</p><br />
 	<p>Touching the bar in any type of video file except for .MOV will allow a user to seek through the video.</p>
 </Text>

@@ -8,7 +8,7 @@
 
 <!-- header -->
 <Text class="title">Video Viewer</Text>
-<Text class="desc" selectable="true">
+<Text class="desc">
 	<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p> <br />
 	<p>In this case, the menu not only provides a helpful visual frame and an info panel, but buttons which allow access to the Video's play and pause functions.</p> <br />
 	<p>This example loads a Video, and flips it with an info-panel.</p>

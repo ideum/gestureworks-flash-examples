@@ -5,7 +5,7 @@
 <!-- header -->
 <Graphic class="header-graphic" />
 <Text class="title">MP3 </Text>
-<Text class="desc" selectable="true">
+<Text class="desc">
 	<p>This tag is used to load an MP3 element that plays back and can be displayed with a graphical wave form.</p><br />
 	<p>Automatic play and looping can be set in the CML tag, as well as the wave form color and background. If no wave form is desired, set display="none".</p><br />
 	<p>Unlike the Wav, an MP3 does not have to be compiled as part of an air project.</p><br />

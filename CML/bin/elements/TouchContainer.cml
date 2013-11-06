@@ -5,7 +5,7 @@
 <!-- header -->
 <Graphic class="header-graphic" />
 <Text class="title">TouchContainer</Text>
-<Text class="desc" selectable="false">
+<Text class="desc">
 	<p>This tag creates touchable containers. Add gestures using the Gesture tag.</p><br />
 	<p>In this example, the drag, scale, and rotate gestures are turned on.</p>
 </Text>

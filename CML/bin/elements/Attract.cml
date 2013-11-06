@@ -5,7 +5,7 @@
 <!-- header -->
 <Graphic class="header-graphic" />
 <Text class="title">AttractKit</Text>
-<Text class="desc" selectable="false">
+<Text class="desc">
 	<p>This tag creates an automated attract screen. The attract screen can be set to timeout and fade out if desired. The timer automatically 
 	resets whenever a touch interaction occurs. When the timer expires, the attract screen is automatically brought back to the top of the display list 
 	and set to visible, so it will never be behind another object.</p><br />

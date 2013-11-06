@@ -5,7 +5,7 @@
 <!-- header -->
 <Graphic class="header-graphic" />
 <Text class="title">Gigapixel </Text>
-<Text class="desc" selectable="true">
+<Text class="desc">
 	<p>This tag is used to load in a gigapixel image. Gigapixel images are massive images made by tiling smaller images in a seamless, pyramid structured fashion.</p><br />
 	<p>The Gigapixel will always maintain its aspect ratio, so you only need to give it a width or a height. If given both width and height, the element will simply have a 
 	viewable area of that size, but will not necessarily fill that area until zoomed in.</p><br/>

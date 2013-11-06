@@ -5,7 +5,7 @@
 <!-- header -->
 <Graphic class="header-graphic" />
 <Text class="title">Video </Text>
-<Text class="desc" selectable="true">
+<Text class="desc">
 	<p>This tag is used to load a video element and play back your selected video from your hard drive. Supported file types are:</p><br />
 	<p><ul>
 	<li>.mp4</li>

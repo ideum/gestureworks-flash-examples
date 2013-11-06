@@ -7,7 +7,7 @@
 <!-- header -->
 <Graphic class="header-graphic" />
 <Text class="title">Filter - DropShadow</Text>
-<Text class="desc" selectable="false">
+<Text class="desc">
 	<p>This tag gives access to various filter effects. The Filter is added on as a child of whatever display object should have that filter, and is then applied. 
 	The ref attribute defines the type of filter.</p><br />
 	<p>The DropShadow uses distance and angle primarily to create the illusion of a shadow cast by a directional light. The hideObject property makes it so that only the object's 

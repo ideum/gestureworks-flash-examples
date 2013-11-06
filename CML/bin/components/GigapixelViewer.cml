@@ -8,7 +8,7 @@
 
 <!-- header -->
 <Text class="title">GigaPixel Viewer</Text>
-<Text class="desc" selectable="true">
+<Text class="desc">
 	<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br />
 	<p>The GigapixelViewer tag loads a gigapixel image from an XML index and folder branch, and allows for an info panel or other buttons to be attached to provide more information.</p>
 </Text>

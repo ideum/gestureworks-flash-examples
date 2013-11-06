@@ -5,7 +5,7 @@
 <!-- header -->
 <Graphic class="header-graphic" />
 <Text class="title">Slideshow</Text>
-<Text class="desc" selectable="true">
+<Text class="desc">
 	<p>The Slideshow tag allows you to create a slideshow out of any variety of display objects, including text, graphics, images, and containers.</p><br /> 
 	<p>The Slideshow can even be put inside a viewer or any other container with buttons that allow a user to access Play, Pause, Resume, and Stop.</p><br />
 	<p>The "rate" is how long each item is on stage in milliseconds after fading in, the fade duration determines in milliseconds how quickly the fade happens between objects.</p>

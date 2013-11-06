@@ -8,7 +8,7 @@
 
 <!-- header -->
 <Text class="title">Flickr Viewer</Text>
-<Text class="desc" selectable="true">
+<Text class="desc">
 	<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br />
 	<p>The FlickrViewer places the Flickr in an easily visible frame. Frames are sometimes used to provide more easily touchable 
 	   areas for other elements which have context-sensitive touch.</p><br />

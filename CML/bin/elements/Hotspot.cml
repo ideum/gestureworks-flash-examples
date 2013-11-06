@@ -5,7 +5,7 @@
 <!-- header -->
 <Graphic class="header-graphic" />
 <Text class="title">Hotspot</Text>
-<Text class="desc" selectable="true">
+<Text class="desc">
 	<p>This tag allows content to set hotspots on images and gigapixel images.</p><br />
 	<p>Hotspots can be attached to other elements or components by setting the component property to the id of the target, and populating the Hotspot with a button 
 	that dispatches the event "hotspot". This allows a user to toggle the visibility of the component on and off, and also allows them to have a tether on to 

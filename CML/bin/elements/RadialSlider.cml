@@ -5,7 +5,7 @@
 <!-- header -->
 <Graphic class="header-graphic" />
 <Text class="title"> Radial Slider </Text>
-<Text class="desc" selectable="true">
+<Text class="desc">
 	<p>This tag creates a slider element. The slider can be used through touch and mouse input devices.</p>
 	<p>It also allows for the input value to be fed through a function call, allowing the slider to be updated by another process.</p><br />
 	<p>The slider can rotate clockwise or counter clockwise. It can act as a continuous slider or one that snaps to x-number of discrete steps.</p>
