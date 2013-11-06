@@ -4,10 +4,10 @@ package cml.elements
 	import com.gestureworks.core.GestureWorks;
 	import flash.events.Event;
 	
-	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="60")]
+	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="30")]
 	
 	/**
-	 * This example demonstrates the Accordion tag
+	 * This example demonstrates the SVG tag
 	 */
 	public class SVGEx extends GestureWorks
 	{		
