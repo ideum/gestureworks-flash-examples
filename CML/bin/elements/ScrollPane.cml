@@ -14,22 +14,16 @@
 	the GestureList they'd like associated. Please note that rotating inside a ScrollPane is not an option.</p>
 </Text>
 
-<ScrollPane id="sp"
-x="500" y="50" 
-width="700" 
-height="500" 
-mouseChildren="true" 
-clusterBubbling="false" 
-scrollThickness="20">
+<ScrollPane id="sp" y="50" x="500" width="400" height="400" paneStroke="0" releaseInertia="true" scrollOnPane="true">
 
 	<!-- ScrollBar for styling-->
-	<ScrollBar buttonFill="0xE7635E" fill="0xF8E9A8" thumbFill="0x452743" cornerHeight="15" cornerWidth="15"/>
+	<ScrollBar buttonFill="0xE7635E" fill="0xF8E9A8" thumbFill="0x452743" width="20" railShape="roundRectangle" cornerHeight="15" cornerWidth="15"/>
 
 	<!--Actual image which will be scalable, draggable, and scrollable.-->
-	<Image x="50" y="50" src="images/500px-Bi-crystal.jpg"/>
+	<Image src="images/500px-Bi-crystal.jpg" />
 	
 	<!-- TouchContainer so dragging and scrolling can be set on or off, also to assist with making child events accesible provided there is no gesture conflict -->
-	<TouchContainer nativeTransform="false" touchChildren="true" clusterBubbling="true">
+	<TouchContainer nativeTransform="false">
 		<GestureList>
 			<Gesture ref="n-drag" gestureOn="true"/>
 			<Gesture ref="n-scale" gestureOn="true"/>
