@@ -45,6 +45,7 @@ package as3.elements
 			h_album.x = 625;
 			h_album.y = 50;
 			
+			h_album.dragGesture = "n-drag";
 			h_album.addChild(getArrow("left"));
 			h_album.addChild(getImage("assets/images/wb3.jpg"));
 			h_album.addChild(getImage("assets/images/USS_Macon_over_Manhattan.png"));
