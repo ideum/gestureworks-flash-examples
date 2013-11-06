@@ -22,7 +22,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("ScrollBar");
-			exTemp.createDesc("<p>This tag provides a mechanism to horizontally or vertically scroll content. The content is intended to be repositioned in its container relative to the scroll bar's position " + "on its rail.<br /><br />See Also: ScrollPane</p>");
+			exTemp.createDesc("<p>This class provides a mechanism to horizontally or vertically scroll content. The content is intended to be repositioned in its container relative to the scroll bar's position " + "on its rail.<br /><br />See Also: ScrollPane</p>");
 			
 			var sb:ScrollBar = new ScrollBar();
 			sb.x = 500;

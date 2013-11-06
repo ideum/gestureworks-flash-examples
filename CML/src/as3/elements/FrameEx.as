@@ -23,7 +23,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("Frame Element");
-			exTemp.createDesc("<p>This tag can be used to create display object frames.</p>");
+			exTemp.createDesc("<p>This class can be used to create display object frames.</p>");
 			
 			var frame:Frame = new Frame();
 			

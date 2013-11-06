@@ -48,7 +48,7 @@ package as3.components
 			addChild(exTemp);
 			
 			exTemp.createTitle("Wav Viewer");
-			exTemp.createDesc("<p>Viewer and Player tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br /><p>Due to certain constraints in Actionscript programming, this element requires your AS3 project to be an AIR project.</p><br /><p>In this case, the menu not only provides a helpful visual frame and an info panel, but buttons which allow access to the WAV's play and pause functions.</p><br /><p>It has also been styled differently in the CML to give it a more unique border and theme.</p><br /><p>This example loads a WAV, and flips it with an info-panel.</p>");
+			exTemp.createDesc("<p>Viewer and Player tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br /><p>Due to certain constraints in Actionscript programming, this element requires your AS3 project to be an AIR project.</p><br /><p>In this case, the menu not only provides a helpful visual frame and an info panel, but buttons which allow access to the WAV's play and pause functions.</p><br /><p>It has also been styled differently to give it a more unique border and theme.</p><br /><p>This example loads a WAV, and flips it with an info-panel.</p>");
 			
 			var wavplayer:WAVPlayer = new WAVPlayer();
 			

@@ -40,7 +40,7 @@ package as3.components
 			addChild(exTemp);
 			
 			exTemp.createTitle("LiveVideo Viewer");
-			exTemp.createDesc("<p>This tag captures and displays video input from a user’s camera. Default has width and height defined for the video but also allows the user to specify their own width and height for the video.This example also captures audio from microphone.Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br /><p>In this case, the menu not only provides a helpful visual frame and an info panel, but buttons which allow access to the liveVideo's stop function.</p><br /><p>This example loads a liveVideo, and flips it with an info-panel.</p>");
+			exTemp.createDesc("<p>This class captures and displays video input from a user’s camera. Default has width and height defined for the video but also allows the user to specify their own width and height for the video.This example also captures audio from microphone.Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br /><p>In this case, the menu not only provides a helpful visual frame and an info panel, but buttons which allow access to the liveVideo's stop function.</p><br /><p>This example loads a liveVideo, and flips it with an info-panel.</p>");
 			
 			var lvViewer:LiveVideoViewer = new LiveVideoViewer();
 			

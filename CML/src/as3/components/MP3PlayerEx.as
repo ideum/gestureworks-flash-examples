@@ -44,7 +44,7 @@ package as3.components
 			addChild(exTemp);
 			
 			exTemp.createTitle("MP3 Player");
-			exTemp.createDesc("<p>Viewer and Player tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br /><p>In this case, the menu not only provides a helpful visual frame and an info panel, but buttons which allow access to the MP3's play and pause functions.</p><br /><p>It has also been styled differently in the CML to give it a more unique border and theme.</p><br /><p>This example loads an MP3, and flips it with an info-panel.</p><br /><p>Unlike the WavElement, an MP3 does not have to be compiled as part of an air project.</p><br /><p>See also:<br/>WavElement, <br/>WavPlayer</p>");
+			exTemp.createDesc("<p>Viewer and Player tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br /><p>In this case, the menu not only provides a helpful visual frame and an info panel, but buttons which allow access to the MP3's play and pause functions.</p><br /><p>It has also been styled differently to give it a more unique border and theme.</p><br /><p>This example loads an MP3, and flips it with an info-panel.</p><br /><p>Unlike the WavElement, an MP3 does not have to be compiled as part of an air project.</p><br /><p>See also:<br/>WavElement, <br/>WavPlayer</p>");
 			
 			var mp3Player:MP3Player = new MP3Player();
 			

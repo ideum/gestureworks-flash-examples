@@ -39,10 +39,12 @@ package as3.elements
 			tf1.width = 365;
 			tf1.height = 150;
 			tf1.background = true;
-			tf1.backgroundColor = 0xFFFFFF;
+			tf1.backgroundColor = 0xFFFFFF;			
+			tf1.color = 0x000000;			
 			tf1.border = true;
 			tf1.multiline = true;
 			tf1.type = "input";
+			tf1.selectable = true;
 			addChild(tf1);
 			
 			var tf2:Text = new Text();
@@ -52,9 +54,11 @@ package as3.elements
 			tf2.height = 150;
 			tf2.background = true;
 			tf2.backgroundColor = 0xFFFFFF;
+			tf2.color = 0x000000;						
 			tf2.border = true;
 			tf2.multiline = true;
 			tf2.type = "input";
+			tf2.selectable = true;
 			addChild(tf2);
 		
 		}

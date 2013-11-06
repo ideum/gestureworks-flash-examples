@@ -26,7 +26,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("DropDownMenu");
-			exTemp.createDesc("<p>This tag is used to create a simple drop-down menu from a text string of items. It requires a menuTitle, and menuItems, which will be a comma separated list of items to populate the menu.</p><br /><p>Width and height are automatically set based on font size. To use the menu, you can listen for StateEvents and then extract the string of the menu item that called it from the event's value.</p><br /><p>A menuMarker attribute can be set to \"true\" or \"false\", this setting determines whether or not an arrow appears next to the title menu item to indicate that this does, in fact, function as a menu.</p>");
+			exTemp.createDesc("<p>This class is used to create a simple drop-down menu from a text string of items. It requires a menuTitle, and menuItems, which will be a comma separated list of items to populate the menu.</p><br /><p>Width and height are automatically set based on font size. To use the menu, you can listen for StateEvents and then extract the string of the menu item that called it from the event's value.</p><br /><p>A menuMarker attribute can be set to \"true\" or \"false\", this setting determines whether or not an arrow appears next to the title menu item to indicate that this does, in fact, function as a menu.</p>");
 			
 			var ddMenu:DropDownMenu = new DropDownMenu();
 			ddMenu.x = 500;
