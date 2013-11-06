@@ -1,12 +1,7 @@
 package cml.elements
 {
-	import com.gestureworks.cml.core.CMLObjectList;
 	import com.gestureworks.cml.core.CMLParser;
-	import com.gestureworks.cml.elements.Accordion;
-	import com.gestureworks.cml.elements.Text;
-	import com.gestureworks.cml.events.StateEvent;
 	import com.gestureworks.core.GestureWorks;
-	import com.greensock.*;
 	import flash.events.Event;
 	
 	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="60")]
@@ -14,12 +9,9 @@ package cml.elements
 	/**
 	 * This example demonstrates the Accordion tag
 	 */
-	public class AccordianEx extends GestureWorks
-	{
-		private var tweening:Boolean = false;
-		private var tween:TweenLite;
-		
-		public function AccordianEx():void
+	public class AccordionEx extends GestureWorks
+	{		
+		public function AccordionEx():void
 		{
 			super();
 			gml = "gml/gestures.gml"
