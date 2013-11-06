@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">TouchContainer</Text>
 <Text class="desc">
 	<p>This tag creates touchable containers. Add gestures using the Gesture tag.</p><br />

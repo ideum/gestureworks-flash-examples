@@ -2,21 +2,21 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-	<!-- header -->
-	<Text class="title">Drawer</Text>
-	<Text class="desc">
-		<p>The Drawer is a container that animates in to conceal its contents (closed state) and animates out to reveal its contents (open state). The open and closed states
-		can be toggled by applying one of the three default gestures (tap, flick, or drag) to the drawer's handle. The default gestures can be overridden to disable or customize the gestures 
-		by assigning a custom gesture list to the 'handleGestureList' attribute. Overriding gestures must share the same gesture type as the default.<br /><br />
-		This example demonstrates a Drawer that can be opened and closed by dragging or tapping (flick is disabled) the handle. This Drawer contains a simple graphic object and a nested Drawer with
-		a left side handle orientation. Notice changing the handle orientation also changes the in and out direction of the Drawer.</p><br />	 
-	</Text>
+<!-- header -->
+<Text class="title">Drawer</Text>
+<Text class="desc">
+	<p>The Drawer is a container that animates in to conceal its contents (closed state) and animates out to reveal its contents (open state). The open and closed states
+	can be toggled by applying one of the three default gestures (tap, flick, or drag) to the drawer's handle. The default gestures can be overridden to disable or customize the gestures 
+	by assigning a custom gesture list to the 'handleGestureList' attribute. Overriding gestures must share the same gesture type as the default.<br /><br />
+	This example demonstrates a Drawer that can be opened and closed by dragging or tapping (flick is disabled) the handle. This Drawer contains a simple graphic object and a nested Drawer with
+	a left side handle orientation. Notice changing the handle orientation also changes the in and out direction of the Drawer.</p><br />	 
+</Text>
 
-	<Drawer title="drawer" width="750" height="500" x="500" y="200" labelFont="OpenSansBold" handleColor="0x787F44" bkgColor="0x44789F" handleGestureList="n-tap:true, n-drag:true, n-flick:false">
-		<Graphic shape="circle" radius="200"/>
-		<Drawer title="nested" width="300" height="300" x="450" y="100" handleColor="0xFF0000" bkgColor="0xCCCCCC" handleOrientation="left">
-			<Image id="background" src="/images/michael-otto.jpg"/>
-		</Drawer>
+<Drawer title="drawer" width="750" height="500" x="500" y="200" labelFont="OpenSansBold" handleColor="0x787F44" bkgColor="0x44789F" handleGestureList="n-tap:true, n-drag:true, n-flick:false">
+	<Graphic shape="circle" radius="200"/>
+	<Drawer title="nested" width="300" height="300" x="450" y="100" handleColor="0xFF0000" bkgColor="0xCCCCCC" handleOrientation="left">
+		<Image id="background" src="/images/michael-otto.jpg"/>
 	</Drawer>
+</Drawer>
 	
 </cml>

@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">Slideshow</Text>
 <Text class="desc">
 	<p>The Slideshow tag allows you to create a slideshow out of any variety of display objects, including text, graphics, images, and containers.</p><br /> 

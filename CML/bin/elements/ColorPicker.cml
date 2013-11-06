@@ -5,7 +5,6 @@
 <Graphic class="background" width = "1280" height = "720" shape="rectangle" color="0x000000"/>  
 
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">ColorPicker</Text>
 <Text class="desc">
 	<p>The ColorPicker element provides color selection capability by moving provided indicators or adjusting color properties to select hue and color variants.<br /><br />

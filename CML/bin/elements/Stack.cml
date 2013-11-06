@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">Stack</Text>
 <Text class="desc">
 	<p>This tag is a container that gathers its children into a stack, and allows the user to shuffle through them using a specified user input.<br /><br />

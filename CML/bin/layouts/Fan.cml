@@ -3,10 +3,9 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
 <!-- header -->
-<Graphic class="header-graphic" />
-<Text class="title">FanLayout</Text>
+<Text class="title">Fan Layout</Text>
 <Text class="desc">
-	<p>The FanLayout positions the corners of the container's objects in the same location and rotates them individually around the corner.</p><br />
+	<p>The Fan Layout positions the corners of the container's objects in the same location and rotates them individually around the corner.</p><br />
 	<p>This example demonstrates the fan layout rotated around each corner at various degrees of rotation.</p><br />
 	<p>See also:<br />
 	PileLayout<br />

@@ -3,7 +3,6 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">YouTube </Text>
 <Text class="desc">
 	<p>This tag is used to load in YouTube videos from their ID labels using the YouTube API. It can be placed inside a viewer, containers, and collection viewers, 

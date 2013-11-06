@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">Image </Text>
 <Text class="desc">
 	<p>This tag allows you to load and display external image files such as jpg, png, etc. This tag can resample of the image. The smaller image has been resampled to reduce memory

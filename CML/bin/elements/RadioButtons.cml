@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">RadioButtons</Text>
 <Text class="desc">
 	<p>The RadioButtons element represents a group of radio buttons generated from a user defined list of labels. Other configurable 

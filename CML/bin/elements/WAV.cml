@@ -2,8 +2,7 @@
 
 <cml css="assets/styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">WAV</Text>
 <Text class="desc">
 	<p>This tag is used to load and play a .WAV file from a local storage device, and optionally provides a graphical visualizer.</p><br />

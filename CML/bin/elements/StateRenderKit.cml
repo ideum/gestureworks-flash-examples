@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cml rootDirectory="assets/" css="styles.css">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">StateManager</Text>
 <Text class="desc">
 	<p>The StateManager gobally stores attributes of items, in the RenderData, as states of the object(s), in the Renderer, by assigning the stateId attribute to

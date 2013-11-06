@@ -3,7 +3,7 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
 <!-- header -->
-<Text class="title">Frame</Text>
+<Text class="title">Paint</Text>
 <Text class="desc">
 	<p>This tag can be used to create display object frames</p>
 </Text>

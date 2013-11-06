@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">Gigapixel </Text>
 <Text class="desc">
 	<p>This tag is used to load in a gigapixel image. Gigapixel images are massive images made by tiling smaller images in a seamless, pyramid structured fashion.</p><br />

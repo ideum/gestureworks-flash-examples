@@ -3,7 +3,6 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">Album</Text>
 <Text class="desc">
 	<p>The Album provides a list of display objects that can be scrolled horizontally or vertically.<br /><br />

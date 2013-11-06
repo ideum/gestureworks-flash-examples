@@ -3,7 +3,6 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
 <!-- header -->
-<Graphic class="header-graphic"/>
 <Text class="title">Switch</Text>
 <Text class="desc">
 	<p>This tag acts as a Switch button. The state can be changed by drag and touch event.</p>

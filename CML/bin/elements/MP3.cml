@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">MP3 </Text>
 <Text class="desc">
 	<p>This tag is used to load an MP3 element that plays back and can be displayed with a graphical wave form.</p><br />

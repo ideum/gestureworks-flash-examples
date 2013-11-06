@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">RenderKit</Text>
 <Text class="desc">
 	<p>This tag is used to create a template which can be populated by XML data that the tag is pointed towards. This allows a user to create a single template, then 

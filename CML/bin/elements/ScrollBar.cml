@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">ScrollBar</Text>
 <Text class="desc">
 	<p>This tag provides a basic scroll bar that can be positioned and styled in various ways, and used to dispatch position events to position content. On its own,

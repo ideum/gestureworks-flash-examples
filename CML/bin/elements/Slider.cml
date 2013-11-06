@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">Slider</Text>
 <Text class="desc" selectable="false" >
 	<p>This tag creates a slider element. The slider can be used through touch and mouse input devices. It also allows for the input value to be fed 

@@ -3,7 +3,6 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">TouchKeyboardCustom</Text>
 <Text class="desc">
 	<p>The TouchKeyboard is a virtual keyboard providing an interface for a collection of Key objects and output management for key events. Default configurations are in place for convenience but the keyboard's style, layout, and key actions are customizable.<br /><br />

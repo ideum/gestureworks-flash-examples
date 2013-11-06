@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">ModestMaps</Text>
 <Text class="desc">
 	<p>This tag is used to load a ModestMaps using the ModestMaps API. The element is already touch enabled for the purpose of navigating the map via touch, and switching map providers via touch. 

@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">TabbedContainer</Text>
 <Text class="desc">
 	<p>The TabbedContainer allows switching between a group of Tabs by selecting their associated tabs.</p><br />

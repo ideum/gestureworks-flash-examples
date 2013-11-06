@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">Include</Text>
 <Text class="desc">
 	<p>This tag allows you to nest CML files. In this example, an external CML file loads an Image wrapped in a TouchContainer</p><br />

@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">HTML (url)</Text>
 <Text class="desc">
 	<p>This tag loads a url using the WebKit AIR Browser.</p>

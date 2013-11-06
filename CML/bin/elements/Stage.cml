@@ -8,9 +8,8 @@
 	fullscreen="false"
 	align="top" 
 	frameRate="30" />
-	
-<!-- header -->
-<Graphic class="header-graphic" />
+
+<!-- header -->	
 <Text class="title">Stage</Text>
 <Text class="desc">
 	<p>This tag gives access to stage definitions normally only available to editing the main document class in Actionscript. This means the stage can be restyled 

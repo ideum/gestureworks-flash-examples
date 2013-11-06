@@ -3,7 +3,6 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">DatePicker</Text>
 <Text class="desc">
 	<p>The DatePicker element provides date selection capability.<br /><br />

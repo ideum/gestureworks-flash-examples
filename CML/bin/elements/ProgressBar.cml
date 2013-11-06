@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">ProgressBar </Text>
 <Text class="desc">
 	<p>The progress bar can be set as the child of a video element to display the video's playing progress. Width and height are customizable, as is color.</p><br />

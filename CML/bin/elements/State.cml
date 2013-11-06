@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cml rootDirectory="assets/"  css="styles.css">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">StateManager</Text>
 <Text class="desc">
 	<p>	The StateManager globally stores attributes specified by nested "State" tags as states of the object(s). When a "State" tag is present, the set of attributes in the object tag

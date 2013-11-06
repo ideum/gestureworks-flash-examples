@@ -2,27 +2,27 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-	<!-- header -->
-	<Graphic class="header-graphic" />
-	<Text class="title">Button</Text>
-	<Text class="desc">
-		<p>The Button hides or shows DisplayObjects on specified state events. The available button states are initial, down, up, over and out.</p><br />
-		<p>This example demonstrates the assignment of DisplayObjects to basic touch events and their visibility settings at each event. When a state event occurs, 
-		the associated object is displayed and all other objects are hidden. The two required attributes are "hit" (defines the object receiving the events) and 
-		"initial" (displays the initial object).</p>
-		<br />
-		<p>See also:<br />Key<br />
-		</p>	 
-	</Text>
+<!-- header -->
+<Text class="title">Button</Text>
+<Text class="desc">
+	<p>The Button hides or shows DisplayObjects on specified state events. The available button states are initial, down, up, over and out.</p><br />
+	<p>This example demonstrates the assignment of DisplayObjects to basic touch events and their visibility settings at each event. When a state event occurs, 
+	the associated object is displayed and all other objects are hidden. The two required attributes are "hit" (defines the object receiving the events) and 
+	"initial" (displays the initial object).</p>
+	<br />
+	<p>See also:<br />Key<br />
+	</p>	 
+</Text>
 
-	<Button x="750" y="200" hit="#hit-area" initial="white" down="blue" up="red" out="purple"
-		dispatch="initial:initial-state:down:down-state:up:up-state:over:over state:out:out-state" >		
-		<Graphic id="hit-area" shape="circle" radius="100" alpha="0" />		
-		<Graphic id="white" color="0xFFFFFF" shape="circle" radius="100" lineStroke="0" />	
-		<Graphic id="red" color="0xFF0000" shape="circle" radius="100" lineStroke="0" />	
-		<Graphic id="blue" color="0x0000FF" shape="circle" radius="100" lineStroke="0" />
-		<Graphic id="purple" color="0xFF00FF" shape="circle" radius="100" lineStroke="0" />
-	</Button>
+<Button x="750" y="200" hit="#hit-area" initial="white" down="blue" up="red" out="purple"
+	dispatch="initial:initial-state:down:down-state:up:up-state:over:over state:out:out-state" >		
+	<Graphic id="hit-area" shape="circle" radius="100" alpha="0" />		
+	<Graphic id="white" color="0xFFFFFF" shape="circle" radius="100" lineStroke="0" />	
+	<Graphic id="red" color="0xFF0000" shape="circle" radius="100" lineStroke="0" />	
+	<Graphic id="blue" color="0x0000FF" shape="circle" radius="100" lineStroke="0" />
+	<Graphic id="purple" color="0xFF00FF" shape="circle" radius="100" lineStroke="0" />
+</Button>
 
-	<Text id="t" x="800" y="420" text="initial-state" autoSize="center" fontSize="50" color="0xFFFFFF"/>
+<Text id="t" x="800" y="420" text="initial-state" autoSize="center" fontSize="50" color="0xFFFFFF"/>
+
 </cml>

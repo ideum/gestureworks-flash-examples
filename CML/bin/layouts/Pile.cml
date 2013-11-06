@@ -3,10 +3,9 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">PileLayout</Text>
 <Text class="desc">
-	<p>The PileLayout positions the centers of the container's objects in the same location and rotates them individually around the center.</p><br />
+	<p>The Pile Layout positions the centers of the container's objects in the same location and rotates them individually around the center.</p><br />
 	<p>This example demonstrates a pile layout with a random angle of rotation and one with a fixed angle of rotation.</p><br />
 	<p>See also:<br />
 	LayoutFactory<br />

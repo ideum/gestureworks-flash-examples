@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">Hotspot</Text>
 <Text class="desc">
 	<p>This tag allows content to set hotspots on images and gigapixel images.</p><br />

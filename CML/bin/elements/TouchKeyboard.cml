@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">TouchKeyboard</Text>
 <Text class="desc">
 	<p>The TouchKeyboard is a virtual keyboard providing an interface for a collection of Key objects and output management for key events. 

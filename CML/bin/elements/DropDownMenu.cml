@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">DropDownMenu</Text>
 <Text class="desc">
 	<p>This tag is used to create a simple drop-down menu from a text string of items. It requires a menuTitle, and menuItems, which will be a comma separated list of items to populate the menu.</p><br/>	 

@@ -7,7 +7,6 @@
 </Background>
 	
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">Background</Text>
 <Text class="desc">
 	<p>This tag creates a background screen out of its child objects. 

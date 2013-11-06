@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">Tab</Text>
 <Text class="desc">
 	<p>The tab element is a container with a tab extension. The container's contents will be visible when the selected state is true and hidden othewise. 

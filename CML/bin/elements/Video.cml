@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">Video </Text>
 <Text class="desc">
 	<p>This tag is used to load a video element and play back your selected video from your hard drive. Supported file types are:</p><br />

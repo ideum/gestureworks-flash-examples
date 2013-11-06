@@ -3,7 +3,6 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">Dial</Text>
 <Text class="desc">
 	<p>The Dial element provides a list of text elements in rotary selection tool.</p><br />

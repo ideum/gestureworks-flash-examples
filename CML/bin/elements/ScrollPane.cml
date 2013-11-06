@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">ScrollPane</Text>
 <Text class="desc">
 	<p>This tag combines or generates ScrollBars with content, to make a scrollable window. Content can be set to use gestures such as n-scale to get bigger and smaller, 

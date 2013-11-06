@@ -2,8 +2,7 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->
-<Graphic class="header-graphic" />
+<!-- header -->	
 <Text class="title">Flickr </Text>
 <Text class="desc">
 	<p>This tag is used to load images in from Flickr using the Flickr API. It can be placed inside a viewer, containers, and collection viewers.</p><br /> 

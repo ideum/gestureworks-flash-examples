@@ -3,10 +3,9 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
 <!-- header -->
-<Graphic class="header-graphic" />
-<Text class="title">GridLayout</Text>
+<Text class="title">Grid Layout</Text>
 <Text class="desc">
-	<p>The GridLayout positions the container's objects in a grid based on the number of rows, columns, and spacing(pixels). 
+	<p>The Grid Layout positions the container's objects in a grid based on the number of rows, columns, and spacing(pixels). 
 	By default, the distribution is from left to right but can be performed from top to bottom by setting the "leftToRight" flag to false. 
 	Spacing is controlled by the "spacingX" and "spacingY" attributes and can be switched to use margins(marginX and marginY) through the 
 	"useMargins" flag.</p><br />

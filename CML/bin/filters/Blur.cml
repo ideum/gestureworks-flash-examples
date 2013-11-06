@@ -3,7 +3,6 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="true">
 	
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">Filter - Blur</Text>
 <Text class="desc">
 	<p>This tag gives access to various filter effects. The Filter is added on as a child of whatever display object should have that filter, and is then applied. 

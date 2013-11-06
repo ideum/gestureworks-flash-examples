@@ -3,10 +3,9 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
 <!-- header -->
-<Graphic class="header-graphic" />
-<Text class="title">PointLayout</Text>
+<Text class="title">Point Layout</Text>
 <Text class="desc">
-	<p>The PointLayout positions the objects of a container based on a user defined list of xy coordinates. 
+	<p>The Point Layout positions the objects of a container based on a user defined list of xy coordinates. 
 	The list is a comma delimited string of number values assigned to the "points" attribute.</p><br />
 	<p>This example demonstrates a layout based on a user defined list of points.</p><br />
 	<p>See also:<br />
