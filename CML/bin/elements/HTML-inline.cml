@@ -5,22 +5,21 @@
 <!-- header -->	
 <Text class="title">HTML (inline)</Text>
 <Text class="desc">
-	<p>This tag loads a url using the WebKit AIR Browser.</p>
+	<p>This tag loads a url or inline HTML using the WebKit AIR Browser.</p>
 </Text>
 	
 	
 <!-- The html element can load inline HTML -->
-<HTML>
+<HTML x="650" y="100" width="600" height="500">
 	<head>
 		<script>
 		function myFunction() {
-		//window.as3Function();
-			alert("You just change the stage background color from AS3");
+			alert("Hello");
 		}
 		</script>
 		</head>
 		<body>
-		<button onclick="myFunction()">Change color</button>
+		<button onclick="myFunction()">Say Hello with JavaScript</button>
 	</body>	
 </HTML>
 

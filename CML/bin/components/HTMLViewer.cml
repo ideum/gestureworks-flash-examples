@@ -7,38 +7,30 @@
 </LibraryKit>
 
 <!-- header -->
-<Text class="title">Image Viewer</Text>
+<Text class="title">HTML Viewer</Text>
 <Text class="desc">
-	<p>The Image Viewer is a component that is primarily meant to display an Image on the front side and meta-data on the back side. 
-	It is composed of the following elements:
-	<ul>
-		<li>- Image</li>
-		<li>- Menu</li>
-		<li>- Frame</li>
-		<li>- Container (front)</li>
-		<li>- Container (back)</li>		
-	</ul> <br />
-	The width and height of the component are automatically set to the dimensions of the image.<br /><br />
-	This example demonstrates an image on the front of an ImageViewer and an info panel on the back. The viewer can be rotated, scaled, and dragged.</p><br />
+	<p>The HTML Viewer is a component that is primarily meant to display an HTML website on the front side and meta-data on the back side. 
+	The width and height of the component are automatically set to the dimensions of the HTML element.<br /><br />
+	This example demonstrates an HTML element on the front and an info panel on the back. The viewer can be rotated, scaled, and dragged.</p><br />
 	<p>See also:<br />
-	Component<br />Image<br />
+	Component<br />HTML<br />
 	</p>	 
 </Text>
 
 
 <!-- VIEWER -->
-<ImageViewer x="720" y="100" front="#img" back="#info" scale=".9">
+<HTMLViewer x="720" y="100" back="#info" scale=".9">
 
-	<!-- FRONT: Image -->
-	<Image id="img" src="images/train.jpg" scale=".5" mouseChildren="false"/>
+	<!-- FRONT: HTML -->
+	<HTML src="http://ideum.com/" width="600" height="500" mouseChildren="false"/>
 	
 	<!-- BACK: info panel -->
 	<Container id="info" visible="false" targetParent="true">
 		<Graphic color="0x665533" alpha="0.8" shape="rectangle" width="100%" height="100%"/>
 		<Container paddingTop="30" paddingLeft="30" paddingRight="30" width="100%" height="100%" relativeY="true">
-			<Text str="The Gare Montparnasse" fontSize="30" color="0xFFFFFF" font="OpenSansBold" autosize="true" width="100%" borderColor="0xFFFFFF" />				
+			<Text str="Open Exhibits" fontSize="30" color="0xFFFFFF" font="OpenSansBold" autosize="true" width="100%" borderColor="0xFFFFFF" />				
 			<Text fontSize="20" wordWrap="true" color="0xFFFFFF" width="100%" autosize="true" multiline="true" 
-				str="The Gare Montparnasse became famous for the derailment on 22 October 1895 of the Granville–Paris Express, which overran the buffer stop."/>			
+				str="Open Exhibits is the parent company for both GestureWorks and Open Exhibits."/>			
 		</Container>
 	</Container>
 
@@ -59,6 +51,6 @@
 		<Gesture ref="n-rotate" />
 	</GestureList>
 	
-</ImageViewer>	
+</HTMLViewer>	
 
 </cml>
