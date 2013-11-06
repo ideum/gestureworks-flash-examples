@@ -15,7 +15,7 @@
 </Text>
 
 <TouchKeyboard id="tk" x="500" y="300" scale=".8"/>
-<Text x="500" y="140" width="365" height="150" background="true" backgroundColor="0xFFFFFF" border="true" multiline="true" type="input"/>
-<Text x="875" y="140" width="365" height="150" background="true" backgroundColor="0xFFFFFF" border="true" multiline="true" type="input"/>
+<Text x="500" y="140" width="365" height="150" background="true" backgroundColor="0xFFFFFF" color="0x000000" selectable="false" border="true" multiline="true" type="input"/>
+<Text x="875" y="140" width="365" height="150" background="true" backgroundColor="0xFFFFFF" color="0x000000" selectable="false" border="true" multiline="true" type="input"/>
 
 </cml>
