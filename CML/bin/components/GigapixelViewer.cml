@@ -9,7 +9,7 @@
 <!-- header -->
 <Text class="title">GigaPixel Viewer</Text>
 <Text class="desc" selectable="true">
-	<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p> 
+	<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br />
 	<p>The GigapixelViewer tag loads a gigapixel image from an XML index and folder branch, and allows for an info panel or other buttons to be attached to provide more information.</p>
 </Text>
 
@@ -19,8 +19,8 @@
 	<Gigapixel src="deepzoom/space.xml" width="600" />
 
 	<!-- BACK: info panel -->
-	<Container id="info" visible="false" targetParent="true">
-		<Graphic color="0xFFAE1F" alpha="0.6" shape="rectangle" width="100%" height="100%"/>
+	<Container id="info" visible="false" targetParent="true" width="100%" height="100%">
+		<Graphic id="bg" color="0xFFAE1F" alpha="0.6" shape="rectangle" width="100%" height="100%"/>
 		<Container paddingTop="30" paddingLeft="30" paddingRight="30" width="100%" height="100%" relativeY="true">
 			<Text str="FDRs Infamy Speech" fontSize="30" color="0xFFFFFF" font="OpenSansBold" autosize="true" width="100%" borderColor="0xFFFFFF" />				
 			<Text fontSize="20" wordWrap="true" color="0xFFFFFF" width="100%" autosize="true" multiline="true" 
@@ -29,7 +29,7 @@
 	</Container>
 	
 	<!-- FRAME-->
-	<Include src="assets/frame.cml" />
+	<Include src="frame.cml" />
 	
 	<!-- MENU -->
 	<Menu x="0" y="0" alpha="0.75" position="bottomRight" autohide="true"

@@ -7,7 +7,7 @@ package cml.components
 	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="30")]
 	
 	/**
-	 * This example demonstrates the CML ModestMapViewer tag.
+	 * This example demonstrates the CML Gigapixel viewer tag.
 	 */
 	public class GigapixelViewerEx extends GestureWorks
 	{

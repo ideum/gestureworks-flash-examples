@@ -2,10 +2,10 @@ package cml.components
 {
 	import com.gestureworks.cml.core.CMLObjectList;
 	import com.gestureworks.cml.core.CMLParser;
-	import com.gestureworks.cml.element.Album;
-	import com.gestureworks.cml.element.Graphic;
-	import com.gestureworks.cml.element.TouchContainer;
-	import com.gestureworks.cml.element.Video;
+	import com.gestureworks.cml.elements.Album;
+	import com.gestureworks.cml.elements.Graphic;
+	import com.gestureworks.cml.elements.TouchContainer;
+	import com.gestureworks.cml.elements.Video;
 	import com.gestureworks.cml.events.StateEvent;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.events.GWGestureEvent;
