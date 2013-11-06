@@ -21,7 +21,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("Toggle");
-			exTemp.createDesc("<p>This tag acts as a toggle button and adds crossline inside square when toggled.</p>");
+			exTemp.createDesc("<p>This class acts as a toggle button and adds crossline inside square when toggled.</p>");
 			
 			var tg:Toggle = new Toggle();
 			

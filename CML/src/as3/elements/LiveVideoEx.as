@@ -22,7 +22,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("Live Video Element");
-			exTemp.createDesc("<p>This tag captures and displays video input from a user’s camera. Default has width and height defined for the video but also allows the user to specify their own width and height for the video. This example also captures audio from microphone.</p>");
+			exTemp.createDesc("<p>This class captures and displays video input from a user’s camera. Default has width and height defined for the video but also allows the user to specify their own width and height for the video. This example also captures audio from microphone.</p>");
 						
 			 var lvElement:LiveVideo = new LiveVideo();
 			 lvElement.scale = 3;

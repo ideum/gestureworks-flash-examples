@@ -27,7 +27,7 @@ package as3.elements
 			   addChild(exTemp);
 			
 			   exTemp.createTitle("Touch Container");
-			   exTemp.createDesc("<p>This tag can be used to create display hierarchies. It keeps track of children through the childlist property.</p>");
+			   exTemp.createDesc("<p>This class can be used to create display hierarchies. It keeps track of children through the childlist property.</p>");
 			
 			
 			   var tc:TouchContainer = new TouchContainer();

@@ -23,7 +23,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("Slideshow");
-			exTemp.createDesc("<p>The Slideshow tag allows you to create a slideshow out of any variety of display objects, including text, graphics, images, and containers.</p><br />"
+			exTemp.createDesc("<p>The Slideshow class allows you to create a slideshow out of any variety of display objects, including text, graphics, images, and containers.</p><br />"
 			+"<p>The Slideshow can even be put inside a viewer or any other container with buttons that allow a user to access Play, Pause, Resume, and Stop.</p><br />"
 			+"<p>The \"rate\" is how long each item is on stage in milliseconds after fading in, the fade duration determines how quickly the fade happens between objects.</p>");
 			

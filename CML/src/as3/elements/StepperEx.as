@@ -21,7 +21,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("Stepper");
-			exTemp.createDesc("<p>This tag provides increment and decrement of text and allows the user to enter the text through text input field. This example also provide an option to change the text from float to integer and integer to float by setting the float flag to true or false.The text can be incremented or decremented based on the touch and drag events.</p>");
+			exTemp.createDesc("<p>This class provides increment and decrement of text and allows the user to enter the text through text input field. This example also provide an option to change the text from float to integer and integer to float by setting the float flag to true or false.The text can be incremented or decremented based on the touch and drag events.</p>");
 			
 			
 			/****Stepper-Float****/

@@ -23,7 +23,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("Image Element");
-			exTemp.createDesc("<p>This tag allows you to load and display external image files such as jpg, png, etc.</p><br /><p>This tag also allows for scaling and resampling.</p>");
+			exTemp.createDesc("<p>This class allows you to load and display external image files such as jpg, png, etc.</p><br /><p>This class also allows for scaling and resampling.</p>");
 			
 			// Set the file path using the src attribute. File paths are relative to the executable or swf file.
 			var img1:Image = new Image();

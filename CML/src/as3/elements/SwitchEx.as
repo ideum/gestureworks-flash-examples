@@ -23,7 +23,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("Switch");
-			exTemp.createDesc("<p>This tag acts as a Switch button. The state can be changed by drag and touch event.</p>");
+			exTemp.createDesc("<p>This class acts as a Switch button. The state can be changed by drag and touch event.</p>");
 			
 			var sw:Switch = new Switch();
 			

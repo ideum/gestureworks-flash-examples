@@ -27,7 +27,7 @@ package as3.elements
 			
 			/**
 			 * The Flickr ID is a numerical ID associated with the picture. To find a picture ID from a link, look at the digits following the slash after the contributor's name.
-			 * For example, in: www.flickr.com/photos/paulslab/4385244497/, the number "438524497" is the ID you need to put in the "src" field of the tag.
+			 * For example, in: www.flickr.com/photos/paulslab/4385244497/, the number "438524497" is the ID you need to put in the "src" field of the class.
 			 */
 			var flickrImg:Flickr = new Flickr();
 			flickrImg.apikey = "ENTER YOUR FLICKR API KEY";

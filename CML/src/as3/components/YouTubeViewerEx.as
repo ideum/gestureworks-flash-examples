@@ -43,7 +43,7 @@ package as3.components
 			addChild(exTemp);
 			
 			exTemp.createTitle("Youtube Viewer");
-			exTemp.createDesc("<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br /><p>In this case, the menu not only provides a helpful visual frame and an info panel, but buttons which allow access to the YouTube's play and pause functions without having to set chrome=\"true\" in the element tag.</p><br /><p>This example loads a YouTube, and flips it with an info-panel.</p>");
+			exTemp.createDesc("<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br /><p>In this case, the menu not only provides a helpful visual frame and an info panel, but buttons which allow access to the YouTube's play and pause functions without having to set chrome=\"true\" in the element class.</p><br /><p>This example loads a YouTube, and flips it with an info-panel.</p>");
 			
 			var youtubeViewer:YouTubeViewer = new YouTubeViewer();
 			

@@ -38,7 +38,7 @@ package as3.components
 			addChild(exTemp);
 			
 			exTemp.createTitle("Gigapixel Viewer");
-			exTemp.createDesc("<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br /><p>The GigapixelViewer tag loads a gigapixel image from an XML index and folder branch, and allows for an info panel or other buttons to be attached to provide more information.</p>");
+			exTemp.createDesc("<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br /><p>The GigapixelViewer class loads a gigapixel image from an XML index and folder branch, and allows for an info panel or other buttons to be attached to provide more information.</p>");
 			
 			var gigapixelViewer:GigapixelViewer = new GigapixelViewer();
 			

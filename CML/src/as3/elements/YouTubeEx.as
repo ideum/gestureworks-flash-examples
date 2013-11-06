@@ -21,7 +21,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("YouTube Element");
-			exTemp.createDesc("<p>This tag is used to load in YouTube videos from their ID labels using the YouTube API. It can be placed inside a viewer, containers, and collection viewers, and has the methods \"Play\", \"Pause\", \"Stop\", \"Resume\", \"Seek\", and \"Close\" available.</p><br /><p>This example will automatically load and play a video from the web.</p><br /><p>This example uses YouTube's \"chromed\" player, which automatically has buttons to control playback, volume, etc. When a YouTube is placed inside a touchContainer, it is recommended to set chrome=\"false\" and to use custom buttons, since touch events will not reach the \"chromed\" player.</p>");
+			exTemp.createDesc("<p>This class is used to load in YouTube videos from their ID labels using the YouTube API. It can be placed inside a viewer, containers, and collection viewers, and has the methods \"Play\", \"Pause\", \"Stop\", \"Resume\", \"Seek\", and \"Close\" available.</p><br /><p>This example will automatically load and play a video from the web.</p><br /><p>This example uses YouTube's \"chromed\" player, which automatically has buttons to control playback, volume, etc. When a YouTube is placed inside a touchContainer, it is recommended to set chrome=\"false\" and to use custom buttons, since touch events will not reach the \"chromed\" player.</p>");
 			
 			/* The Video ID is the 10-digit ID associated with the video link. For example, a direct URL to the video used in this example is:
 			   http://www.youtube.com/watch?v=h0MZX-D8xzA Notice the "h0MZX-D8xzA" is the video's id. A video must be set to allow embedding from its owner

@@ -22,7 +22,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("ScrollPane");
-			exTemp.createDesc("<p>This tag provides a mechanism to horizontally or vertically scroll content that exceeds the container's dimensions. Content can be scrolled by dragging " + "the object directly or by using the vertical/horizontal scroll bars.<br /><br />See Also: ScrollBar</p>");
+			exTemp.createDesc("<p>This class provides a mechanism to horizontally or vertically scroll content that exceeds the container's dimensions. Content can be scrolled by dragging " + "the object directly or by using the vertical/horizontal scroll bars.<br /><br />See Also: ScrollBar</p>");
 			
 			var sp:ScrollPane = new ScrollPane();
 			sp.width = 500;
