@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+<!-- header -->
+<Text class="title">SVG</Text>
+<Text class="desc">
+	<p>This tag is used to load SVG media types. This is a great way to incorporate your own graphics into applications.</p><br />
+	<p>The SVG tag uses the AS3SVGRenderer library: https://github.com/LucasLorentz/AS3SVGRenderer</p>
+</Text>
+
+<SVG src="fraser-spiral.svg" />
+
+</cml>

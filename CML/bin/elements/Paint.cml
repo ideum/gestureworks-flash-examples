@@ -7,7 +7,7 @@
 <Text class="desc">
 	<p>The Paint tag can be used to create a drawable display container. Place this element anywhere in the display stack to create a paint overlay.</p><br />
 	<p>The tag supports import / export options for SVG and PNG file types.</p><br />
-	<p>See the ActionScript file to see how one can easily map keyboard commands to various settings.</p>
+	<p>See the ActionScript file to see how one can easily map keyboard commands to various settings and functions.</p>
 </Text>
 
 <Image x="650" y="100" src="images/background.jpg" width="500" height="500" />	
