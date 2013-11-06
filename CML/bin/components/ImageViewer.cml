@@ -47,7 +47,7 @@
 	
 	<!-- MENU -->
 	<Menu x="0" y="0" alpha="0.75" position="bottomRight" autohide="true"
-		paddingLeft="0" paddingBottom="10" paddingRight="10" visible="false">
+		paddingBottom="10" paddingRight="10" visible="false">
 		<Include src="infoButton.cml"/>
 		<Include src="closeButton.cml"/>		
 	</Menu>
