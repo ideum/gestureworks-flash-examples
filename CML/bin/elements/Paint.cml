@@ -5,10 +5,12 @@
 <!-- header -->
 <Text class="title">Paint</Text>
 <Text class="desc">
-	<p>This tag can be used to create display object frames</p>
+	<p>The Paint tag can be used to create a drawable display container. Place this element anywhere in the display stack to create a paint overlay.</p><br />
+	<p>The tag supports import / export options for SVG and PNG file types.</p><br />
+	<p>See the ActionScript file to see how one can easily map keyboard commands to various settings.</p>
 </Text>
 
-<Frame id="frame1" width="300" height="300" x="700" y="200" frameAlpha=".7" 
-	frameColor="0xAAAABB" frameThickness="20"/>
+<Image x="650" y="100" src="images/background.jpg" width="500" height="500" />	
+<Paint x="650" y="100" width="500" height="500" backgroundColor="0xFFFFFF" backgroundAlpha="0" />
 
 </cml>

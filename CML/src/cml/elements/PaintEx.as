@@ -1,13 +1,12 @@
-package 
+package cml.elements
 {
+	import com.gestureworks.cml.elements.Paint;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.cml.core.CMLObjectList;
 	import com.gestureworks.cml.core.CMLParser;
 	import flash.events.Event;
 	import flash.events.KeyboardEvent;
-	
-	import Paint;
-	
+		
 	[SWF(width = "1280", height = "720", backgroundColor = "0x000000", frameRate = "30")]
 	
 	public class PaintEx extends GestureWorks
@@ -16,7 +15,7 @@ package
         {
             super();
 			gml = "gml/gestures.gml";
-			cml = "elements/paint.cml";
+			cml = "elements/Paint.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
         }
 		
