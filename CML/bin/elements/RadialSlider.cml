@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<cml rootDirectory="assets">
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
 <!-- header -->
-<Graphic class="header-graphic" />
-<Text class="title"> Radial Slider </Text>
+<Text class="title">Radial Slider</Text>
 <Text class="desc">
 	<p>This tag creates a slider element. The slider can be used through touch and mouse input devices.</p>
 	<p>It also allows for the input value to be fed through a function call, allowing the slider to be updated by another process.</p><br />
 	<p>The slider can rotate clockwise or counter clockwise. It can act as a continuous slider or one that snaps to x-number of discrete steps.</p>
 </Text>
 
-<RadialSlider id="Snapping Slider" x="500" y="0" min="0" max="100" discrete="true" knobRadius="20" startAngle="0" radius="100" innerRadius="50" centerX="100" centerY="100" clockwise="false" hit="hitSnap" rail="railSnap" knob="knobSnap">
+<RadialSlider id="Snapping Slider" x="500" y="40" min="0" max="100" discrete="true" knobRadius="20" startAngle="0" radius="100" innerRadius="50" centerX="100" centerY="100" clockwise="false" hit="hitSnap" rail="railSnap" knob="knobSnap">
 	<Graphic id="railSnap" shape="circleSegment" x="10" y="10" radius="90" innerRadius="60" startAngle="0" angleLength="0" clockwise="false" lineStroke="1" color="0xFF2222" lineColor="0xFF3333" alpha="1"/>
 	<Graphic id="hitSnap" shape="circleSegment" x="0" y="0" radius="100" innerRadius="50" startAngle="0" angleLength="360" clockwise="false" color="0x222222" alpha="0.75" lineColor="0x333333"/>
 	<Graphic id="knobSnap" shape="circle" x="0" y="0" radius="18" lineStroke="2" color="0xDDDDDD" lineColor="0x666666" alpha="1" />
 </RadialSlider>
 
-<TLF x="490" y="205" width="400" height="260" font="OpenSansBoldTLF">
+<TLF x="490" y="245" width="400" height="260" font="OpenSansBoldTLF">
 	<TextFlow xmlns="http://ns.adobe.com/textLayout/2008" color="0xFFFFFF">
 		<p fontSize="20">Snapping Enabled Slider</p> 
 	</TextFlow>		

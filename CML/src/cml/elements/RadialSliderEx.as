@@ -1,20 +1,19 @@
-//////////////////////////////////////////////////////////////////////////////
-// This example demonstrates the CML RadialSlider tag.
-/////////////////////////////////////////////////////////////////////////////
-
 package cml.elements
 {
 	import com.gestureworks.cml.core.CMLObjectList;
 	import com.gestureworks.cml.core.CMLParser;
-	import com.gestureworks.core.GestureWorks;
+	import com.gestureworks.cml.elements.RadialSlider;
 	import com.gestureworks.cml.events.StateEvent;
-	import com.gestureworks.cml.element.RadialSlider;
+	import com.gestureworks.core.GestureWorks;
 	import flash.events.Event;
 	import flash.events.TimerEvent;
 	import flash.utils.Timer;
 
 	[SWF(width = "1280", height = "720", backgroundColor = "0x000000", frameRate = "30")]
 
+	/**
+	 * This example demonstrates the CML RadialSlider tag.
+	 */
 	public class RadialSliderEx extends GestureWorks
 	{
 		public function RadialSliderEx():void 
