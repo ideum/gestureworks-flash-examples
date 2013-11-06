@@ -7,7 +7,6 @@
 </LibraryKit>
 
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">ModestMap Viewer</Text>
 <Text class="desc" selectable="true">
 	<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br />
@@ -22,7 +21,7 @@
 	</TouchContainer>
 
 	<TouchContainer class="map_container" visible="true" targetParent="false" mouseChildren="false"  nativeTransform="false" affineTransform="false">
-		
+
 		<ModestMap class="map_element" height="400" width="550" latitude="51.1857" longitude="-1.8033" zoom="13" mapprovider="MicrosoftHybridMapProvider">
 			<ModestMapMarker longitude="-1.7867" latitude="51.1896">
 				<Text text="Woodhenge" color="0xFAFAC0" fontSize="12" width="81" height="20" background="true" backgroundColor="0x594D37"/>
@@ -33,10 +32,10 @@
 		</ModestMap>	
 		
 		<GestureList>
-			<Gesture ref="n-drag" gestureOn="true"/>
-			<Gesture ref="n-scale" gestureOn="true"/>
-			<Gesture ref="n-rotate" gestureOn="true"/>
-			<Gesture ref="double_tap" gestureOn="true"/>
+			<Gesture ref="n-drag" />
+			<Gesture ref="n-scale" />
+			<Gesture ref="n-rotate" />
+			<Gesture ref="double_tap" />
 		</GestureList>			
 	</TouchContainer>	
 	
@@ -48,18 +47,15 @@
 	
 	<!-- Here is where the entire menu is structured. We used "include" files to style each of our buttons individually rather than have all the mark-up here. -->
 	<Menu class="menu_container" x="0" y="0" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="true" visible="false">
-	
 		<Include src="infoButton.cml"/>
-		
-		<Include src="closeButton.cml"/>
-		
+		<Include src="closeButton.cml"/>		
 	</Menu>
 	
 	<GestureList>
-		<Gesture ref="n-drag" gestureOn="true"/>
-		<Gesture ref="n-scale" gestureOn="true"/>
-		<Gesture ref="n-rotate" gestureOn="true"/>
-		<Gesture ref="tap" gestureOn="true"/>
+		<Gesture ref="n-drag" />
+		<Gesture ref="n-scale" />
+		<Gesture ref="n-rotate" />
+		<Gesture ref="n-tap" />
 	</GestureList>
 	
 </ModestMapViewer>

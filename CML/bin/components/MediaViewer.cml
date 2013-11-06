@@ -7,7 +7,6 @@
 </LibraryKit>
 
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">MediaViewer</Text>
 <Text class="desc" selectable="true">
 	<p>The MediaViewer is a component that is meant to load various types of media files on the front and metadata on the back. It is composed of the 
@@ -57,10 +56,10 @@
 	</Menu>
 	
 	<GestureList>
-		<Gesture ref="n-drag" gestureOn="true"/>
-		<Gesture ref="n-scale" gestureOn="true"/>
-		<Gesture ref="n-rotate" gestureOn="true"/>
-		<Gesture ref="tap" gestureOn="true"/>
+		<Gesture ref="n-drag" />
+		<Gesture ref="n-scale" />
+		<Gesture ref="n-rotate" />
+		<Gesture ref="tap" />
 	</GestureList>
 	
 </MediaViewer>

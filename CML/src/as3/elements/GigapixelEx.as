@@ -30,7 +30,6 @@ package as3.elements
 			gpElement.x = 500;
 			gpElement.width = 600;
 			gpElement.height = 600;
-			gpElement.mouseChildren = true;
 			addChild(gpElement);
 			gpElement.init();
 		}

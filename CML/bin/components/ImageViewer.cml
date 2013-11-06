@@ -7,8 +7,7 @@
 </LibraryKit>
 
 <!-- header -->
-<Graphic class="header-graphic" />
-<Text class="title">ImageViewer</Text>
+<Text class="title">Image Viewer</Text>
 <Text class="desc">
 	<p>The ImageViewer is a component that is primarily meant to display an Image on the front side and meta-data on the back side. 
 	It is composed of the following elements:
@@ -29,7 +28,8 @@
 
 <!-- VIEWER -->
 <ImageViewer x="720" y="100" front="#img" back="#info" scale=".9">
-	<!-- FRONT: image -->
+
+	<!-- FRONT: Image -->
 	<Image id="img" src="images/train.jpg" scale=".5" mouseChildren="false"/>
 	
 	<!-- BACK: info panel -->
@@ -46,7 +46,7 @@
 	<Include src="frame.cml" />
 	
 	<!-- MENU -->
-	<Menu x="0" y="0" alpha="0.75" position="bottomRight" autoHide="true"
+	<Menu x="0" y="0" alpha="0.75" position="bottomRight" autohide="true"
 		paddingLeft="0" paddingBottom="10" paddingRight="10" visible="false">
 		<Include src="infoButton.cml"/>
 		<Include src="closeButton.cml"/>		
@@ -54,9 +54,9 @@
 	
 	<!-- GESTURES -->
 	<GestureList>
-		<Gesture ref="n-drag" gestureOn="true"/>
-		<Gesture ref="n-scale" gestureOn="true"/>
-		<Gesture ref="n-rotate" gestureOn="true"/>
+		<Gesture ref="n-drag" />
+		<Gesture ref="n-scale" />
+		<Gesture ref="n-rotate" />
 	</GestureList>
 	
 </ImageViewer>	

@@ -4,7 +4,7 @@
 
 <!-- header -->
 <Graphic class="header-graphic" />
-<Text class="title">ScrollBar</Text>
+<Text class="title">ScrollPane</Text>
 <Text class="desc">
 	<p>This tag combines or generates ScrollBars with content, to make a scrollable window. Content can be set to use gestures such as n-scale to get bigger and smaller, 
 	and users can use drag gestures to pan through the content. The drag is reversible, so it can perform similar to text fields on small touch screen devices.</p><br />
@@ -14,21 +14,19 @@
 	the GestureList they'd like associated. Please note that rotating inside a ScrollPane is not an option.</p>
 </Text>
 
-<ScrollPane id="sp" y="50" x="500" width="400" height="400" paneStroke="0" releaseInertia="true" scrollOnPane="true">
+<ScrollPane id="sp" x="600" y="50" width="500" height="500" paneStroke="0" releaseInertia="true">
 
 	<!-- ScrollBar for styling-->
-	<ScrollBar buttonFill="0xE7635E" fill="0xF8E9A8" thumbFill="0x452743" width="20" railShape="roundRectangle" cornerHeight="15" cornerWidth="15"/>
+	<ScrollBar buttonFill="0x222222" fill="0x333333" thumbFill="0x553344" width="20" railShape="roundRectangle" cornerHeight="15" cornerWidth="15"/>
 
 	<!--Actual image which will be scalable, draggable, and scrollable.-->
-	<Image src="images/500px-Bi-crystal.jpg" />
+	<Image src="images/smoke.jpg" />
 	
 	<!-- TouchContainer so dragging and scrolling can be set on or off, also to assist with making child events accesible provided there is no gesture conflict -->
-	<TouchContainer nativeTransform="false">
-		<GestureList>
-			<Gesture ref="n-drag" gestureOn="true"/>
-			<Gesture ref="n-scale" gestureOn="true"/>
-		</GestureList>
-	</TouchContainer>
+	<GestureList>
+		<Gesture ref="n-drag-inertia" gestureOn="true"/>
+		<Gesture ref="n-scale-inertia" gestureOn="true"/>
+	</GestureList>
 
 </ScrollPane>
 

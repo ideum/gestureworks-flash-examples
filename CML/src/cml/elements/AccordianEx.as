@@ -31,30 +31,6 @@ package cml.elements
 		{
 			CMLParser.removeEventListener(CMLParser.COMPLETE, cmlInit);
 			trace("cmlInit()");
-			// entry point
-			var accordion:Accordion = CMLObjectList.instance.getId("accordion-example");
-			accordion.addEventListener(StateEvent.CHANGE, onStateEvent);
-			var text:Text = CMLObjectList.instance.getId("debug-text");
-			tween = new TweenLite(text, 1.5, {alpha: 1, onComplete: reverseTween, onReverseComplete: finishTween});
-		}
-		
-		private function onStateEvent(e:StateEvent):void
-		{
-			if (e.value == "bees" && !tweening)
-			{
-				tweening = true;
-				tween.play();
-			}
-		}
-		
-		private function reverseTween():void
-		{
-			tween.reverse();
-		}
-		
-		private function finishTween():void
-		{
-			tweening = false;
 		}
 	}
 }

@@ -17,36 +17,20 @@
 </Text>
 
 <Accordion id="accordion-example"
-	x="500" y="25" 
-	width="375" height="375" 
-	labels="Photo 1,Photo 2" 
+	x="590" y="50" 
+	width="600" height="375" 
+	labels="25%,50%,100%" 
 	autoLayout="false" 
 	twirlIndicator="true" 
 	paddingTop="10" 
 	paddingBottom="15" 
 	paddingRight="15" 
 	fontSize="16" 
-	fontColor="0xff0000">
+	fontColor="0x124223">
 
-	<Container>
-		<Graphic shape="rectangle" width="375" height="375" fill="color" color="0x424141" lineStroke="0" />
-		<Image y="20" src="images/bee.jpg" alpha=".25" />
-	</Container>
-
-	<Container>
-		<Graphic shape="rectangle" width="375" height="375" fill="color" color="0x424141" lineStroke="0"/>
-		<Image y="20" src="images/bee.jpg" alpha=".75" />
-	</Container>
-
-	<Container>
-		<Graphic shape="rectangle" width="375" height="375" fill="color" color="0x424141" lineStroke="0"/>
-		<Button y="20" dispatch="down:bees" hit="bee-hit" initial="beeButton" down="beeButton" up="beeButton" out="beeButton">
-			<Image id="beeButton" src="images/bee.jpg" alpha="1" />
-			<Graphic id="bee-hit" shape="rectangle" width="317" height="241" color="0x666666" alpha="0" />
-		</Button>
-	</Container>
+	<Image src="images/bee.jpg" alpha=".25" />
+	<Image src="images/bee.jpg" alpha=".5" />
+	<Image src="images/bee.jpg" alpha="1" />
 </Accordion>
-
-<Text id="debug-text" x="900" y="100" autoSize="left" font="OpenSansRegular" fontSize="15" color="0xffffff" text="Button event working" visible="true" alpha="0" />
 
 </cml>

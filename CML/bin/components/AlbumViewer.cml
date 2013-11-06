@@ -27,29 +27,29 @@
 				<Video src="market-street.mov" width="500" height="400"/>
 				<Graphic shape="triangle" height="100" rotation="90" x="300" y="150" alpha=".5"/> 
 				<GestureList>
-					<Gesture ref="n-tap" gestureOn="true"/>
+					<Gesture ref="n-tap" />
 				</GestureList>				
 			</TouchContainer>
 			<TouchContainer class="player" width="500" height="400" mouseChildren="false" nativeTransform="false">
 				<Video src="market-street.mov" width="500" height="400"/>
 				<Graphic shape="triangle" height="100" rotation="90" x="300" y="150" alpha=".5"/> 
 				<GestureList>
-					<Gesture ref="n-tap" gestureOn="true"/>
+					<Gesture ref="n-tap" />
 				</GestureList>				
 			</TouchContainer>			
 			<TouchContainer class="player" width="500" height="400" mouseChildren="false" nativeTransform="false">
 				<Video src="market-street.mov" width="500" height="400"/>
 				<Graphic shape="triangle" height="100" rotation="90" x="300" y="150" alpha=".5"/> 
 				<GestureList>
-					<Gesture ref="n-tap" gestureOn="true"/>
+					<Gesture ref="n-tap" />
 				</GestureList>				
 			</TouchContainer>				
 			<ScrollPane width="500" height="400" paneStroke="0" scrollThickness="0" mouseChildren="true" targetParent="false" clusterBubbling="true" invertDrag="true">
 				<Image name="baby" src="images/USS_Macon_over_Manhattan.png" width="500" height="400"/>
 				<TouchContainer nativeTransform="false">
 					<GestureList>
-						<Gesture ref="2-finger-drag" gestureOn="true"/>
-						<Gesture ref="n-scale" gestureOn="true"/>
+						<Gesture ref="2-finger-drag" />
+						<Gesture ref="n-scale" />
 					</GestureList>
 				</TouchContainer>
 			</ScrollPane>			
@@ -57,8 +57,8 @@
 				<Image name="bee" src="images/wb3.jpg" width="500" height="400"/>			
 				<TouchContainer nativeTransform="false">
 					<GestureList>
-						<Gesture ref="2-finger-drag" gestureOn="true"/>
-						<Gesture ref="n-scale" gestureOn="true"/>
+						<Gesture ref="2-finger-drag" />
+						<Gesture ref="n-scale" />
 					</GestureList>
 				</TouchContainer>
 			</ScrollPane>			
@@ -155,9 +155,9 @@
 		</Menu>
 		
 		<GestureList>
-			<Gesture ref="n-drag" gestureOn="true"/>
-			<Gesture ref="n-scale" gestureOn="true"/>
-			<Gesture ref="n-rotate" gestureOn="true"/>
+			<Gesture ref="n-drag" />
+			<Gesture ref="n-scale" />
+			<Gesture ref="n-rotate" />
 		</GestureList>
 		
 	</AlbumViewer>

@@ -8,7 +8,6 @@
 </LibraryKit>
 
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">Collection Viewer</Text>
 <Text class="desc">
 	<p>The Collection Viewer can load more objects than will display at any one time. The objects not displayed are put into queue and the CollectionViwer cycles through the queue whenever a user closes an object or moves it offscreen.<br /><br />

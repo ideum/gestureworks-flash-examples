@@ -7,55 +7,49 @@
 </LibraryKit>
 
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">LiveVideoViewer</Text>
 <Text class="desc" selectable="true">
-	<p>This tag captures and displays video input from a user’s camera. Default has width and height defined for the video but also allows the user to specify their own width and height for the video.<br/>
-	  This example also captures audio from microphone.
-	</p>
+	<p>This tag captures and displays video input from a user’s camera. 
+		The default width and height (320 x 240) is defined for the video, but you can also specify your own width and height.</p><br/>
+	 <p>This example also captures audio from microphone.</p>
 </Text>
 	
 
-<LiveVideoViewer id="video-viewer-1" x="600" y="300" rotation="-20" mouseChildren="true" nativeTransform="true" affineTransform="true">
-	<TouchContainer id="tc_video1" class="video_container" visible="true" targetParent="true" mouseChildren="false">
-		<LiveVideo id="live" camera="#cam" microphone="#micro" width="320" height="240">
-		    <VideoCamera id="cam"/>
-		    <Microphone id="micro"/>
-	    </LiveVideo >
-	</TouchContainer>
-				
-	<TouchContainer id="video1-info" class="info_container" visible="false" targetParent="true" mouseChildren="false" >
-		<Graphic id="info-bg" class="info_bg" shape="rectangle"/>		
-		<Text id="title" class="info_title" border="false" selectable="false" text="LiveVideoViewer"/>				
-		<Text id="description" class="info_description" border="false" selectable="false" text="The LiveVideoViewer displays live web camera video as a multitouch object."/>		
-	</TouchContainer>
+<LiveVideoViewer x="650" y="100" rotation="1" back="#info">
 
-	<TouchContainer id="frame-c" class="frame_container" visible="true" targetParent="true" mouseChildren="false">
-		<Frame id="frame-e" class="frame_element"/>
-	</TouchContainer>
+	<!-- FRONT: LiveVideo -->
+	<LiveVideo camera="#cam" microphone="#micro" targetParent="true" width="480" height="360">
+		<VideoCamera id="cam"/>
+		<Microphone id="micro"/>
+	</LiveVideo >
 		
-	<!-- Here is where the entire menu is structured. We used "include" files to style each of our buttons individually rather than have all the mark-up here. -->
-	<Menu id="menu-1" class="menu_container" x="0" y="0" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="true" visible="true">
+	<!-- BACK: info panel -->
+	<Container id="info" visible="false" targetParent="true">
+		<Graphic color="0x665533" alpha="0.9" shape="rectangle" width="100%" height="100%"/>
+		<Container paddingTop="30" paddingLeft="30" paddingRight="30" width="100%" height="100%" relativeY="true">
+			<Text str="Live Video Viewer" fontSize="30" color="0xFFFFFF" font="OpenSansBold" autosize="true" width="100%" borderColor="0xFFFFFF" />				
+			<Text fontSize="20" wordWrap="true" color="0xFFFFFF" width="100%" autosize="true" multiline="true" str="You must have a video camera attached to the computer." />
+		</Container>
+	</Container>
+	
+	<!-- FRAME-->
+	<Include src="frame.cml" />
+		
+	<!-- MENU -->
+	<Menu x="0" y="0" alpha="0.75" position="bottomRight" autohide="true"
+		paddingRight="10" paddingBottom="10" visible="false">
 		<Include src="infoButton.cml"/>
 		<Include src="closeButton.cml"/>
 	</Menu>
-		
+	
+	<!-- GESTURES -->
 	<GestureList>
-		<Gesture ref="n-drag" gestureOn="true"/>
-		<Gesture ref="n-scale" gestureOn="true"/>
-		<Gesture ref="n-rotate" gestureOn="true"/>
+		<Gesture ref="n-drag" />
+		<Gesture ref="n-scale" />
+		<Gesture ref="n-rotate" />
 	</GestureList>
 
 </LiveVideoViewer>	
-
-	<DebugKit displayOn="true" displayAlwaysOn="false" displayRadius="300">
-		<DebugLayer type="point_shapes" displayOn="true"/>
-		<DebugLayer type="cluster_circle" displayOn="true"/>
-		<DebugLayer type="cluster_box" displayOn="true"/>
-		<DebugLayer type="cluster_center" displayOn="true"/>
-		<DebugLayer type="cluster_web" displayOn="true"/>
-		<DebugLayer type="cluster_rotation" displayOn="true"/>
-	</DebugKit>
 	
 </cml>
 

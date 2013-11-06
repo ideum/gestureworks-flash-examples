@@ -7,39 +7,42 @@
 </LibraryKit>
 
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">GigaPixel Viewer</Text>
 <Text class="desc" selectable="true">
 	<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p> 
 	<p>The GigapixelViewer tag loads a gigapixel image from an XML index and folder branch, and allows for an info panel or other buttons to be attached to provide more information.</p>
 </Text>
 
-<GigapixelViewer x="540" y="140" width="600" height="450" rotation="3" mouseChildren="true" nativeTransform="true" affineTransform="true">
+<GigapixelViewer x="540" y="140" width="600" height="450" back="#info">
 	
-	<Frame class="frame_element"/>
+	<!-- FRONT: Gigapixel -->	
+	<Gigapixel src="deepzoom/space.xml" width="600" />
 
-	<Gigapixel x="0" y="0" class="gigapixel_element" src="deepzoom/space.xml" touchChildren="true" width="600" />
+	<!-- BACK: info panel -->
+	<Container id="info" visible="false" targetParent="true">
+		<Graphic color="0xFFAE1F" alpha="0.6" shape="rectangle" width="100%" height="100%"/>
+		<Container paddingTop="30" paddingLeft="30" paddingRight="30" width="100%" height="100%" relativeY="true">
+			<Text str="FDRs Infamy Speech" fontSize="30" color="0xFFFFFF" font="OpenSansBold" autosize="true" width="100%" borderColor="0xFFFFFF" />				
+			<Text fontSize="20" wordWrap="true" color="0xFFFFFF" width="100%" autosize="true" multiline="true" 
+				str="This is a compiled mosaic image captured by the NASA Spitzer Space Telescope." />
+		</Container>
+	</Container>
 	
-	<TouchContainer id="map1-info" class="info_container" visible="false" targetParent="true" mouseChildren="false" >
-		<Graphic color="0xFFAE1F" alpha="0.6" lineStroke="0" class="info_bg" shape="rectangle"/>		
-		<Text border="false" class="title" selectable="false" text="Cygnus X"/>				
-		<Text width="360" border="false" class="desc" text="This is a compiled mosaic image captured by the NASA Spitzer Space Telescope."/>
-	</TouchContainer>
+	<!-- FRAME-->
+	<Include src="assets/frame.cml" />
 	
-	<!-- Here is where the entire menu is structured. We used "include" files to style each of our buttons individually rather than have all the mark-up here. -->
-	<Menu class="menu_container" x="0" y="0" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="false" visible="true">
-	
-		<Include src="infoButton.cml"/>
-		
+	<!-- MENU -->
+	<Menu x="0" y="0" alpha="0.75" position="bottomRight" autohide="true"
+		paddingRight="10" paddingBottom="10" visible="false">
+		<Include src="infoButton.cml"/>		
 		<Include src="closeButton.cml"/>
-		
 	</Menu>
 	
+	<!-- GESTURES -->
 	<GestureList>
-		<Gesture ref="n-drag" gestureOn="true"/>
-		<Gesture ref="n-scale" gestureOn="true"/>
-		<Gesture ref="n-rotate" gestureOn="true"/>
-		<Gesture ref="tap" gestureOn="true"/>
+		<Gesture ref="n-drag" />
+		<Gesture ref="n-scale" />
+		<Gesture ref="n-rotate" />
 	</GestureList>
 	
 </GigapixelViewer>

@@ -1,8 +1,4 @@
-<cml css="../../menu_styles.css">
-
-<LibraryKit>
-	<Library type="swf" src="library/assets/openexhibits_assets.swf" />	
-</LibraryKit>
+<cml>
 
 <Button id="pause-btn" class="pause_btn" dispatch="down:pause" hit="pause-hit" initial="pause-up" down="pause-down" up="pause-up" out="pause-up">
 	<Container id="pause-up">

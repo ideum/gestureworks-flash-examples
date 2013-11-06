@@ -7,7 +7,6 @@
 </LibraryKit>
 
 <!-- header -->
-<Graphic class="header-graphic" />
 <Text class="title">Mask Image Viewer</Text>
 <Text class="desc" selectable="true">
 	<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br />
@@ -41,10 +40,10 @@
 		
 		<TouchContainer>
 			<GestureList>
-				<Gesture ref="n-double_tap" gestureOn="true"/>
-				<Gesture ref="n-drag" gestureOn="true"/>
-				<Gesture ref="n-scale" gestureOn="true"/>
-				<Gesture ref="n-rotate" gestureOn="true"/>
+				<Gesture ref="n-double_tap" />
+				<Gesture ref="n-drag" />
+				<Gesture ref="n-scale" />
+				<Gesture ref="n-rotate" />
 			</GestureList>
 		</TouchContainer>
 	</MaskContainer>
@@ -62,10 +61,10 @@
 	</Menu>
 	
 	<GestureList>
-		<Gesture ref="n-drag" gestureOn="true"/>
-		<Gesture ref="n-scale" gestureOn="true"/>
-		<Gesture ref="n-rotate" gestureOn="true"/>
-		<Gesture ref="tap" gestureOn="true"/>
+		<Gesture ref="n-drag" />
+		<Gesture ref="n-scale" />
+		<Gesture ref="n-rotate" />
+		<Gesture ref="n-tap" />
 	</GestureList>
 	
 </MaskImageViewer>

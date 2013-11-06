@@ -1,4 +1,4 @@
-<cml css="../../menu_styles.css">
+<cml>
 
 <Button id="close-btn" class="close_btn" dispatch="down:close" hit="close-hit" initial="close-up" down="close-down" up="close-up" out="close-up">
 	<Container id="close-up" class="up" >

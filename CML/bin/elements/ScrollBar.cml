@@ -15,32 +15,32 @@
 </Text>
 
 <ScrollBar id="sb-vert" 
-x="500" y="50" 
-orientation="vertical" 
-width="30" 
-contentHeight="1000" 
-height="500" 
-buttonFill="0xE7635E" 
-fill="0xF8E9A8" 
-thumbFill="0x452743" 
-cornerHeight="15" 
-cornerWidth="15"/>
+	x="500" y="50" 
+	orientation="vertical" 
+	width="30" 
+	contentHeight="1000" 
+	height="500" 
+	buttonFill="0xE7635E" 
+	fill="0xF8E9A8" 
+	thumbFill="0x452743" 
+	cornerHeight="15" 
+	cornerWidth="15"/>
 
 <Text id="vert-text" x="550" y="80" text="0" color="0xffffff" />
 
 <Text id="horiz-text" x="780" y="500" text="0" color="0xffffff"/>
 
 <ScrollBar id="sb-horiz" 
-x="530" y="550" 
-orientation="horizontal" 
-height="30" 
-contentWidth="1000" 
-width="500" 
-buttonFill="0xE7635E" 
-fill="0xF8E9A8" 
-thumbFill="0x452743" 
-cornerHeight="15" 
-cornerWidth="15"
-buttonVisible="false" />
+	x="530" y="550" 
+	orientation="horizontal" 
+	height="30" 
+	contentWidth="1000" 
+	width="500" 
+	buttonFill="0xE7635E" 
+	fill="0xF8E9A8" 
+	thumbFill="0x452743" 
+	cornerHeight="15" 
+	cornerWidth="15"
+	buttonVisible="false" />
 
 </cml>

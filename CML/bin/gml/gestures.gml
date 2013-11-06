@@ -504,6 +504,33 @@
 									</mapping>
 								</Gesture>
 								
+									<Gesture id="3-finger-scale" type="scale">
+									<match>
+										<action>
+											<initial>
+												<cluster point_number="3"/>
+											</initial>
+										</action>
+									</match>
+									<analysis>
+										<algorithm>
+											<library module="scale"/>
+											<returns>
+												<property ref="scale_dsx" result="ds"/>
+												<property ref="scale_dsy" result="ds"/>
+											</returns>
+										</algorithm>
+									</analysis>	
+									<mapping>
+										<update>
+											<gesture_event  type="scale">
+												<property ref="scale_dsx" target="scaleX"/>
+												<property ref="scale_dsy" target="scaleY"/>
+											</gesture_event>
+										</update>
+									</mapping>
+								</Gesture>
+								
 								<Gesture id="5-finger-scale" type="scale">
 									<match>
 										<action>

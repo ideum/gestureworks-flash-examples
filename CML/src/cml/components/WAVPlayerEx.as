@@ -1,4 +1,4 @@
-package 
+package cml.components
 {
 	import com.gestureworks.cml.core.CMLParser;
 	import com.gestureworks.core.GestureWorks;
@@ -12,19 +12,12 @@ package
 	
 	public class WAVPlayerEx extends GestureWorks
 	{
-		public function Main():void 
+		public function WAVPlayerEx():void 
 		{
 			super();
 			gml = "gml/gestures.gml";
-			cml = "WAVPlayer.cml";
-			
-			// add this event listener so we know when the CML parsing is complete
+			cml = "components/WAVPlayer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
-		}
-	
-		override protected function gestureworksInit():void
- 		{
-			trace("gestureWorksInit()");			
 		}
 		
 		private function cmlInit(event:Event):void

@@ -1,4 +1,4 @@
-<cml css="../../menu_styles.css">
+<cml>
 
 <Button id="info-btn" class="info_btn" dispatch="down:info" hit="info-hit" initial="info-up" down="info-down" up="info-up" out="info-up">
 	<Container id="info-up">
