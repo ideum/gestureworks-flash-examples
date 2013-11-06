@@ -7,7 +7,7 @@
 </LibraryKit>
 
 <!-- header -->
-<Text class="title">Mask Image Viewer</Text>
+<Text class="title">MaskImage Viewer</Text>
 <Text class="desc">
 	<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br />
 	<p>The viewer here provides a helpful frame to give an idea of the boundaries of the maskContainer, gives an easy area to touch 

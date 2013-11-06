@@ -18,7 +18,7 @@
 </Text>
 
 <!-- collection viewer -->
-<CollectionViewer id="collection" autoShuffle="true" amountToShow="2" mouseChildren="true" animateIn="true">
+<CollectionViewer autoShuffle="true" amountToShow="2" mouseChildren="true" animateIn="true">
 	<Include src="ImageViewer.cml" />
 	<Include src="MP3Player.cml" />
 	<Include src="VideoViewer.cml" />

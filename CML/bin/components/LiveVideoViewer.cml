@@ -7,7 +7,7 @@
 </LibraryKit>
 
 <!-- header -->
-<Text class="title">LiveVideoViewer</Text>
+<Text class="title">LiveVideo Viewer</Text>
 <Text class="desc">
 	<p>This tag captures and displays video input from a user’s camera. 
 		The default width and height (320 x 240) is defined for the video, but you can also specify your own width and height.</p><br/>

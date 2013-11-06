@@ -2,37 +2,38 @@
 
 <cml>
 
-<VideoViewer x="500" y="250" width="320" height="240" rotation="-20" mouseChildren="true" nativeTransform="true">
+<VideoViewer x="600" y="150" back="#info" releaseInertia="true">
 	
-	<TouchContainer class="video_container" visible="true" targetParent="true" mouseChildren="false">
-		<Video class="video_element" src="market-street.mov" autoplay="true"/>
-	</TouchContainer>
+	<!-- FRONT: Video -->
+	<Video src="market-street.mov" width="480" height="360" autoplay="true" loop="true" />
 	
-	<!-- Designate information for the info panel. Something labeled with class="info_bg" will be set as the back. -->
-	<TouchContainer class="info_container" visible="false" targetParent="true" mouseChildren="false" >
-		<Graphic color="0x19677F" alpha="0.6" lineStroke="0" class="info_bg" shape="rectangle"/>		
-		<Text class="title" border="false" selectable="false" text="Market Street"/>				
-	</TouchContainer>
+	<!-- BACK: info panel -->
+	<Container id="info" visible="false" targetParent="true">
+		<Graphic color="0x665533" alpha="0.8" shape="rectangle" width="100%" height="100%"/>
+		<Container paddingTop="30" paddingLeft="30" paddingRight="30" width="100%" height="100%" relativeY="true">
+			<Text str="Market Street" fontSize="30" color="0xFFFFFF" font="OpenSansBold" autosize="true" width="100%" borderColor="0xFFFFFF" />				
+			<Text fontSize="20" wordWrap="true" color="0xFFFFFF" width="100%" autosize="true" multiline="true" 
+				str="A Trip Down Market Street is a 13-minute actuality film recorded by placing a movie camera on the front of a cable car as it travels down San Franciscos Market Street."/>			
+		</Container>
+	</Container>
 
-	<!-- This is just the frame for the whole viewer. Thick frames are very useful for objects with context-specific touch, as it gives a touchable border. 
-	The VideoViewer does not have context specific touch, so feel free to style it however you like. -->
-	<TouchContainer class="frame_container" visible="true" targetParent="true" mouseChildren="false">
-		<Frame frameColor="0x999999" frameAlpha="0.3" frameThickness="30" frameShape="rectangle" class="frame_element"/>
-	</TouchContainer>
+	<!-- FRAME-->
+	<Include src="frame.cml" />
 	
-	<!-- Here is where the entire menu is structured. We used "include" files to style each of our buttons individually rather than have all the mark-up here. -->
-	<Menu class="menu_container" x="0" y="0" alpha="0.6" position="bottomRight" paddingBottom="-50" paddingRight="10" autoHide="true" visible="false">
+	<!-- MENU -->
+	<Menu x="0" y="0" alpha="0.75" position="bottomRight" autohide="true"
+		paddingLeft="0" paddingBottom="10" paddingRight="10" visible="false">			
 		<Include src="infoButton.cml"/>
 		<Include src="playButton.cml"/>
 		<Include src="pauseButton.cml"/>
 		<Include src="closeButton.cml"/>
 	</Menu>
 	
+	<!-- GESTURES -->
 	<GestureList>
-		<Gesture ref="n-drag" gestureOn="true"/>
-		<Gesture ref="n-scale" gestureOn="true"/>
-		<Gesture ref="n-rotate" gestureOn="true"/>
-		<Gesture ref="tap" gestureOn="true"/>
+		<Gesture ref="n-drag-inertia" />
+		<Gesture ref="n-scale-inertia" />
+		<Gesture ref="n-rotate-inertia" />
 	</GestureList>
 	
 </VideoViewer>

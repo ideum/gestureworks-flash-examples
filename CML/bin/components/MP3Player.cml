@@ -7,7 +7,7 @@
 </LibraryKit>
 
 <!-- header -->
-<Text class="title">MP3</Text>
+<Text class="title">MP3 Player</Text>
 <Text class="desc">
 	<p>Viewer and Player tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br />
 	<p>In this case, the menu not only provides a helpful visual frame and an info panel, but buttons which allow access to the MP3's play and pause functions.</p><br />

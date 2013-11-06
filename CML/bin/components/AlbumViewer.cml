@@ -8,7 +8,7 @@
 
 	<!-- header -->
 	<Graphic class="header-graphic" />
-	<Text class="title">AlbumViewer</Text>
+	<Text class="title">Album Viewer</Text>
 	<Text class="desc">
 		<p>The AlbumViewer is a component that is primarily meant to display an Album on the front side and meta-data on the back side. 
 		It is composed of the following elements: album, front, back, menu, and frame. The width and height of the component are automatically 

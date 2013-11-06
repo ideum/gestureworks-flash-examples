@@ -1,52 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <cml>
 	
-<!-- The MP3 plays mp3 files and optionally displays a graphical waveform. -->
+<MP3Player x="600" y="150" back="#info" releaseInertia="true">
 
-<MP3Player x="600" y="170" mouseChildren="true" nativeTransform="true">
+	<!-- FRONT: MP3 -->	
+	<MP3 src="RuthCalledShot_vbr.mp3" 
+		display="waveform"
+		width="600" height="400" 
+		autoplay="true"
+		loop="true"
+		pan="0.0"
+		volume="1.0"
+		waveColor="0xF97D41"
+		backgroundColor="0x353345"
+		backgroundAlpha=".5" targetParent="true" mouseChildren="false"/>
+	
+	<!-- BACK: info panel -->	
+	<Container id="info" visible="false" targetParent="true">
+		<Graphic color="0x665533" alpha="0.8" shape="rectangle" width="100%" height="100%"/>
+		<Container paddingTop="30" paddingLeft="30" paddingRight="30" width="100%" height="100%" relativeY="true">
+			<Text str="Babe Ruth" fontSize="30" color="0xFFFFFF" font="OpenSansBold" autosize="true" width="100%" borderColor="0xFFFFFF" />				
+			<Text fontSize="20" wordWrap="true" color="0xFFFFFF" width="100%" autosize="true" multiline="true" 
+				str="Babe Ruths called shot was the home run hit by Babe Ruth of the New York Yankees in the fifth inning of Game 3 of the 1932 World Series, held on October 1, 1932, at Wrigley Field in Chicago."/>			
+		</Container>
+	</Container>
 
-	<TouchContainer class="mp3_container" visible="true" targetParent="true" mouseChildren="false">
-		<MP3 src="RuthCalledShot_vbr.mp3" 
-			display="waveform"
-			width="600" height="400" 
-			autoplay="true"
-			preload="true"
-			loop="true"
-			pan="0.0"
-			volume="1.0"
-			waveColor="0xF97D41"
-			backgroundColor="0xFFF9EC"
-			backgroundAlpha="1" />
-	</TouchContainer>
+	<!-- FRAME-->
+	<Include src="frame.cml" />
 	
-	<TouchContainer class="info_container" visible="false" targetParent="true" mouseChildren="false" >
-		<Graphic color="0xE9BB4F" alpha="0.6" lineStroke="0" class="info_bg" shape="rectangle"/>
-		<Text class="title" border="false" selectable="false" text="Babe Ruth's Called Shot"/>				
-		<Text class="desc" text="An interview going over the narrative of Babe Ruth's famously called shot."/>		
-	</TouchContainer>
-	
-	<TouchContainer class="frame_container" visible="true" targetParent="true" mouseChildren="false">
-		<Frame frameColor="0x0E5923" frameAlpha="0.6" frameThickness="10" frameShape="rectangle" class="frame_element"/>
-	</TouchContainer>
-	
-	<Menu class="menu_container" x="0" y="-65" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="true" visible="false">
-	
+	<!-- MENU -->
+	<Menu x="0" y="0" alpha="0.75" position="bottomRight" autohide="true"
+		paddingLeft="0" paddingBottom="10" paddingRight="10" visible="false">			
 		<Include src="infoButton.cml"/>
-		
 		<Include src="playButton.cml"/>
-		
 		<Include src="pauseButton.cml"/>
-		
 		<Include src="closeButton.cml"/>
-		
 	</Menu>
 	
+	<!-- GESTURES -->
 	<GestureList>
-		<Gesture ref="n-drag" gestureOn="true"/>
-		<Gesture ref="n-scale" gestureOn="true"/>
-		<Gesture ref="n-rotate" gestureOn="true"/>
-		<Gesture ref="tap" gestureOn="true"/>
+		<Gesture ref="n-drag-inertia" />
+		<Gesture ref="n-scale-inertia" />
+		<Gesture ref="n-rotate-inertia" />
 	</GestureList>
 	
 </MP3Player>
