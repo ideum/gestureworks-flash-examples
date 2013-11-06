@@ -1,7 +1,7 @@
 package as3.layouts
 {
-	import com.gestureworks.cml.element.Container;
-	import com.gestureworks.cml.element.Image;
+	import com.gestureworks.cml.elements.Container;
+	import com.gestureworks.cml.elements.Image;
 	import com.gestureworks.cml.layouts.FanLayout;
 	import com.gestureworks.cml.layouts.GridLayout;
 	import com.gestureworks.core.GestureWorks;

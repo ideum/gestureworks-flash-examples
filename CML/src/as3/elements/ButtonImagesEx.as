@@ -1,8 +1,8 @@
 package as3.elements
 {
-	import com.gestureworks.cml.element.Button;
-	import com.gestureworks.cml.element.Graphic;
-	import com.gestureworks.cml.element.Image;
+	import com.gestureworks.cml.elements.Button;
+	import com.gestureworks.cml.elements.Graphic;
+	import com.gestureworks.cml.elements.Image;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	

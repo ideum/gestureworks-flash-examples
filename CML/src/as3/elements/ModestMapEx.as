@@ -1,9 +1,9 @@
 package as3.elements 
 {
-	import com.gestureworks.cml.element.Graphic;
-	import com.gestureworks.cml.element.ModestMap;
-	import com.gestureworks.cml.element.ModestMapMarker;
-	import com.gestureworks.cml.element.Text;
+	import com.gestureworks.cml.elements.Graphic;
+	import com.gestureworks.cml.elements.ModestMap;
+	import com.gestureworks.cml.elements.ModestMapMarker;
+	import com.gestureworks.cml.elements.Text;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	import flash.display.Sprite;

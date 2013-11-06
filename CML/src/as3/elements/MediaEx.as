@@ -1,6 +1,6 @@
 package as3.elements 
 {
-	import com.gestureworks.cml.element.Media;
+	import com.gestureworks.cml.elements.Media;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	import flash.events.Event;

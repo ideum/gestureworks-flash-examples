@@ -1,9 +1,9 @@
 package as3.elements
 {
-	import com.gestureworks.cml.element.Image;
-	import com.gestureworks.cml.element.ScrollBar;
-	import com.gestureworks.cml.element.ScrollPane;
-	import com.gestureworks.cml.element.TouchContainer;
+	import com.gestureworks.cml.elements.Image;
+	import com.gestureworks.cml.elements.ScrollBar;
+	import com.gestureworks.cml.elements.ScrollPane;
+	import com.gestureworks.cml.elements.TouchContainer;
 	import com.gestureworks.cml.events.StateEvent;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;

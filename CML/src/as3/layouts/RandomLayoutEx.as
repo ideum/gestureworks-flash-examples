@@ -1,7 +1,7 @@
 package as3.layouts
 {
-	import com.gestureworks.cml.element.Image;
-	import com.gestureworks.cml.element.TouchContainer;
+	import com.gestureworks.cml.elements.Image;
+	import com.gestureworks.cml.elements.TouchContainer;
 	import com.gestureworks.cml.layouts.RandomLayout;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;

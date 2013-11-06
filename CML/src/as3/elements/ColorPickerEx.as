@@ -1,7 +1,7 @@
 package as3.elements
 {
-	import com.gestureworks.cml.element.ColorPicker;
-	import com.gestureworks.cml.element.Graphic;
+	import com.gestureworks.cml.elements.ColorPicker;
+	import com.gestureworks.cml.elements.Graphic;
 	import com.gestureworks.cml.events.StateEvent;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;

@@ -1,7 +1,7 @@
 package as3.elements
 {
 	import com.gestureworks.cml.core.CMLAir; CMLAir;
-	import com.gestureworks.cml.element.WAV;
+	import com.gestureworks.cml.elements.WAV;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	import flash.display.Sprite; 

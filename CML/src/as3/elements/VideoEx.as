@@ -1,6 +1,6 @@
 package as3.elements
 {
-	import com.gestureworks.cml.element.Video;
+	import com.gestureworks.cml.elements.Video;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	

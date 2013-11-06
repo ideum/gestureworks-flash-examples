@@ -1,14 +1,14 @@
 package as3.components
 {
 	import com.gestureworks.cml.components.YouTubeViewer;
-	import com.gestureworks.cml.element.Button;
-	import com.gestureworks.cml.element.Container;
-	import com.gestureworks.cml.element.Frame;
-	import com.gestureworks.cml.element.Graphic;
-	import com.gestureworks.cml.element.Menu;
-	import com.gestureworks.cml.element.Text;
-	import com.gestureworks.cml.element.TouchContainer;
-	import com.gestureworks.cml.element.YouTube;
+	import com.gestureworks.cml.elements.Button;
+	import com.gestureworks.cml.elements.Container;
+	import com.gestureworks.cml.elements.Frame;
+	import com.gestureworks.cml.elements.Graphic;
+	import com.gestureworks.cml.elements.Menu;
+	import com.gestureworks.cml.elements.Text;
+	import com.gestureworks.cml.elements.TouchContainer;
+	import com.gestureworks.cml.elements.YouTube;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	import flash.display.Sprite;

@@ -1,6 +1,6 @@
 package as3.elements
 {
-	import com.gestureworks.cml.element.Gigapixel;
+	import com.gestureworks.cml.elements.Gigapixel;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	import flash.display.Sprite;

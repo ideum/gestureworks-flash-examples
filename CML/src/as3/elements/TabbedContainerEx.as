@@ -1,9 +1,9 @@
 package as3.elements
 {
-	import com.gestureworks.cml.element.Container;
-	import com.gestureworks.cml.element.Graphic;
-	import com.gestureworks.cml.element.TabbedContainer;
-	import com.gestureworks.cml.element.Tab;
+	import com.gestureworks.cml.elements.Container;
+	import com.gestureworks.cml.elements.Graphic;
+	import com.gestureworks.cml.elements.TabbedContainer;
+	import com.gestureworks.cml.elements.Tab;
 	import com.gestureworks.cml.layouts.RandomLayout;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;

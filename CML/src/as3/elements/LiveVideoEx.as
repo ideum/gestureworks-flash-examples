@@ -1,7 +1,7 @@
 package as3.elements 
 {
-	import com.gestureworks.cml.element.LiveVideo;
-	import com.gestureworks.cml.element.VideoCamera;
+	import com.gestureworks.cml.elements.LiveVideo;
+	import com.gestureworks.cml.elements.VideoCamera;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
 	import flash.media.Camera;
@@ -28,7 +28,7 @@ package as3.elements
 			 lvElement.scale = 3;
 			 lvElement.x = 625;
 			 lvElement.y = 185;
-			 lvElement.microphone = new com.gestureworks.cml.element.Microphone();
+			 lvElement.microphone = new com.gestureworks.cml.elements.Microphone();
 			 lvElement.camera = new VideoCamera;
 			 lvElement.init();
 		   
