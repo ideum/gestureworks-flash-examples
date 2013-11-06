@@ -1,0 +1,16 @@
+.header-graphic {	
+	x:10; y:10; shape:roundRectangle; width:450; height:700; color:0xFFFFFF; lineStroke:5; lineColor:0xFFFFFF; alpha:.0; cornerWidth:30; cornerHeight:30;
+}
+
+.title {	
+	x:35; y:25; fontSize:30; width:425; color:0xFFFFFF; selectable:false; font:OpenSansBold;
+}
+
+.desc {	
+	x:35; y:85; color:0xFFFFFF; fontSize:16; width:425; height:700; wordWrap:true; multiline:true; selectable:false; textAlign:left; font:OpenSansRegular; leading:-4.5;
+}
+
+.example-graphic {	
+	x:460; y:10; shape:rectangle; width:450; height:700; color:0x333333; lineStroke:0;
+}
+

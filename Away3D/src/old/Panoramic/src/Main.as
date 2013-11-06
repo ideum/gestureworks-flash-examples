@@ -7,6 +7,7 @@ package
 	import com.gestureworks.cml.core.CMLParser;
 	import com.gestureworks.core.GestureWorks;
 	import flash.events.Event;
+	import com.gestureworks.cml.core.CMLAway3D; CMLAway3D;
 
 	[SWF(width = "1280", height = "720", backgroundColor = "0x000000", frameRate = "30")]
 
@@ -15,8 +16,7 @@ package
 		public function Main():void 
 		{
 			super();
-			cml = "Panoramic.cml";
-			
+			cml = "Panoramic.cml";			
 			
 			// add this event listener so we know when the CML parsing is complete
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);

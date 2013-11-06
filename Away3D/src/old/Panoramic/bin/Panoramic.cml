@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<cml rootDirectory="../../../../_assets/" css="styles.css" tuio="false" simulator="false">
+<cml rootDirectory="../../../../bin/assets/" gml="../../../../bin/gml/gestures.gml" css="styles.css" >
 
 <!-- header -->
 <Graphic class="header-graphic" />
@@ -17,13 +17,13 @@
 <Panoramic projectionType="cube" cubeFace="true" x="500" y="100" width="720" height="405" fovMin="30" mouseChildren="true">
 	
 	<Image width="1024" src="panoramic/30kabah_r.jpg"/>
-	<ImageElement width="1024" src="panoramic/30kabah_l.jpg"/>
-	<ImageElement width="1024" src="panoramic/30kabah_u.jpg"/>
-	<ImageElement width="1024" src="panoramic/30kabah_d.jpg"/>
-	<ImageElement width="1024" src="panoramic/30kabah_f.jpg"/>
-	<ImageElement width="1024" src="panoramic/30kabah_b.jpg"/>
+	<Image width="1024" src="panoramic/30kabah_l.jpg"/>
+	<Image width="1024" src="panoramic/30kabah_u.jpg"/>
+	<Image width="1024" src="panoramic/30kabah_d.jpg"/>
+	<Image width="1024" src="panoramic/30kabah_f.jpg"/>
+	<Image width="1024" src="panoramic/30kabah_b.jpg"/>
 		
-	<TouchContainer nestedTransform="false" gestureEvents="true" mouseChildren="false" disableNativeTransform="true" disableAffineTransform="true">
+	<TouchContainer nestedTransform="false" gestureEvents="true" mouseChildren="false" nativeTransform="false" affineTransform="false">
 		<GestureList>
 			<Gesture ref="n-drag" gestureOn="true"/>
 			<Gesture ref="n-scale" gestureOn="true"/>
