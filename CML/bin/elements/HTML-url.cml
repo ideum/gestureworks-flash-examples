@@ -2,15 +2,9 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- header -->	
-<Text class="title">HTML (url)</Text>
-<Text class="desc">
-	<p>This tag loads a url or inline HTML using the WebKit AIR Browser.</p>
-</Text>
-	
-	
+		
 <!-- The html element can load local or remote url addresses. -->
-<HTML src="https://www.google.com/" x="650" y="100" width="600" height="500" />
+<HTML src="https://www.google.com/" x="0" y="0" width="1280" height="720" />
 
 
 </cml>
