@@ -37,38 +37,41 @@ package as3.components
 			
 			//YouTube Viewer Component
 			var youtubeViewer:YouTubeViewer = new YouTubeViewer();			
-			youtubeViewer.x = 520;
-			youtubeViewer.y = 250;
-			youtubeViewer.rotation = -20;
-			youtubeViewer.mouseChildren = true;
-			youtubeViewer.gestureList = {"n-drag": true, "n-scale": true, "n-rotate": true};			
+			youtubeViewer.x = 600;
+			youtubeViewer.y = 150;
+			youtubeViewer.gestureList = { "n-drag": true, "n-scale": true, "n-rotate": true };			
+			addChild(youtubeViewer);
 			
 			//FRONT: YouTube element			
 			var youtube:YouTube = new YouTube();
-			youtube.src = "h0MZX-D8xzA";
+			youtube.src = "Fo3u_8pZ7Pw";
 			youtube.width = 600;
 			youtube.height = 360;
 			youtube.autoplay = false;
+			youtube.targetParent = true;
 			youtubeViewer.addChild(youtube);			
 			
 			//BACK: info panel
 			var infoPanel:InfoPanel = new InfoPanel();
-			infoPanel.bkgColor = 0xFFAE1F;
-			infoPanel.tFontSize = 20;
-			infoPanel.dFontSize = 16;
-			infoPanel.title = "title";
-			infoPanel.descr = "description";
+			infoPanel.title = "Open Exhibits";
+			infoPanel.descr = "Open Exhibits focuses on the development of new human computer interaction (HCI) exhibits that holds the promise of creating visitor experiences that are physically engaging and socially interactive. The Open Exhibits software collection includes templates, components, and utilities that serve as building blocks for creating digital exhibits and interactives. These tools facilitate the development of applications that encourage shared-surface, collaborative computing and other HCI innovations.";
 			youtubeViewer.addChild(infoPanel);
 			youtubeViewer.back = infoPanel;
 						
 			//Frame
 			var frame:Frame = new Frame();
+			frame.frameColor = 0x232223;
+			frame.frameThickness = 20;
 			frame.targetParent = true;
 			frame.mouseChildren = false;
 			youtubeViewer.addChild(frame);
 			
 			// Menu
 			var menu:ViewerMenu = new ViewerMenu(true, true, true, true);
+			menu.btnColor = 0x282E33;
+			menu.paddingBottom = 10;
+			menu.paddingRight = 10;
+			menu.paddingLeft = 300;
 			youtubeViewer.addChild(menu);
 			
 			//Initialize component

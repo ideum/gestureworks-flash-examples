@@ -39,37 +39,43 @@ package as3.components
 			//Video Viewer Component
 			var videoViewer:VideoViewer = new VideoViewer();
 			videoViewer.x = 600;
-			videoViewer.y = 250;
-			videoViewer.width = 320;
-			videoViewer.height = 240;
-			videoViewer.mouseChildren = true;			
+			videoViewer.y = 150;
 			videoViewer.gestureList = {"n-drag": true, "n-scale": true, "n-rotate": true};			
 			addChild(videoViewer);						
 			
 			//FRONT: video element
 			var video:Video = new Video();
 			video.src = "assets/market-street.mov";
+			video.width = 480;
+			video.height = 360;
 			video.autoplay = true;
+			video.loop = true;
 			videoViewer.addChild(video);	
 			
 			//BACK: info panel
 			var infoPanel:InfoPanel = new InfoPanel();
-			infoPanel.bkgColor = 0xFFAE1F;
+			infoPanel.bkgColor = 0x665533;
 			infoPanel.tFontSize = 20;
 			infoPanel.dFontSize = 16;
 			infoPanel.title = "Market Street";
-			infoPanel.descr = "add description";
+			infoPanel.descr = "A Trip Down Market Street is a 13-minute actuality film recorded by placing a movie camera on the front of a cable car as it travels down San Franciscos Market Street.";
 			videoViewer.addChild(infoPanel);
 			videoViewer.back = infoPanel;			
 					
 			//Frame
 			var frame:Frame = new Frame();
+			frame.frameColor = 0x232223;
+			frame.frameThickness = 20;
 			frame.targetParent = true;
 			frame.mouseChildren = false;
 			videoViewer.addChild(frame);
 			
 			// Menu
 			var menu:ViewerMenu = new ViewerMenu(true, true, true, true);
+			menu.btnColor = 0x282E33;
+			menu.paddingBottom = 10;
+			menu.paddingRight = 10;
+			menu.paddingLeft = 300;
 			videoViewer.addChild(menu);
 			
 			//Initialize component

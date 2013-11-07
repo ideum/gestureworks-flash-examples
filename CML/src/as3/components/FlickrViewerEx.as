@@ -39,9 +39,8 @@ package as3.components
 						
 			//FRONT: flickr element
 			var flickr:Flickr = new Flickr();
-			flickr.className = "flickr_element";
 			flickr.apikey = "5487a9cd58bb07a37700558d6362972f";
-			flickr.src = "3322780400";			
+			flickr.src = "4385244497";			
 			flickrViewer.addChild(flickr);
 			
 			//BACK: info panel
@@ -52,7 +51,8 @@ package as3.components
 			infoPanel.title = "Chrome Alum Crystals";
 			infoPanel.descr = "This is a photo of chrome alum crystals in a chrome alum solution, at 20x magnification. Taken with my Canon SX110 IS, through a Novex stereo microscope with lighting from underneath. The crystals are grown from a saturated solution and are no more than 1 mm in diameter. Created myself, Paul, from www.paulslab.com";
 			flickrViewer.addChild(infoPanel);
-			flickrViewer.back = infoPanel;			
+			flickrViewer.back = infoPanel;
+			flickrViewer.background = infoPanel.bkg;
 			
 			//Frame
 			var frame:Frame = new Frame();
@@ -62,8 +62,7 @@ package as3.components
 			
 			// Menu
 			var menu:ViewerMenu = new ViewerMenu();
-			menu.paddingLeft = 250;
-			menu.paddingRight = 0;
+			menu.paddingLeft = 375;
 			flickrViewer.addChild(menu);
 			
 			//Initialize component

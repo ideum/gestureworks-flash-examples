@@ -6,7 +6,8 @@ package as3.components.ui
 	
 	public class InfoPanel extends Container
 	{		
-		public var bkgColor:uint = 0x5F68ED;
+		public var bkg:Graphic;
+		public var bkgColor:uint = 0x665533;
 		public var bkgAlpha:Number = 0.8;
 		
 		public var title:String;
@@ -15,11 +16,14 @@ package as3.components.ui
 		
 		public var descr:String;
 		public var dFontColor:uint = 0xFFFFFF;
-		public var dFontSize:Number = 20;		
+		public var dFontSize:Number = 20;
+		
+		public function InfoPanel() {
+			visible = false;
+			targetParent = true;			
+		}
 		
 		override public function init():void {
-			visible = false;
-			targetParent = true;
 			setupUI();
 			super.init();
 		}
@@ -30,7 +34,7 @@ package as3.components.ui
 		}
 		
 		private function addBkg():void {
-			var bkg:Graphic = new Graphic();
+			bkg = new Graphic();
 			bkg.color = bkgColor;
 			bkg.alpha = bkgAlpha;
 			bkg.shape = "rectangle";
