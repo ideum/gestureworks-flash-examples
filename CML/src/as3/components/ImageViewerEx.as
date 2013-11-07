@@ -27,6 +27,7 @@ package as3.components
 		
 		override protected function gestureworksInit():void
 		{
+			//Description
 			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("ImageViewer");
 			exTemp.createDesc("<p>The ImageViewer is a component that is primarily meant to display an Image on the front side and meta-data on the back side. "
@@ -44,6 +45,7 @@ package as3.components
 			imageViewer.gestureList = {"n-drag": true, "n-scale": true, "n-rotate": true};			
 			addChild(imageViewer);			
 			
+			//FRONT: image element
 			var image:Image = getImage("assets/images/train.jpg");
 			image.targetParent = true;
 			imageViewer.addChild(image);
@@ -65,7 +67,6 @@ package as3.components
 			
 			// Menu
 			var menu:ViewerMenu = new ViewerMenu();
-			menu.btnColor = 0x282E33;
 			menu.paddingLeft = 250;
 			menu.paddingRight = 0;
 			imageViewer.addChild(menu);

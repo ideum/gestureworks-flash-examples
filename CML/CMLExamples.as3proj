@@ -16,8 +16,8 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
-    <class path="..\..\gwas\development\cml_core" />
-    <class path="..\..\gwas\development\gml_core" />
+    <class path="..\..\..\cml_core" />
+    <class path="..\..\..\gml_core" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -77,7 +77,7 @@
   </library>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
-    <compile path="src\cml\components\HTMLViewerEx.as" />
+    <compile path="src\as3\components\YouTubeViewerEx.as" />
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>
