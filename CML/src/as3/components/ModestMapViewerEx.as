@@ -31,7 +31,7 @@ package as3.components
 			//Description			
 			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("Modest Map Viewer");
-			exTemp.createDesc("<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p>"
+			exTemp.createDesc("<p>Viewer classes are used as larger containers which help to combine menu items and extra functionality with elements.</p>"
 			+"<p>The ModestMapViewer wraps a ModestMap in a frame with optional buttons. The ModestMap has its own drag and scale functions, so a thick frame "
 			+"is helpful in enabling touch and manipulation around the rest of the stage.</p>");
 			addChild(exTemp);			

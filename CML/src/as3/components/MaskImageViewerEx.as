@@ -40,7 +40,7 @@ package as3.components
 			//Description
 			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("Mask Image Viewer");
-			exTemp.createDesc("<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br /><p>"
+			exTemp.createDesc("<p>Viewer classes are used as larger containers which help to combine menu items and extra functionality with elements.</p><br /><p>"
 			+"The viewer here provides a helpful frame to give an idea of the boundaries of the maskContainer, gives an easy area to touch since the MaskContainer "
 			+"itself has its own context-sensitive touch, and places an info button to gain more information about the subject.</p><br /><p>"
 			+"This example loads a MaskContainer, and flips it with an info-panel.</p>");
