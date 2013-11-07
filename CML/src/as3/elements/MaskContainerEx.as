@@ -25,12 +25,9 @@ package as3.elements
 		}
 		
 		override protected function gestureworksInit():void 
-		{
-			
+		{			
 			// entry point
-			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("Mask Container");

@@ -19,7 +19,6 @@ package as3.layouts
 		{
 			// entry point
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("GridLayout");

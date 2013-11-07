@@ -19,8 +19,7 @@ package as3.layouts
 		override protected function gestureworksInit():void
 		{
 			// entry point
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
+			var exTemp:ExampleTemplate = new ExampleTemplate();		
 			addChild(exTemp);
 			
 			exTemp.createTitle("ListLayout");
