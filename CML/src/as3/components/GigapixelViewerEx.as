@@ -26,7 +26,7 @@ package as3.components
 		
 		public function GigapixelViewerEx():void
 		{
-			gml = "assets/gestures.gml";
+			gml = "gml/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void
@@ -34,7 +34,6 @@ package as3.components
 			// entry point
 			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("Gigapixel Viewer");
