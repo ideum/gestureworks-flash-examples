@@ -19,7 +19,6 @@ package as3.elements
 			trace("gestureWorksInit()");		
 			// entry point
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("Frame Element");
