@@ -28,7 +28,7 @@ package as3.elements
 			html.y = 100;
 			html.width = 600;
 			html.height = 500;
-			html.src = "http://ideum.com/";
+			html.src = "https://www.google.com/";
 			html.init();
 			addChild(html);
 		}

@@ -36,7 +36,7 @@ package as3.elements
 				"</script>" + 
 				"</head>" + 
 				"<body>" + 
-				"<button onclick="myFunction()">Say Hello with JavaScript</button>" + 
+				"<button onclick='myFunction()'>Say Hello with JavaScript</button>" + 
 				"</body>";
 			html.init();
 			addChild(html);
