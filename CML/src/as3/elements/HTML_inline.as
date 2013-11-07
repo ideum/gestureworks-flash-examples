@@ -24,7 +24,7 @@ package as3.elements
 			exTemp.createDesc("<p>This class loads a url or inline HTML using the WebKit AIR Browser.</p>");
 			
 			var html:HTML = new HTML();			
-			html.x = 650;
+			html.x = 600;
 			html.y = 100;
 			html.width = 600;
 			html.height = 500;

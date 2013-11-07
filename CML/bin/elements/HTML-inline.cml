@@ -10,7 +10,7 @@
 	
 	
 <!-- The html element can load inline HTML -->
-<HTML x="650" y="100" width="600" height="500">
+<HTML x="600" y="100" width="600" height="500">
 	<head>
 		<script>
 		function myFunction() {
