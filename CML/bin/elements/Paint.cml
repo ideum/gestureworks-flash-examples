@@ -11,6 +11,6 @@
 </Text>
 
 <Image x="650" y="100" src="images/background.jpg" width="500" height="500" />	
-<Paint x="650" y="100" width="500" height="500" backgroundColor="0xFFFFFF" backgroundAlpha="0" />
+<Paint id="painter" x="650" y="100" width="500" height="500" backgroundColor="0xFFFFFF" backgroundAlpha="0" />
 
 </cml>
