@@ -32,15 +32,12 @@ package as3.components
 		
 		public function AlbumViewerEx():void
 		{
-			gml = "assets/gestures.gml";
+			gml = "gml/gestures.gml";
 		}
 		
 		override protected function gestureworksInit():void
 		{
-			// entry point
-			
 			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
 			addChild(exTemp);
 			
 			exTemp.createTitle("AlbumViewer");
@@ -56,44 +53,28 @@ package as3.components
 			album.addChild(getImage("assets/images/wb3.jpg"));
 			album.addChild(getImage("assets/images/USS_Macon_over_Manhattan.png"));
 			album.loop = true;
-			album.init();
-			
+			album.init();			
 			albumViewer.addChild(album);
-			albumViewer.childToList("video_element", album);
-			albumViewer.album = album;
 			
 			//The viewer frame
-			var frameContainer:TouchContainer = new TouchContainer();
-			frameContainer.className = "frame_container";
-			frameContainer.visible = true;
-			frameContainer.targetParent = true;
-			frameContainer.init();
-			
 			var frame:Frame = new Frame();
-			frame.className = "frame_element";
-			frameContainer.addChild(frame);
-			frameContainer.childToList("frame_element", frame);
-			
-			frame.init();
-			
-			albumViewer.addChild(frameContainer);
-			albumViewer.childToList("frame_container", frameContainer);
+			frame.targetParent = true;			
+			frame.init();			
+			albumViewer.addChild(frame);
 			
 			// Info container
 			var infoContainer:TouchContainer = new TouchContainer();
-			infoContainer.className = "info_container";
-			infoContainer.visible = false;
 			infoContainer.targetParent = true;
 			infoContainer.init();
 			
 			var infoBg:Graphic = new Graphic();
 			infoBg.shape = "rectangle";
-			infoBg.className = "info_bg";
 			infoBg.alpha = 0.6;
 			infoBg.lineStroke = 0;
 			infoBg.color = 0x6699FF;
+			infoBg.widthPercent = 100;
+			infoBg.heightPercent = 100;
 			infoContainer.addChild(infoBg);
-			infoContainer.childToList("info_bg", infoBg);
 			
 			var infoTitle:Text = new Text();
 			infoTitle.border = false;
@@ -109,7 +90,6 @@ package as3.components
 			
 			var infoBody:Text = new Text();
 			infoBody.border = false;
-			infoBody.className = "info_description";
 			infoBody.selectable = false;
 			infoBody.multiline = true;
 			infoBody.wordWrap = true;
@@ -120,12 +100,9 @@ package as3.components
 			infoBody.text = "Macon, built in Ohio by the Goodyear-Zeppelin Corporation, was commissioned on 11 Mar 1933. 785 feet long and 132 feet in diameter, the airship carried five Curtiss F9C Sparrowhawk biplanes and had a crew of 76.";
 			
 			infoContainer.addChild(infoTitle);
-			infoContainer.childToList("title", infoTitle);
 			infoContainer.addChild(infoBody);
-			infoContainer.childToList("info_description", infoBody);
 			
 			albumViewer.addChild(infoContainer);
-			albumViewer.childToList("info_container", infoContainer);
 			albumViewer.back = infoContainer;
 			
 			//Info section ends.
@@ -133,7 +110,6 @@ package as3.components
 			// Menu
 			
 			var menu:Menu = new Menu();
-			menu.className = "menu_container";
 			menu.alpha = 0.6;
 			menu.position = "bottom";
 			menu.paddingLeft = 375;
