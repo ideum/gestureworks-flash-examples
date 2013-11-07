@@ -42,8 +42,8 @@ package as3.components
 			mapViewer.y = 100;
 			mapViewer.width = 550;
 			mapViewer.height = 400;
-			mapViewer.mouseChildren = true;					
-			mapViewer.gestureList = { "n-drag": true, "n-scale": true, "n-rotate": true, "tap": true };			
+			mapViewer.autoTextLayout = false;				
+			mapViewer.gestureList = { "n-drag": true, "n-scale": true, "n-rotate": true};			
 			addChild(mapViewer);						
 			
 			//FRONT: modest map element
@@ -57,6 +57,10 @@ package as3.components
 			map.zoom = 12;
 			map.mapprovider = "MicrosoftAerialMapProvider";
 			mapViewer.addChild(map);
+			
+			//Markers
+			map.addChild(marker("Woodhenge", -1.7867, 51.1896));
+			map.addChild(marker("Stonehenge", -1.8264, 51.1789));
 			
 			//BACK: info panel
 			var infoPanel:InfoPanel = new InfoPanel();
@@ -80,6 +84,24 @@ package as3.components
 			
 			//Initialize component
 			DisplayUtils.initAll(mapViewer);			
+		}
+		
+		private function marker(name:String, lon:Number, lat:Number):ModestMapMarker {
+			var mkr:ModestMapMarker = new ModestMapMarker();
+			mkr.longitude = lon; 
+			mkr.latitude = lat;
+			
+			var label:Text = new Text();
+			label.str = name;
+			label.color = 0xFAFAC0;
+			label.fontSize = 12;
+			label.width = 81;
+			label.height = 20;
+			label.background = true;
+			label.backgroundColor = 0x594D37;
+			mkr.addChild(label);
+		
+			return mkr;
 		}
 	}
 

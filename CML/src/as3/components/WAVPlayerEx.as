@@ -53,7 +53,7 @@ package as3.components
 			
 			//FRONT: WAV element			
 			var wav:WAV = new WAV();
-			wav.src = "library/assets/FDR-Infamy.wav";
+			wav.src = "assets/FDR-Infamy.wav";
 			wav.autoplay = true;
 			wav.display = "waveform";
 			wav.waveColor = 0xD9B26A;
@@ -65,7 +65,7 @@ package as3.components
 			
 			//BACK: info panel
 			var infoPanel:InfoPanel = new InfoPanel();
-			infoPanel.bkgColor = 0x6699FF;
+			infoPanel.bkgColor = 0x665533;
 			infoPanel.tFontSize = 20;
 			infoPanel.dFontSize = 16;
 			infoPanel.title = "FDR's Infamy Speech";
@@ -81,9 +81,10 @@ package as3.components
 			wavplayer.addChild(frame);
 			
 			// Menu
-			var menu:ViewerMenu = new ViewerMenu();
+			var menu:ViewerMenu = new ViewerMenu(true, true, true, true);
 			menu.btnColor = 0xD9B26A;
 			menu.btnLineColor = 0xD9B26A;
+			menu.paddingLeft = 300;
 			wavplayer.addChild(menu);
 			
 			//Initialize component
