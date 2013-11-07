@@ -23,11 +23,9 @@ package as3.elements
 			exTemp.createTitle("HTML");
 			exTemp.createDesc("<p>This class loads a url or inline HTML using the WebKit AIR Browser.</p>");
 			
-			var html:HTML = new HTML();			
-			html.x = 650;
-			html.y = 100;
-			html.width = 600;
-			html.height = 500;
+			var html:HTML = new HTML();
+			html.width = 1280;
+			html.height = 720;
 			html.src = "https://www.google.com/";
 			html.init();
 			addChild(html);

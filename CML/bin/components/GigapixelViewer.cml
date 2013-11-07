@@ -22,7 +22,7 @@
 	<Container id="info" visible="false" targetParent="true" width="100%" height="100%">
 		<Graphic id="bg" color="0xFFAE1F" alpha="0.6" shape="rectangle" width="100%" height="100%"/>
 		<Container paddingTop="30" paddingLeft="30" paddingRight="30" width="100%" height="100%" relativeY="true">
-			<Text str="FDRs Infamy Speech" fontSize="30" color="0xFFFFFF" font="OpenSansBold" autosize="true" width="100%" borderColor="0xFFFFFF" />				
+			<Text str="FDRs Infamy Speech" fontSize="30" color="0xFFFFFF" font="OpenSansBold" autosize="true" width="100%" />				
 			<Text fontSize="20" wordWrap="true" color="0xFFFFFF" width="100%" autosize="true" multiline="true" 
 				str="This is a compiled mosaic image captured by the NASA Spitzer Space Telescope." />
 		</Container>
