@@ -94,7 +94,6 @@ package as3.components
 			
 			//BACK: info panel
 			var infoPanel:InfoPanel = new InfoPanel();
-			infoPanel.bkgColor = 0x6699FF;
 			infoPanel.tFontSize = 20;
 			infoPanel.dFontSize = 16;
 			infoPanel.title = "Light Bulbs";
@@ -112,6 +111,7 @@ package as3.components
 			// Menu
 			var menu:ViewerMenu = new ViewerMenu();
 			menu.btnColor = 0x6498B2;
+			menu.paddingLeft = 490;
 			maskImageViewer.addChild(menu);			
 						
 			function baseComplete(e:Event):void {
