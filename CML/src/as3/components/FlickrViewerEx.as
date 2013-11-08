@@ -5,6 +5,7 @@ package as3.components
 	import com.gestureworks.cml.components.FlickrViewer;
 	import com.gestureworks.cml.elements.Flickr;
 	import com.gestureworks.cml.elements.Frame;
+	import com.gestureworks.cml.events.StateEvent;
 	import com.gestureworks.cml.utils.DisplayUtils;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
@@ -31,21 +32,27 @@ package as3.components
 			
 			//Flickr Viewer Component
 			var flickrViewer:FlickrViewer = new FlickrViewer();
-			flickrViewer.x = 600;
-			flickrViewer.y = 100;
+			flickrViewer.x = 650;
+			flickrViewer.y = 150;
 			flickrViewer.mouseChildren = true;
 			flickrViewer.gestureList = { "n-drag": true, "n-scale": true, "n-rotate": true };	
 			addChild(flickrViewer);
 						
 			//FRONT: flickr element
 			var flickr:Flickr = new Flickr();
+			flickr.width = 500;
 			flickr.apikey = "5487a9cd58bb07a37700558d6362972f";
 			flickr.src = "4385244497";			
+			flickr.addEventListener(StateEvent.CHANGE, function(e:StateEvent):void {
+				//Initialize component
+				DisplayUtils.initAll(flickrViewer);	
+				flickrViewer.visible = true;
+			});
 			flickrViewer.addChild(flickr);
+			flickr.init();
 			
 			//BACK: info panel
 			var infoPanel:InfoPanel = new InfoPanel();
-			infoPanel.bkgColor = 0x6699FF;
 			infoPanel.tFontSize = 20;
 			infoPanel.dFontSize = 16;
 			infoPanel.title = "Chrome Alum Crystals";
@@ -63,10 +70,7 @@ package as3.components
 			// Menu
 			var menu:ViewerMenu = new ViewerMenu();
 			menu.paddingLeft = 375;
-			flickrViewer.addChild(menu);
-			
-			//Initialize component
-			DisplayUtils.initAll(flickrViewer);				
+			flickrViewer.addChild(menu);			
 		}
 	}
 
