@@ -3,9 +3,9 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
 <!-- header -->	
-<Text class="title">ModestMaps</Text>
+<Text class="title">ModestMap</Text>
 <Text class="desc">
-	<p>This tag is used to load a ModestMaps using the ModestMaps API. The element is already touch enabled for the purpose of navigating the map via touch, and switching map providers via touch. 
+	<p>This tag is used to load a ModestMap using the ModestMaps API. The element is already touch enabled for the purpose of navigating the map via touch, and switching map providers via touch. 
 	Map providers are basically the style of the map. The available map providers are:</p>
 	<ul>
 		<li>- BlueMarbleMapProvider</li>
@@ -22,7 +22,7 @@
 	which is a display object.</p><br />
 </Text>
 
-<ModestMap x="500" y="50" height="600" width="600" latitude="51.1789" longitude="-1.8264" zoom="7" mapprovider="BlueMarbleMapProvider">
+<ModestMap x="600" y="60" height="600" width="600" latitude="51.1789" longitude="-1.8264" zoom="7" mapprovider="BlueMarbleMapProvider">
 
 	<ModestMapMarker longitude="-1.8264" latitude="51.1789">
 		<Graphic fill="color" color="0x594D37" shape="roundRectangle" width="81" height="25" cornerWidth="10" cornerHeight="10" lineStroke="2" lineColor="0x293033"/>

@@ -11,29 +11,26 @@
 <Text class="desc">
 	<p>Viewer tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br />
 	<p>The ModestMapViewer wraps a ModestMap in a frame with optional buttons. The ModestMap has its own drag and scale functions, 
-	so a thick frame is helpful in enabling touch and manipulation around the rest of the stage.</p>
+	so a thick frame is helpful in enabling touch and manipulation around the rest of the stage. Double-tap has been enabled, which changes the map content.</p>
 </Text>
 
-<ModestMapViewer x="630" y="100" width="550" height="400" rotation="10" autoTextLayout="false">
+<ModestMapViewer x="630" y="150" rotation="1" back="#info">
 
-	<TouchContainer class="map_container" visible="true" targetParent="false" mouseChildren="false" nativeTransform="false" affineTransform="false">
-
-		<ModestMap height="400" width="550" latitude="51.1857" longitude="-1.8033" zoom="13" mapprovider="MicrosoftHybridMapProvider">
-			<ModestMapMarker longitude="-1.7867" latitude="51.1896">
-				<Text text="Woodhenge" color="0xFAFAC0" fontSize="12" width="81" height="20" background="true" backgroundColor="0x594D37"/>
-			</ModestMapMarker>
-			<ModestMapMarker longitude="-1.8264" latitude="51.1789">
-				<Text text="Stonehenge" color="0xFAFAC0" fontSize="12" width="81" height="20" background="true" backgroundColor="0x594D37"/>
-			</ModestMapMarker>
-		</ModestMap>	
-		
+	<!-- FRONT: Map -->
+	<ModestMap height="400" width="550" latitude="51.1857" longitude="-1.8033" zoom="13" mapprovider="MicrosoftHybridMapProvider" >
+		<ModestMapMarker longitude="-1.7867" latitude="51.1896">
+			<Text text="Woodhenge" color="0xFAFAC0" fontSize="12" width="81" height="20" background="true" backgroundColor="0x594D37"/>
+		</ModestMapMarker>
+		<ModestMapMarker longitude="-1.8264" latitude="51.1789">
+			<Text text="Stonehenge" color="0xFAFAC0" fontSize="12" width="81" height="20" background="true" backgroundColor="0x594D37"/>
+		</ModestMapMarker>
 		<GestureList>
 			<Gesture ref="n-drag" />
 			<Gesture ref="n-scale" />
 			<Gesture ref="n-rotate" />
 			<Gesture ref="n-double_tap" />
-		</GestureList>			
-	</TouchContainer>	
+		</GestureList>
+	</ModestMap>	
 	
 	<!-- BACK: info panel -->
 	<Container id="info" visible="false" targetParent="true">
@@ -60,7 +57,6 @@
 		<Gesture ref="n-drag" />
 		<Gesture ref="n-scale" />
 		<Gesture ref="n-rotate" />
-		<Gesture ref="n-tap" />
 	</GestureList>
 	
 </ModestMapViewer>

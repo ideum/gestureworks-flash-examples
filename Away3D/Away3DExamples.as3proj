@@ -16,7 +16,11 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
-    <class path="..\..\lib" />
+    <class path="..\..\gwas\development\cml_core" />
+    <class path="..\..\gwas\development\gml_core" />
+    <class path="..\..\gwas\development\lib\away3d" />
+    <class path="..\..\gwas\development\away3d" />
+    <class path="..\..\gwas\development\lib\away3d\src" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -67,6 +71,8 @@
     <element path="..\..\lib\Away3D.swc" />
     <element path="..\..\lib\GestureWorksCML.swc" />
     <element path="..\..\lib\GestureWorksGML.swc" />
+    <element path="..\..\gwas\development\cml_core\lib\cml_ext.swc" />
+    <element path="..\..\gwas\development\gml_core\lib\gml_ext.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
@@ -86,7 +92,7 @@
   </library>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
-    <compile path="src\cml\TouchContainer3DEx.as" />
+    <compile path="src\cml\MeshEx.as" />
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>
