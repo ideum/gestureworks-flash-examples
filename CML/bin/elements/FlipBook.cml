@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Text class="title">FlipBook</Text>
+<Text class="desc">
+	<p>This tag can be used to create a Flip Book out of any number of display containers. Drag on the corners to flip the pages. 
+	   It is best to use the same dimensions for each page.</p>
+</Text>
+
+<FlipBook width="400" height="631" mouseChildren="true" nativeTransform="false" x="400" y="50">
+	<Image src="images/Blake_sie_cover.jpg" width="400" height="631" />
+	<Image src="images/Blake_si_intro.jpg" width="400" height="631" />	
+	<Image src="images/Blake_Innocence_Frontispies_p2.jpg" width="400" height="631" />	
+	<Graphic shape="rectangle" width="400" height="631" color="0x553344">
+		<Text str="You can create complex pages from containers." x="40" y="20" 
+			color="0xFFFFFF" width="340" fontSize="25" multiline="true" wordWrap="true" height="500"  />
+	</Graphic>	
+	<Graphic shape="rectangle" width="400" height="631" color="0x555555">
+		<Text str="This is the last page. Isn't William Blake cool?" x="40" y="20" 
+			color="0xFFFFFF" width="340" height="500" fontSize="25" multiline="true" wordWrap="true" />
+	</Graphic>
+	<Gesture ref="n-drag"/>
+</FlipBook>
+</cml>
