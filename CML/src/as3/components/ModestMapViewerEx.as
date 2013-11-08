@@ -42,7 +42,8 @@ package as3.components
 			mapViewer.y = 100;
 			mapViewer.width = 550;
 			mapViewer.height = 400;
-			mapViewer.autoTextLayout = false;				
+			mapViewer.autoTextLayout = false;	
+			mapViewer.mouseChildren = true;
 			mapViewer.gestureList = { "n-drag": true, "n-scale": true, "n-rotate": true};			
 			addChild(mapViewer);						
 			
@@ -64,7 +65,6 @@ package as3.components
 			
 			//BACK: info panel
 			var infoPanel:InfoPanel = new InfoPanel();
-			infoPanel.bkgColor = 0xFFAE1F;
 			infoPanel.tFontSize = 20;
 			infoPanel.dFontSize = 16;
 			infoPanel.title = "Stonehenge and Woodhenge";
@@ -95,8 +95,8 @@ package as3.components
 			label.str = name;
 			label.color = 0xFAFAC0;
 			label.fontSize = 12;
-			label.width = 81;
-			label.height = 20;
+			label.width = 100;
+			label.height = 25;
 			label.background = true;
 			label.backgroundColor = 0x594D37;
 			mkr.addChild(label);
