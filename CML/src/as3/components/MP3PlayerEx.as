@@ -76,9 +76,8 @@ package as3.components
 			
 			// Menu		
 			var menu:ViewerMenu = new ViewerMenu(true, true, true, true);
-			menu.btnLineColor = 0x8ED358;
-			menu.btnColor = 0x0E5923;
 			menu.y = -65;
+			menu.paddingLeft = 400;
 			mp3Player.addChild(menu);
 			
 			//Initialize component
