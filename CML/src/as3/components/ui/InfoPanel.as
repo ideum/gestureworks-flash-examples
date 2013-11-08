@@ -15,6 +15,7 @@ package as3.components.ui
 		public var tFontSize:Number = 30;
 		
 		public var descr:String;
+		public var descrHTML:String;
 		public var dFontColor:uint = 0xFFFFFF;
 		public var dFontSize:Number = 20;
 		
@@ -64,7 +65,7 @@ package as3.components.ui
 				info.addChild(t);				
 			}
 			
-			if (descr) {
+			if (descr || descrHTML) {
 				var d:Text = new Text();
 				d.fontSize = dFontSize;
 				d.wordWrap = true;
@@ -72,7 +73,12 @@ package as3.components.ui
 				d.widthPercent = 100;
 				d.autosize = true;
 				d.multiline = true;
-				d.str = descr;
+				if (descr) {
+					d.str = descr;
+				}
+				else {
+					d.htmlText = descrHTML;
+				}
 				info.addChild(d);				
 			}
 		}

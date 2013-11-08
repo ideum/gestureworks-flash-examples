@@ -3,24 +3,12 @@ package as3.components
 	import as3.components.ui.InfoPanel;
 	import as3.components.ui.ViewerMenu;
 	import com.gestureworks.cml.components.WAVPlayer;
-	import com.gestureworks.cml.elements.Button;
-	import com.gestureworks.cml.elements.Container;
 	import com.gestureworks.cml.elements.Frame;
-	import com.gestureworks.cml.elements.Graphic;
-	import com.gestureworks.cml.elements.Menu;
-	import com.gestureworks.cml.elements.Text;
-	import com.gestureworks.cml.elements.TouchContainer;
 	import com.gestureworks.cml.elements.WAV;
 	import com.gestureworks.cml.utils.DisplayUtils;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;
-	import flash.display.Sprite;
-	
-	/**
-	 * ...
-	 * @author Ideum
-	 */
-	
+
 	 [SWF(width = "1280", height = "720", backgroundColor = "0x000000", frameRate = "30")]
 	 
 	public class WAVPlayerEx extends GestureWorks 
