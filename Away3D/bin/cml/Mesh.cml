@@ -4,12 +4,12 @@
 	-->
 <cml>
 
-<Geometry ref="Cube" id="cube" width="200" height="200" depth="300" />
-<Material id="blue" color="0x447199"/>
+<Geometry id="cube" ref="Cube" width="200" height="200" depth="300" />
+<Material id="blue" ref="Color" color="0x447199"/>
 
-<Scene>
-	<Camera pos="0,0,-500" lookat="0,0,0" viewBgColor="0x000000" />
-	<Mesh geometry="cube" material="blue" releaseInertia="true">
+<Scene id="scene">
+	<Camera pos="0,0,-500" lookat="0,0,0" viewBgColor="0x000000"/>
+	<Mesh geometry="#cube" material="#blue">
 		<Gesture ref="n-drag-3d" />
 		<Gesture ref="n-rotate-3d" />
 		<Gesture ref="n-scale-3d" />

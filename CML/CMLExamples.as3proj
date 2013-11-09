@@ -77,7 +77,11 @@
   </library>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
+<<<<<<< HEAD
     <compile path="src\as3\components\HTMLViewerEx.as" />
+=======
+    <compile path="src\cml\layouts\RandomEx.as" />
+>>>>>>> origin/restructure-3d
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>
