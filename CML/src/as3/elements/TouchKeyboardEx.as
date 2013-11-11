@@ -22,7 +22,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("TouchKeyboard");
-			exTemp.createDesc("<p>The TouchKeyboard is a virtual keyboard providing an interface for a collection of KeyElement objects and output management for key events. Default configurations are in place for convenience but the keyboard's style, layout, and key actions are customizable.<br /><br />" + "This example displays the default layout and demonstrates key actions and the ability switch between multiple text fields.</p><br />" + "<p>See also:<br />KeyElement<br />TouchKeyboardCustom<br /></p>");
+			exTemp.createDesc("<p>The TouchKeyboard is a virtual keyboard providing an interface for a collection of KeyElement objects and output management for key events. Default configurations are in place for convenience but the keyboard's style, layout, and key actions are customizable.<br /><br />" + "This example displays the default layout and demonstrates key actions and the ability switch between multiple text fields. To output to one of the text fields, set focus by either touching or clicking the desired text field.</p><br />" + "<p>See also:<br />KeyElement<br />TouchKeyboardCustom<br /></p>");
 			
 			//create touch keyboard
 			var tk:TouchKeyboard = new TouchKeyboard();

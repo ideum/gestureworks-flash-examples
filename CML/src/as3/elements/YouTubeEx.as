@@ -31,7 +31,7 @@ package as3.elements
 			var ytElement:YouTube = new YouTube();
 			ytElement.x = 600;
 			ytElement.y = 150;
-			ytElement.src = "h0MZX-D8xzA";
+			ytElement.src = "Fo3u_8pZ7Pw";
 			ytElement.autoplay = true;
 			ytElement.chrome = true;
 			addChild(ytElement);
