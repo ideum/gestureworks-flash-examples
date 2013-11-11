@@ -2,7 +2,9 @@ package cml {
 	import com.gestureworks.away3d.TouchManager3D;
 	import com.gestureworks.cml.core.CMLAway3D;
 	import com.gestureworks.cml.core.CMLParser;
+	import com.gestureworks.cml.utils.document;
 	import com.gestureworks.core.GestureWorks;
+	import com.gestureworks.events.GWGestureEvent;
 	import flash.events.Event;
 	
 	// load Away3D classes
@@ -22,6 +24,13 @@ package cml {
 		private function cmlInit(event:Event):void {
 			trace("cmlInit()");
 			CMLParser.removeEventListener(CMLParser.COMPLETE, cmlInit);
+			
+			document.getElementById("cone").vto.addEventListener(GWGestureEvent.TAP, onTap);
+			
+			function onTap(e:Event):void {
+				trace('tap');
+			}
+			
 		}
 	}
 }

@@ -4,14 +4,28 @@
 	-->
 <cml>
 	
+<LightPicker id="lp-1" lights="light-1" />
+	
+	
 <Scene>
-	<Camera pos="0,500,-1000" lookat="0,0,0" />
-					
-	<Model src="assets/HighPolyCar.awd">
+	<Camera x="0" y="0" z="-1000" />
+		
+	<Light id="light-1" ref="Directional" color="0xFFFFFF" />	
+	
+
+	<Model id="cone" src="assets/cone.awd" lightPicker="lp-1" touchEnabled="true" pos="200,0,0" sca="5,5,5">
+		<Gesture ref="n-drag-3d"/>
+		<Gesture ref="n-scale-3d"/>
+		<Gesture ref="n-rotate-3d"/>
+		<Gesture ref="n-tap"/>
+	</Model>	
+	
+	<Model src="assets/cube.awd" lightPicker="lp-1" touchEnabled="true" pos="-200,0,0" sca="5,5,5">
 		<Gesture ref="n-drag-3d"/>
 		<Gesture ref="n-scale-3d"/>
 		<Gesture ref="n-rotate-3d"/>
 	</Model>
+		
 </Scene>
 
 </cml>

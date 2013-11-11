@@ -3,17 +3,48 @@
 	Mesh example
 	-->
 <cml>
+	
+	<LightPicker id="lp-1" lights="light-1" />
 
-<Geometry id="cube" ref="Cube" width="200" height="200" depth="300" />
-<Material id="blue" ref="Color" color="0x447199"/>
+<Scene>
+	<Camera pos="0,0,-1000" lens="prospective" color="0x333333" />	
+	
+	<SkyBox>
+		<Image width="1024" src="assets/panoramic/30kabah_r.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_l.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_u.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_d.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_f.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_b.jpg"/>
+	</SkyBox>
+	
+<!--	<Texture id="tex-1" ref="Bitmap" src="assets/stripeTexture.jpg" />
+	
+<!--	<Material id="mat-1" ref="Texture" texture="#tex-1" lightPicker="lp-1" />
 
-<Scene id="scene">
-	<Camera pos="0,0,-500" lookat="0,0,0" viewBgColor="0x000000"/>
-	<Mesh geometry="#cube" material="#blue">
-		<Gesture ref="n-drag-3d" />
-		<Gesture ref="n-rotate-3d" />
-		<Gesture ref="n-scale-3d" />
-	</Mesh>
+-->	
+
+	<Material id="mat-2" ref="Color" color="0x447733" lightPicker="lp-1" ambientColor="0x000000" specular=".25" ambient="1" />
+	<Geometry id="geom-1" ref="Cube" width="500" height="500" depth="500" />
+	<Geometry id="geom-2" ref="Plane" width="1500" height="1500" yUp="true" />
+
+	<Light id="light-1" ref="Directional" color="0xFFFFFF" castsShadows="true" x="0" y="-1000" z="-1500" rotationX="0" shadowType="soft" />
+	
+	
+	<Container3D rot="0,0,0">
+		<Mesh 	geometry="#geom-1" material="#mat-2" 	pos="0,0,0" rot="0,0,0" sca="1,1,1"		touchEnabled="true" releaseInertia="true" >
+			<Gesture ref="n-drag-3d" />
+			<Gesture ref="n-rotate-3d" />
+			<Gesture ref="n-scale-3d" />
+		</Mesh>
+		<Mesh 	geometry="#geom-2" material="#mat-2" 	pos="0,-500,0" rot="-45,0,0" sca="1,1,1"	touchEnabled="true" releaseInertia="true" >
+			<Gesture ref="n-drag-3d" />
+			<Gesture ref="n-rotate-3d" />
+			<Gesture ref="n-scale-3d" />
+		</Mesh>		
+	</Container3D>
+	
+	
 </Scene>
 
 </cml>

@@ -4,7 +4,7 @@
 	-->
 <cml>
 
-<Geometry ref="Cube" id="cube" width="200" height="200" depth="200" />
+<Geometry ref="Cube" id="cube" width="200" height="300" depth="200" />
 <Material id="blue" color="0x447199"/>
 
 <Scene>

@@ -4,24 +4,30 @@
 	-->
 <cml>
 	
-<Geometry ref="Cube" id="BaseCube" width="1000" height="50" depth="1000" />
-<Material id="BaseCubeColor" color="0x007100" lightPicker="lp1" />
-<Material id="swapTexture"  src="assets/stripeTexture.jpg" lightPicker="lp1"/>
+<Texture id="tex-1" ref="Bitmap" src="assets/stripeTexture.jpg"  />
+<Material id="swapTexture" ref="Texture" texture="#tex-1" />	
+	
 
 <Scene>
 	<!-- if no viewDim given use full stage-->
-	<Camera pos="0,500,-1000" lookat="0,0,0" />
+	<Camera pos="0,0,-500" />
 					
-	<Model src="assets/HighPolyCar.awd"  >
-		<LightPicker>
-			<Light type="directional" direction="1,-1,0" diffuseColor="0xffffff" castsShadows="true"/>
-		</LightPicker>
-		<ModelAsset id="Bonnet" material="swapTexture"/>
-		<ModelAsset id="Glass" alpha="0.9" />
+	<Model src="assets/HighPolyCar.awd" touchEnabled="false">
+		
+		<ModelAsset id="Bonnet" material="#swapTexture" touchEnabled="true">
+			<Gesture ref="n-drag-3d"/>
+			<Gesture ref="n-scale-3d"/>
+			<Gesture ref="n-rotate-3d"/>
+		</ModelAsset>
+		
+		<ModelAsset id="Glass" alpha=".9" />
+		
 		<Gesture ref="n-drag-3d"/>
 		<Gesture ref="n-scale-3d"/>
 		<Gesture ref="n-rotate-3d"/>
+		
 	</Model>
+	
 </Scene>
 
 </cml>

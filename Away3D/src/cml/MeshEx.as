@@ -1,5 +1,6 @@
 package cml {
 	import com.gestureworks.away3d.TouchManager3D;
+	import com.gestureworks.cml.away3d.elements.LightPicker;
 	import com.gestureworks.cml.core.CMLAway3D;
 	import com.gestureworks.cml.core.CMLParser;
 	import com.gestureworks.core.GestureWorks;
@@ -15,7 +16,7 @@ package cml {
 			super();
 			TouchManager3D.initialize(); // TouchManager3D must be initialized
 			gml = "gml/gestures.gml";			
-			cml = "cml/Mesh.cml";
+			cml = "cml/Mesh.cml"; 
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}
 
