@@ -16,6 +16,7 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
+    <class path="..\..\gwas\development\away3d" />
     <class path="..\..\gwas\development\cml_core" />
     <class path="..\..\gwas\development\gml_core" />
   </classpaths>
@@ -54,10 +55,8 @@
   </includeLibraries>
   <!-- SWC Libraries -->
   <libraryPaths>
-    <element path="..\..\..\cml_core\lib\cml_ext.swc" />
-    <element path="..\..\..\gml_core\lib\gml_ext.swc" />
-    <element path="..\..\gwas\development\gml_core\lib\gml_ext.swc" />
     <element path="..\..\gwas\development\cml_core\lib\cml_ext.swc" />
+    <element path="..\..\gwas\development\gml_core\lib\gml_ext.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
@@ -77,11 +76,7 @@
   </library>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
-<<<<<<< HEAD
-    <compile path="src\as3\components\HTMLViewerEx.as" />
-=======
-    <compile path="src\cml\layouts\RandomEx.as" />
->>>>>>> origin/restructure-3d
+    <compile path="src\cml\elements\AccordionEx.as" />
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>
@@ -98,8 +93,5 @@
     <option testMovieCommand="" />
   </options>
   <!-- Plugin storage -->
-  <storage>
-    <entry key="at_enabled"><![CDATA[0]]></entry>
-    <entry key="at_password"><![CDATA[AT]]></entry>
-  </storage>
+  <storage />
 </project>
