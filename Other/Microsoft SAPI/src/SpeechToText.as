@@ -12,7 +12,7 @@ package
 		private var timer:Timer;
 		private var mSwap:Boolean = false;
 			
-		public function Main():void {
+		public function SpeechToText():void {
 			
 			stage.displayState = StageDisplayState.FULL_SCREEN_INTERACTIVE
 			
