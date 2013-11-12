@@ -55,6 +55,8 @@
   <libraryPaths>
     <element path="..\..\lib\GestureWorksCML_4.0.0.swc" />
     <element path="..\..\lib\GestureWorksGML_4.0.0.swc" />
+    <element path="..\..\lib\GestureWorksCML_3.0.0.swc" />
+    <element path="..\..\lib\GestureWorksGML_3.0.0.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
@@ -91,5 +93,8 @@
     <option testMovieCommand="" />
   </options>
   <!-- Plugin storage -->
-  <storage />
+  <storage>
+    <entry key="at_enabled"><![CDATA[0]]></entry>
+    <entry key="at_password"><![CDATA[AT]]></entry>
+  </storage>
 </project>

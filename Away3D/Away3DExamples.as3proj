@@ -70,6 +70,10 @@
     <element path="..\..\lib\GestureWorksAway3D_4.0.0.swc" />
     <element path="..\..\lib\GestureWorksCML_4.0.0.swc" />
     <element path="..\..\lib\GestureWorksGML_4.0.0.swc" />
+    <element path="..\..\lib\GestureWorksAway3D_3.0.0.swc" />
+    <element path="..\..\lib\GestureWorksCML_3.0.0.swc" />
+    <element path="..\..\lib\GestureWorksGML_3.0.0.swc" />
+    <element path="..\..\lib\away3d-core-fp11_4_1_4.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
