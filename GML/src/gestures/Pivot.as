@@ -15,16 +15,11 @@ package gestures
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+		{	
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("pivot");
 			exTemp.createDesc("The pivot gesture analyzes the motion of a single touch point cluster and calculates the change in rotation (\"pivot_dtheta\") of a pivot arm drawn from the center of the touch object to the touch point.");
+			addChild(exTemp);			
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

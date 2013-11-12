@@ -15,14 +15,8 @@ package gestures
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+		{	
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("stroke_letter_upper");
 			exTemp.createDesc("This gesture object describes a single finger stroke or \"uni-stroke\" gesture. When a user places one touch point on a touch object and draws a path the gesture compares the "
 			+ "captured path to the path described in the gesture object and returns a discrete gesture event if it is a match. The exact path and number of touch points are defined in the <match> tag. "
@@ -31,6 +25,7 @@ package gestures
 			+ "the reference path trajectory and the captured sample path. This returns a probability value which is defined as one of the standard gesture object dimensions. If the probability of the stroke match "
 			+ "is below 0.7 a gesture event will not be dispatched. This gesture has a total of three dimensions: \"stroke_prob\" returns the match probability of the reference and sample path, then \"stroke_x\" and "
 			+ "\"stroke_y\" which define the x and y coordinates of the center of the stroke sample path.<br /><br />This example will trace the uppercase letter matching the path in the stroke event to the output window.");
+			addChild(exTemp);			
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

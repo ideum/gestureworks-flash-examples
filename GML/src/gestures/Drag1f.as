@@ -15,16 +15,11 @@ package gestures
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+		{		
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("drag-1f");
 			exTemp.createDesc("<p>The drag-1f gesture is designed to provide one-finger drag functionality. The touch point requirement is set through the point_number attribute in the \"cluster\" tag");
+			addChild(exTemp);			
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

@@ -15,19 +15,14 @@ package gestures
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+		{	
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("manipulate");
 			exTemp.createDesc("The manipulate gesture is a single gesture that combines three transformation analysis steps in three separate gesture objects into one.<br /><br />The change in the translation, scale "
 			+ "and rotation of the touch point cluster is calculated using the \"manipulate\" algorithm and returned in five independent gesture object dimensions: \"dx\" , \"dy\" , \"dsx\" , \"dsy\" and "
 			+ "\"dtheta\".<br /><br />As long as the matching criteria is met (one to ten touch points are recognized by the touch object), the values are continuously queried and dispatched in a structured gesture "
 			+ "event that maps the dimensions to: \"x\" , \"y\" , \"scaleX\", \"scaleY\" and \"rotation\".<br /><br />This example translates, scales, and rotates the square on each manipulate event.");
+			addChild(exTemp);			
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

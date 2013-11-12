@@ -15,16 +15,11 @@ package gestures
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+		{	
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("drag-x-axis");
 			exTemp.createDesc("<p>The drag-x gesture is designed to provide horizontal drag functionality. The translation is limited to the x axis by only analyzing the x delta.<br /><br />This example moves the square along the x-axis on each drag event meeting the defined critera.");
+			addChild(exTemp);			
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

@@ -16,20 +16,15 @@ package gestures
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+		{		
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("swipe");
 			exTemp.createDesc("The 'swipe' gesture can be activated by any number of touch points. When a touch down is recognized on a touch object, the velocity and acceleration of the touch points are "
 			+ "tracked. If acceleration of the cluster is below the acceleration threshold a swipe event is dispatched.<br /><br />The acceleration threshold is defined in the \"variables\" tag in the \"analysis\" "
 			+ "block. In the example below the var=\"etm_ddx\" has an allowable maximum value of var_max=\"1\". This sets maximum value of 1 on the variable \"etm_ddx\" (mean acceleration in the x direction). " 
 			+ "If the average group acceleration of the touch point cluster is greater than 1 pixle per second, the return value of the dimension is set to zero. If both dimensions are have zero value "
 			+ "the gesture will be put in an inactive state and no event will dispatched.<br /><br />This example randomly changes the color of the square on each swipe event. It also traces the return values to the output window.");
+			addChild(exTemp);			
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

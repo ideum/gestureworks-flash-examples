@@ -16,20 +16,13 @@ package gestures
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+		{		
+			var exTemp:ExampleTemplate = new ExampleTemplate();		
 			exTemp.createTitle("double-tap");
-			exTemp.createDesc("<p>The double-tap gesture is recognized when two tap events occur within a specified time interval and translation threshold. " + "These values can be set in the GML definition. The interval can be set using the \"event_duration_max\" attribute and the translation threshold can be set using the " + "\"translation_max\" attribute. The duration threshold for the two tap events can be set using the \"interevent_duration_max\".</p><br />" +
-				
-				"<p>Like other gestures you can turn an \"double-tap\" gesture into a 1-finger, 2-finger, etc. double_tap gesture by altering the cluster point number.</p><br />" +
-				
+			exTemp.createDesc("<p>The double-tap gesture is recognized when two tap events occur within a specified time interval and translation threshold. " + "These values can be set in the GML definition. The interval can be set using the \"event_duration_max\" attribute and the translation threshold can be set using the " + "\"translation_max\" attribute. The duration threshold for the two tap events can be set using the \"interevent_duration_max\".</p><br />" +				
+				"<p>Like other gestures you can turn an \"double-tap\" gesture into a 1-finger, 2-finger, etc. double_tap gesture by altering the cluster point number.</p><br />" +				
 				"<p>This example randomly changes the color of the square on each tap event. It also traces the return values to the output window.</p><br />");
+			addChild(exTemp);				
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

@@ -16,20 +16,13 @@ package gestures
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+		{	
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("tap");
-			exTemp.createDesc("<p>The tap gesture is recognized when a touch down and touch up event occur within a specified time interval and translation threshold. " + "These values can be set in the GML definition. The interval can be set using the \"event_duration_max\" attribute and the translation threshold can be set using the " + "\"translation_max\" attribute.</p><br />" +
-				
-				"<p>Like other gestures you can turn a \"tap\" gesture into a 1-finger, 2-finger, etc. tap gesture by altering the cluster point number.</p><br />" +
-				
+			exTemp.createDesc("<p>The tap gesture is recognized when a touch down and touch up event occur within a specified time interval and translation threshold. " + "These values can be set in the GML definition. The interval can be set using the \"event_duration_max\" attribute and the translation threshold can be set using the " + "\"translation_max\" attribute.</p><br />" +				
+				"<p>Like other gestures you can turn a \"tap\" gesture into a 1-finger, 2-finger, etc. tap gesture by altering the cluster point number.</p><br />" +				
 				"<p>This example randomly changes the color of the square on each tap event. It also traces the return values to the output window.</p><br />");
+			addChild(exTemp);				
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

@@ -16,16 +16,11 @@ package gestures
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+		{	
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("scroll");
 			exTemp.createDesc("The 'scroll' gesture can be activated by any number of touch points. When a touch down is recognized on a touch object, the velocity and acceleration of the touch points are " + "tracked. If velocity of the cluster is above the translation threshold a scroll event is dispatched.<br /><br />The value returned in each dimension is temporal mean average of the touch point " + "velocities over set of processing frames as denoted by \"etm_dx\" and \"etm_dy\". This has the effect of evening out changes in the values to that they can be mapped to display object and present " + "smoothed continuous motion.<br /><br />This example traces the return values to the output window.");
+			addChild(exTemp);			
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

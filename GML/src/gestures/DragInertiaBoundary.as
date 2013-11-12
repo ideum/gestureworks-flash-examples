@@ -16,15 +16,10 @@ package gestures
 		
 		override protected function gestureworksInit():void
 		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("drag-inertia-boundary");
 			exTemp.createDesc("<p>The drag-inertia-boundary gesture is designed to provide object drag functionality using any number of touch points. Filters are " + "applied to the gesture's inertia and boundaries within the \"processing\" tag to restrict the dimension values to a specific range.<br /><br />The example " + "demonstrates the boundary filter by preventing the TouchSprite from being dragged outside of the range, defined by the boundary_min and boundary_max values, on " + "each axis and an inertial friction of 0.9 is applied on release.<br /><br />This example moves the square, within the boundaries, on each drag event and applies " + "inerita on rlease.");
+			addChild(exTemp);			
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

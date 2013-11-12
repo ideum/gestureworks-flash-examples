@@ -15,19 +15,14 @@ package gestures
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+		{		
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("orient");
 			exTemp.createDesc("The \"orient\" gesture analyzes the orientation of a group of five touch points. The orient algorithm uses the relative position of five touch points to identify which "
 			+ "touchpoint is likely to be the user's thumb. The thumb is then removed from the cluster processing and the remaining four fingers are used to establish the approximate orientation of the user's hand. "
 			+ "<br /><br />This gesture ONLY works with five touch points and can be used as a reliable measure of user orientation when the hand is placed in a \"natural\" resting position.<br /><br />This example "
 			+ "demonstrates the identification of each finger, on the square, through the debug display. It also traces the thumb id to the output window.");
+			addChild(exTemp);			
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

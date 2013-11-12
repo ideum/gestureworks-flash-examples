@@ -16,22 +16,15 @@ package gestures
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+		{	
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("tilt-3f");
 			exTemp.createDesc("<p>The tilt gesture is triggered when two touch points are held stationary and the third point is pulled away. The change in the separation \"dsx\" and \"dsy\" is calculated "
-				+"and returned to the gesture dimensions \"tilt_dx\" and \"tilt_dy\" respectively.</p><br />" 
-				
+				+"and returned to the gesture dimensions \"tilt_dx\" and \"tilt_dy\" respectively.</p><br />" 				
 				+"<p>In this example, the \"tilt-3f\" gesture only works with three touch points. Dimension values are only returned if the change in cluster separation is above the minimum threshold of \"0.015\" pixels. " 
-				+"If the threshold is met then the value is passed through the multiply filter which acts to amplify the change in separation so that it becomes 1000 times larger.</p><br />" 
-				
+				+"If the threshold is met then the value is passed through the multiply filter which acts to amplify the change in separation so that it becomes 1000 times larger.</p><br />" 				
 				+"<p>This example applies the tilt_dy delta to rotate the square around its x-axis.</p><br />");
+			addChild(exTemp);
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

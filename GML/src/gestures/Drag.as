@@ -15,16 +15,11 @@ package gestures
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+		{			
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("drag");
 			exTemp.createDesc("<p>The drag gesture is designed to provide object drag functionality using any number of touch points. It is considered to be one of the three fundamental object manipulation" + " gestures.<br /><br />This gesture can be activated by any number of touch points between 1 and 10. When a touch is recognized on a touch object the position of the touch point is tracked. This changes in " + "position of the touch point is mapped directly to the position of the touch object.<br /><br />This example moves the sqauare on each drag event meeting the defined criteria. It also traces the return values to the output window.");
+			addChild(exTemp);			
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

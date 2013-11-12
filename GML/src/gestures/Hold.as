@@ -17,18 +17,13 @@ package gestures
 		
 		override protected function gestureworksInit():void 
 		{
-			trace("gestureWorksInit()");						
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("hold");
 			exTemp.createDesc("The hold gesture is initialized by a touch event and is dispatched when the touch point remains after a specified time frame.<br /><br />The \"event_duration_max\" " +
 			"attribute of the \"point\" tag defines the maximum allowable time between touch point events. Similarly \"event_duration_min\" attribute defines the minimum amount of time " +
 			"between touch point events. Any touchEnd event that does not occur within time frame defined by the event_duration_min and event_duration_max, will not meet the matching criteria. " +
 			"<br /><br />This example randomly changes the color of the square on each hold event. It also traces the return values to the output window.");
+			addChild(exTemp);			
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

@@ -17,19 +17,14 @@ package gestures
 		
 		override protected function gestureworksInit():void
 		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("flick");
 			exTemp.createDesc("<p>The 'flick' gesture can be activated by any number of touch points. When a touch down is recognized on a touch object, the velocity and acceleration of the touch points "
 			+ "are tracked. If acceleration of the cluster is above the acceleration threshold a flick event is dispatched.<br /><br />The acceleration threshold is defined in the \"variables\" tag in the "
 			+ "\"analysis\" block. In the GML file, the var=\"etm_ddx\" has an allowable min value of var_min=\"2\". This sets minimum value of two on the variable \"etm_ddx\" (mean acceleration in the x direction "
 			+ "if the average group acceleration of the touch point cluster is below 2 pixels per second the return value of the dimensions is set to zero. if both dimensions have a zero value, the gesture "
 			+ "will be put in an inactive state and no event will dispatch.<br /><br />This example randomly changes the color of the square on each flick event. It also traces the return values to the output window.");
+			addChild(exTemp);			
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();

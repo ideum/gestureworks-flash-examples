@@ -15,16 +15,11 @@ package gestures
 		}
 		
 		override protected function gestureworksInit():void
-		{
-			trace("gestureWorksInit()");
-			
-			// entry point			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			exTemp.createHeader();
-			addChild(exTemp);
-			
+		{	
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("scale");
 			exTemp.createDesc("The Scale gesture is designed to provide object scaling or zoom functionality using any number of touch points. It is considered to be one of the three fundamental " + "object manipulation gestures.<br /><br />This gesture can be activated by any number of touch points between 2 and 10. When two or more touch points are recognized on a touch object the " + "relative separation of the touch points are tracked and grouped into a cluster. Changes in the separation of the cluster are mapped directly to the scale of the touch object.<br /><br />This " + "example scales the square on each scale event.");
+			addChild(exTemp);			
 			
 			// create a touchable sprite 
 			var touchSprite:TouchSprite = new TouchSprite();
