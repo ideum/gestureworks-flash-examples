@@ -12,6 +12,7 @@ package as3.components
 	
 	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="30")]
 	
+	// AIR-EXCLUSIVE 
 	public class HTMLViewerEx extends GestureWorks
 	{		
 		public function HTMLViewerEx():void
@@ -24,7 +25,7 @@ package as3.components
 			//Description
 			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("HTML Viewer");
-			exTemp.createDesc("<p>The HTML Viewer is a component that is primarily meant to display an HTML website on the front side and meta-data on the back side." +
+			exTemp.createDesc("<p>The HTML Viewer is an AIR-EXCLUSIVE component that is primarily meant to display an HTML website on the front side and meta-data on the back side." +
 				"The width and height of the component are automatically set to the dimensions of the HTML element.<br /><br />" +
 				"This example demonstrates an HTML element on the front and an info panel on the back. The viewer can be rotated, scaled, and dragged.</p><br />" +
 				"<p>See also:<br />" +

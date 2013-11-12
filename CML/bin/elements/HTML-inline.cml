@@ -5,7 +5,7 @@
 <!-- header -->	
 <Text class="title">HTML (inline)</Text>
 <Text class="desc">
-	<p>This tag loads a url or inline HTML using the WebKit AIR Browser.</p>
+	<p>This AIR-EXCLUSIVE tag loads a url or inline HTML using the WebKit AIR Browser. </p>
 </Text>
 	
 	

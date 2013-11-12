@@ -5,7 +5,11 @@ package
 	import flash.events.*;
 	import flash.utils.*;
 	/**
-	 * SAPI TTS Examples
+	 * SAPI STT Examples
+	 * Loads TTS and SST through the Microsoft API
+	 *  1. Start sapi_websocket.exe
+	 *  2. Compile AS3 application
+	 *  3. Press any key to trigger text to speech
 	 */
 	public class TextToSpeech extends Sprite {
 		private var websocket:WebSocket;		

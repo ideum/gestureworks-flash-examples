@@ -6,6 +6,10 @@ package
 	import flash.utils.*;
 	/**
 	 * SAPI STT Examples
+	 * Loads TTS and SST through the Microsoft API
+	 *  1. Add recoginzed grammar in the file: bin/grammar/grammar.txt
+	 *  2. Start sapi_websocket.exe
+	 *  3. Compile AS3 application 
 	 */
 	public class SpeechToText extends Sprite {
 		private var websocket:WebSocket;		

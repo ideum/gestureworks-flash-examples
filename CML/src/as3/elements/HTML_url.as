@@ -6,6 +6,7 @@ package as3.elements
 	
 	[SWF(width="1280",height="720",backgroundColor="0x000000",frameRate="30")]
 	
+	// AIR-EXCLUSIVE 
 	public class HTML_url extends GestureWorks
 	{
 		public function HTML_url():void

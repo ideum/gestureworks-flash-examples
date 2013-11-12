@@ -9,14 +9,14 @@
     <movie width="800" />
     <movie height="600" />
     <movie version="11" />
-    <movie minorVersion="8" />
+    <movie minorVersion="7" />
     <movie platform="Flash Player" />
     <movie background="#FFFFFF" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
-    <class path="..\..\..\gml_core" />
+    <class path="..\..\lib" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -54,6 +54,7 @@
   <!-- SWC Libraries -->
   <libraryPaths>
     <element path="..\..\..\gml_core\lib\gml_ext.swc" />
+    <element path="..\..\lib\GestureWorksGML_4.0.0.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
