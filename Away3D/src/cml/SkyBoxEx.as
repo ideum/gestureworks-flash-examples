@@ -9,13 +9,13 @@ package cml {
 	CMLAway3D;
 	
 	[SWF(width="1280", height="720", frameRate="60", backgroundColor="0x000000")]
-	public class MeshEx extends GestureWorks {	
+	public class SkyBoxEx extends GestureWorks {	
 		
-		public function MeshEx() {
+		public function SkyBoxEx() {
 			super();
 			TouchManager3D.initialize(); // TouchManager3D must be initialized
 			gml = "gml/gestures.gml";			
-			cml = "cml/Mesh.cml"; 
+			cml = "cml/SkyBox.cml"; 
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}
 

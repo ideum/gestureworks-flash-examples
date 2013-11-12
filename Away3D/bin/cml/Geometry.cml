@@ -11,66 +11,26 @@
 <Geometry ref="Sphere" id="TreeTop" radius="65" />
 <Geometry ref="Cylinder" id="TreeTrunk" topRadius="20" bottomRadius="20" height="200" yUp="true" />
 
-<Material id="BaseCubeColor" color="0x007100" />
-<Material id="TreeTrunkColor" color="0x673f20" />
-<Material id="TreeTopColor" color="0x00cb00" />
+<Material ref="Color" id="BaseCubeColor" color="0x007100" />
+<Material ref="Color" id="TreeTrunkColor" color="0x673f20" />
+<Material ref="Color" id="TreeTopColor" color="0x00cb00" />
 
-<Scene viewPos="30,20" viewDim="600,300">
-	<Mesh geometry="BaseCube" material="BaseCubeColor" />
+<Scene>		
+	<Camera pos="0,0,-1000" lens="prospective" color="0x000000" />	
+
+	<Mesh geometry="#BaseCube" material="#BaseCubeColor" />
 		
-	<TouchContainer3D id="ThreeTreesA">
-		<Mesh geometry="TreeTrunk" material="TreeTrunkColor" pos="128,125,5" sca="0.7,0.7,0.7" >
-			<Mesh geometry="TreeTop" material="TreeTopColor" pos="0,125,0" sca="1,2,1" />
-		</Mesh>
-		<Mesh geometry="TreeTrunk"  material="TreeTrunkColor" pos="0,125,0">
-			<Mesh geometry="TreeTop" material="TreeTopColor" pos="0,150,0" sca="1,2,1" />
-		</Mesh>
-		<Mesh geometry="TreeTrunk"  material="TreeTrunkColor" pos="33,125,165"  sca="0.8,0.8,0.8" >
-			<Mesh geometry="TreeTop" material="TreeTopColor" pos="0,125,0" sca="1,2,1" />
-		</Mesh>
-	</TouchContainer3D>
-</Scene>
-
-
-
-<!-- Example of bad use of  geometries amd materials 
-	This version uses
-	7 CubeGeometries
-	7 Materials
-	to draw the same scene as above.
-	-->
-<Scene viewPos="630,20" viewDim="600,300">
-	<Mesh>
-		<Cube  width="1000" height="50" depth="1000" />
-		<Material color="0x007100" />
+	<Mesh geometry="#TreeTrunk" material="#TreeTrunkColor" pos="128,125,5" sca="0.7,0.7,0.7" >
+		<Mesh geometry="#TreeTop" material="#TreeTopColor" pos="0,125,0" sca="1,2,1" />
 	</Mesh>
-	
-	<TouchContainer3D  id="ThreeTreesB">
-		<Mesh pos="128,125,5" sca="0.7,0.7,0.7">
-			<Cylinder topRadius="20" bottomRadius="20" height="200" yUp="true" />
-			<Material color="0x673f20" />
-			<Mesh pos="0,125,0" sca="1,2,1">
-				<Sphere radius="65" />
-				<Material color="0x00cb00" />
-			</Mesh>
-		</Mesh>
-		<Mesh pos="0,125,0">
-			<Cylinder topRadius="20" bottomRadius="20" height="200" yUp="true" />
-			<Material color="0x673f20" />
-			<Mesh pos="0,125,0" sca="1,2,1">
-				<Sphere radius="65" />
-				<Material color="0x00cb00" />
-			</Mesh>
-		</Mesh>
-		<Mesh pos="33,125,165" sca="0.8,0.8,0.8">
-			<Cylinder topRadius="20" bottomRadius="20" height="200" yUp="true" />
-			<Material color="0x673f20" />
-			<Mesh pos="0,125,0" sca="1,2,1">
-				<Sphere radius="65" />
-				<Material color="0x00cb00" />
-			</Mesh>
-		</Mesh>
-	</TouchContainer3D>
+	<Mesh geometry="#TreeTrunk"  material="#TreeTrunkColor" pos="0,125,0">
+		<Mesh geometry="#TreeTop" material="#TreeTopColor" pos="0,150,0" sca="1,2,1" />
+	</Mesh>
+	<Mesh geometry="#TreeTrunk"  material="#TreeTrunkColor" pos="33,125,165"  sca="0.8,0.8,0.8" >
+		<Mesh geometry="#TreeTop" material="#TreeTopColor" pos="0,125,0" sca="1,2,1" />
+	</Mesh>
+
 </Scene>
+
 
 </cml>

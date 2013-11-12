@@ -1,6 +1,6 @@
 package cml {
 	import com.gestureworks.away3d.TouchManager3D;
-	import com.gestureworks.cml.core.CMLAway3D;
+	import com.gestureworks.cml.core.CMLAway3D;	
 	import com.gestureworks.cml.core.CMLParser;
 	import com.gestureworks.core.GestureWorks;
 	import flash.events.Event;
@@ -9,19 +9,19 @@ package cml {
 	CMLAway3D;
 	
 	[SWF(width="1280", height="720", frameRate="60", backgroundColor="0x000000")]
-	public class TouchContainer3DEx extends GestureWorks {	
+	public class MaterialEx extends GestureWorks {	
 		
-		public function TouchContainer3DEx() {		
+		public function MaterialEx() {
 			super();
-			TouchManager3D.initialize(); // TouchManager3D must be initialized			
+			TouchManager3D.initialize(); // TouchManager3D must be initialized
 			gml = "gml/gestures.gml";			
-			cml = "cml/TouchContainer3D.cml";
+			cml = "cml/Material.cml"; 
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}
-		
+
 		private function cmlInit(event:Event):void {
 			trace("cmlInit()");
 			CMLParser.removeEventListener(CMLParser.COMPLETE, cmlInit);
-		}	
+		}
 	}
 }

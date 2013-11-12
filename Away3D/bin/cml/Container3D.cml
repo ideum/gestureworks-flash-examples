@@ -10,13 +10,13 @@
 <Scene>	
 	<Camera pos="0,0,-1000" lens="prospective" color="0x000000" />	
 	
-	<TouchContainer3D>
-		<Mesh geometry="#cube" material="#blue" releaseInertia="true" touchEnabled="true" x="-200" />
-		<Mesh geometry="#cube" material="#blue" releaseInertia="true" touchEnabled="true" x="200" />
-		<Gesture ref="n-drag-3d" />
-		<Gesture ref="n-rotate-3d" />
-		<Gesture ref="n-scale-3d" />		
-	</TouchContainer3D>
+	<!-- 
+		Containers cannot have gestures applied to them. They simply act as display containers.
+	-->	
+	<Container3D x="200">
+		<Mesh geometry="#cube" material="#blue" x="-200" />
+		<Mesh geometry="#cube" material="#blue" x="200" />		
+	</Container3D>
 	
 </Scene>
 

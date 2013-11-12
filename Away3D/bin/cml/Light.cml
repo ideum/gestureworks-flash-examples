@@ -1,38 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-	Two LightPickers and two materials and three lights.
-	Both materials have two lights and share a common light "shared-light"
+	Light example
 	-->
 <cml>
-		
-<LightPicker id="lp1" lights="shared-light,pointLight_1" />
-<LightPicker id="LP2" lights="shared-light,pointLight_2" />
-<LightPicker id="LP3" lights="shared-light,pointLight_2,pointLight_1" />
-<Geometry ref="Sphere" id="sphere" radius="150" />
-<Material id="lightMat" color="0xffffff" />
+
+<!-- 
+	Use a LightPicker to make lighting groups. Apply the lightPicker by id.
+	-->
+
+<LightPicker id="lp-1" lights="light-1" />
 
 <Scene>
-	<Camera pos="0,500,-2000" viewPos="0,0" lookat="0,0,0" viewBackgroundColor="0x0" />
-	<Light id="shared-light" type="directional" direction="0,-1,0" diffuseColor="0xff00ff" diffuse="0.3" castsShadows="true" />
+	<Camera pos="0,0,-1000" lens="prospective" color="0x333333" />	
 	
-	<Mesh pos="0,-150,0">
-		<Plane width="4000" height="4000" yUp="true"/>
-		<Material color="0xffffff" lightPicker="LP3"/>
+	<Material id="mat-2" ref="Color" color="0x447733" lightPicker="lp-1" ambientColor="0x000000" specular=".25" ambient="1" />
+	<Geometry id="geom-1" ref="Cube" width="500" height="500" depth="500" />
+
+	<Light id="light-1" ref="Directional" color="0xFFFFFF" x="0" y="-1000" z="-1500" rotationX="0" />
+	
+	<Mesh 	geometry="#geom-1" material="#mat-2" 	pos="0,0,0" rot="0,0,0" sca="1,1,1"		touchEnabled="true" releaseInertia="true" >
+		<Gesture ref="n-drag-3d" />
+		<Gesture ref="n-rotate-3d" />
+		<Gesture ref="n-scale-3d" />
 	</Mesh>
 	
-	<Mesh geometry="sphere" pos="-500,0,0">
-		<Material id="lightRed" color="0xffcccc" lightPicker="lp1"/>
-		<Light id="pointLight_1" type="point" pos="0,600,0" ambientColor="0xff0000" diffuseColor="0x0000ff">
-			<Mesh geometry="sphere" sca="0.2,0.2,0.2" material="lightMat"/> <!-- shows pos of pointlight-->
-		</Light><!-- light is child of mesh-->
-	</Mesh>
-	
-	<Mesh geometry="sphere" pos="500,0,0">
-		<Light id="pointLight_2" type="point" pos="0,600,0" diffuseColor="0x00ff00"  radius="1600" fallOff="1800">
-			<Mesh geometry="sphere" material="lightMat" sca="0.2,0.2,0.2" castsShadows="false" /> <!-- shows position of pointlight-->
-		</Light><!-- light is child of mesh-->
-		<Material color="0xccccff" lightPicker="LP2"/>
-	</Mesh>	
 </Scene>
 
 </cml>

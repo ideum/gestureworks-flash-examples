@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	SkyBox Example
+	-->
+<cml>
+	
+<Scene>
+	<Camera pos="0,0,-1000" lens="prospective" color="0x333333" />	
+	<!-- 
+		Load SkyBox data through the image tag
+	-->	
+	<SkyBox>
+		<Image width="1024" src="assets/panoramic/30kabah_r.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_l.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_u.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_d.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_f.jpg"/>
+		<Image width="1024" src="assets/panoramic/30kabah_b.jpg"/>
+	</SkyBox>
+	
+</Scene>
+
+</cml>

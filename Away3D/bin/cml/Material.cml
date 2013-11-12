@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Mesh example
+	-->
+<cml>
+	
+<!-- 
+	There are two types of materials: Color and Texture. Use the ref attribute to load the referenced AS3 material class.
+	-->
+<Material id="mat-1" ref="Color" color="0x423353" />
+<Material id="mat-2" ref="Texture" texture="#tex-1" />
+
+<!-- 
+	Link a Bitmap texture to the texture material
+	-->
+<Texture id="tex-1" ref="Bitmap" src="assets/stripeTexture.jpg" />
+
+<!-- 
+	Create some geometry
+	-->
+<Geometry id="geom-1" ref="Cube" width="500" height="500" depth="500" />
+
+
+<Scene id="scene">
+	<Camera pos="0,0,-1000" lookat="0,0,0" viewBgColor="0x000000"/>
+	<!-- 
+		Apply the material to the Mesh with the material attribute
+	-->	
+	<Mesh geometry="#geom-1" material="#mat-1" touchEnabled="true" x="100">
+		<Gesture ref="n-drag-3d" />
+		<Gesture ref="n-rotate-3d" />
+		<Gesture ref="n-scale-3d" />
+	</Mesh>
+	<Mesh geometry="#geom-1" material="#mat-2" touchEnabled="true" x="-100">
+		<Gesture ref="n-drag-3d" />
+		<Gesture ref="n-rotate-3d" />
+		<Gesture ref="n-scale-3d" />
+	</Mesh>	
+</Scene>
+
+</cml>
