@@ -38,7 +38,7 @@ package gestures
 			
 			// add events 
 			touchSprite.nativeTransform = true;
-			touchSprite.gestureList = {"pivot": true};
+			touchSprite.gestureList = {"pivot": true, "n-drag":true};
 		}
 	}
 
