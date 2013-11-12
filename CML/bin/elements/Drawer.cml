@@ -15,7 +15,7 @@
 <Drawer title="drawer" width="750" height="500" x="500" y="200" labelFont="OpenSansBold" handleColor="0x787F44" bkgColor="0x44789F" handleGestureList="n-tap:true, n-drag:true, n-flick:false">
 	<Graphic shape="circle" radius="200"/>
 	<Drawer title="nested" width="300" height="300" x="450" y="100" handleColor="0xFF0000" bkgColor="0xCCCCCC" handleOrientation="left">
-		<Image id="background" src="/images/michael-otto.jpg"/>
+		<Image id="background" src="images/michael-otto.jpg"/>
 	</Drawer>
 </Drawer>
 	

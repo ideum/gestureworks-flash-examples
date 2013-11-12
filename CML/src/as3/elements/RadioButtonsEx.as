@@ -19,13 +19,10 @@ package as3.elements
 		
 		override protected function gestureworksInit():void
 		{
-			// entry point
-			
-			var exTemp:ExampleTemplate = new ExampleTemplate();
-			addChild(exTemp);
-			
+			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("RadioButtons");
 			exTemp.createDesc("<p>The RadioButtons element represents a group of radio buttons generated from a user defined list of labels. Other configurable properties include the primary font characteristics (style, size, and color), placement direction (right to left or top to bottom), and the spacing between the buttons.<br /><br />" + "This example demonstrates the selection of a value from a defined set of choices by selecting a corresponding button.</p>" + "<br /><p>See also:<br />Toggle<br /></p>");
+			addChild(exTemp);			
 			
 			//create radio buttons
 			var rbs:RadioButtons = new RadioButtons();
@@ -48,6 +45,7 @@ package as3.elements
 			text.fontSize = 50;
 			text.textColor = 0xFFFFFF;
 			text.selectable = false;
+			text.str = rbs.selectedLabel;
 			addChild(text);
 		}
 		

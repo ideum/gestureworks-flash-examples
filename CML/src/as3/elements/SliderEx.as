@@ -137,7 +137,7 @@ package as3.elements
 			//event listener	
 			function onStateEvent(event:StateEvent):void
 			{
-				trace(event.id, event.property, event.value);
+			//	trace(event.id, event.property, event.value);
 			}
 			
 			//timer	for continous slider

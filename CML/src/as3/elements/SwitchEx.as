@@ -50,10 +50,13 @@ package as3.elements
 			sw.init();
 			addChild(sw);
 			
-			text.text = "FALSE";
+			text.str = "FALSE";
 			text.visible = false;
 			text.color = 0xFFFFFF;
 			text.fontSize = 25;
+			text.visible = true;
+			text.x = 708;
+			text.y = 300;
 			addChild(text);
 		}
 		

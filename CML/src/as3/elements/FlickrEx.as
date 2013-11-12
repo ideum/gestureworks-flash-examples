@@ -29,8 +29,8 @@ package as3.elements
 			 * For example, in: www.flickr.com/photos/paulslab/4385244497/, the number "438524497" is the ID you need to put in the "src" field of the class.
 			 */
 			var flickrImg:Flickr = new Flickr();
-			flickrImg.apikey = "ENTER YOUR FLICKR API KEY";
-			flickrImg.src = "5703998760";
+			flickrImg.apikey = "5487a9cd58bb07a37700558d6362972f";
+			flickrImg.src = "3322780400";
 			flickrImg.x = 500;
 			flickrImg.y = 200;
 			addChild(flickrImg);

@@ -18,7 +18,9 @@ package gestures
 		{
 			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("drag-inertia-boundary");
-			exTemp.createDesc("<p>The drag-inertia-boundary gesture is designed to provide object drag functionality using any number of touch points. Filters are " + "applied to the gesture's inertia and boundaries within the \"processing\" tag to restrict the dimension values to a specific range.<br /><br />The example " + "demonstrates the boundary filter by preventing the TouchSprite from being dragged outside of the range, defined by the boundary_min and boundary_max values, on " + "each axis and an inertial friction of 0.9 is applied on release.<br /><br />This example moves the square, within the boundaries, on each drag event and applies " + "inerita on rlease.");
+			exTemp.createDesc("<p>The drag-inertia-boundary gesture is designed to provide object drag functionality using any number of touch points. A filter is " 
+			+ "applied within the gesture's \"processing\" tag to enable inertia and transformation boundaries are set on the return values in the mapping block to prevent the object from translating beyond a specific range defined for each axis.<br /><br />"
+			+"This example moves the square, within the boundaries, on each drag event and applies " + "inerita with a friction of 0.9 on rlease.");
 			addChild(exTemp);			
 			
 			// create a touchable sprite 

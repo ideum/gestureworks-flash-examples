@@ -25,16 +25,12 @@
 				<property ref="drag_dx" active="true" friction="0.9"/>
 				<property ref="drag_dy" active="true" friction="0.9"/>
 			</inertial_filter>						
-			<boundary_filter>
-				<property ref="drag_dx" active="true" boundary_min="200" boundary_max="1080"/>
-				<property ref="drag_dy" active="true" boundary_min="200" boundary_max="520"/>
-			</boundary_filter>
 		</processing>
 		<mapping>
 			<update dispatch_type="continuous">
 				<gesture_event type="drag">
-					<property ref="drag_dx" target="x"/>
-					<property ref="drag_dy" target="y"/>
+					<property ref="drag_dx" target="x" min="10" max="1200" />
+					<property ref="drag_dy" target="y" min="10" max="650" />
 				</gesture_event>
 			</update>
 		</mapping>
