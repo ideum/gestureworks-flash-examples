@@ -93,7 +93,6 @@
 				<algorithm class="kinemetric" type="continuous">
 					<library module="rotate"/>
 					<returns>
-						<property id="rotate_dtheta" result="dtheta"/>
 						<property id="rotate_dthetaX" result="dthetaX"/>
 						<property id="rotate_dthetaY" result="dthetaY"/>
 						<property id="rotate_dthetaZ" result="dthetaZ"/>
@@ -102,13 +101,11 @@
 			</analysis>	
 			<processing>
 				<inertial_filter>
-					<property ref="rotate_dtheta" active="true" friction="0.9"/>
 					<property ref="rotate_dthetaX" active="true" friction="0.9"/>
 					<property ref="rotate_dthetaY" active="true" friction="0.9"/>
 					<property ref="rotate_dthetaZ" active="true" friction="0.9"/>
 				</inertial_filter>
 				<delta_filter>
-					<property ref="rotate_dtheta" active="true" delta_min="0" delta_max="20"/>
 					<property ref="rotate_dthetaX" active="true" delta_min="0" delta_max="20"/>
 					<property ref="rotate_dthetaY" active="true" delta_min="0" delta_max="20"/>
 					<property ref="rotate_dthetaZ" active="true" delta_min="0" delta_max="20"/>
@@ -117,7 +114,6 @@
 			<mapping>
 				<update dispatch_type="continuous">
 					<gesture_event type="rotate">
-						<property ref="rotate_dtheta" target="rotation"/>
 						<property ref="rotate_dthetaX" target="rotationX"/>
 						<property ref="rotate_dthetaY" target="rotationY"/>
 						<property ref="rotate_dthetaZ" target="rotationZ"/>
