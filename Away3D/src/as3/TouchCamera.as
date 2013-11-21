@@ -114,10 +114,10 @@
 			// provides tween intertia upon release
 			tO.releaseInertia = true; 
 			
-			// add scale 3D gesture	-> see loaded gml file
+			// add 3D gestures	-> see loaded gml file
 			tO.gestureList = { "n-drag-3d":true, "n-rotate-3d":true, "n-scale-3d":true }; 	
 			
-			// add scale event listener	
+			// add gesture event listeners	
 			tO.addEventListener(GWGestureEvent.DRAG, onDrag); 		
 			tO.addEventListener(GWGestureEvent.ROTATE, onRotate);
 			tO.addEventListener(GWGestureEvent.SCALE, onScale); 
