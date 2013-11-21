@@ -123,7 +123,7 @@
 			tO.addEventListener(GWGestureEvent.SCALE, onScale); 
 			
 			
-			// create a touch camera using 2d drag gesture on the view
+			// create a touch camera using a 2d drag gesture on the view
 			touchCamera = new TouchSprite(view);
 			touchCamera.gestureList = { "n-drag":true };
 			touchCamera.addEventListener(GWGestureEvent.DRAG, onCameraDrag);
@@ -147,7 +147,7 @@
 		private function onDrag(e:GWGestureEvent):void {	
 			
 			var m:Matrix3D = cube.parent.inverseSceneTransform; 
-			var v:Vector3D = new Vector3D(e.value.value.drag_dx, e.value.value.drag_dy, e.value.value.drag_dz) ; 
+			var v:Vector3D = new Vector3D(e.value.drag_dx, e.value.drag_dy, e.value.drag_dz) ; 
 			v = m.deltaTransformVector(v); 					
 			
 			// apply gesture drag values to cube
