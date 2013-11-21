@@ -146,10 +146,6 @@
 		 */
 		private function onDrag(e:GWGestureEvent):void {	
 			
-			var m:Matrix3D = cube.parent.inverseSceneTransform; 
-			var v:Vector3D = new Vector3D(e.value.drag_dx, e.value.drag_dy, e.value.drag_dz) ; 
-			v = m.deltaTransformVector(v); 					
-			
 			// apply gesture drag values to cube
 			cube.x += v.x;
 			cube.y += v.y;
