@@ -147,9 +147,9 @@
 		private function onDrag(e:GWGestureEvent):void {	
 			
 			// apply gesture drag values to cube
-			cube.x += v.x;
-			cube.y += v.y;
-			cube.z += v.z;
+			cube.x += e.value.drag_dx;
+			cube.y += e.value.drag_dy;
+			cube.z += e.value.drag_dz;
 			
 			trace("drag values:", e.value.drag_dx, e.value.drag_dy, e.value.drag_dz);			
 		}		
