@@ -30,6 +30,7 @@
 		private var cube:Mesh;
 		private var tO:ITouchObject3D;	
 		private var container:ObjectContainer3D;
+		private var containerSub:ObjectContainer3D;
 		
 		public function NestedTransforms():void {
 			super();
@@ -91,8 +92,16 @@
 			// apply rotation to parent container
 			container.rotationZ = 90;
 			
+			// create sub container to nest container
+			containerSub = new ObjectContainer3D;
+			
+			// apply rotation to parent container
+			containerSub.rotationY = 90;			
+			containerSub.rotationZ = 90;			
+			
 			// add to display list
-			container.addChild(cube);
+			containerSub.addChild(cube);
+			container.addChild(containerSub);
 			view.scene.addChild(container);	
 			
 			// create an update event loop
