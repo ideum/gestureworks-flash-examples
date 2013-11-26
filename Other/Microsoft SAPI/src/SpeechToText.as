@@ -18,7 +18,7 @@ package
 			
 		public function SpeechToText():void {
 			
-			stage.displayState = StageDisplayState.FULL_SCREEN_INTERACTIVE
+			//stage.displayState = StageDisplayState.FULL_SCREEN_INTERACTIVE
 			
 			// setup websocket
 			websocket = new WebSocket("ws://localhost:81", "*");
@@ -61,7 +61,7 @@ package
 		
 		// socket handle fail error handler
 		private function handleConnectionFail(event:WebSocketErrorEvent):void {
-			trace(event);
+			trace(event); 
 		}
 		
 		// socket closed handler

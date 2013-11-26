@@ -7,16 +7,16 @@ package
 	/**
 	 * SAPI STT Examples
 	 * Loads TTS and SST through the Microsoft API
-	 *  1. Start sapi_websocket.exe
-	 *  2. Compile AS3 application
-	 *  3. Press any key to trigger text to speech
+	 *  1. Add recoginzed grammar in the file: bin/grammar/grammar.txt
+	 *  2. Start sapi_websocket.exe
+	 *  3. Compile AS3 application 
 	 */
-	public class TextToSpeech extends Sprite {
+	public class DynamicSpeechToText extends Sprite {
 		private var websocket:WebSocket;		
 		private var timer:Timer;
 		private var mSwap:Boolean = false;
 			
-		public function TextToSpeech():void {
+		public function DynamicSpeechToText():void {
 			
 			//stage.displayState = StageDisplayState.FULL_SCREEN_INTERACTIVE
 			
@@ -36,6 +36,17 @@ package
 			timer.start();
 		}
 		
+		// keyboard event handler
+		private function onDown(e:KeyboardEvent = null): void {
+			// normal string
+			var xml:XML = <gml xmlns="http://gestureworks.com/gml/version/1.0">
+							<phrase>hello speech</phrase>
+							<phrase>change speech</phrase>
+						</gml>
+	
+			websocket.sendUTF(xml.toString());			
+		}	
+		
 		// on timer, try to connect
 		private function onTimer(e:TimerEvent):void {
 			websocket.connect();
@@ -45,31 +56,11 @@ package
 		private function handleWebSocketOpen(event:WebSocketEvent):void {
 			trace(event);
 			timer.stop();
-			timer.removeEventListener(TimerEvent.TIMER, onTimer);					
-			stage.addEventListener(KeyboardEvent.KEY_DOWN, onDown);			
-		}		
-		
-		// keyboard event handler
-		private function onDown(e:KeyboardEvent):void {
-			// normal string
-			var str:String = "The emerald-eyed tree frog, Hypsiboas crepitans, is a species of frog in the Hylidae family found in Brazil, Colombia, French Guiana, Guyana, Panama, Suriname, Trinidad and Tobago, and Venezuela. Its natural habitats are subtropical or tropical dry forests, subtropical or tropical moist lowland forests, dry savanna, moist savanna, rivers, intermittent rivers, freshwater lakes, intermittent freshwater lakes, freshwater marshes, intermittent freshwater marshes, freshwater springs, inland deltas, arable land, pastureland, plantations, rural gardens, urban areas, heavily degraded former forests, water storage areas, ponds, aquaculture ponds, irrigated land, and seasonally flooded agricultural land.";
+			timer.removeEventListener(TimerEvent.TIMER, onTimer);	
+			stage.addEventListener(KeyboardEvent.KEY_DOWN, onDown);
+			onDown();
 			
-			// SSML string
-			var ssml:String = "<speak version=\"1.0\"";
-            ssml += " xmlns=\"http://www.w3.org/2001/10/synthesis\"";
-            ssml += " xml:lang=\"en-US\">";
-            ssml += "<say-as type=\"date:mdy\"> 1/29/2009 </say-as>";
-            ssml += "</speak>";
-									
-			if (mSwap) {
-				websocket.sendUTF(str);	
-			}
-			else {
-				websocket.sendUTF(ssml);	
-			}
-			
-			mSwap = !mSwap;			
-		}		
+		}			
 		
 		// socket io error handler
 		private function handleIOError(event:IOErrorEvent):void {
@@ -84,7 +75,7 @@ package
 		
 		// socket handle fail error handler
 		private function handleConnectionFail(event:WebSocketErrorEvent):void {
-			trace(event);
+			trace(event); 
 		}
 		
 		// socket closed handler
