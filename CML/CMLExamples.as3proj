@@ -16,7 +16,8 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
-    <class path="..\..\lib" />
+    <class path="..\..\gestureworks-flash-cml" />
+    <class path="..\..\gestureworks-flash-gml" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -53,10 +54,12 @@
   </includeLibraries>
   <!-- SWC Libraries -->
   <libraryPaths>
-    <element path="..\..\lib\GestureWorksCML_4.0.0.swc" />
     <element path="..\..\lib\GestureWorksGML_4.0.0.swc" />
     <element path="..\..\lib\GestureWorksCML_3.0.0.swc" />
     <element path="..\..\lib\GestureWorksGML_3.0.0.swc" />
+    <element path="..\..\gestureworks-flash-gml\lib\gml_ext.swc" />
+    <element path="..\..\gestureworks-flash-cml\lib\cml_ext.swc" />
+    <element path="..\..\gestureworks-flash-cml\lib\gui.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
@@ -76,7 +79,7 @@
   </library>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
-    <compile path="src\cml\elements\AccordionEx.as" />
+    <compile path="src\other\TouchRecorder.as" />
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>

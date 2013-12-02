@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+	<LibraryKit>
+		<Library type="swf" src="assets/openexhibits_assets.swf" />	
+	</LibraryKit>
+	<Drawer id="drawerRecord" initializeOpen="true" x="0" y="100" width="300" height="250" handleOrientation="right" title="RECORDING" >
+			
+		<Button toggle = "down" initial = "white" dispatch = "toggle:{currentIndex}" x="95" y="95" id="play" scale=".8">	
+				
+				<SWF alpha="1" color="0xFFFFFF" scale="5" ref="org.openexhibits.assets.Play" id="white" />
+				<SWF alpha="1" color="0xFF0000" scale="5" ref="org.openexhibits.assets.Play" id="red" />
+				
+		</Button>	
+		
+		<Button toggle = "down" initial = "white" dispatch = "toggle:{currentIndex}" x="160" y="100" id="record">	
+						
+				<Graphic id="white" color="0xFFFFFF" shape="circle" radius="25" lineStroke="0" />
+				<Graphic id="red" color="0xFF0000" shape="circle" radius="25" lineStroke="0" />
+				
+		</Button>
+		
+		<Button toggle = "down" initial = "white" dispatch = "toggle:{currentIndex}" x="30" y="100" id="pause" hit="pausehittest" scale=".8">	
+				
+				<SWF alpha="1" color="0xFFFFFF" scale="5" ref="org.openexhibits.assets.Pause" id="white" />
+				<SWF alpha="1" color="0xFF0000" scale="5" ref="org.openexhibits.assets.Pause" id="red" />
+				<Graphic x="-12" color="0x000000" alpha = "0" shape="circle" radius="32" lineStroke="0" id="pausehittest" />
+		</Button>
+		
+		<Button initial = "white" dispatch = "initial:white:down:blue:up:other" x="25" y="180" id="clear" down="blue" up="white" hit="clearhittest">	
+				<Text text="RESET" color="0xFFFFFF" fontSize="30" id="white" />
+				<Text text="RESET" color="0x0000FF" fontSize="30" id="blue" />
+				<Graphic id="clearhittest" shape="circle" radius="35" alpha="0" x="15" />
+		</Button>
+		
+		<Button initial = "white" dispatch = "initial:white:down:blue:up:other" x="135" y="180" id="erase" down="blue" up="white" hit="erasehittest">	
+				<Text text="CLEAR" color="0xFFFFFF" fontSize="30" id="white" />
+				<Text text="CLEAR" color="0x0000FF" fontSize="30" id="blue" />
+				<Graphic id="erasehittest" shape="circle" radius="35" alpha="0" x="15" />
+		</Button>
+		
+		<Button initial = "white" dispatch = "initial:white:down:blue:up:other" x="25" y="30" id="load" down="blue" up="white" hit="loadhittest">	
+				<Text text="LOAD" color="0xFFFFFF" fontSize="30" id="white" />
+				<Text text="LOAD" color="0x0000FF" fontSize="30" id="blue" />
+				<Graphic id="loadhittest" shape="circle" radius="35" alpha="0" x="5" y="-20" />
+		</Button>
+		
+		<Button initial = "white" dispatch = "initial:white:down:blue:up:other" x="135" y="30" id="save" down="blue" up="white" hit="savehittest">	
+				<Text text="SAVE" color="0xFFFFFF" fontSize="30" id="white" />
+				<Text text="SAVE" color="0x0000FF" fontSize="30" id="blue" />
+				<Graphic id="savehittest" shape="circle" radius="35" alpha="0" x="5" y="-20" />
+		</Button>
+		
+	</Drawer>
+
+</cml>
