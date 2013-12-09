@@ -54,7 +54,6 @@
   </includeLibraries>
   <!-- SWC Libraries -->
   <libraryPaths>
-    <element path="..\..\lib\GestureWorksGML_4.0.0.swc" />
     <element path="..\..\lib\GestureWorksCML_3.0.0.swc" />
     <element path="..\..\lib\GestureWorksGML_3.0.0.swc" />
     <element path="..\..\gestureworks-flash-gml\lib\gml_ext.swc" />
@@ -79,7 +78,7 @@
   </library>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
-    <compile path="src\other\TouchRecorder.as" />
+    <compile path="src\cml\elements\ScrollPaneEx.as" />
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>
