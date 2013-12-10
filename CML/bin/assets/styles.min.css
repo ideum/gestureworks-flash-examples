@@ -3,4 +3,5 @@
 .example-graphic{x:460;y:10;shape:rectangle;width:450;height:700;color:0x333333;lineStroke:0;}
 .a-title{x:35;y:25;fontSize:30;width:425;color:0xFFFFFF;selectable:false;font:OpenSansBold;}
 .a-desc{x:35;y:85;color:0xFFFFFF;fontSize:20;width:425;height:700;wordWrap:true;multiline:true;selectable:false;textAlign:left;font:OpenSansRegular;leading:-4.5;}
-
+#tlf-id{font-size:10;color:0xFF0000;}
+.tlf-class{font-size:25;color:0xFF00FF;}

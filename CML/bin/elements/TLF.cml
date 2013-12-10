@@ -12,9 +12,11 @@
 	</p>	 
 </Text>
 
-<TLF x="750" y="300" width="300" height="260" font="OpenSansRegularTLF">
+<TLF x="750" y="100" width="300" height="500" font="OpenSansRegularTLF">
 	<TextFlow xmlns="http://ns.adobe.com/textLayout/2008" color="0xFFFFFF">
-		<p fontSize="30">THE 19<span baselineShift="superscript">th</span> CENTURY</p> 
+		<p fontSize="30">THE 19<span baselineShift="superscript">th</span> CENTURY</p>
+		<p id="tlf-id">This is styled by CSS through an id selector.</p> 
+		<p class="tlf-class">This is styled by CSS through a class selector.</p> 
 	</TextFlow>		
 </TLF>	
 

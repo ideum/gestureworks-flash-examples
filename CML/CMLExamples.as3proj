@@ -54,11 +54,12 @@
   </includeLibraries>
   <!-- SWC Libraries -->
   <libraryPaths>
-    <element path="..\..\lib\GestureWorksCML_3.0.0.swc" />
-    <element path="..\..\lib\GestureWorksGML_3.0.0.swc" />
+    <element path="" />
+    <element path="" />
     <element path="..\..\gestureworks-flash-gml\lib\gml_ext.swc" />
     <element path="..\..\gestureworks-flash-cml\lib\cml_ext.swc" />
     <element path="..\..\gestureworks-flash-cml\lib\gui.swc" />
+    <element path="lib\textLayout.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
@@ -78,7 +79,7 @@
   </library>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
-    <compile path="src\cml\elements\ScrollPaneEx.as" />
+    <compile path="src\cml\elements\TLFEx.as" />
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>
