@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->	
+<Text class="title">Text</Text>
+<Text class="desc">
+	<p>This tag creates dynamic and input text fields. It has the functionality of AS3's TextField and TextFormat classes combined.</p><br />
+	<p>There are two ways to add text strings: (1) as a simple string through the str attribute or (2) as a minor subset of the HTML.</p>
+</Text>
+
+	
+<!-- simple text string -->
+<Text x="600" y="75" width="500" multiline="true" wordWrap="true" autosize="true" fontSize="35" color="0xFFF000" type="input" selectable="true" 
+	str="Simple text from a string that is also acting as an input field. Click and type to edit!" />
+
+<!-- html-style text -->
+<Text x="600" y="300" width="500" multiline="true" wordWrap="true" autosize="true" fontSize="25" color="0x00FFFF">
+	<p>This text was population using a subset of HTML that is supported as the htmlText attribute of Adobe's TextField class.</p><br />
+	
+	<!-- gestures are special case tags, and work here -->
+	<Gesture ref="n-drag" />
+</Text>	
+	
+</cml>
