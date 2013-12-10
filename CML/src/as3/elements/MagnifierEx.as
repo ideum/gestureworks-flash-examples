@@ -31,7 +31,7 @@ package as3.elements
 			//Background image
 			
 			var bgImage:Image = new Image();
-			bgImage.src = "assets/images/oe_bg_720.png";
+			bgImage.src = "assets/images/background.jpg";
 			bgImage.open(bgImage.src);
 			addChild(bgImage);
 			
