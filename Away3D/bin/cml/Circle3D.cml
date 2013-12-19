@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Light example
+	-->
+<cml>
+
+<!-- 
+	Use a LightPicker to make lighting groups. Apply the lightPicker by id.
+	-->
+
+<LightPicker id="lp-1" lights="light-1" />
+
+<Scene>
+	<Camera pos="0,0,-1000" lens="prospective" color="0x333333" />	
+	
+	<Material id="mat-2" ref="Color" color="0x447733" lightPicker="lp-1" ambientColor="0x000000" specular=".25" ambient="1" />
+	<Geometry id="geom-1" ref="Cube" width="500" height="500" depth="500" />
+
+	<Light id="light-1" ref="Directional" color="0xFFFFFF" x="0" y="-1000" z="-1500" rotationX="0" />
+	
+	<Mesh 	geometry="#geom-1" material="#mat-2">
+		<Mesh 	geometry="#geom-1" material="#mat-2" />
+		<Mesh 	geometry="#geom-1" material="#mat-2" />
+		<Mesh 	geometry="#geom-1" material="#mat-2" />
+		<Mesh 	geometry="#geom-1" material="#mat-2" />
+		<Layout3D ref="Circle3DLayout" radius="100" />
+	</Mesh>
+	
+</Scene>
+
+</cml>
