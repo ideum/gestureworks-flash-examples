@@ -23,7 +23,7 @@
 		<Mesh 	geometry="#geom-1" material="#mat-2" />
 		<Mesh 	geometry="#geom-1" material="#mat-2" />
 		<Mesh 	geometry="#geom-1" material="#mat-2" />
-		<Layout3D ref="Circle3DLayout" radius="100" />
+		<Layout3D ref="CircleLayout3D" radius="100" />
 	</Mesh>
 	
 </Scene>

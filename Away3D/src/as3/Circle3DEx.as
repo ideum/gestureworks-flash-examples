@@ -10,8 +10,8 @@
 	import away3d.materials.lightpickers.StaticLightPicker;
 	import away3d.primitives.CubeGeometry;
 	import com.gestureworks.away3d.TouchManager3D;
-	import com.gestureworks.cml.away3d.layouts.Circle3DLayout;
-	import com.gestureworks.cml.away3d.layouts.Random3DLayout;
+	import com.gestureworks.cml.away3d.layouts.CircleLayout3D;
+	import com.gestureworks.cml.away3d.layouts.RandomLayout3D;
 	import com.gestureworks.cml.utils.NumberUtils;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.core.TouchSprite;
@@ -36,7 +36,7 @@
 		private var cameraController:HoverController;
 		private var container:ObjectContainer3D;
 		private var cubeGeometry:CubeGeometry;
-		private var layout:Circle3DLayout;
+		private var layout:CircleLayout3D;
 		
 		public function Circle3DEx():void {
 			super();
@@ -102,7 +102,7 @@
 				container.addChild(cube);	
 			}
 			
-			layout = new Circle3DLayout;
+			layout = new CircleLayout3D();
 			layout.radius = 100;
 			
 			layout.tween = true;
@@ -119,7 +119,7 @@
 		private function complete():void {
 			trace("complete");
 		
-			layout = new Circle3DLayout;
+			layout = new CircleLayout3D();
 			layout.radius = NumberUtils.randomNumber(10, 200);
 			
 			layout.tween = true;

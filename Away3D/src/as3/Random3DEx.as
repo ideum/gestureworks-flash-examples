@@ -10,7 +10,7 @@
 	import away3d.materials.lightpickers.StaticLightPicker;
 	import away3d.primitives.CubeGeometry;
 	import com.gestureworks.away3d.TouchManager3D;
-	import com.gestureworks.cml.away3d.layouts.Random3DLayout;
+	import com.gestureworks.cml.away3d.layouts.RandomLayout3D;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.core.TouchSprite;
 	import com.gestureworks.events.GWGestureEvent;
@@ -34,7 +34,7 @@
 		private var cameraController:HoverController;
 		private var container:ObjectContainer3D;
 		private var cubeGeometry:CubeGeometry;
-		private var r3D:Random3DLayout;
+		private var r3D:RandomLayout3D;
 		
 		public function Random3DEx():void {
 			super();
@@ -100,7 +100,7 @@
 				container.addChild(cube);	
 			}
 			
-			r3D = new Random3DLayout;
+			r3D = new RandomLayout3D();
 			r3D.posMin = new Vector3D(-100,-100,-100);
 			r3D.posMax = new Vector3D(100,100,100);
 			
@@ -128,7 +128,7 @@
 		private function complete():void {
 			trace("complete");
 			
-			r3D = new Random3DLayout;
+			r3D = new RandomLayout3D();
 			r3D.posMin = new Vector3D(-100,-100,-100);
 			r3D.posMax = new Vector3D(100,100,100);
 			
