@@ -15,8 +15,7 @@
 	<p>This example loads a MaskContainer, and flips it with an info-panel.</p><br />
 </Text>
 
-<MaskImageViewer x="560" y="200" autoTextLayout="false" rotation="-7" class="touch_container" nestedTransform="false" width="600" height="450"
-	mouseChildren="true" gestureEvents="true">
+<MaskImageViewer x="560" y="200" back="#info_container" autoTextLayout="false" rotation="-7" class="touch_container" nestedTransform="false" width="600" height="450" mouseChildren="true" gestureEvents="true">
 		
 	<!-- Frames are commonly applied to make objects with context-sensitive touch more easy to touch. The MaskContainer has its own context-sensitive touch, since it
 	controls its own touch events to be able to manipulate the mask inside it. -->
@@ -48,10 +47,10 @@
 		</TouchContainer>
 	</MaskContainer>
 	
-	<TouchContainer class="info_container" visible="false" targetParent="true" mouseChildren="false" >
-		<Graphic color="0x7D7682" alpha="0.6" lineStroke="0" class="info_bg" shape="rectangle"/>		
+	<TouchContainer id="info_container" visible="false" targetParent="true" mouseChildren="false" >
+		<Graphic color="0x7D7682" alpha="0.6" lineStroke="0" class="info_bg" shape="rectangle" width="600" height="450"/>		
 		<Text class="title" selectable="false" border="false" textSize="38" text="Light Bulbs"/>				
-		<Text x="30" y="70" color="0xffffff" fontSize="16" wordWrap="true" multiline="true" textAlign="justify" border="false" 
+		<Text x="30" y="70" color="0xffffff" fontSize="16" wordWrap="true" multiline="true" textAlign="justify" border="false"  width="500" height="450"
 			text="Light bulbs viewed through various types of imaging using thermal, infrared, UV, X-ray, and visible light."/>		
 	</TouchContainer>
 
