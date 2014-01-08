@@ -16,8 +16,7 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
-    <class path="..\..\gestureworks-flash-cml" />
-    <class path="..\..\gestureworks-flash-gml" />
+    <class path="..\..\lib" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -56,10 +55,9 @@
   <libraryPaths>
     <element path="" />
     <element path="" />
-    <element path="..\..\gestureworks-flash-gml\lib\gml_ext.swc" />
-    <element path="..\..\gestureworks-flash-cml\lib\cml_ext.swc" />
-    <element path="..\..\gestureworks-flash-cml\lib\gui.swc" />
     <element path="lib\textLayout.swc" />
+    <element path="..\..\lib\GestureWorksCML_4.1.0.swc" />
+    <element path="..\..\lib\GestureWorksGML_4.1.0.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
@@ -79,7 +77,7 @@
   </library>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
-    <compile path="src\cml\elements\TLFEx.as" />
+    <compile path="src\cml\components\MaskImageViewerEx.as" />
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>
