@@ -1,4 +1,4 @@
-﻿package as3 {
+﻿package as3.layouts {
 	import away3d.containers.ObjectContainer3D;
 	import away3d.containers.View3D;
 	import away3d.controllers.HoverController;
@@ -10,7 +10,9 @@
 	import away3d.materials.lightpickers.StaticLightPicker;
 	import away3d.primitives.CubeGeometry;
 	import com.gestureworks.away3d.TouchManager3D;
+	import com.gestureworks.cml.away3d.layouts.CircleLayout3D;
 	import com.gestureworks.cml.away3d.layouts.RandomLayout3D;
+	import com.gestureworks.cml.utils.NumberUtils;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.core.TouchSprite;
 	import com.gestureworks.events.GWGestureEvent;
@@ -23,7 +25,7 @@
 	/**
 	 * This example demonstrates how to create a touch camera using the hover camer controller.
 	 */
-	public class Random3DEx extends GestureWorks  {
+	public class CircleEx extends GestureWorks  {
 		
 		private var view:View3D;
 		private var material:ColorMaterial;
@@ -34,9 +36,9 @@
 		private var cameraController:HoverController;
 		private var container:ObjectContainer3D;
 		private var cubeGeometry:CubeGeometry;
-		private var r3D:RandomLayout3D;
+		private var layout:CircleLayout3D;
 		
-		public function Random3DEx():void {
+		public function CircleEx():void {
 			super();
 			fullscreen = true;
 			
@@ -92,33 +94,22 @@
 			container = new ObjectContainer3D;
 			view.scene.addChild(container);
 			
-			cubeGeometry = new CubeGeometry;
+			cubeGeometry = new CubeGeometry(10, 10, 10);
 			
 						
-			for (var i:int = 0; i < 100; i++) {
+			for (var i:int = 0; i < 25; i++) {
 				var cube:Mesh = new Mesh( cubeGeometry, material );
 				container.addChild(cube);	
 			}
 			
-			r3D = new RandomLayout3D();
-			r3D.posMin = new Vector3D(-100,-100,-100);
-			r3D.posMax = new Vector3D(100,100,100);
+			layout = new CircleLayout3D();
+			layout.radius = 100;
 			
-			r3D.rotMin = new Vector3D(-45,-45,-45);
-			r3D.rotMax = new Vector3D(45,45,45);			
-			
-			r3D.scaMin = new Vector3D(.5,.5,.5);
-			r3D.scaMax = new Vector3D(1,1,1);
-			
-			// alternatively set a single value for scale
-			//r3D.scaleMin = .5;
-			//r3D.scaleMax = 1;
-			
-			r3D.autoplay = true;
-			r3D.tween = true;
-			r3D.onComplete = complete;
-			r3D.layout(container);
-			//r3D.layoutTween.play();
+			layout.tween = true;
+			layout.tweenTime = 500;
+			layout.autoplay = true;			
+			layout.onComplete = complete;
+			layout.layout(container);
 			
 			// create an update event loop
 			addEventListener(Event.ENTER_FRAME, update);				
@@ -127,29 +118,15 @@
 		
 		private function complete():void {
 			trace("complete");
+		
+			layout = new CircleLayout3D();
+			layout.radius = NumberUtils.randomNumber(10, 200);
 			
-			r3D = new RandomLayout3D();
-			r3D.posMin = new Vector3D(-100,-100,-100);
-			r3D.posMax = new Vector3D(100,100,100);
-			
-			r3D.rotMin = new Vector3D(-45,-45,-45);
-			r3D.rotMax = new Vector3D(45,45,45);			
-			
-			r3D.scaMin = new Vector3D(.5,.5,.5);
-			r3D.scaMax = new Vector3D(1,1,1);
-			
-			// alternatively set a single value for scale
-			//r3D.scaleMin = .5;
-			//r3D.scaleMax = 1;
-			
-			r3D.tween = true;
-			r3D.autoplay = true;
-			r3D.onComplete = complete;
-			r3D.layout(container);
-			//r3D.layoutTween.play();			
-			
-			//r3D.layout(container);
-			//r3D.layoutTween.play();
+			layout.tween = true;
+			layout.tweenTime = 500;
+			layout.autoplay = true;			
+			layout.onComplete = complete;
+			layout.layout(container);
 		}
 		
 		
