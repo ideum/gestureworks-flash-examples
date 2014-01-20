@@ -17,7 +17,8 @@
   <classpaths>
     <class path="src" />
     <class path="stats" />
-    <class path="..\..\..\gwas\development\docs\lib" />
+    <class path="..\..\..\gestureworks-flash-cml" />
+    <class path="..\..\..\gestureworks-flash-gml" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -58,6 +59,10 @@
     <element path="..\..\lib\gml_ext.swc" />
     <element path="..\..\..\gwas\development\docs\lib\GestureWorksCML_4.0.0.swc" />
     <element path="..\..\..\gwas\development\docs\lib\GestureWorksGML_4.0.0.swc" />
+    <element path="..\..\..\gestureworks-flash-cml\lib\cml_ext.swc" />
+    <element path="..\..\..\gestureworks-flash-cml\lib\gui.swc" />
+    <element path="..\..\..\gestureworks-flash-cml\lib\textLayout.swc" />
+    <element path="..\..\..\gestureworks-flash-gml\lib\gml_ext.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

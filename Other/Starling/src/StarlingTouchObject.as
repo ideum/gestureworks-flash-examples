@@ -20,7 +20,6 @@ package
 		override public function updateVTO():void
 		{
 			vto.transformationMatrix = transform.matrix;
-
 		}
 		
 	}
