@@ -5,9 +5,9 @@
 <!-- header -->	
 <Text class="title">Image </Text>
 <Text class="desc">
-	<p>This tag allows you to load and display external image files such as jpg, png, etc. This tag can resample of the image. The smaller image has been resampled to reduce memory
-		and increase performance, but it will become pixelated if scaled too high.  </p><br />
-	<p>Most elements including the image are gesture-ready.</p><br />
+	<p>This tag allows you to load and display external image files such as jpg, png, etc. It also allows you to resample the image to different sizes.
+		The smaller image has been resampled to reduce memory and increase performance, but it will become pixelated if scaled too high.  </p><br />
+	<p>Most elements including Image are gesture-ready.</p><br />
 </Text>
 
 <!-- Set the file path using the src attribute. File paths are relevant to the executable or swf file. -->
