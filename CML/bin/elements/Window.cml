@@ -5,7 +5,8 @@
 
 <Window screen="1" isDefault="true" title="Main Window Title" width="1920" height="1080">		
 	<Stage color="0xFF0000" fullscreen="true">
-		<Graphic shape="circle" radius="100">
+		<Graphic shape="circle" radius="200">
+			<Graphic shape="circle" radius="100" color="0x555FFF" x="100" y="100" />
 			<Gesture ref="n-drag" />
 		</Graphic>
 	</Stage>
@@ -13,7 +14,9 @@
 
 <Window screen="2" title="2nd Window Title" width="1920" height="1080" systemChrome="none" transparent="false">
 	<Stage color="0x0000FF">
-		<Graphic shape="circle" radius="100" />
+		<Graphic shape="circle" radius="100">
+			<Graphic shape="circle" radius="50" color="0x555FFF" x="50" y="50" />
+		</Graphic>
 	</Stage>	
 </Window>	
 
