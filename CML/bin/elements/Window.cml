@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- if using the window/stage tag(s) the cml fullscreen attribute will be overridden -->
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<Window screen="1" isDefault="true" title="Main Window Title" width="1920" height="1080">		
+	<Stage color="0xFF0000" fullscreen="true">
+		<Graphic shape="circle" radius="100">
+			<Gesture ref="n-drag" />
+		</Graphic>
+	</Stage>
+</Window>
+
+<Window screen="2" title="2nd Window Title" width="1920" height="1080" systemChrome="none" transparent="false">
+	<Stage color="0x0000FF">
+		<Graphic shape="circle" radius="100" />
+	</Stage>	
+</Window>	
+
+</cml>

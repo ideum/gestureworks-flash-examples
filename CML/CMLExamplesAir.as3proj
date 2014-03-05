@@ -17,6 +17,8 @@
   <classpaths>
     <class path="src" />
     <class path="..\..\lib" />
+    <class path="..\..\gestureworks-flash-cml" />
+    <class path="..\..\gestureworks-flash-gml" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -55,6 +57,11 @@
   <libraryPaths>
     <element path="..\..\lib\GestureWorksCML_4.0.0.swc" />
     <element path="..\..\lib\GestureWorksGML_4.0.0.swc" />
+    <element path="..\..\gestureworks-flash-gml\lib\gml_ext.swc" />
+    <element path="..\..\gestureworks-flash-gml\lib\WiiFlash.swc" />
+    <element path="..\..\gestureworks-flash-cml\lib\cml_ext.swc" />
+    <element path="..\..\gestureworks-flash-cml\lib\gui.swc" />
+    <element path="..\..\gestureworks-flash-cml\lib\textLayout.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
@@ -74,7 +81,7 @@
   </library>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
-    <compile path="src\cml\components\HTMLViewerEx.as" />
+    <compile path="src\cml\elements\WindowEx.as" />
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>

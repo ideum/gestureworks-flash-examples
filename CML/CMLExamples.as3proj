@@ -17,6 +17,8 @@
   <classpaths>
     <class path="src" />
     <class path="..\..\lib" />
+    <class path="..\..\gestureworks-flash-cml" />
+    <class path="..\..\gestureworks-flash-gml" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -58,6 +60,11 @@
     <element path="lib\textLayout.swc" />
     <element path="..\..\lib\GestureWorksCML_4.1.0.swc" />
     <element path="..\..\lib\GestureWorksGML_4.1.0.swc" />
+    <element path="..\..\gestureworks-flash-cml\lib\cml_ext.swc" />
+    <element path="..\..\gestureworks-flash-cml\lib\gui.swc" />
+    <element path="..\..\gestureworks-flash-cml\lib\textLayout.swc" />
+    <element path="..\..\gestureworks-flash-gml\lib\gml_ext.swc" />
+    <element path="..\..\gestureworks-flash-gml\lib\WiiFlash.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
