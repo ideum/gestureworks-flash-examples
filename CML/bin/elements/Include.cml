@@ -6,7 +6,7 @@
 <Text class="title">Include</Text>
 <Text class="desc">
 	<p>This tag allows you to nest CML files. In this example, an external CML file loads an Image wrapped in a TouchContainer</p><br />
-	<p>The Include tag inserts CML at the location of the Include tag. Include tags are use often.</p>	
+	<p>The Include tag inserts CML at the location of the Include tag. Include tags are used often.</p>	
 </Text>
 
 	
