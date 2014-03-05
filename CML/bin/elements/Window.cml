@@ -4,8 +4,20 @@
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
 <Window screen="1" isDefault="true" title="Main Window Title" width="1920" height="1080">		
-	<Stage color="0xFF0000" fullscreen="true">
-		<Graphic shape="circle" radius="200">
+	<Stage color="0x223355" fullscreen="true">
+		
+		<!-- header -->	
+		<Text class="title">Window</Text>
+		<Text class="desc">
+			<p>This tag allows you to create system Windows and set the Window's position, dimensions and other options that are
+			   available through AS3's SystemWindow class.</p><br />
+			<p>AIR will create a default window automatically, you can hook this window by setting the: "isDefault" property to "true". 
+			   Otherwise a new window will be created.</p><br />
+			<p>The GestureWorks engine is currently limited to the default window. Any additional windows will not register gesture events.</p><br />			   
+			<p>The Window tag is AIR-exclusive.</p>	
+		</Text>		
+		
+		<Graphic shape="circle" radius="200" x="900" y="250">
 			<Graphic shape="circle" radius="100" color="0x555FFF" x="100" y="100" />
 			<Gesture ref="n-drag" />
 		</Graphic>
@@ -13,7 +25,7 @@
 </Window>
 
 <Window screen="2" title="2nd Window Title" width="1920" height="1080" systemChrome="none" transparent="false">
-	<Stage color="0x0000FF">
+	<Stage color="0x558893">
 		<Graphic shape="circle" radius="100">
 			<Graphic shape="circle" radius="50" color="0x555FFF" x="50" y="50" />
 		</Graphic>
