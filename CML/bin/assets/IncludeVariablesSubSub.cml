@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml>
+	
+	<Graphic shape="rectangle" width="200" height="200" color="$color1">
+		<Graphic shape="rectangle" width="100" height="100" color="$color2" x="50" y="50" />
+		<Gesture ref="n-drag" />
+	</Graphic>	
+
+</cml>
+

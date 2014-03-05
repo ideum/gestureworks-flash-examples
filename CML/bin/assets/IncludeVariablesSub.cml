@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml>
+	
+<Container x="550" y="50">
+
+	<Include src="IncludeVariablesSubSub.cml" 	
+		color1="$color1" color2="0x550000" />
+
+	<Include src="IncludeVariablesSubSub.cml" 	
+		color1="0xFF0000" color2="0x550000" />
+	
+	<Include src="IncludeVariablesSubSub.cml" 	
+		color1="0xFF0000" color2="0x550000" />
+		
+	<Include src="IncludeVariablesSubSub.cml" 	
+		color1="0x00FF00" color2="0x005500" />
+		
+	<Include src="IncludeVariablesSubSub.cml" 	
+		color1="0x00FF00" color2="0x005500" />
+		
+	<Include src="IncludeVariablesSubSub.cml" 	
+		color1="0x00FF00" color2="0x005500" />
+		
+	<Include src="IncludeVariablesSubSub.cml" 	
+		color1="0x0000FF" color2="0x000055" />
+		
+	<Include src="IncludeVariablesSubSub.cml" 	
+		color1="0x0000FF" color2="0x000055" />
+		
+	<Include src="IncludeVariablesSubSub.cml" 	
+		color1="0x0000FF" color2="0x000055" />
+		
+	<Layout ref="Grid" rows="3" columns="3" useMargins="true" marginX="4" marginY="4" tween="true" tweenTime="500"/>                  
+	
+</Container>
+
+</cml>
+

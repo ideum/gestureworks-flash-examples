@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Text class="title">Include Variables</Text>
+<Text class="desc">
+	<p>This example shows how you can use variables within an Include tag.</p><br />
+	<p>Use of the prefix symbol "$" will denote a variable inside of a CML document 
+	   which is to be included within another document. The string variable that comes 
+	   after the "$" symbol can be specified as an attribute of Include tag. The value
+	   assigned to that attribute will replace the "$" variable within the included 
+	   CML document.</p><br />
+</Text>
+
+<Include src="IncludeVariablesSub.cml" color1="0x334455" />
+
+</cml>
+
