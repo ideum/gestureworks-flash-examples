@@ -48,7 +48,7 @@
 	
 <!-- Triangle -->
 <Text text="Triangle" x="500" y="640" color="0xFFFFFF" fontSize="25" width="200" />
-<Graphic x="500" y="680" shape="triangle" color="0x00FF00" height="100"/> 
+<Graphic x="500" y="680" shape="triangle" color="0x00FF00" ac="100" ab="100" angleA="60"/>
 
 <!-- Curve -->
 <Text text="Curve" x="750" y="640" color="0xFFFFFF" fontSize="25" width="200" />
