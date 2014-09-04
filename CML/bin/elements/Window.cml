@@ -24,8 +24,8 @@
 	</Stage>
 </Window>
 
-<Window screen="2" title="2nd Window Title" width="1920" height="1080" systemChrome="none" transparent="false">
-	<Stage color="0x558893">
+<Window screen="0" title="2nd Window Title" width="1920" height="1080">
+	<Stage color="0x558893" fullscreen="true">
 		<Graphic shape="circle" radius="100">
 			<Graphic shape="circle" radius="50" color="0x555FFF" x="50" y="50" />
 		</Graphic>
