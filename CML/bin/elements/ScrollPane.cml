@@ -13,14 +13,19 @@
 	the GestureList they'd like associated. Please note that rotating inside a ScrollPane is not an option.</p>
 </Text>
 
-<ScrollPane id="sp" x="600" y="50" width="500" height="500" paneStroke="0" releaseInertia="true">
-
-	<!-- ScrollBar for styling-->
-	<ScrollBar buttonFill="0x222222" fill="0x333333" thumbFill="0x553344" width="20" railShape="roundRectangle" cornerHeight="15" cornerWidth="15"/>
-
-	<!--Actual image which will be scalable, draggable, and scrollable.-->
-	<Image src="images/smoke.jpg" />
+<!-- If the contentGestures attribute is set, nativeTransform on the ScrollPane will be disabled 
+	(many gestures on actual ScrollPane will not work). Leave it out to allow dragging or scaling of
+	the entire ScrollPane rather than its "contents". 
+	Example: <ScrollPane ... ... contentGestures="n-drag,n-scale" /> -->
+<ScrollPane id="sp" contentGestures="n-drag,n-scale" x="600" y="50" vBar="vSB" hBar="hSB" width="500" height="500" paneStroke="0" releaseInertia="true">
 	
+	<!-- optional ScrollBar definitions, if left out default values will be used -->
+	<ScrollBar id="vSB" buttonVisible="true" buttonFill="0x222222" fill="0x333333" thumbFill="0x553344" width="20" railShape="roundRectangle" cornerHeight="15" cornerWidth="15"/>
+	<ScrollBar id="hSB" buttonVisible="true" buttonFill="0x222222" fill="0x333333" thumbFill="0x553344" height="20" railShape="roundRectangle" cornerHeight="15" cornerWidth="15"/>
+
+	<!-- scrollpane contents here -->
+	<Image src="images/smoke.jpg"/>
+
 	<!-- TouchContainer so dragging and scrolling can be set on or off, also to assist with making child events accesible provided there is no gesture conflict -->
 	<GestureList>
 		<Gesture ref="n-drag-inertia" gestureOn="true"/>

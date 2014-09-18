@@ -21,6 +21,7 @@ package cml.elements
 			super();
 			gml = "gml/gestures.gml"
 			cml = "elements/ScrollPane.cml";
+			//simulator = true;
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}
 		
@@ -30,7 +31,6 @@ package cml.elements
 			trace("cmlInit()");
 			
 			var sp:ScrollPane = document.getElementById("sp");
-			
 			
 			// we'll replace the scroll pane's content with a textfield on any keyboard event
 			
@@ -45,23 +45,18 @@ package cml.elements
 			txt.init();
 			
 			// store the original content for later
-			var original:DisplayObject = sp.content;
-
+			//var original:DisplayObject = sp.content;
 			
 			// add a keyboard event listener to dynamically switch content
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, onKey);
 						
 			// keyboard event handler
 			function onKey(e:KeyboardEvent):void {
-			
-				if (sp.content == original) {				
-					sp.updateContent(txt);
+				if(e.keyCode == 13){
+					if (sp.contains(txt)) { sp.removeChild(txt); }
+					else { sp.addChild(txt); }
 				}
-				else {
-					sp.updateContent(original);
-				}
-			}	
-			
+			}
 		}
 	}
 }
