@@ -1,23 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
-
-<!-- header -->
-<Text class="title">TLF</Text>
-<Text class="desc">
+<cml>
+	
+<Text x="35" y="25" fontSize="30" width="425" selectable="false" font="OpenSansBold">TLF</Text>
+<Text x="35" y="85" fontSize="16" width="425" height="700" wordWrap="true" multiline="true" selectable="false" textAlign="left" font="OpenSansRegular" leading="-4.5">
 	<p>TLF is a wrapper for AS3's TLF system. The input is in the form of XML, and prefixed with AS3's namespace.</p><br />
-	<p>This example demonstrates a simple line of text with superscript.</p><br />
+	<p>This example demonstrates various TLF markup features.</p><br />
 	<p>See also:<br />
 	Text<br />
 	</p>	 
-</Text>
-
-<TLF x="750" y="100" width="300" height="500" font="OpenSansRegularTLF">
-	<TextFlow xmlns="http://ns.adobe.com/textLayout/2008" color="0xFFFFFF">
-		<p fontSize="30">THE 19<span baselineShift="superscript">th</span> CENTURY</p>
-		<p id="tlf-id">This is styled by CSS through an id selector.</p> 
-		<p class="tlf-class">This is styled by CSS through a class selector.</p> 
-	</TextFlow>		
+</Text>	
+	
+<TLF x="550" y="100" width="1000" height="1000" font="LocatorTLF">
+	
+	<!--spreadsheet entry-->
+	<TextFlow color="#000000" fontSize="18" paragraphSpaceAfter="20" xmlns="http://ns.adobe.com/textLayout/2008">
+				
+		<!--italics-->
+		<!--&# sets word spacing-->
+		<p>
+			This is an example of<span fontStyle="italic">&#160;italic&#160;</span>text
+		</p>
+		
+		<!--bold-->
+		<p>
+			This is an example of<span fontWeight="bold">&#160;bold&#160;</span>text
+		</p>	
+		
+		<!--font size-->
+		<p>
+			This is an example of <span fontSize="30">&#160;larger&#160;</span>text
+		</p>
+		
+		<!--link-->
+		<p>
+			<span>This is an example of a</span>
+			<a href="http://openexhibits.org/" target="_self">
+				<linkActiveFormat><TextLayoutFormat color="#0000cc" textDecoration="underline"/></linkActiveFormat>
+				<linkHoverFormat><TextLayoutFormat color="#cc0000" textDecoration="underline"/></linkHoverFormat>
+				<linkNormalFormat><TextLayoutFormat color="#0000cc" textDecoration="underline"/></linkNormalFormat>
+				<span>&#160;link&#160;</span>
+			</a>
+		</p>	
+		
+		<!--colored text-->
+		<p>
+			This is an example of<span color="#990000">&#160;colored&#160;</span>text
+		</p>				
+		
+		<!--special characters-->
+		<p>
+			 This is an example of special characters:<span>&#160;ö Traité</span> 
+		</p>
+		
+		<!--superscript-->
+		<p>
+			This is an example of<span baselineShift="superscript">&#160;superscript&#160;</span>text
+		</p>	
+		
+	</TextFlow>
+	
 </TLF>	
+
+
 
 </cml>
