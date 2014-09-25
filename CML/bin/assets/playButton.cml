@@ -1,6 +1,6 @@
 <cml>
 
-	<Button id="play-btn" class="play_btn" dispatch="down:play" hit="play-hit" initial="play-up" down="play-down" up="play-up" out="play-up">
+	<Button id="play-btn" class="play_btn" dispatch="down:play" hit="play-hit" initial="play-up" down="play-down" up="play-up" out="play-up" width="40" height="40">
 	<Container id="play-up">
 		<Graphic alpha="1" shape="circle" radius="20" lineStroke="1.5" color="0x282E33" />	
 		<SWF alpha="1" x="15" y="8" color="0xFFFFFF" scale="1.6" classRef="org.openexhibits.assets.Play" />

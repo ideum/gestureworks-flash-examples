@@ -25,7 +25,7 @@
 <MediaViewer x="675" y="100" width="485" height="360" back="#info">
 	
 	<!-- FRONT: Media -->
-	<Media src="market-street.mov" autoplay="true" loop="true" scale="1.5" targetParent="true" mouseChildren="false"/>
+	<Media src="market-street.mov" loop="true" scale="1.5" targetParent="true" mouseChildren="false"/>
 
 	<!-- BACK: info panel -->
 	<Container id="info" visible="false" targetParent="true">
@@ -41,8 +41,7 @@
 	<Include src="frame.cml" />
 	
 	<!-- MENU -->
-	<Menu x="0" y="0" alpha="0.75" position="bottomRight" autohide="true"
-		paddingBottom="10" paddingRight="10" visible="false">
+	<Menu alpha="0.75" position="bottomRight" autohide="true" visible="false" paddingRight="2" paddingTop="2">
 		<Include src="infoButton.cml"/>
 		<Include src="playButton.cml"/>
 		<Include src="pauseButton.cml"/>
