@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+<cml rootDirectory="assets/" css="styles.css">
 
 <LibraryKit>
 	<Library type="swf" src="assets/openexhibits_assets.swf" />	
@@ -12,27 +12,27 @@
 	<p>The MediaViewer is a component that is meant to load various types of media files on the front and metadata on the back. It is composed of the 
 	following elements: media, front, back, menu, and frame. The width and height of the component are automatically set to the dimensions of the media 
 	element unless it is previously specifed by the component. It is useful for situations where the type of media changes during run-time.</p><br />
-	<p>This example loads a video file, and flips it with an info-panel.</p><br />
+	<p>This example loads a video file, and flips it with an info-panel. Hit the ENTER key to dynamically switch the media type.</p><br />
 	<p>See also:<br />
 		Media<br />
 		VideoViewer<br />
 		ImageViewer<br />
-		MP3Player<br />
+		AudioPlayer<br />
 	</p>
 </Text>
 
 
-<MediaViewer x="675" y="100" back="#info" affineTransform="true">
+<MediaViewer x="610" y="183" width="500" height="350" back="#info" affineTransform="true">
 	
 	<!-- FRONT: Media -->
-	<Media src="market-street.mov" loop="true" targetParent="true" mouseChildren="false"/>
+	<Media id="media" src="market-street.mov" loop="true" targetParent="true" mouseChildren="false"/>
 
 	<!-- BACK: info panel -->
 	<Container id="info" visible="false" targetParent="true" width="100%" height="100%">
-		<Graphic color="0x665533" alpha="0.8" shape="rectangle" width="100%" height="100%"/>
+		<Graphic color="0x709EF4" alpha="0.8" shape="rectangle" width="100%" height="100%"/>
 		<Container width="100%" height="100%">
-			<Text str="Market Street" fontSize="30" color="0xFFFFFF" font="OpenSansBold" autosize="true" width="100%" />				
-			<Text y="40" fontSize="20" wordWrap="true" color="0xFFFFFF" width="100%" autosize="true" multiline="true" 
+			<Text id="title" str="Market Street" fontSize="30" color="0xFFFFFF" font="OpenSansBold" autosize="true" width="100%" />				
+			<Text id="descr" y="40" fontSize="20" wordWrap="true" color="0xFFFFFF" width="100%" autosize="true" multiline="true" 
 				str="A Trip Down Market Street is a 13-minute actuality film recorded by placing a movie camera on the front of a cable car as it travels down San Franciscos Market Street."/>			
 		</Container>
 	</Container>

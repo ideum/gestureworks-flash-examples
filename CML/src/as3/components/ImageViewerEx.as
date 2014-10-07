@@ -76,7 +76,7 @@ package as3.components
 		private function getImage(source:String):Image
 		{
 			var img:Image = new Image();
-			img.open(source);
+			img.src = source; 
 			img.width = 353;
 			img.height = 420;
 			return img;

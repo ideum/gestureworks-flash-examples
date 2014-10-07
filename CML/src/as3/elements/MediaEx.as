@@ -31,8 +31,8 @@ package as3.elements
 			me1.x = 500;
 			me1.y = 160;
 			me1.src = "assets/images/plane.jpg";
-			me1.open("assets/images/plane.jpg");
 			me1.scale = .46;
+			me1.init();
 			addChild(me1);
 			
 			//video media
@@ -40,9 +40,9 @@ package as3.elements
 			me2.x = 910;
 			me2.y = 335;
 			me2.src = "assets/market-street.mov";
-			me2.open("assets/market-street.mov");
 			me2.autoplay = true;
 			me2.loop = true;
+			me2.init();
 			addChild(me2);			
 		}			
 	}	

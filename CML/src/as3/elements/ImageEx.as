@@ -22,7 +22,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("Image Element");
-			exTemp.createDesc("<p>This class allows you to load and display external image files such as jpg, png, etc.</p><br /><p>This class also allows for scaling and resampling.</p>");
+			exTemp.createDesc("<p>This class allows you to load and display jpg, png, or gif image files.</p>");
 			
 			// Set the file path using the src attribute. File paths are relative to the executable or swf file.
 			var img1:Image = new Image();
@@ -30,13 +30,12 @@ package as3.elements
 			img1.scale = 0.6;
 			img1.x = 460;
 			img1.y = 50;
-			img1.open(img1.src);
+			img1.init();
 			addChild(img1);
 			
 			// Downsampling can improve performance. You can set just one dimension to maintain the original aspect ratio.			
-			var loadString:String = "assets/images/train.jpg";
 			var img2:Image = new Image();
-			img2.open(loadString);
+			img2.src = "assets/images/train.jpg";
 			img2.width = 300;
 			img2.resample = true;
 			img2.x = 950;

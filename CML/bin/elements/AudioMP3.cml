@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css">
+	
+	<!-- header -->	
+	<Text class="title">Audio</Text>
+	<Text class="desc">
+		<p>This tag is used to load and play a .WAV and MP3 files from a local storage device, and optionally provides a graphical visualizer.</p><br />
+	</Text>
+		
+	<Audio src="RuthCalledShot_vbr.mp3" x="550" y="100" width="650" height="300" waveform="true" autoplay="true" loop="true" waveColor="0x558855" background="true" backgroundAlpha="0.5">
+		<Gesture ref="n-drag" />
+		<Gesture ref="n-scale" />
+		<Gesture ref="n-rotate" />		
+	</Audio>
+	
+</cml>

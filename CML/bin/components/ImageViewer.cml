@@ -27,10 +27,10 @@
 
 
 <!-- VIEWER -->
-<ImageViewer x="720" y="100" front="#img" back="#info" scale=".9">
+<ImageViewer x="700" y="65" front="#img" width="504" height="600" back="#info">
 
 	<!-- FRONT: Image -->
-	<Image id="img" src="images/train.jpg" scale=".5" mouseChildren="false"/>
+	<Image id="img" src="images/train.jpg" width="504" height="600" mouseChildren="false"/>
 	
 	<!-- BACK: info panel -->
 	<Container id="info" visible="false" targetParent="true">

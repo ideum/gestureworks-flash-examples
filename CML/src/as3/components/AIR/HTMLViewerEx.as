@@ -1,4 +1,4 @@
-package as3.components
+package as3.components.AIR
 {
 	import as3.components.ui.InfoPanel;
 	import as3.components.ui.ViewerMenu;

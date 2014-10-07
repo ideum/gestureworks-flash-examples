@@ -1,10 +1,12 @@
-package cml.elements
+package cml.elements.AIR
 {
 	import com.gestureworks.cml.elements.Window;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.cml.core.CMLParser;
 	import com.gestureworks.core.GestureWorksAIR;
 	import flash.events.Event;
+	
+	//load AIR classes
 	import com.gestureworks.cml.core.CMLAir; CMLAir;
 		
 	[SWF(width="1920",height="1080")]
@@ -18,7 +20,7 @@ package cml.elements
 		{
 			super();
 			gml = "gml/gestures.gml"
-			cml = "elements/Window.cml";
+			cml = "elements/AIR/Window.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}
 		

@@ -76,7 +76,10 @@ package as3.components.ui
 			down = type + "-down";
 			hit = type + "-hit";
 			
-			dispatch = "down:" + type;					
+			dispatch = "down:" + type;		
+			
+			width = 40;
+			height = 40;
 		}	
 		
 		override public function init():void {

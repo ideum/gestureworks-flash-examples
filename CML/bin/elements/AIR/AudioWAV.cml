@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css">
+
+	<!-- header -->	
+	<Text class="title">Audio</Text>
+	<Text class="desc">
+		<p>This tag is used to load and play .WAV and MP3 files from a local storage device, and optionally provides a graphical visualizer.</p><br />
+		<p>Due to certain constraints in Actionscript programming, .WAV support for this element requires your AS3 project to be an AIR project.</p><br />
+		<p>This particular example will load a file of FDR's famous "infamy" speech.</p><br />
+	</Text>
+	 
+	<Audio src="FDR-Infamy.wav" x="550" y="150" width="650" height="300" autoplay="true" waveform="true" background="true" backgroundColor="0x542622">
+		<Gesture ref="n-drag" />
+		<Gesture ref="n-scale" />
+		<Gesture ref="n-rotate" />		
+	</Audio>
+	 
+</cml>

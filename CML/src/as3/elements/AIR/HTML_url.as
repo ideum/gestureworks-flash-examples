@@ -1,4 +1,4 @@
-package as3.elements
+package as3.elements.AIR
 {
 	import com.gestureworks.cml.elements.HTML;
 	import com.gestureworks.core.GestureWorks;

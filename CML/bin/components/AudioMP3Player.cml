@@ -1,67 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+<cml rootDirectory="assets/" css="styles.css">
 
 <LibraryKit>
 	<Library type="swf" src="assets/openexhibits_assets.swf" />	
 </LibraryKit>
 
 <!-- header -->
-<Text class="title">MP3 Player</Text>
+<Text class="title">Audio Player</Text>
 <Text class="desc">
 	<p>Viewer and Player tags are used as larger containers which help to combine menu items and extra functionality with elements.</p><br />
 	<p>In this case, the menu not only provides a helpful visual frame and an info panel, but buttons which allow access to the MP3's play and pause functions.</p><br />
-	<p>It has also been styled differently in the CML to give it a more unique border and theme.</p><br />
 	<p>This example loads an MP3, and flips it with an info-panel.</p><br />
 	<p>Unlike the Wav, an MP3 does not have to be compiled as part of an air project.</p><br />
-	<p>See also:<br/>Wav, <br/>WavPlayer</p>
+	<p>See also:<br/>Wav</p>
 </Text>
 	
 <!-- The MP3 plays mp3 files and optionally displays a graphical waveform. -->
 
-<MP3Player x="600" y="150" back="#info">
+<AudioPlayer x="600" y="150" back="#info">
 
-	<!-- FRONT: MP3 -->	
-	<MP3 src="RuthCalledShot_vbr.mp3" 
-		display="waveform"
-		width="600" height="400" 
-		autoplay="true"
-		loop="true"
-		pan="0.0"
-		volume="1.0"
-		waveColor="0xF97D41"
-		backgroundColor="0x353345"
-		backgroundAlpha=".5" targetParent="true" mouseChildren="false"/>
-	
-	<!-- BACK: info panel -->	
-	<Container id="info" visible="false" targetParent="true">
-		<Graphic color="0x665533" alpha="0.8" shape="rectangle" width="100%" height="100%"/>
-		<Container paddingTop="30" paddingLeft="30" paddingRight="30" width="100%" height="100%" relativeY="true">
+	<!-- FRONT: Audio -->			
+	<Audio src="RuthCalledShot_vbr.mp3" width="600" height="400" waveform="true" waveColor="0xF97D41" background="true" backgroundColor="0x353345" backgroundAlpha=".5" targetParent="true"/>
+
+	<!-- BACK: info panel -->
+	<Container id="info" visible="false" targetParent="true" width="100%" height="100%">
+		<Graphic color="0xF97D41" alpha="0.8" shape="rectangle" width="100%" height="100%"/>
+		<Container width="100%" height="100%">
 			<Text str="Babe Ruth" fontSize="30" color="0xFFFFFF" font="OpenSansBold" autosize="true" width="100%" />				
-			<Text fontSize="20" wordWrap="true" color="0xFFFFFF" width="100%" autosize="true" multiline="true" 
+			<Text y="40" fontSize="20" wordWrap="true" color="0xFFFFFF" width="100%" autosize="true" multiline="true" 
 				str="Babe Ruths called shot was the home run hit by Babe Ruth of the New York Yankees in the fifth inning of Game 3 of the 1932 World Series, held on October 1, 1932, at Wrigley Field in Chicago."/>			
 		</Container>
 	</Container>
-
+	
 	<!-- FRAME-->
 	<Include src="frame.cml" />
 	
 	<!-- MENU -->
-	<Menu x="0" y="0" alpha="0.75" position="bottomRight" autohide="true"
-		paddingLeft="0" paddingBottom="10" paddingRight="10" visible="false">			
+	<Menu alpha="0.75" position="bottomLeft" autohide="false" visible="false" margin="10" offsetX="-35" offsetY="48">
 		<Include src="infoButton.cml"/>
 		<Include src="playButton.cml"/>
 		<Include src="pauseButton.cml"/>
 		<Include src="closeButton.cml"/>
 	</Menu>
-	
-	<!-- GESTURES -->
+
+	<!-- GESTURES -->	
 	<GestureList>
 		<Gesture ref="n-drag" />
 		<Gesture ref="n-scale" />
 		<Gesture ref="n-rotate" />
 	</GestureList>
 	
-</MP3Player>
+</AudioPlayer>
 
 </cml>

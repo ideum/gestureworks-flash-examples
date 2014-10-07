@@ -23,10 +23,7 @@ package as3.components.ui
 				
 		public function ViewerMenu(info:Boolean=true, close:Boolean=true, play:Boolean=false, pause:Boolean=false) {
 			alpha = 0.6;
-			position = "bottom";
-			paddingLeft = 30;
-			paddingBottom = -50;
-			paddingRight = 20;
+			position = "bottomLeft";
 			autohide = true;
 			visible = false;
 			

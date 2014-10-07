@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+<cml rootDirectory="assets/" css="styles.css">
 
-<!-- header -->
-<Text class="title">Media</Text>
-<Text class="desc">
-	<p>The Media is a wrapper for media elements including the Image, Video, and the MP3. It auto-selects the correct media element based on the input file extension. 
-	It suppports the following file extensions: png, gif, jpg, mpeg-4, mp4, m4v, 3gpp, mov, flv, f4v, and mp3.<br /><br />
-	This example demonstrates the loading of two different types of media files: jpg and mov. </p><br />
-	<p>The drag and rotate gestures have been enabled on the video.</p><br />
-	<p>See also:<br />
-	MediaViewer<br />
-	Image<br />
-	Video<br />
-	MP3<br />
-	</p>	 
-</Text>
+	<!-- header -->
+	<Text class="title">Media</Text>
+	<Text class="desc">
+		<p>The Media is a wrapper for media elements including the Image, Video, and Audio. It auto-selects the correct media element based on the input file extension.<br /><br /> 
+		It suppports the following file extensions:<br />
+		Image: png, gif, jpg<br />
+		Video: mpeg-4, mp4, m4v, 3gpp, mov, flv, f4v<br />
+		Audio: mp3, wav<br /><br />
+		This example demonstrates the loading of two different types of media files: jpg and mov. </p><br />
+		<p>See also:<br />
+		MediaViewer<br />
+		Image<br />
+		Video<br />
+		MP3<br />
+		</p>	 
+	</Text>
 
-<!-- The Media tag auto-switches the correctly playback based on media type specified in the src attribute. 
-	This is useful, for example, in situations where you are switching between media types dynamically. -->
-
-<Media id="image" x="500" y="50" src="images/plane.jpg" scale=".8" />
-<Media id="video" x="500" y="350" src="market-street.mov" autoplay="true" loop="true" scale="1">
-	<Gesture ref="n-drag"/>
-	<Gesture ref="n-rotate"/>
-</Media>
+	<!-- The Media tag auto-switches the correctly playback based on media type specified in the src attribute. 
+		This is useful in situations where you are switching between media types dynamically. -->
+	<Media id="image" x="500" y="50" src="images/plane.jpg" scale=".8">
+		<Gesture ref="n-rotate"/>
+	</Media>
+	<Media id="video" x="500" y="350" src="market-street.mov" autoplay="true" loop="true" scale="1">
+		<Gesture ref="n-drag"/>
+		<Gesture ref="n-rotate"/>
+	</Media>
 
 </cml>

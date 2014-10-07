@@ -10,11 +10,13 @@ package as3.components.ui
 		public var bkgColor:uint = 0x665533;
 		public var bkgAlpha:Number = 0.8;
 		
-		public var title:String;
+		private var t:Text;
+		private var _title:String;
 		public var tFontColor:uint = 0xFFFFFF;
 		public var tFontSize:Number = 30;
 		
-		public var descr:String;
+		private var d:Text;
+		private var _descr:String;
 		public var descrHTML:String;
 		public var dFontColor:uint = 0xFFFFFF;
 		public var dFontSize:Number = 20;
@@ -27,6 +29,22 @@ package as3.components.ui
 		override public function init():void {
 			setupUI();
 			super.init();
+		}
+		
+		public function get title():String { return _title; }
+		public function set title(value:String):void {
+			_title = value; 
+			if (t) {
+				t.str = _title;
+			}
+		}
+		
+		public function get descr():String { return _descr; }
+		public function set descr(value:String):void {
+			_descr = value; 
+			if (d) {
+				d.str = _descr;
+			}
 		}
 		
 		private function setupUI():void {
@@ -55,7 +73,7 @@ package as3.components.ui
 			addChild(info);			
 			
 			if (title) {
-				var t:Text = new Text();
+				t = new Text();
 				t.str = title;
 				t.fontSize = tFontSize;
 				t.color = tFontColor;
@@ -66,7 +84,7 @@ package as3.components.ui
 			}
 			
 			if (descr || descrHTML) {
-				var d:Text = new Text();
+				d = new Text();
 				d.fontSize = dFontSize;
 				d.wordWrap = true;
 				d.color = dFontColor;
