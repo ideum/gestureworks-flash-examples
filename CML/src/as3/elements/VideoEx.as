@@ -24,13 +24,11 @@ package as3.elements
 			var video:Video = new Video();
 			video.src = "assets/market-street.mov";
 			video.autoplay = true;
-			video.scale = 1;
 			video.x = 500;
 			video.y = 100;
 			addChild(video);
 			
 			video.init();
-			video.play();
 		}
 	
 	}
