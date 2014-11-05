@@ -40,6 +40,7 @@ package as3.elements
 			img2.resample = true;
 			img2.x = 950;
 			img2.y = 350;
+			img2.init();
 			addChild(img2);
 		}
 		
