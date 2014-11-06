@@ -57,6 +57,7 @@ package as3.components
 			media.loop = true;
 			media.targetParent = true;
 			media.mouseChildren = false;
+			media.resetDimensions = false; 
 			mediaViewer.addChild(media);
 			
 			//BACK: info panel
