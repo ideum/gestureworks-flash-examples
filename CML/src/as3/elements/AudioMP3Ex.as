@@ -3,7 +3,7 @@ package as3.elements
 	import cml.elements.StateEx;
 	import com.gestureworks.cml.elements.Audio;
 	import com.gestureworks.cml.events.StateEvent;
-	import com.gestureworks.cml.utils.media.MediaStatus;
+	import com.gestureworks.cml.base.media.MediaStatus;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.utils.ExampleTemplate;	
 	import flash.events.KeyboardEvent;
