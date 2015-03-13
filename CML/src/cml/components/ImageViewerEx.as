@@ -11,18 +11,15 @@ package cml.components
 	 */
 	public class ImageViewerEx extends GestureWorks
 	{
-		public function ImageViewerEx():void
-		{
+		public function ImageViewerEx():void{
 			super();
 			gml = "gml/gestures.gml"
 			cml = "components/ImageViewer.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}
 		
-		private function cmlInit(event:Event):void
-		{
+		private function cmlInit(event:Event):void{
 			CMLParser.removeEventListener(CMLParser.COMPLETE, cmlInit);
-			trace("cmlInit()");
 		}
 	}
 }

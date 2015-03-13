@@ -23,9 +23,7 @@ package as3.components
 			//Description
 			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("ImageViewer");
-			exTemp.createDesc("<p>The ImageViewer is a component that is primarily meant to display an Image on the front side and meta-data on the back side. "
-			+"It is composed of the following elements: image, front, back, menu, and frame. The width and height of the component are automatically set to the dimensions of the image unless it is previously specifed by the component.<br /><br />" 
-			+ "This example demonstrates an image on the front of an ImageViewer and an info panel on the back. The viewer can be rotated, scaled, and dragged.</p>" 
+			exTemp.createDesc("<p>The ImageViewer component displays an Image on the front side and meta-data on the back side. The viewer can be rotated, scaled, and dragged.</p>" 
 			+ "<br /><p>See also:<br />Component<br />Image<br /></p>");
 			addChild(exTemp);
 			
@@ -35,7 +33,7 @@ package as3.components
 			imageViewer.y = 150;
 			imageViewer.rotation = 10;
 			imageViewer.mouseChildren = true;
-			imageViewer.gestureList = {"n-drag": true, "n-scale": true, "n-rotate": true};			
+			imageViewer.gestureList = { "n-drag": true, "n-scale": true, "n-rotate": true };		
 			addChild(imageViewer);			
 			
 			//FRONT: image element
