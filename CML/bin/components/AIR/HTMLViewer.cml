@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+<cml rootDirectory="assets/" css="styles.css">
 
 <LibraryKit>
 	<Library type="swf" src="assets/openexhibits_assets.swf" />	
@@ -54,10 +54,8 @@
 	</Menu>
 	
 	<!-- GESTURES -->
-	<GestureList>
-		<Gesture ref="n-drag" />
-		<Gesture ref="n-scale" />
-	</GestureList>
+	<Gesture ref="n-drag" />
+	<Gesture ref="n-scale" />
 	
 </HTMLViewer>	
 
