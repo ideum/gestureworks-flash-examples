@@ -11,17 +11,14 @@ package cml.components
 	 */
 	public class AudioMP3PlayerEx extends GestureWorks
 	{
-		public function AudioMP3PlayerEx():void
-		{
+		public function AudioMP3PlayerEx():void{
 			super();
 			gml = "gml/gestures.gml"
 			cml = "components/AudioMP3Player.cml";
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}
 		
-		private function cmlInit(event:Event):void
-		{
-			trace("cmlInit()");
+		private function cmlInit(event:Event):void{
 			CMLParser.removeEventListener(CMLParser.COMPLETE, cmlInit);
 		}
 	}

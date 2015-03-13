@@ -17,7 +17,6 @@
 </Text>
 	
 <!-- The MP3 plays mp3 files and optionally displays a graphical waveform. -->
-
 <AudioPlayer x="600" y="150" back="#info">
 
 	<!-- FRONT: Audio -->			
@@ -45,11 +44,9 @@
 	</Menu>
 
 	<!-- GESTURES -->	
-	<GestureList>
-		<Gesture ref="n-drag" />
-		<Gesture ref="n-scale" />
-		<Gesture ref="n-rotate" />
-	</GestureList>
+	<Gesture ref="n-drag" />
+	<Gesture ref="n-scale" />
+	<Gesture ref="n-rotate" />
 	
 </AudioPlayer>
 
