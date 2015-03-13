@@ -1,5 +1,6 @@
 package cml.components
 {
+	import com.gestureworks.cml.components.MediaViewer;
 	import com.gestureworks.cml.core.CMLParser;
 	import com.gestureworks.cml.elements.Media;
 	import com.gestureworks.cml.elements.Text;
@@ -42,6 +43,9 @@ package cml.components
 			descr = document.getElementById("descr");
 			
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, updateMedia);
+			
+			var mv:MediaViewer = document.getElementsByTagName(MediaViewer)[0];
+			var c:MediaViewer = mv.clone();
 		}
 		
 		private function updateMedia(e:KeyboardEvent):void {

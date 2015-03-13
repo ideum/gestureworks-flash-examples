@@ -49,11 +49,9 @@
 	</Menu>
 
 	<!-- GESTURES -->	
-	<GestureList>
-		<Gesture ref="n-drag" />
-		<Gesture ref="n-scale" />
-		<Gesture ref="n-rotate" />
-	</GestureList>
+	<Gesture ref="n-drag" />
+	<Gesture ref="n-scale" />
+	<Gesture ref="n-rotate" />
 	
 </MediaViewer>
 
