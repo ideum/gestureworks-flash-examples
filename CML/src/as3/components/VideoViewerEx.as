@@ -13,13 +13,11 @@ package as3.components
 	
 	public class VideoViewerEx extends GestureWorks
 	{		
-		public function VideoViewerEx():void
-		{
+		public function VideoViewerEx():void{
 			gml = "gml/gestures.gml";
 		}
 		
-		override protected function gestureworksInit():void
-		{
+		override protected function gestureworksInit():void{
 			//Description			
 			var exTemp:ExampleTemplate = new ExampleTemplate();			
 			exTemp.createTitle("Video Viewer");
@@ -32,7 +30,8 @@ package as3.components
 			var videoViewer:VideoViewer = new VideoViewer();
 			videoViewer.x = 600;
 			videoViewer.y = 150;
-			videoViewer.gestureList = {"n-drag": true, "n-scale": true, "n-rotate": true};			
+			videoViewer.gestureList = { "n-drag": true, "n-scale": true, "n-rotate": true };			
+			videoViewer.hideFrontOnFlip = false; 
 			addChild(videoViewer);						
 			
 			//FRONT: video element
