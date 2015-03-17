@@ -16,6 +16,7 @@ package cml.components
 	 */
 	public class MediaViewerEx extends GestureWorks
 	{
+		private var mediaViewer:MediaViewer;
 		private var media:Media; 
 		private var title:Text;
 		private var descr:Text; 
@@ -38,6 +39,7 @@ package cml.components
 			CMLParser.removeEventListener(CMLParser.COMPLETE, cmlInit);
 			trace("cmlInit()");
 			
+			mediaViewer = document.getElementsByTagName(MediaViewer)[0];
 			media = document.getElementById("media");
 			title = document.getElementById("title");
 			descr = document.getElementById("descr");
@@ -51,8 +53,9 @@ package cml.components
 			if (e.keyCode == 13) {
 				index = index == files.length - 1 ? 0 : index + 1;
 				title.str = titles[index];
-				descr.str = descrs[index];
+				descr.str = descrs[index];				
 				media.src = files[index];
+				mediaViewer.init();
 			}
 		}
 	}
