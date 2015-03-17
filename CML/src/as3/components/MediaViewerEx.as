@@ -17,6 +17,7 @@ package as3.components
 		
 		private var media:Media; 
 		private var infoPanel:InfoPanel;
+		private var mediaViewer:MediaViewer;
 		
 		private var files:Array = ["assets/market-street.mov", "assets/images/plane.jpg", "assets/RuthCalledShot_vbr.mp3"];
 		private var titles:Array = ["Market Street", "Wright Brothers", "Babe Ruth"];
@@ -41,7 +42,7 @@ package as3.components
 			addChild(exTemp);		
 			
 			//Media Viewer Component
-			var mediaViewer:MediaViewer = new MediaViewer();
+			mediaViewer = new MediaViewer();
 			mediaViewer.x = 610;
 			mediaViewer.y = 183;
 			mediaViewer.width = 500;
@@ -98,6 +99,7 @@ package as3.components
 				infoPanel.title = titles[index];
 				infoPanel.descr = descrs[index];
 				media.src = files[index];
+				mediaViewer.init();
 			}
 		}		
 	}

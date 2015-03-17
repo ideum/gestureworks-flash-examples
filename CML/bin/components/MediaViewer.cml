@@ -31,7 +31,7 @@
 	<Container id="info" visible="false" targetParent="true" width="100%" height="100%">
 		<Graphic color="0x709EF4" alpha="0.8" shape="rectangle" width="100%" height="100%"/>
 		<Container width="100%" height="100%">
-			<Text id="title" str="Market Street" fontSize="30" color="0xFFFFFF" font="OpenSansBold" autosize="true" width="100%" />				
+			<Text id="title" str="Market Street" fontSize="30" color="0xFFFFFF" font="OpenSansBold" width="100%" textAlign="center"/>				
 			<Text id="descr" y="40" fontSize="20" wordWrap="true" color="0xFFFFFF" width="100%" autosize="true" multiline="true" 
 				str="A Trip Down Market Street is a 13-minute actuality film recorded by placing a movie camera on the front of a cable car as it travels down San Franciscos Market Street."/>			
 		</Container>

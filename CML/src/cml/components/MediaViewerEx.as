@@ -45,7 +45,6 @@ package cml.components
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, updateMedia);
 			
 			var mv:MediaViewer = document.getElementsByTagName(MediaViewer)[0];
-			var c:MediaViewer = mv.clone();
 		}
 		
 		private function updateMedia(e:KeyboardEvent):void {
