@@ -54,7 +54,7 @@ package as3.components
 			for (var i:int = 0; i < 5; i++){
 				ts = new TouchContainer();
 				ts.topOnPoint = true; 
-				ts.gestureList = { "n-drag-inertia":true, "n-tap":true};
+				ts.gestureList = { "n-drag-inertia":true, "n-scale":true, "n-rotate":true, "n-tap":true};
 				ts.nativeTransform = true; 				
 				ts.releaseInertia = true; 
 				ts.graphics.beginFill(NumberUtils.randomNumber(0x000001, 0xFFFFFF));
