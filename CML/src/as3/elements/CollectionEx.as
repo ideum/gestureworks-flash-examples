@@ -48,6 +48,7 @@ package as3.elements
 				ts.addEventListener(GWGestureEvent.TAP, function(e:GWGestureEvent):void {
 					e.target.visible = false; 
 				});
+				ts.init();
 				collection.addChild(ts);		
 			}	
 			
