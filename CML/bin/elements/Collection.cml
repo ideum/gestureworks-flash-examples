@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" >
+
+	<!-- header -->	
+	<Text class="title">Collection</Text>
+	<Text class="desc">
+		<p>The Collection controls the display of its children based on a set number of allowable display objects. All objects not displayed are put into a queue to be invoked when the display count changes (either when an object becomes invisble or is moved offscreen) providing a cyclical browsing of the collection objects.</p>
+		<br /><p>This example demonstrates the cycling of display objects when the display count decreases below 3 by either disabling an object's visibility (with a tap gesture) or moving it off screen.</p>
+	</Text>
+
+	<!-- collection -->
+	<Collection x="460" width="820" displayCount="3" animateIn="true" background="true" backgroundColor="0x538096">
+		<Image src="images/michael-otto.jpg" releaseInertia="true" width="512" height="340" topOnPoint="true">
+			<Gesture ref="n-drag-inertia"/>
+			<Gesture ref="n-scale"/>
+			<Gesture ref="n-rotate"/>
+			<Gesture ref="n-tap"/>
+		</Image>
+		<Image src="images/neretva-river.jpg" releaseInertia="true" width="512" height="340" topOnPoint="true">
+			<Gesture ref="n-drag-inertia"/>
+			<Gesture ref="n-scale"/>
+			<Gesture ref="n-rotate"/>
+			<Gesture ref="n-tap"/>
+		</Image>
+		<Image src="images/golden-gate.jpg" releaseInertia="true" width="512" height="340" topOnPoint="true">
+			<Gesture ref="n-drag-inertia"/>
+			<Gesture ref="n-scale"/>
+			<Gesture ref="n-rotate"/>
+			<Gesture ref="n-tap"/>
+		</Image>
+		<Image src="images/lake-vuoksa.jpg" releaseInertia="true" width="512" height="340" topOnPoint="true">
+			<Gesture ref="n-drag-inertia"/>
+			<Gesture ref="n-scale"/>
+			<Gesture ref="n-rotate"/>
+			<Gesture ref="n-tap"/>
+		</Image>
+	</Collection>
+
+</cml>
