@@ -2,26 +2,72 @@
 
 <cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
 
-<!-- library files must be relative to the root directory for security reasons -->
-<LibraryKit>
-	<Library type="swf" src="assets/openexhibits_assets.swf" />	
-</LibraryKit>
+	<LibraryKit>
+		<Library type="swf" src="assets/openexhibits_assets.swf" />	
+	</LibraryKit>
 
-<!-- header -->
-<Text class="title">Collection Viewer</Text>
-<Text class="desc">
-	<p>The Collection Viewer can load more objects than will display at any one time. The objects not displayed are put into queue and the CollectionViwer cycles through the queue whenever a user closes an object or moves it offscreen.<br /><br />
-	This example demonstrates three items loaded, with two on-screen (amountToShow) and one in the queue.</p><br />
-	<p>See also:<br />
-	Component<br />ImageViewer<br />VideoViewer<br />MP3Player<br />
-	</p>	 
-</Text>
+	<!-- header -->
+	<Text class="title">CollectionViewer</Text>
+	<Text class="desc">
+		<p>The CollectionViewer component displays a Collection on the front side and meta-data on the back side. The viewer can be rotated, scaled, and dragged.</p>
+		<br /><p>See also:<br />Component<br />Collection<br /></p>
+	</Text>
 
-<!-- collection viewer -->
-<CollectionViewer autoShuffle="true" amountToShow="2" mouseChildren="true" animateIn="true">
-	<Include src="ImageViewer.cml" />
-	<Include src="MP3Player.cml" />
-	<Include src="VideoViewer.cml" />
-</CollectionViewer>
+
+	<!-- VIEWER -->
+	<CollectionViewer x="625" y="150" width="500" height="350" rotation="10" back="info">
+
+		<!-- FRONT: Collection -->
+		<Collection displayCount="3" animateIn="true" background="true" backgroundColor="0x538096">
+			<Image src="images/michael-otto.jpg" releaseInertia="true" width="256" height="170" topOnPoint="true">
+				<Gesture ref="n-drag-inertia"/>
+				<Gesture ref="n-scale"/>
+				<Gesture ref="n-rotate"/>
+				<Gesture ref="n-tap"/>
+			</Image>
+			<Image src="images/neretva-river.jpg" releaseInertia="true" width="256" height="170" topOnPoint="true">
+				<Gesture ref="n-drag-inertia"/>
+				<Gesture ref="n-scale"/>
+				<Gesture ref="n-rotate"/>
+				<Gesture ref="n-tap"/>
+			</Image>
+			<Image src="images/golden-gate.jpg" releaseInertia="true" width="256" height="170" topOnPoint="true">
+				<Gesture ref="n-drag-inertia"/>
+				<Gesture ref="n-scale"/>
+				<Gesture ref="n-rotate"/>
+				<Gesture ref="n-tap"/>
+			</Image>
+			<Image src="images/lake-vuoksa.jpg" releaseInertia="true" width="256" height="170" topOnPoint="true">
+				<Gesture ref="n-drag-inertia"/>
+				<Gesture ref="n-scale"/>
+				<Gesture ref="n-rotate"/>
+				<Gesture ref="n-tap"/>
+			</Image>
+		</Collection>
+		
+		<!-- BACK: info panel -->
+		<Container id="info" visible="false" targetParent="true" width="100%" height="100%">
+			<Graphic color="0x665533" alpha="0.8" shape="rectangle" width="100%" height="100%"/>
+			<Container width="100%" height="100%" paddingLeft="30" paddingRight="30" paddingTop="30" relativeY="true">
+				<Text str="Collection Viewer" fontSize="30" color="0xFFFFFF" font="OpenSansBold" textAlign="center" height="50"/>				
+				<Text fontSize="20" wordWrap="true" color="0xFFFFFF" autosize="true" multiline="true" str="This example demonstrates the cycling of display objects when the display count decreases below 3 by either disabling an object's visibility (with a tap gesture) or moving it off screen."/>			
+			</Container>
+		</Container>
+
+		<!-- FRAME-->
+		<Include src="frame.cml" />
+		
+		<!-- MENU -->
+		<Menu alpha="0.75" position="bottomRight" autohide="true" paddingBottom="10" paddingRight="10" visible="false">
+			<Include src="infoButton.cml"/>
+			<Include src="closeButton.cml"/>		
+		</Menu>
+		
+		<!-- GESTURES -->
+		<Gesture ref="n-drag" />
+		<Gesture ref="n-scale" />
+		<Gesture ref="n-rotate" />
+		
+	</CollectionViewer>	
 
 </cml>
