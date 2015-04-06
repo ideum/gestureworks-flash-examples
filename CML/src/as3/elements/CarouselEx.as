@@ -22,7 +22,7 @@ package as3.elements
 			addChild(exTemp);
 			
 			exTemp.createTitle("Carousel");
-			exTemp.createDesc("<p>The Carousel provides a circular list of display objects that can be scrolled circularly or horizontally.<br/><br/>Top right: standard carousel with circular scroll.<br/><br/>Bottom right: fancy carousel with linear scroll and added scaling and rotation effects.<br/><br/>Bottom left: carousel with a rotation offset and rotation effect.</p>");
+			exTemp.createDesc("<p>The Carousel provides a circular list of display objects that can be scrolled circularly or horizontally.<br/><br/>Top right: standard carousel with circular scroll.<br/><br/>Bottom right: fancy carousel with linear scroll and added scaling and rotation effects.<br/><br/>Bottom left: carousel with a rotation offset and a rotation type set to ROTATE_OUTWARD.</p>");
 			
 			addChild(standardCarousel());
 			addChild(cornerCarousel());
