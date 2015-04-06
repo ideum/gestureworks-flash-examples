@@ -36,7 +36,7 @@
 	<Image src="images/plane.jpg" scale=".3"/>
 	<Image src="images/plane.jpg" scale=".3"/>
 	<Image src="images/plane.jpg" scale=".3"/>
-	<Layout ref="List" useMargins="true" marginY="5" type="vertical" tween="true" tweenTime="1500"/>                  
+	<Layout ref="ListLayout" useMargins="true" marginY="5" type="vertical" tween="true" tweenTime="1500"/>                  
 </Container>
 
 </cml>
