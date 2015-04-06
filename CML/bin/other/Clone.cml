@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css">
+
+	<!-- header -->	
+	<Text class="title">Clone</Text>
+	<Text class="desc">
+		<p>The Clone tag is a data node allowing the duplication of an object through CML declarations. The clone source is specified by
+		assigning its id to the 'ref' attribute of the Clone tag. By default, a single instance is cloned but the number of instances can 
+		be set through the 'instances' attribute. A clone does not have to belong to the same parent as the source, a clone tag can be nested
+		in any display hiearchy. Clone properties can also be overwritten through tag attribute assignments supported by the source object.</p>
+		<br /><p>This example demonstrates the cloning of four sibling instances of an image object and the assignment of an additional clone, with
+		overwriting x and y coordinates, to a new Graphic parent.</p>
+	</Text>
+
+	<!-- source object -->
+	<Image id="img" src="images/smoke.jpg" x="500" y="10" scale=".4">
+		<Gesture ref="n-drag" />
+		<Gesture ref="n-rotate" />
+		<Gesture ref="n-scale" />	
+	</Image>	
+
+	<!-- clone four instances -->
+	<Clone ref="img" instances="4" />
+
+	<!-- assign clone to a different parent than the source and overwrite source properties -->
+	<Graphic shape="rectangle" x="500" y="350" width="600" height="360" color="0xCCCCCC" mouseChildren="true">
+		<Clone ref="img" x="95" y="45" />
+		<Gesture ref="n-drag" />
+		<Gesture ref="n-rotate" />
+		<Gesture ref="n-scale" />			
+	</Graphic>
+
+</cml>
