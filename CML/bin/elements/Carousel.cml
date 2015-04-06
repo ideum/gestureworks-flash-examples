@@ -6,12 +6,14 @@
 <Text class="title">Carousel</Text>
 <Text class="desc">
 	<p>The Carousel provides a circular list of display objects that can be scrolled circularly or horizontally.<br/><br/>
-	This example demonstrates the circular scrolling of a set of graphics objects by dragging the list in a circular fashion.
-	When dragging is complete, the view will snap to the closest display object.
+	These examples demonstrate the circular scrolling of a set of graphics objects by dragging the list in a circular fashion.
+	When dragging is complete, the view will snap to the closest display object.<br/><br/>
+	Top right: carousel with rotationType set to ROTATE_INWARD (refer to documentation for rotationType integer values).<br/><br/>
+	Bottom right: standard carousel.
 	</p>
 </Text>
 
-<Carousel x="700" y="310" width="400" height="100">
+<Carousel x="700" y="410" width="400" height="100">
 	<Graphic shape="rectangle" width="100" height="100" color="0x987465" lineColor="0" lineAlpha="0.5" lineStroke="4" />
 	<Graphic shape="rectangle" width="100" height="100" color="0x519357" lineColor="0" lineAlpha="0.5" lineStroke="4" />
 	<Graphic shape="rectangle" width="100" height="100" color="0x156657" lineColor="0" lineAlpha="0.5" lineStroke="4" />
@@ -32,6 +34,29 @@
 	<Graphic shape="rectangle" width="100" height="100" color="0x159735" lineColor="0" lineAlpha="0.5" lineStroke="4" />
 	<Graphic shape="rectangle" width="100" height="100" color="0x158957" lineColor="0" lineAlpha="0.5" lineStroke="4" />
 	<Graphic shape="rectangle" width="100" height="100" color="0x987456" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+</Carousel>
+
+<Carousel x="700" y="-200" width="400" height="400" rotationType="1">
+	<Graphic shape="rectangle" width="100" height="100" color="0x156354" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x564383" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x519735" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x879452" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x541984" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x456188" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x851321" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x341852" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x549132" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x484521" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x786521" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x894563" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x159674" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x345812" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x524154" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x321896" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x564165" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x754312" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x985432" lineColor="0" lineAlpha="0.5" lineStroke="4" />
+	<Graphic shape="rectangle" width="100" height="100" color="0x159473" lineColor="0" lineAlpha="0.5" lineStroke="4" />
 </Carousel>
 
 </cml>

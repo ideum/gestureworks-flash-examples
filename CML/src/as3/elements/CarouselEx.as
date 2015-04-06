@@ -56,15 +56,15 @@ package as3.elements
 			c_carousel.width  = 600;
 			c_carousel.height = 600;
 			c_carousel.rotationOffset = -3 * Math.PI / 4;
-			c_carousel.onUpdate = function(child:DisplayObject, theta:Number):void
-			{
-				child.rotation = theta * 180 / Math.PI + 90;
-			}
+			c_carousel.rotationType = Carousel.ROTATE_OUTWARD;
 			for (var i:int = 0; i < 20; ++i)
 			{
 				c_carousel.addChild(box(200, 200));
 			}
 			c_carousel.init();
+			c_carousel.clone();
+			c_carousel.clone();
+			c_carousel.clone();
 			return c_carousel;
 		}
 		
