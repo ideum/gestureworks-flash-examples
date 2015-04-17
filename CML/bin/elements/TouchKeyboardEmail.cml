@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="assets/" css="styles.css" tuio="false" simulator="false">
+
+<!-- header -->
+<Text class="title">TouchKeyboardEmail</Text>
+<Text class="desc">
+	<p>The TouchKeyboard is a virtual keyboard providing an interface for a collection of Key objects and output management for key events. Default configurations are in place for convenience but the keyboard's style, layout, and key actions are customizable.<br /><br />
+	This example displays a custom TouchKeyboard stripped to basic email characters with custom image representations of the key states.</p><br />
+	<p>See also:<br />
+	TouchKeyboard<br />Key<br />
+	</p>	 
+</Text>
+
+<!-- This is a customized TouchKeyboard stripped to basic email characters with custom image representations of the key states. The TouchKeyboard can be customized 
+     by nesting Containers of Keys, each Container representing a row of keys. If an output is not specified, the output text field will be the currently 
+	 focused(focus is gained by touch) text field. If an output is specified, the output is fixed to the provided text field. For ogranization purposes, most of the 
+	 Key settings can be found in the corresponding CSS file.-->
+
+<TouchKeyboard id="tk" x="550" y="300" scale=".8" background="bkg" bkgPadding="20" output="notepad">
+	<Container class="row1" >				
+		<Key class="email_key" text="1">
+			<Image id="up" src="images/keyboard_assets/up/1.png"/>
+			<Image id="down" src="images/keyboard_assets/down/1.png"/>
+		</Key>					
+		<Key class="email_key"  text="2">
+			<Image id="up" src="images/keyboard_assets/up/2.png"/>
+			<Image id="down" src="images/keyboard_assets/down/2.png"/>			
+		</Key>						
+		<Key class="email_key"  text="3">
+			<Image id="up" src="images/keyboard_assets/up/3.png"/>
+			<Image id="down" src="images/keyboard_assets/down/3.png"/>			
+		</Key>						
+		<Key class="email_key"  text="4">
+			<Image id="up" src="images/keyboard_assets/up/4.png"/>
+			<Image id="down" src="images/keyboard_assets/down/4.png"/>			
+		</Key>						
+		<Key class="email_key"  text="5">
+			<Image id="up" src="images/keyboard_assets/up/5.png"/>
+			<Image id="down" src="images/keyboard_assets/down/5.png"/>			
+		</Key>						
+		<Key class="email_key"  text="6">
+			<Image id="up" src="images/keyboard_assets/up/6.png"/>
+			<Image id="down" src="images/keyboard_assets/down/6.png"/>			
+		</Key>						
+		<Key class="email_key"  text="7">
+			<Image id="up" src="images/keyboard_assets/up/7.png"/>
+			<Image id="down" src="images/keyboard_assets/down/7.png"/>			
+		</Key>						
+		<Key class="email_key"  text="8">
+			<Image id="up" src="images/keyboard_assets/up/8.png"/>
+			<Image id="down" src="images/keyboard_assets/down/8.png"/>			
+		</Key>						
+		<Key class="email_key"  text="9">
+			<Image id="up" src="images/keyboard_assets/up/9.png"/>
+			<Image id="down" src="images/keyboard_assets/down/9.png"/>			
+		</Key>						
+		<Key class="email_key"  text="0">
+			<Image id="up" src="images/keyboard_assets/up/0.png"/>
+			<Image id="down" src="images/keyboard_assets/down/0.png"/>			
+		</Key>						
+		<Key class="email_key"  text="Delete" keyCode="8" width="120">
+			<Image id="up" src="images/keyboard_assets/up/delete.png"/>
+			<Image id="down" src="images/keyboard_assets/down/delete.png"/>			
+		</Key>	
+	</Container>		
+	<Container class="row2" x="8">
+		<Key class="email_key"  text="q">
+			<Image id="up" src="images/keyboard_assets/up/q.png"/>
+			<Image id="down" src="images/keyboard_assets/down/q.png"/>				
+		</Key>						
+		<Key class="email_key"  text="w">
+			<Image id="up" src="images/keyboard_assets/up/w.png"/>
+			<Image id="down" src="images/keyboard_assets/down/w.png"/>				
+		</Key>
+		<Key class="email_key"  text="e">
+			<Image id="up" src="images/keyboard_assets/up/e.png"/>
+			<Image id="down" src="images/keyboard_assets/down/e.png"/>	
+		</Key>						
+		<Key class="email_key"  text="r">
+			<Image id="up" src="images/keyboard_assets/up/r.png"/>
+			<Image id="down" src="images/keyboard_assets/down/r.png"/>				
+		</Key>						
+		<Key class="email_key"  text="t">
+			<Image id="up" src="images/keyboard_assets/up/t.png"/>
+			<Image id="down" src="images/keyboard_assets/down/t.png"/>				
+		</Key>						
+		<Key class="email_key"  text="y">
+			<Image id="up" src="images/keyboard_assets/up/y.png"/>
+			<Image id="down" src="images/keyboard_assets/down/y.png"/>				
+		</Key>
+		<Key class="email_key"  text="u">
+			<Image id="up" src="images/keyboard_assets/up/u.png"/>
+			<Image id="down" src="images/keyboard_assets/down/u.png"/>				
+		</Key>
+		<Key class="email_key"  text="i">
+			<Image id="up" src="images/keyboard_assets/up/i.png"/>
+			<Image id="down" src="images/keyboard_assets/down/i.png"/>				
+		</Key>
+		<Key class="email_key"  text="o">
+			<Image id="up" src="images/keyboard_assets/up/o.png"/>
+			<Image id="down" src="images/keyboard_assets/down/o.png"/>				
+		</Key>
+		<Key class="email_key"  text="p">
+			<Image id="up" src="images/keyboard_assets/up/p.png"/>
+			<Image id="down" src="images/keyboard_assets/down/p.png"/>				
+		</Key>						
+		<Key class="email_key"  text="~">
+			<Image id="up" src="images/keyboard_assets/up/tilde.png"/>
+			<Image id="down" src="images/keyboard_assets/down/tilde.png"/>				
+		</Key>	
+		<Key class="email_key"  text="&">
+			<Image id="up" src="images/keyboard_assets/up/amp.png"/>
+			<Image id="down" src="images/keyboard_assets/down/amp.png"/>				
+		</Key>	
+	</Container>
+	<Container class="row3" x="16">
+		<Key class="email_key"  text="a">
+			<Image id="up" src="images/keyboard_assets/up/a.png"/>
+			<Image id="down" src="images/keyboard_assets/down/a.png"/>				
+		</Key>					
+		<Key class="email_key"  text="s">
+			<Image id="up" src="images/keyboard_assets/up/s.png"/>
+			<Image id="down" src="images/keyboard_assets/down/s.png"/>				
+		</Key>
+		<Key class="email_key"  text="d">
+			<Image id="up" src="images/keyboard_assets/up/d.png"/>
+			<Image id="down" src="images/keyboard_assets/down/d.png"/>				
+		</Key>
+		<Key class="email_key"  text="f">
+			<Image id="up" src="images/keyboard_assets/up/f.png"/>
+			<Image id="down" src="images/keyboard_assets/down/f.png"/>				
+		</Key>
+		<Key class="email_key"  text="g">
+			<Image id="up" src="images/keyboard_assets/up/g.png"/>
+			<Image id="down" src="images/keyboard_assets/down/g.png"/>				
+		</Key>						
+		<Key class="email_key"  text="h">
+			<Image id="up" src="images/keyboard_assets/up/h.png"/>
+			<Image id="down" src="images/keyboard_assets/down/h.png"/>				
+		</Key>						
+		<Key class="email_key"  text="j">
+			<Image id="up" src="images/keyboard_assets/up/j.png"/>
+			<Image id="down" src="images/keyboard_assets/down/j.png"/>				
+		</Key>						
+		<Key class="email_key"  text="k">
+			<Image id="up" src="images/keyboard_assets/up/k.png"/>
+			<Image id="down" src="images/keyboard_assets/down/k.png"/>				
+		</Key>						
+		<Key class="email_key"  text="l">
+			<Image id="up" src="images/keyboard_assets/up/l.png"/>
+			<Image id="down" src="images/keyboard_assets/down/l.png"/>				
+		</Key>						
+		<Key class="email_key"  text="-">
+			<Image id="up" src="images/keyboard_assets/up/-.png"/>
+			<Image id="down" src="images/keyboard_assets/down/-.png"/>				
+		</Key>	
+		<Key class="email_key"  text="+">
+			<Image id="up" src="images/keyboard_assets/up/+.png"/>
+			<Image id="down" src="images/keyboard_assets/down/+.png"/>				
+		</Key>	
+		<Key class="email_key"  text="_">
+			<Image id="up" src="images/keyboard_assets/up/_.png"/>
+			<Image id="down" src="images/keyboard_assets/down/_.png"/>				
+		</Key>	
+	</Container>	
+	<Container class="row4" x="24">
+		<Key class="email_key"  text="z">
+			<Image id="up" src="images/keyboard_assets/up/z.png"/>
+			<Image id="down" src="images/keyboard_assets/down/z.png"/>				
+		</Key>						
+		<Key class="email_key"  text="x">
+			<Image id="up" src="images/keyboard_assets/up/x.png"/>
+			<Image id="down" src="images/keyboard_assets/down/x.png"/>				
+		</Key>
+		<Key class="email_key"  text="c">
+			<Image id="up" src="images/keyboard_assets/up/c.png"/>
+			<Image id="down" src="images/keyboard_assets/down/c.png"/>				
+		</Key>
+		<Key class="email_key"  text="v">
+			<Image id="up" src="images/keyboard_assets/up/v.png"/>
+			<Image id="down" src="images/keyboard_assets/down/v.png"/>				
+		</Key>
+		<Key class="email_key"  text="b">
+			<Image id="up" src="images/keyboard_assets/up/b.png"/>
+			<Image id="down" src="images/keyboard_assets/down/b.png"/>				
+		</Key>						
+		<Key class="email_key"  text="n">
+			<Image id="up" src="images/keyboard_assets/up/n.png"/>
+			<Image id="down" src="images/keyboard_assets/down/n.png"/>				
+		</Key>						
+		<Key class="email_key"  text="m">
+			<Image id="up" src="images/keyboard_assets/up/m.png"/>
+			<Image id="down" src="images/keyboard_assets/down/m.png"/>				
+		</Key>						
+		<Key class="email_key"  text="@">
+			<Image id="up" src="images/keyboard_assets/up/at.png"/>
+			<Image id="down" src="images/keyboard_assets/down/at.png"/>				
+		</Key>						
+		<Key class="email_key"  text=".">
+			<Image id="up" src="images/keyboard_assets/up/period.png"/>
+			<Image id="down" src="images/keyboard_assets/down/period.png"/>				
+		</Key>						
+		<Key class="email_key"  text=".com" width="110" outputText="true">
+			<Image id="up" src="images/keyboard_assets/up/dot-com.png"/>
+			<Image id="down" src="images/keyboard_assets/down/dot-com.png"/>				
+		</Key>											
+	</Container>				
+	<Graphic id="bkg" shape="rectangle" color="0xFFFFFF" lineStroke="0" alpha="0"/>                                                     
+</TouchKeyboard>
+
+<Image x="560" y="250" src="images/keyboard_assets/input-bar.png"/>  <!--notepad background image-->
+
+<Text id="notepad" x="575" y="260" width="420" height="20" color="0xFFFFFF"/>   <!--Fixed output textfield referenced by id-->	
+
+<Button id="submit_button" x="1020" y="258" hit="hit" initial="up" up="up" out="up" down="down" over="down"> <!--email submission button-->
+	<Graphic id="hit" shape="rectangle" width="100" height="30" alpha="0"/>
+	<Image id="up" src="images/keyboard_assets/up/submit.png"/>
+	<Image id="down" src="images/keyboard_assets/down/submit.png"/>
+</Button>
+
+</cml>

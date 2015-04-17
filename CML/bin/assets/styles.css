@@ -27,3 +27,14 @@
 	font-size:25;
 	color:0xFF00FF;
 }
+
+.email_key {
+	initial:up;
+	up:up;
+	out:up;
+	down:down;
+	over:down;
+	width:45;
+	height:45;
+	hideText:true; 
+}
