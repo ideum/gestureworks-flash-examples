@@ -74,7 +74,7 @@ package cml.elements
 		 * @param	e
 		 */
 		private function clearText(e:GWTouchEvent):void {
-			text.str = "";
+			keyboard.clearOutput();
 			keyboard.removeEventListener(GWTouchEvent.TOUCH_BEGIN, clearText);
 		}
 	}
